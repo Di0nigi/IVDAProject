@@ -31,7 +31,21 @@
 %     Content     %
 %%%%%%%%%%%%%%%%%
 \section*{What}
-% YOUR RESPONSE HERE
+We have set out to make an interactive surface for Grata Franzini's manhually collected ``Catalogue of Digital Editions''. The catalogue consists of a list of 350 
+ works from digital humanities projects with a total of 52 attributes each (including an ID per item), obtained in tabular form as a CSV file from her GitHub repository  
+ (\href{Link}{https://github.com/dig-Eds-cat/digEds_cat}), which is  periodically updated with new works and maintained for accuracy. 
+ Of the 52 attributes, 25 are encoded as dummy variables, 15 as text (i.e. links, names, descriptions), 
+ 8 as categorical variables, and 4 as numerical variables., of which 3 are dates/years.
+ Some of the dummy variables refer to inherent properties of the actual digital edition (susch as ``Account for Textual Variance'', which describes 
+ if an edition takes into account textual variations between different versions of the considered work), while others refer to the presence technical properties
+ (e.g. ``XML-TEI Transcription'', which indicates if the item is available as such). Categorical variables allow the editions to be more finely described, again by inherent attribute
+ e.g. the historical period (in 8 categories, in this case even ordinal, though this doubles in part with the publishing century) or technical details (e.g. indicating the type of OCR used). 
+ Works range From the antiquity to contemporary, with ``Middle Ages'', `` Long Nineteenth Century'' and `` Early Modern'' dominating. Predominantly, editions are
+ in either English, Latin or German, whcih comprise more than half of the mostly manuscript based catalogue. Of the 18'252 cells, only 8 have missing values, concentrated in just three columns.
+ 6 Items are missing their HAndle-PID (a persistent identifier), one is missing information on the funding body and for one the catalogue does not specify wether the edition considers the `` value of witnesses''.
+ The majority of items provide a XML-TEI transcription, although most refuse the ability to download this. Just over half of the editions are open access, with some more being partially open source.
+The catalogue has a website already (\href{Link}{https://dig-ed-cat.acdh.oeaw.ac.at/editions.html}), but it is very barebones when it comes to visual exploration. Only a map of the funding institutions is provided (apart from the tabluar representation with categorical filtering). 
+
 
 \section*{Why}
 % YOUR RESPONSE HERE
