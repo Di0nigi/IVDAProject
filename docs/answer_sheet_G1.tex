@@ -35,7 +35,7 @@
 \section*{What}
 We have set out to make an interactive surface for Grata Franzini's manually collected ``Catalogue of Digital Editions''. The catalogue consists of a list of 350
 works from digital humanities projects with a total of 52 attributes each (including an ID per item), obtained in tabular form as a CSV file from her GitHub repository
-(\href{https://github.com/dig-Eds-cat/digEds_cat}{Link}), which is  periodically updated with new works and maintained for accuracy.
+(\href{https://github.com/dig-Eds-cat/digEds_cat}{Link}), which is  periodically updated with new works and maintained for accuracy. 
 Of the 52 attributes, 25 are encoded as dummy variables, 15 as text (i.e. links, names, descriptions),
 8 as categorical variables, and 4 as numerical variables., of which 3 are dates/years.
 Some of the dummy variables refer to inherent properties of the actual digital edition (susch as ``Account for Textual Variance'', which describes
@@ -44,22 +44,31 @@ if an edition takes into account textual variations between different versions o
 e.g. the historical period (in 8 categories, in this case even ordinal, though this doubles in part with the publishing century) or technical details (e.g. indicating the type of OCR used).
 Works range From the antiquity to contemporary, with ``Middle Ages'', `` Long Nineteenth Century'' and `` Early Modern'' dominating. Predominantly, editions are
 in either English, Latin or German, whcih comprise more than half of the mostly manuscript based catalogue. Of the 18'252 cells, only 8 have missing values, concentrated in just three columns.
-6 Items are missing their HAndle-PID (a persistent identifier), one is missing information on the funding body and for one the catalogue does not specify wether the edition considers the `` value of witnesses''.
+6 Items are missing their Handle-PID (a persistent identifier), one is missing information on the funding body and for one the catalogue does not specify wether the edition considers the `` value of witnesses''. Given the data was prepared by an experienced researcher,
+we consider it both reliable (safe for an occasional dead link) and clean, requiring little to no preprocessing except the handling ot the missing values.
 The majority of items provide a XML-TEI transcription, although most refuse the ability to download this. Just over half of the editions are open access, with some more being partially open source.
+We imntent to augment the dataset with a number of LLM generated attributes in order to facilitate exploration and assessment of works by researchers through similarities and connections between items: 
+Author school of thought, 5 keywords based on the contents of a works url, author and title, A categorical statement on authoritativeness, similarly a categorical statement for the renown of a work as well as a 
+quick work description to provide some detail on the contents of a work dujring exploration. We intend to use mainly intrinsic attributes for the project, not the technical ones, as the target audience is
+primarily interested in these aspects.
 The catalogue has a website already (\href{https://dig-ed-cat.acdh.oeaw.ac.at/editions.html}{Link}), but it is very barebones when it
  comes to visual exploration. Only a map of the funding institutions is provided (apart from the tabluar representation with categorical filtering).
 
--still missing: what are we actually using
--Data wrangling: little to none, deal with the missing values. put missing or unclear. describe the LLm generated columns we want to add.
--dataset authority: done by a seasoned researcher, the links work and the data seems consistent. Some bias in selection of works.
 -go over this with the slides on the side.
 
 \section*{Why}
+The goal according to the problem statement is to let users (primarily Historians, Researches and Digital Library users) explore the contents of the catalogue.
+Naturally, the catalogue also needs to enable the users to do directed search, in case they already know what they are looking for. A such, the task falls squarely into the data
+ exploration and Interactive relation discovery research streams. We are considering a sub tool that would enable users to tag their own connections between works, 
+ which would touch upon interactive data labeling.
+
+
 \textbf{Note:} I talked to my friend with a histry master about this. Yes filters are useful and necessary, but apparently, if we are thinking about exploration,
 the main thing for historians is not just an overview, but rather the ability to go down a rabbit hole. I.e. they are interested in connections betweeen the works/authors etc.
 That may also be a way to incorporate LLM generation, more as a POC than as actual functionality, which would have to be provided by linking things to other databases such as \href{Monumenta Germanie Historica}{https://www.mgh.de/de}
 
 \begin{itemize}
+    
     \item Explore all data
     \item data exploration is the main research stream this project falls into
     \item Discover relations as well--Dependencies between items and similarities and
@@ -87,6 +96,9 @@ That may also be a way to incorporate LLM generation, more as a POC than as actu
 - Tag relationships: Record own train of thought and help organize research; User defined attributes
 
 - go through these points with the slides on the side again
+
+
+
 
 \section*{How}
 %1
