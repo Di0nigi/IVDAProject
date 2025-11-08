@@ -86,29 +86,35 @@ Naturally, the catalogue also needs to enable the users to do directed search, i
 \section*{How}
 %1
 \begin{itemize}
-    \item Gain overview of the data; timeline with ages colored, block of title author
-          and description of a work, histogram of languages, density map based on source
-          material location, predefined version of the keyword graph
-    \item Identify relationships; Graph (used defined/premade), Map?, Cluster plot
-    \item Filter by attributes; historgams/bar chart like in the lecture, search
-          function, glkobal filter model
-    \item judge reliabilty; User generated score represented as bar
-    \item Tag relationships; Graph (used defined) with field text
+    \item Gain overview of the data: We will use timeline (Time, century on x axis) with bars for period/ages colored and works plotted into this (perhaps with shape encoding for an additional attribute), an example block of title author
+          and description of a work, a bar chart of languages, and a cluster plot based on keywords as initial overview. All of these are linked and can be narrowed down
+           to suit a subset of works specific to the users needs.
+    \item Identify relationships: We envision a (network) graph (user defined/premade) as well as a cluster plot with redundant encoding by colour and shape for this. 
+    \item Filter by attributes; We will provide a search function by title or author for specific queries, as well as traditional filter by attribute. These will come in the form of sliders, or drag and drop pills. 
+    Where possible, we will provide histograms as seen in the lecture.
+    \item Judge reliabilty: We will present the user with a generated score represented as (colored) bar, as well as the underlying attribuztes pertaining to this.
+    \item Tag relationships: We will provide a network graph where users can add edges between works to represent their own relationships and tag them as well as organize in groups.
 \end{itemize}
 
 Always encode with colorblind colors.
+- needs work, especially with munzner.
+
 
 %2
-sketched- dont forget descriprions of sketches.
+We will provide this a single dashboard with linked visualizations as outlined above. We are not currently set on wether to move or hide certain items based on user preferences,
+ but will allow users to define global filters as well as filters applying to idnividual elements. Items will be clickable and consistently encoded by color and shape where possible, 
+ while (relative) position and connection and containment marks will be reserved for usage inside individual visualizations to give them seperate meanings.
 
 %3
-zooming on timeline/cluster plot, lasso selection in graphs, clicking for
-details on demand, typing fro search, drag drop for filter and user defined
-graph if possible, sliders,
+Users will be able to click individual items to get details on demand, as well as hover for quick info. We will provide tools for lasso selection where appropriate (cluster plot, network graph).
+In timeline and clusterplot and network graph users will be able to zoom to obtain more detail. We will provide drag and drop for filters (and user defined graph) if possible and use sliders otherwise.
+Clustering and generate scores will be done with ML techniques as outlined below and should be user customizable (e.g. setting higher emphasis on certain attributes via sliders).
+
 
 %4 ML: 
-kmeans/Knn(supervised) for clustering, soemthing for the reliabilty score...
-dont forget the reference to some tutorial etc
+We will use a k-means algorithm for clustering based on a selection of (predefined when opened) user selectable intrinsic attributes. We are not sure yet wether to provide scores based on regression or just some even simpler weighted sum.
+
+-dont forget the reference to some tutorial etc e.g. https://realpython.com/k-means-clustering-python/ 
 
 % dont forget: max 250 words per section, no more than 4 pages of text (excl any visualizations and references)
 
