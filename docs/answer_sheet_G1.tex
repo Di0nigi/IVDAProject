@@ -60,44 +60,25 @@ The catalogue has a website already (\href{https://dig-ed-cat.acdh.oeaw.ac.at/ed
 The goal according to the problem statement is to let users (primarily Historians, Researches and Digital Library users) explore the contents of the catalogue.
 Naturally, the catalogue also needs to enable the users to do directed search, in case they already know what they are looking for. A such, the task falls squarely into the data
  exploration and Interactive relation discovery research streams. We are considering a sub tool that would enable users to tag their own connections between works, 
- which would touch upon interactive data labeling.
-
-
-\textbf{Note:} I talked to my friend with a histry master about this. Yes filters are useful and necessary, but apparently, if we are thinking about exploration,
-the main thing for historians is not just an overview, but rather the ability to go down a rabbit hole. I.e. they are interested in connections betweeen the works/authors etc.
-That may also be a way to incorporate LLM generation, more as a POC than as actual functionality, which would have to be provided by linking things to other databases such as \href{Monumenta Germanie Historica}{https://www.mgh.de/de}
-
-\begin{itemize}
-    
-    \item Explore all data
-    \item data exploration is the main research stream this project falls into
-    \item Discover relations as well--Dependencies between items and similarities and
-          differences
-    \item Show Clusters
-    \item Find interesting works
-    \item Focus should be on Consumption: Discover, Enjoy
-    \item Exploratory search: combining open-ended information-seeking behavior
-          (exploration) with directed search and exploration support
-\end{itemize}
+ which would touch upon interactive data labeling. Correspondingly we have settled on the following tasks to be covered:
 
 %actual tasks selected
 \begin{itemize}
-    \item Gain overview of the data
-    \item Identify relationships
-    \item Filter by attributes
-    \item judge reliabilty
-    \item Tag relationships
+    \item Overview the data -- Given the large amount and different types of works, users need to get a grasp 
+    of what they are able to find in the catalogue and if there may be something that fits their need and interest, 
+    focused on intrisic attributes (Author, LLM generated keywords, School of thought Period, Time, Account of textual variance,Value of witnesses, etc.), not technical ones. 
+    As Part of the overview we will provide a clustering of similar works.
+    \item Identify relationships -- Historians like to go into a rabbit hole from one item to the next. We want to facilitate this by guiding exploration among relationships between works.
+    (author school of thought, author, time, period, keywords, description, institution). We will use clustering to find similar works, as well as LLM generated keywords.
+    \item Filter by attributes -- In order to reduce noise and narrow down the search space, users need to be able to filter by all attributes, technical and non technical. This will be done using traditional filters.
+    \item Judge reliability -- In order to make an informed decision on what works to use, users need to be able to assess the quality of the data. We will provide LLM generated attributes such as renown and 
+    authoritativeness along side the values contained in the catalogue (sponsor/founding body, repository of source materials, citations, audience, philiological statement, value of witnesses, ). We will provide an (likely) 
+    ML based overall score as well.
+    \item Tag relationships -- In order to record their own train of thought and help organize their research, users need to be able to tag relationships between works. We will likely provide a user defineable attribute graph for this.
 \end{itemize}
 
-- Gain overview of the data: the user wants to know what kind and type of work is even available in the cataglogue; All data attributes that are not technical
-- Identify relationships: Guide exploration in a meaningful way and find similar or related works; ML for clustering, Author school of thought, Author, time period, keywords, description, institution
-- filter by attributes: Narrow down the search space in order to reduce noise; all attributes
-- judge reliability: assess the quality of the data, to make an informed decision; LLM: Renown, audience, LLM auhtoritativeness (and ingredients), Repository of source materials, sponsor/founding body, citations, Maybe ML for score
-- Tag relationships: Record own train of thought and help organize research; User defined attributes
 
 - go through these points with the slides on the side again
-
-
 
 
 \section*{How}
