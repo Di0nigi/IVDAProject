@@ -35,7 +35,7 @@
 \section*{What}
 We have set out to make an interactive surface for Grata Franzini's manually collected ``Catalogue of Digital Editions''. The catalogue consists of a list of 350
 works from digital humanities projects with a total of 52 attributes each (including an ID per item), obtained in tabular form as a CSV file from her GitHub repository
-(\href{https://github.com/dig-Eds-cat/digEds_cat}{Link}), which is  periodically updated with new works and maintained for accuracy. 
+(\href{https://github.com/dig-Eds-cat/digEds_cat}{Link}), which is  periodically updated with new works and maintained for accuracy.
 Of the 52 attributes, 25 are encoded as dummy variables, 15 as text (i.e. links, names, descriptions),
 8 as categorical variables, and 4 as numerical variables., of which 3 are dates/years.
 Some of the dummy variables refer to inherent properties of the actual digital edition (susch as ``Account for Textual Variance'', which describes
@@ -47,12 +47,12 @@ in either English, Latin or German, whcih comprise more than half of the mostly 
 6 Items are missing their Handle-PID (a persistent identifier), one is missing information on the funding body and for one the catalogue does not specify wether the edition considers the `` value of witnesses''. Given the data was prepared by an experienced researcher,
 we consider it both reliable (safe for an occasional dead link) and clean, requiring little to no preprocessing except the handling ot the missing values.
 The majority of items provide a XML-TEI transcription, although most refuse the ability to download this. Just over half of the editions are open access, with some more being partially open source.
-We imntent to augment the dataset with a number of LLM generated attributes in order to facilitate exploration and assessment of works by researchers through similarities and connections between items: 
-Author school of thought, 5 keywords based on the contents of a works url, author and title, A categorical statement on authoritativeness, similarly a categorical statement for the renown of a work as well as a 
+We imntent to augment the dataset with a number of LLM generated attributes in order to facilitate exploration and assessment of works by researchers through similarities and connections between items:
+Author school of thought, 5 keywords based on the contents of a works url, author and title, A categorical statement on authoritativeness, similarly a categorical statement for the renown of a work as well as a
 quick work description to provide some detail on the contents of a work dujring exploration. We intend to use mainly intrinsic attributes for the project, not the technical ones, as the target audience is
 primarily interested in these aspects.
 The catalogue has a website already (\href{https://dig-ed-cat.acdh.oeaw.ac.at/editions.html}{Link}), but it is very barebones when it
- comes to visual exploration. Only a map of the funding institutions is provided (apart from the tabluar representation with categorical filtering).
+comes to visual exploration. Only a map of the funding institutions is provided (apart from the tabluar representation with categorical filtering).
 
 -go over this with the slides on the side.
 - add references
@@ -60,71 +60,97 @@ The catalogue has a website already (\href{https://dig-ed-cat.acdh.oeaw.ac.at/ed
 \section*{Why}
 The goal according to the problem statement is to let users (primarily Historians, Researches and Digital Library users) explore the contents of the catalogue.
 Naturally, the catalogue also needs to enable the users to do directed search, in case they already know what they are looking for. A such, the task falls squarely into the data
- exploration and Interactive relation discovery research streams. We are considering a sub tool that would enable users to tag their own connections between works, 
- which would touch upon interactive data labeling. Correspondingly we have settled on the following tasks to be covered:
+exploration and Interactive relation discovery research streams. We are considering a sub tool that would enable users to tag their own connections between works,
+which would touch upon interactive data labeling. Correspondingly we have settled on the following tasks to be covered:
 
 %actual tasks selected
 \begin{itemize}
-    \item Overview the data -- Given the large amount and different types of works, users need to get a grasp 
-    of what they are able to find in the catalogue and if there may be something that fits their need and interest, 
-    focused on intrisic attributes (Author, LLM generated keywords, School of thought Period, Time, Account of textual variance,Value of witnesses, etc.), not technical ones. 
-    As Part of the overview we will provide a clustering of similar works.
-    \item Identify relationships -- Historians like to go into a rabbit hole from one item to the next. We want to facilitate this by guiding exploration among relationships between works.
-    (author school of thought, author, time, period, keywords, description, institution). We will use clustering to find similar works, as well as LLM generated keywords.
-    \item Filter by attributes -- In order to reduce noise and narrow down the search space, users need to be able to filter by all attributes, technical and non technical. This will be done using traditional filters.
-    \item Judge reliability -- In order to make an informed decision on what works to use, users need to be able to assess the quality of the data. We will provide LLM generated attributes such as renown and 
-    authoritativeness along side the values contained in the catalogue (sponsor/founding body, repository of source materials, citations, audience, philiological statement, value of witnesses, ). We will provide an (likely) 
-    ML based overall score as well.
-    \item Tag relationships -- In order to record their own train of thought and help organize their research, users need to be able to tag relationships between works. We will likely provide a user defineable attribute graph for this.
+    \item Overview the data -- Given the large amount and different types of works, users
+          need to get a grasp of what they are able to find in the catalogue and if there
+          may be something that fits their need and interest, focused on intrisic
+          attributes (Author, LLM generated keywords, School of thought Period, Time,
+          Account of textual variance,Value of witnesses, etc.), not technical ones. As
+          Part of the overview we will provide a clustering of similar works.
+    \item Identify relationships -- Historians like to go into a rabbit hole from one
+          item to the next. We want to facilitate this by guiding exploration among
+          relationships between works. (author school of thought, author, time, period,
+          keywords, description, institution). We will use clustering to find similar
+          works, as well as LLM generated keywords.
+    \item Filter by attributes -- In order to reduce noise and narrow down the search
+          space, users need to be able to filter by all attributes, technical and non
+          technical. This will be done using traditional filters.
+    \item Judge reliability -- In order to make an informed decision on what works to
+          use, users need to be able to assess the quality of the data. We will provide
+          LLM generated attributes such as renown and authoritativeness along side the
+          values contained in the catalogue (sponsor/founding body, repository of source
+          materials, citations, audience, philiological statement, value of witnesses, ).
+          We will provide an (likely) ML based overall score as well.
+    \item Tag relationships -- In order to record their own train of thought and help
+          organize their research, users need to be able to tag relationships between
+          works. We will likely provide a user defineable attribute graph for this.
 \end{itemize}
-
 
 - go through these points with the slides on the side again
 - add references
 
-
 \section*{How}
 %1
 \begin{itemize}
-    \item Gain overview of the data: We will use timeline (Time, century on x axis) with bars for period/ages colored and works plotted into this (perhaps with shape encoding for an additional attribute), an example block of title author
-          and description of a work, a bar chart of languages, and a cluster plot based on keywords as initial overview. All of these are linked and can be narrowed down
-           to suit a subset of works specific to the users needs.
-    \item Identify relationships: We envision a (network) graph (user defined/premade) as well as a cluster plot with redundant encoding by colour and shape for this. 
-    \item Filter by attributes; We will provide a search function by title or author for specific queries, as well as traditional filter by attribute. These will come in the form of sliders, or drag and drop pills. 
-    Where possible, we will provide histograms as seen in the lecture.
-    \item Judge reliabilty: We will present the user with a generated score represented as (colored) bar, as well as the underlying attribuztes pertaining to this.
-    \item Tag relationships: We will provide a network graph where users can add edges between works to represent their own relationships and tag them as well as organize in groups.
+    \item Gain overview of the data: We will use timeline (Time, century on x axis) with
+          bars for period/ages colored and works plotted into this (perhaps with shape
+          encoding for an additional attribute), an example block of title author and
+          description of a work, a bar chart of languages, and a cluster plot based on
+          keywords as initial overview. All of these are linked and can be narrowed down
+          to suit a subset of works specific to the users needs.
+    \item Identify relationships: We envision a (network) graph (user defined/premade) as
+          well as a cluster plot with redundant encoding by colour and shape for this.
+    \item Filter by attributes; We will provide a search function by title or author for
+          specific queries, as well as traditional filter by attribute. These will come
+          in the form of sliders, or drag and drop pills. Where possible, we will provide
+          histograms as seen in the lecture.
+    \item Judge reliabilty: We will present the user with a generated score represented
+          as (colored) bar, as well as the underlying attribuztes pertaining to this.
+    \item Tag relationships: We will provide a network graph where users can add edges
+          between works to represent their own relationships and tag them as well as
+          organize in groups.
 \end{itemize}
 
-Always encode with colorblind colors.
-- needs work, especially with munzner.
-
+Always encode with colorblind colors. - needs work, especially with munzner.
 
 %2
-We will provide this a single dashboard with linked visualizations as outlined above. We are not currently set on wether to move or hide certain items based on user preferences,
- but will allow users to define global filters as well as filters applying to idnividual elements. Items will be clickable and consistently encoded by color and shape where possible, 
- while (relative) position and connection and containment marks will be reserved for usage inside individual visualizations to give them seperate meanings.
+We will provide this a single dashboard with linked visualizations as outlined
+above. We are not currently set on wether to move or hide certain items based
+on user preferences, but will allow users to define global filters as well as
+filters applying to idnividual elements. Items will be clickable and
+consistently encoded by color and shape where possible, while (relative)
+position and connection and containment marks will be reserved for usage inside
+individual visualizations to give them seperate meanings.
 
 %3
-Users will be able to click individual items to get details on demand, as well as hover for quick info. We will provide tools for lasso selection where appropriate (cluster plot, network graph).
-In timeline and clusterplot and network graph users will be able to zoom to obtain more detail. We will provide drag and drop for filters (and user defined graph) if possible and use sliders otherwise.
-Clustering and generate scores will be done with ML techniques as outlined below and should be user customizable (e.g. setting higher emphasis on certain attributes via sliders).
-
+Users will be able to click individual items to get details on demand, as well
+as hover for quick info. We will provide tools for lasso selection where
+appropriate (cluster plot, network graph). In timeline and clusterplot and
+network graph users will be able to zoom to obtain more detail. We will provide
+drag and drop for filters (and user defined graph) if possible and use sliders
+otherwise. Clustering and generate scores will be done with ML techniques as
+outlined below and should be user customizable (e.g. setting higher emphasis on
+certain attributes via sliders).
 
 %4 ML: 
-We will use a k-means algorithm for clustering based on a selection of (predefined when opened) user selectable intrinsic attributes. We are not sure yet wether to provide scores based on regression or just some even simpler weighted sum.
+We will use a k-means algorithm for clustering based on a selection of
+(predefined when opened) user selectable intrinsic attributes. We are not sure
+yet wether to provide scores based on regression or just some even simpler
+weighted sum.
 
--dont forget the reference to some tutorial etc e.g. https://realpython.com/k-means-clustering-python/ 
+-dont forget the reference to some tutorial etc e.g. https://realpython.com/k-means-clustering-python/
 
 % dont forget: max 250 words per section, no more than 4 pages of text (excl any visualizations and references)
 
 \section*{Group Dynamics}
 Given our data is fairly clean and well structured already, we have no need for an explicit DAta Steward/ Data Shaper role as outlined in the course material.
-Dionigi will largely take on the roles of data engineer and ML/AI engineer, supported by Cyril, as both study AI. Cyril will also take on the 
-role of a generalist, supporting frontend development and documentation. While we are lacking a research scientist, Patrick will take on the 
+Dionigi will largely take on the roles of data engineer and ML/AI engineer, supported by Cyril, as both study AI. Cyril will also take on the
+role of a generalist, supporting frontend development and documentation. While we are lacking a research scientist, Patrick will take on the
 role of technical analyst, And support Cyril in frontend development and documentation as well. All together will serve as evangelists in so far as it is necessary.
-
-
 
 %%%%%%%%%%%%%%%%%
 \newpage
