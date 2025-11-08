@@ -23,7 +23,7 @@
 %     Title     %
 %%%%%%%%%%%%%%%%%
 \title{{Group Assignment 1: Project Characterization \\ \small Interactive-Visual Data Analysis, Fall 2024}}
-\author{\textbf{INSERT HERE: Dicypa, Dio: 24-755-688, Cyril: 24-754-434; Full names and student numbers of your entire group}}
+\author{\textbf{Dicypa: Dionigi Rodriguez 24-755-688; Cyril Smetanka 24-754-434; Patrick Sproll 19-733-104}}
 \begin{document}
 \maketitle
 
@@ -31,26 +31,25 @@
 %     Content     %
 %%%%%%%%%%%%%%%%%
 \section*{What}
-We have set out to make an interactive surface for Grata Franzini's manhually collected ``Catalogue of Digital Editions''. The catalogue consists of a list of 350 
- works from digital humanities projects with a total of 52 attributes each (including an ID per item), obtained in tabular form as a CSV file from her GitHub repository  
- (\href{Link}{https://github.com/dig-Eds-cat/digEds_cat}), which is  periodically updated with new works and maintained for accuracy. 
- Of the 52 attributes, 25 are encoded as dummy variables, 15 as text (i.e. links, names, descriptions), 
- 8 as categorical variables, and 4 as numerical variables., of which 3 are dates/years.
- Some of the dummy variables refer to inherent properties of the actual digital edition (susch as ``Account for Textual Variance'', which describes 
- if an edition takes into account textual variations between different versions of the considered work), while others refer to the presence technical properties
- (e.g. ``XML-TEI Transcription'', which indicates if the item is available as such). Categorical variables allow the editions to be more finely described, again by inherent attribute
- e.g. the historical period (in 8 categories, in this case even ordinal, though this doubles in part with the publishing century) or technical details (e.g. indicating the type of OCR used). 
- Works range From the antiquity to contemporary, with ``Middle Ages'', `` Long Nineteenth Century'' and `` Early Modern'' dominating. Predominantly, editions are
- in either English, Latin or German, whcih comprise more than half of the mostly manuscript based catalogue. Of the 18'252 cells, only 8 have missing values, concentrated in just three columns.
- 6 Items are missing their HAndle-PID (a persistent identifier), one is missing information on the funding body and for one the catalogue does not specify wether the edition considers the `` value of witnesses''.
- The majority of items provide a XML-TEI transcription, although most refuse the ability to download this. Just over half of the editions are open access, with some more being partially open source.
-The catalogue has a website already (\href{Link}{https://dig-ed-cat.acdh.oeaw.ac.at/editions.html}), but it is very barebones when it comes to visual exploration. Only a map of the funding institutions is provided (apart from the tabluar representation with categorical filtering). 
+We have set out to make an interactive surface for Grata Franzini's manhually collected ``Catalogue of Digital Editions''. The catalogue consists of a list of 350
+works from digital humanities projects with a total of 52 attributes each (including an ID per item), obtained in tabular form as a CSV file from her GitHub repository
+(\href{Link}{https://github.com/dig-Eds-cat/digEds_cat}), which is  periodically updated with new works and maintained for accuracy.
+Of the 52 attributes, 25 are encoded as dummy variables, 15 as text (i.e. links, names, descriptions),
+8 as categorical variables, and 4 as numerical variables., of which 3 are dates/years.
+Some of the dummy variables refer to inherent properties of the actual digital edition (susch as ``Account for Textual Variance'', which describes
+if an edition takes into account textual variations between different versions of the considered work), while others refer to the presence technical properties
+(e.g. ``XML-TEI Transcription'', which indicates if the item is available as such). Categorical variables allow the editions to be more finely described, again by inherent attribute
+e.g. the historical period (in 8 categories, in this case even ordinal, though this doubles in part with the publishing century) or technical details (e.g. indicating the type of OCR used).
+Works range From the antiquity to contemporary, with ``Middle Ages'', `` Long Nineteenth Century'' and `` Early Modern'' dominating. Predominantly, editions are
+in either English, Latin or German, whcih comprise more than half of the mostly manuscript based catalogue. Of the 18'252 cells, only 8 have missing values, concentrated in just three columns.
+6 Items are missing their HAndle-PID (a persistent identifier), one is missing information on the funding body and for one the catalogue does not specify wether the edition considers the `` value of witnesses''.
+The majority of items provide a XML-TEI transcription, although most refuse the ability to download this. Just over half of the editions are open access, with some more being partially open source.
+The catalogue has a website already (\href{Link}{https://dig-ed-cat.acdh.oeaw.ac.at/editions.html}), but it is very barebones when it comes to visual exploration. Only a map of the funding institutions is provided (apart from the tabluar representation with categorical filtering).
 
 -still missing: what are we actually using
 -Data wrangling: little to none, deal with the missing values. put missing or unclear. describe the LLm generated columns we want to add.
 -dataset authority: done by a seasoned researcher, the links work and the data seems consistent. Some bias in selection of works.
 -go over this with the slides on the side.
-
 
 \section*{Why}
 \textbf{Note:} I talked to my friend with a histry master about this. Yes filters are useful and necessary, but apparently, if we are thinking about exploration,
@@ -59,12 +58,14 @@ That may also be a way to incorporate LLM generation, more as a POC than as actu
 
 \begin{itemize}
     \item Explore all data
-    \item data exploration is the main  research stream this project falls into
-    \item Discover relations as well--Dependencies between items and similarities and differences
+    \item data exploration is the main research stream this project falls into
+    \item Discover relations as well--Dependencies between items and similarities and
+          differences
     \item Show Clusters
     \item Find interesting works
     \item Focus should be on Consumption: Discover, Enjoy
-    \item Exploratory search: combining open-ended information-seeking behavior (exploration) with directed search and exploration support
+    \item Exploratory search: combining open-ended information-seeking behavior
+          (exploration) with directed search and exploration support
 \end{itemize}
 
 %actual tasks selected
@@ -87,9 +88,12 @@ That may also be a way to incorporate LLM generation, more as a POC than as actu
 \section*{How}
 %1
 \begin{itemize}
-    \item Gain overview of the data; timeline with ages colored, block of title author and description of a work, histogram of languages, density map based on source material location, predefined version of the keyword graph
+    \item Gain overview of the data; timeline with ages colored, block of title author
+          and description of a work, histogram of languages, density map based on source
+          material location, predefined version of the keyword graph
     \item Identify relationships; Graph (used defined/premade), Map?, Cluster plot
-    \item Filter by attributes; historgams/bar chart like in the lecture, search function, glkobal filter model
+    \item Filter by attributes; historgams/bar chart like in the lecture, search
+          function, glkobal filter model
     \item judge reliabilty; User generated score represented as bar
     \item Tag relationships; Graph (used defined) with field text
 \end{itemize}
@@ -100,8 +104,9 @@ Always encode with colorblind colors.
 sketched
 
 %3
-zooming on timeline/cluster plot, lasso selection in graphs, clicking for details on demand, typing fro search, drag drop for filter and user defined graph if possible, sliders, 
-
+zooming on timeline/cluster plot, lasso selection in graphs, clicking for
+details on demand, typing fro search, drag drop for filter and user defined
+graph if possible, sliders,
 
 %4 ML: 
 kmeans/Knn(supervised) for clustering, soemthing for the reliabilty score...
@@ -112,15 +117,13 @@ dont forget the reference to some tutorial etc
 \section*{Group Dynamics}
 
 \begin{itemize}
-    \item Data shaper and data steward are not really necesasry, the data is there and mostly clean
+    \item Data shaper and data steward are not really necesasry, the data is there and
+          mostly clean
     \item Dionigi is ML/AI Engineer / Data engineer-> mostly backend work
     \item Cyril will mostly be the generalist -> Frontend / documentation
     \item Patrick will be the technical analyst -> Frontend / Documentation
     \item No research scientist present
 \end{itemize}
-
-
-
 
 % YOUR RESPONSE HERE
 
