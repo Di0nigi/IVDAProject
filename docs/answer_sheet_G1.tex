@@ -25,7 +25,7 @@
 %     Title     %
 %%%%%%%%%%%%%%%%%
 \title{{Group Assignment 1: Project Characterization \\ \small Interactive-Visual Data Analysis, Fall 2024}}
-\author{\textbf{Dicypa: Dionigi Rodriguez 24-755-688; Cyril Smetanka 24-754-434; Patrick Sproll 19-733-104}}
+\author{\textbf{Dicypa: Dionigi Rodriguez 24-755-688 \\ Cyril Smetanka 24-754-434 \\ Patrick Sproll 19-733-104}}
 \begin{document}
 \maketitle
 
@@ -33,9 +33,9 @@
 %     Content     %
 %%%%%%%%%%%%%%%%%
 \section*{What}
-We have set out to make an interactive surface for Grata Franzini's manhually collected ``Catalogue of Digital Editions''. The catalogue consists of a list of 350
+We have set out to make an interactive surface for Grata Franzini's manually collected ``Catalogue of Digital Editions''. The catalogue consists of a list of 350
 works from digital humanities projects with a total of 52 attributes each (including an ID per item), obtained in tabular form as a CSV file from her GitHub repository
-(\href{Link}{https://github.com/dig-Eds-cat/digEds_cat}), which is  periodically updated with new works and maintained for accuracy.
+(\href{https://github.com/dig-Eds-cat/digEds_cat}{Link}), which is  periodically updated with new works and maintained for accuracy.
 Of the 52 attributes, 25 are encoded as dummy variables, 15 as text (i.e. links, names, descriptions),
 8 as categorical variables, and 4 as numerical variables., of which 3 are dates/years.
 Some of the dummy variables refer to inherent properties of the actual digital edition (susch as ``Account for Textual Variance'', which describes
@@ -46,7 +46,8 @@ Works range From the antiquity to contemporary, with ``Middle Ages'', `` Long Ni
 in either English, Latin or German, whcih comprise more than half of the mostly manuscript based catalogue. Of the 18'252 cells, only 8 have missing values, concentrated in just three columns.
 6 Items are missing their HAndle-PID (a persistent identifier), one is missing information on the funding body and for one the catalogue does not specify wether the edition considers the `` value of witnesses''.
 The majority of items provide a XML-TEI transcription, although most refuse the ability to download this. Just over half of the editions are open access, with some more being partially open source.
-The catalogue has a website already (\href{Link}{https://dig-ed-cat.acdh.oeaw.ac.at/editions.html}), but it is very barebones when it comes to visual exploration. Only a map of the funding institutions is provided (apart from the tabluar representation with categorical filtering).
+The catalogue has a website already (\href{https://dig-ed-cat.acdh.oeaw.ac.at/editions.html}{Link}), but it is very barebones when it
+ comes to visual exploration. Only a map of the funding institutions is provided (apart from the tabluar representation with categorical filtering).
 
 -still missing: what are we actually using
 -Data wrangling: little to none, deal with the missing values. put missing or unclear. describe the LLm generated columns we want to add.
