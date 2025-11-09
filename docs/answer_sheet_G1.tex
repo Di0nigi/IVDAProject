@@ -87,19 +87,18 @@ to be able to tag relationships between works.
 
 \begin{itemize}
     \item Gain overview: Timeline with
-          colored background blocks and works plotted into this, a block of title, author and
+          colored background blocks and works plotted, a block of title, author and
           description of a work, a bar chart of languages, and a cluster plot based on
-          keywords as initial overview. All of these are linked and can be narrowed down
+          keywords as initial overview, all linked and can be narrowed down
           to suit any subset of works.
-    \item Identify relationships: We envision a network graph as
-          well as a cluster plot with redundant encoding by colour and shape for this.
-    \item Filter by attributes; We will provide a search function by title or author for
+    \item Identify relationships: A network graph and cluster plot with redundant encoding by colour and shape.
+    \item Filter by attributes: A search function by title or author for
           specific queries, as well as traditional filter by attribute. These will come
           in the form of sliders, or drag and drop pills. Where possible, we will also provide
           histograms.
-    \item Judge reliability: We will present the user with a score represented
-          as a colored bar, as well as the attributes contributing to this.
-    \item Tag relationships: We will provide a network graph where users can add edges
+    \item Judge reliability: We will provide a score represented
+          as a colored bar, as well as the attributes contributing to the score.
+    \item Tag relationships: A network graph where users can add edges
           between works to represent their own relationships and tag them as well as
           organize in groups.
 \end{itemize}
@@ -109,8 +108,7 @@ We will provide this in a single dashboard with linked visualisations as outline
 
 %4 ML: 
 We will use two main techniques, the k-means \cite{8ddb7f85-9a8c-3829-b04e-0476a67eb0fd} algorithm and PCA \cite{DBLP:journals/corr/Shlens14} (Principal Component Analysis), to identify significant clusters and represent the data in a lower-dimensional space. 
-In addition to these techniques, we will leverage a pretrained transformer model (e.g., BERT \cite{DBLP:journals/corr/abs-1810-04805}) to generate semantically meaningful embeddings\cite{thePowerOfEmbeddings} of various attributes, providing a numerical representation of each article for use with the clustering and dimensionality reduction algorithms mentioned above. 
-
+In addition, we will leverage a pretrained transformer model (e.g., BERT \cite{DBLP:journals/corr/abs-1810-04805}) to generate semantically meaningful embeddings\cite{thePowerOfEmbeddings} of various attributes, providing a numerical representation of each article for use with the clustering and dimensionality reduction algorithms. 
 
 % dont forget: max 250 words per section, no more than 4 pages of text (excl any visualizations and references)
 
