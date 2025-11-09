@@ -67,16 +67,16 @@ between works, which would touch upon interactive data labeling. The following t
 covered:
 %actual tasks selected
 \begin{itemize}
-    \item Gain overview – Users will need to get a grasp of what they are able to find in the catalogue and if there may
+    \item Gain overview -- Users will need to get a grasp of what they are able to find in the catalogue and if there may
 be something that fits their needs and interests, focused on intrinsic attributes, not technical ones.
-    \item Identify relationships – We facilitate this by guiding exploration among relationships between works,
+    \item Identify relationships -- We facilitate this by guiding exploration among relationships between works,
 such as time period, or author. We will use clustering and LLM generated keywords to find similar works.
     \item Filter by attributes -- To reduce noise and narrow down the search space, users need to be able to
 filter by all attributes, technical and non technical.
     \item Judge reliability -- Users need to be able to assess the quality of the data. We will provide LLM generated
 attributes such as renown and authoritativeness along side the values contained in the catalogue. We will
-provide an ML based overall score as well.
-    \item Tag relationships -- In order to record their own train of thought and help organize their research, users need
+provide an overall score as well.
+    \item Tag relationships -- To record their own train of thought and help organize their research, users need
 to be able to tag relationships between works.
           works.
 \end{itemize}
@@ -84,7 +84,7 @@ to be able to tag relationships between works.
 \section*{How}
 %1
 \begin{itemize}
-    \item Gain overview: We will use a timeline with
+    \item Gain overview: Timeline with
           colored background blocks and works plotted into this, a block of title, author and
           description of a work, a bar chart of languages, and a cluster plot based on
           keywords as initial overview. All of these are linked and can be narrowed down
@@ -103,7 +103,7 @@ to be able to tag relationships between works.
 \end{itemize}
 
 %2
-We will provide this in a single dashboard with linked visualisations as outlined above. We will allow users to define global filters and apply them to individual elements. Items will also be clickable and encoded by color and shape where possible. 
+We will provide this in a single dashboard with linked visualisations as outlined above. We will allow users to define global filters and apply them to individual elements.
 
 %4 ML: 
 We will use two main techniques, the k-means \cite{8ddb7f85-9a8c-3829-b04e-0476a67eb0fd} algorithm and PCA \cite{DBLP:journals/corr/Shlens14} (Principal Component Analysis), to identify significant clusters and represent the data in a lower-dimensional space. 
