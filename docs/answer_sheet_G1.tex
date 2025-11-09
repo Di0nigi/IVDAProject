@@ -51,56 +51,52 @@ Categorical variables allow the editions to be more finely described, again by i
 e.g. the historical period.
 Works range from the antiquity to contemporary, with ``Middle Ages'', `` Long Nineteenth Century'' and `` Early Modern'' dominating. Predominantly, editions are
 in either English, Latin or German, which comprise more than half of the catalogue.\\
-Of the 18'252 cells, only 8 have missing values, concentrated in just three columns.
+Of the 18'252 cells, only 8 have missing values, in just three columns.
 Given the data was prepared by an experienced researcher,
-we consider it both reliable and clean, requiring little to no preprocessing except the handling of the missing values, which will be done through replacement.
-We intend to augment the dataset with a number of LLM generated attributes in order to facilitate exploration and assessment of works by researchers through similarities and connections between items:
+we consider it both reliable and clean, requiring little preprocessing except the handling of the missing values, which will be done through replacement.
+We intend to augment the dataset with a number of LLM generated attributes to facilitate exploration and assessment of works by researchers through similarities and connections between items:
 Author school of thought, 5 keywords, authoritativeness, and a statement for the renown of a work as well as a
 quick work description to provide some detail on the contents of a work during exploration. We intend to use mainly intrinsic attributes for the project, not the technical ones, as the target audience is
 primarily interested in these aspects.
 
 \section*{Why}
-The goal according to the problem statement is to let users (primarily historians, researchers and digital library users) explore the contents of the catalogue, while also allowing them to do a directed search, if they know the specific work they are looking for.
-As such, the task falls squarely into the data
-exploration and interactive relation discovery research streams. We are considering a sub tool that would enable users to tag their own connections between works,
-which would touch upon interactive data labeling. We have settled on the following tasks to be covered:
-
+The goal according to the problem statement is to let users (primarily historians, researchers and digital library
+users) explore the contents of the catalogue, while also allowing them to do a directed search. The task falls squarely into the data exploration and interactive relation
+discovery research streams. We are considering a sub tool that enables users to tag their own connections
+between works, which would touch upon interactive data labeling. The following tasks need to be
+covered:
 %actual tasks selected
 \begin{itemize}
-    \item Gain overview -- Users will need to get a grasp of what they are able to find in the catalogue and if there
-          may be something that fits their needs and interests, focused on intrinsic
-          attributes, not technical ones. 
-    \item Identify relationships -- We want to facilitate this by guiding exploration among
-          relationships between works, such as time period, or author. We will use clustering and LLM generated keywords to find similar
-          works.
-    \item Filter by attributes -- In order to reduce noise and narrow down the search
-          space, users need to be able to filter by all attributes, technical and non
-          technical.
-    \item Judge reliability -- Users need to be able to assess the quality of the data. We will provide
-          LLM generated attributes such as renown and authoritativeness along side the
-          values contained in the catalogue. We will provide an ML based overall score as well.
-    \item Tag relationships -- In order to record their own train of thought and help
-          organize their research, users need to be able to tag relationships between
+    \item Gain overview – Users will need to get a grasp of what they are able to find in the catalogue and if there may
+be something that fits their needs and interests, focused on intrinsic attributes, not technical ones.
+    \item Identify relationships – We facilitate this by guiding exploration among relationships between works,
+such as time period, or author. We will use clustering and LLM generated keywords to find similar works.
+    \item Filter by attributes -- To reduce noise and narrow down the search space, users need to be able to
+filter by all attributes, technical and non technical.
+    \item Judge reliability -- Users need to be able to assess the quality of the data. We will provide LLM generated
+attributes such as renown and authoritativeness along side the values contained in the catalogue. We will
+provide an ML based overall score as well.
+    \item Tag relationships -- In order to record their own train of thought and help organize their research, users need
+to be able to tag relationships between works.
           works.
 \end{itemize}
 
 \section*{How}
 %1
 \begin{itemize}
-    \item Gain overview: We will use timeline with
-          bars for period colored and works plotted into this (with shape or color
-          encoding for an additional attribute), a block of title, author and
+    \item Gain overview: We will use a timeline with
+          colored background blocks and works plotted into this, a block of title, author and
           description of a work, a bar chart of languages, and a cluster plot based on
           keywords as initial overview. All of these are linked and can be narrowed down
-          to suit a subset of works specific to the users needs.
+          to suit any subset of works.
     \item Identify relationships: We envision a network graph as
           well as a cluster plot with redundant encoding by colour and shape for this.
     \item Filter by attributes; We will provide a search function by title or author for
           specific queries, as well as traditional filter by attribute. These will come
           in the form of sliders, or drag and drop pills. Where possible, we will also provide
           histograms.
-    \item Judge reliability: We will present the user with a generated score represented
-          as a colored bar, as well as the underlying attributes contributing to this.
+    \item Judge reliability: We will present the user with a score represented
+          as a colored bar, as well as the attributes contributing to this.
     \item Tag relationships: We will provide a network graph where users can add edges
           between works to represent their own relationships and tag them as well as
           organize in groups.
@@ -109,18 +105,10 @@ which would touch upon interactive data labeling. We have settled on the followi
 %2
 We will provide this in a single dashboard with linked visualisations as outlined above. We will allow users to define global filters and apply them to individual elements. Items will also be clickable and encoded by color and shape where possible. 
 
-%3
-Users will be able to click individual items to get details on demand, as well
-as hover for quick info. We will provide tools for lasso selection where
-appropriate, as well as zoom. We will provide
-drag and drop for filters if possible and use sliders
-otherwise. Clustering and generate scores will be done with ML techniques as
-outlined below and should be user customizable via sliders.
-
 %4 ML: 
 We will use two main techniques, the k-means \cite{8ddb7f85-9a8c-3829-b04e-0476a67eb0fd} algorithm and PCA \cite{DBLP:journals/corr/Shlens14} (Principal Component Analysis), to identify significant clusters and represent the data in a lower-dimensional space. 
 In addition to these techniques, we will leverage a pretrained transformer model (e.g., BERT \cite{DBLP:journals/corr/abs-1810-04805}) to generate semantically meaningful embeddings\cite{thePowerOfEmbeddings} of various attributes, providing a numerical representation of each article for use with the clustering and dimensionality reduction algorithms mentioned above. 
-These embeddings will be used only for inference and will not be modified during use, whereas k-means and PCA will be dynamically recomputed as needed.
+
 
 % dont forget: max 250 words per section, no more than 4 pages of text (excl any visualizations and references)
 
