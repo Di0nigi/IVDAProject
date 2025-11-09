@@ -2,12 +2,12 @@
 ["bibtex answer_sheet_G1"] 0 "answer_sheet_G1.aux" "answer_sheet_G1.bbl" "answer_sheet_G1" 0 -1
   "./references.bib" 1762702858 2291 22fc577f70e3588898e789f146bfb797 ""
   "C:/Users/dioni/AppData/Local/Programs/MiKTeX/bibtex/bst/feupphdteses/IEEEtranN.bst" 1363102770 63465 52e4631827d9e4cab8ed25dc93fa95dd ""
-  "answer_sheet_G1.aux" 1762704133 4038 107d2e5e44b182cdd628ae799316e0d3 "pdflatex"
+  "answer_sheet_G1.aux" 1762704275 4038 162a3a01c1528b381b59f48719c8524b "pdflatex"
   (generated)
   "answer_sheet_G1.bbl"
   "answer_sheet_G1.blg"
   (rewritten before read)
-["pdflatex"] 1762704131.12642 "d:/dionigi/Documents/IvdaProj/IVDAProject/docs/answer_sheet_G1.tex" "answer_sheet_G1.pdf" "answer_sheet_G1" 1762704134.37374 2
+["pdflatex"] 1762704273.46368 "d:/dionigi/Documents/IvdaProj/IVDAProject/docs/answer_sheet_G1.tex" "answer_sheet_G1.pdf" "answer_sheet_G1" 1762704276.74565 2
   "C:/Users/dioni/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762257609 83637 15e7234f7f0768b75cfac8317adcc5d1 ""
   "C:/Users/dioni/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1727258522 11548 e17d21d21179447c0f7d461d93df873c ""
   "C:/Users/dioni/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1727887223 11948238 766f847929d4cf81b0e43709f8c61abc ""
@@ -221,13 +221,13 @@
   "Dummy_variable_dist.png" 1762702810 94834 e15a38ad93290f3f0bf4106cad593595 ""
   "ai-usage-card.sty" 1762629842 453 84085a7e5bfe69b0fb10ed61315cfccb ""
   "ai-usage-card.tex" 1762629842 6864 7dc8da79a64228d09ff32a39a0eb268d ""
-  "answer_sheet_G1.aux" 1762704133 4038 107d2e5e44b182cdd628ae799316e0d3 "pdflatex"
+  "answer_sheet_G1.aux" 1762704275 4038 162a3a01c1528b381b59f48719c8524b "pdflatex"
   "answer_sheet_G1.bbl" 1762704117 2368 c7575c693dd119de6b5927a801bed1f7 "bibtex answer_sheet_G1"
-  "answer_sheet_G1.out" 1762704132 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "answer_sheet_G1.tex" 1762704126 10252 28259ee90809c6bd1a4be3fd845f64bb ""
+  "answer_sheet_G1.out" 1762704274 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "answer_sheet_G1.tex" 1762704268 10252 190be8c341d0a1e4f21cb5352f3b8296 ""
   "bar chart.png" 1762702810 22819 5ccb3d82c516feb709d5938ec466e281 ""
   "cluster_plot.png" 1762702810 66946 5e2fd50fdac454330728962fa27e6895 ""
-  "d:/dionigi/Documents/IvdaProj/IVDAProject/docs/answer_sheet_G1.tex" 1762704126 10252 28259ee90809c6bd1a4be3fd845f64bb ""
+  "d:/dionigi/Documents/IvdaProj/IVDAProject/docs/answer_sheet_G1.tex" 1762704268 10252 190be8c341d0a1e4f21cb5352f3b8296 ""
   "dashboard.png" 1762702810 198412 381318b4620bce73299f29b2385f8baa ""
   "detail_view.png" 1762702810 50041 e05192aa0bd07a52cad33e278bb241d1 ""
   "docs/list.png" 0 -1 0 ""
