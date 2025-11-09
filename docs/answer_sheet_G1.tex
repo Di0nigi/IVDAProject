@@ -118,9 +118,9 @@ otherwise. Clustering and generate scores will be done with ML techniques as
 outlined below and should be user customizable via sliders.
 
 %4 ML: 
-We will use a k-means algorithm for clustering based on a selection of user selectable intrinsic attributes. tbd - Dio
-
--dont forget the reference to some tutorial etc e.g. https://realpython.com/k-means-clustering-python/
+We will use two main techniques, the k-means \cite{8ddb7f85-9a8c-3829-b04e-0476a67eb0fd} algorithm and PCA \cite{DBLP:journals/corr/Shlens14} (Principal Component Analysis), to identify significant clusters and represent the data in a lower-dimensional space. 
+In addition to these techniques, we will leverage a pretrained transformer model (e.g., BERT \cite{DBLP:journals/corr/abs-1810-04805}) to generate semantically meaningful embeddings\cite{thePowerOfEmbeddings} of various attributes, providing a numerical representation of each article for use with the clustering and dimensionality reduction algorithms mentioned above. 
+These embeddings will be used only for inference and will not be modified during use, whereas k-means and PCA will be dynamically recomputed as needed.
 
 % dont forget: max 250 words per section, no more than 4 pages of text (excl any visualizations and references)
 

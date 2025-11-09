@@ -1,0 +1,46 @@
+DIGITAL EDITIONS DATASET - SUMMARY REPORT
+================================================================================
+
+Total Editions: 351
+Total Columns: 52
+
+Column Types:
+----------------------------------------
+  dummy: 25
+  text: 15
+  categorical: 8
+  year/date: 3
+  numeric: 1
+
+Dummy Variables:
+----------------------------------------
+  • Scholarly
+  • Digital
+  • Edition
+  • Philological statement
+  • Account of textual variance
+  • XML-TEI Transcription
+  • XML(-TEI) available to download
+  • Images
+  • Zoom images
+  • Image manipulation (brightness, rotation, etc.)
+  • Text-Image Linking
+  • Glossary
+  • Indices
+  • String matching
+  • Advanced search
+  • Creative Commons License
+  • Linked Open Data
+  • API
+  • Crowdsourcing
+  • Feedback
+  • Technological statement
+  • Links to ext. resources
+  • Mobile friendly/application
+  • Current availability
+  • Citation
+
+Missing Data:
+----------------------------------------
+  Overall: 0.04%
+  Columns with >50% missing: 0
