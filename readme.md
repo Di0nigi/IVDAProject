@@ -27,7 +27,6 @@ code|
                                 |
                                 |-> components: Helloworld.vue (main page) 
 
-
 ```
 
 ## How to run
