@@ -18,8 +18,9 @@ code|
     |
     |-> main|: Actual project code
             |
-            |-> backend: api and ml utilities for the app
-            |
+            |-> backend |: api and ml utilities for the app
+            |           |
+            |           |-> src: main backend code 
             |-> frontend|: Vue project for frontend programming
                         |
                         |-> src |: App.vue & main.js
@@ -31,8 +32,11 @@ code|
 
 ## How to run
 
-- cd into code\\main
+-**Frontend**
+    - cd into code\\main\\frontend
+    - run ```npm run dev```
 
-- cd into frontend and run "npm run dev"
-
-- cd into backend and ... (tbd)
+-**Backend**
+    - cd into code\\main\\backend
+    - run ```.\env\Scripts\activate.bat```
+    -  **IF FIRST TIME** run ```installReq.bat```
