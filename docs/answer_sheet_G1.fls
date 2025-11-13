@@ -304,6 +304,12 @@ INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT .\answer_sheet_G1.out
+INPUT .\answer_sheet_G1.out
+INPUT answer_sheet_G1.out
+INPUT answer_sheet_G1.out
+INPUT .\answer_sheet_G1.out
+INPUT .\answer_sheet_G1.out
 OUTPUT answer_sheet_G1.out
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
@@ -334,7 +340,6 @@ INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT .\Dummy_variable_dist.png
 INPUT .\Dummy_variable_dist.png
 INPUT .\Dummy_variable_dist.png
@@ -344,6 +349,7 @@ INPUT .\Dummy_variable_dist.png
 INPUT .\Dummy_variable_dist.png
 INPUT C:\Users\dioni\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT .\bar chart.png
 INPUT .\bar chart.png
 INPUT .\bar chart.png
@@ -372,7 +378,34 @@ INPUT .\global_filters.png
 INPUT .\global_filters.png
 INPUT .\global_filters.png
 INPUT .\global_filters.png
-INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT .\relation_graph.png
+INPUT .\relation_graph.png
+INPUT .\relation_graph.png
+INPUT .\relation_graph.png
+INPUT .\relation_graph.png
+INPUT .\relation_graph.png
+INPUT .\relation_graph.png
+INPUT .\list.png
+INPUT .\list.png
+INPUT .\list.png
+INPUT .\list.png
+INPUT .\list.png
+INPUT .\list.png
+INPUT .\list.png
+INPUT .\reliability_score_settings.png
+INPUT .\reliability_score_settings.png
+INPUT .\reliability_score_settings.png
+INPUT .\reliability_score_settings.png
+INPUT .\reliability_score_settings.png
+INPUT .\reliability_score_settings.png
+INPUT .\reliability_score_settings.png
+INPUT .\timeline.png
+INPUT .\timeline.png
+INPUT .\timeline.png
+INPUT .\timeline.png
+INPUT .\timeline.png
+INPUT .\timeline.png
+INPUT .\timeline.png
 INPUT .\dashboard.png
 INPUT .\dashboard.png
 INPUT .\dashboard.png
@@ -424,7 +457,5 @@ INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssbx10.pfb
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
-INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
 INPUT C:\Users\dioni\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
