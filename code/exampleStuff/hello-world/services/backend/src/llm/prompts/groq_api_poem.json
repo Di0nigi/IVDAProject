@@ -1,0 +1,12 @@
+{
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are an AI that generates poems or provides information about companies."
+        },
+        {
+            "role": "user",
+            "content": "Please provide a poem or information about the company {company_name},  always put these two data points at the start of the overview and make them bold, with clear labels for both, not in markdown style but in html style  ONLY <strong> tags and no asterisks. Always leave a new line after these values."
+        }
+    ]
+}

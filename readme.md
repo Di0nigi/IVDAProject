@@ -9,3 +9,30 @@ how interactive visualizations can allow users to explore the data. Choose appro
 facets (e.g., time, geo, categorical, numerical, binary) and combine them in an interactive interface. Make appropriate
 assumptions in cases where the features in the dataset are not self-explanatory. If interested, you can also think of
 LLM-Based Data Enrichment for yet other, non-existing attributes/metadata._
+
+## Project structure
+
+``` txt
+code|
+    |-> exampleStuff: Assigment 1 example code
+    |
+    |-> main|: Actual project code
+            |
+            |-> backend: api and ml utilities for the app
+            |
+            |-> frontend|: Vue project for frontend programming
+                        |
+                        |-> src |: App.vue & main.js
+                                |
+                                |-> components: Helloworld.vue (main page) 
+
+
+```
+
+## How to run
+
+- cd into code\\main
+
+- cd into frontend and run "npm run dev"
+
+- cd into backend and ... (tbd)
