@@ -21,6 +21,7 @@ code|
             |-> backend |: api and ml utilities for the app
             |           |
             |           |-> src: main backend code 
+            |
             |-> frontend|: Vue project for frontend programming
                         |
                         |-> src |: App.vue & main.js
@@ -29,17 +30,27 @@ code|
 
 ```
 
+## How to build the DataBase
+
+- Open _*MongoDBCompass*_
+- Connect to locallhost
+- Click "Create database" (the "+" sign to the side of localhost)
+- Database name: _*DigitalEditions*_
+- Collection name: _*editions*_
+- Click "ADD DATA" and "Import JSON or CSV"
+- Select _*data\processed_data.csv*_
+- Select delimiter "Comma"
+- Click "Import"
+
 ## How to run
 
--**Frontend**
-Run ```runFront.bat```,
-or
+- **Frontend**
+Run ```runFront.bat```, or
     - go into ```cd code\\main\\frontend```
     - run ```npm run dev```
 
--**Backend**
-Run ```runBack.bat```,
-or
+- **Backend**
+Run ```runBack.bat```, or
     - go into ```cd code\\main\\backend```
     - run ```.\env\Scripts\activate.bat```
     -  **IF FIRST TIME** run ```installReq.bat```
