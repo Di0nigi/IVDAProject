@@ -32,10 +32,15 @@ code|
 ## How to run
 
 -**Frontend**
-    - cd into code\\main\\frontend
+Run ```runFront.bat```,
+or
+    - go into ```cd code\\main\\frontend```
     - run ```npm run dev```
 
 -**Backend**
-    - cd into code\\main\\backend
+Run ```runBack.bat```,
+or
+    - go into ```cd code\\main\\backend```
     - run ```.\env\Scripts\activate.bat```
     -  **IF FIRST TIME** run ```installReq.bat```
+    - run ```python app.py```
