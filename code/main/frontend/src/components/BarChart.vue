@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue';
+import { computed, onMounted } from 'vue';
 import { Bar } from 'vue-chartjs';
 import {
   Chart as ChartJS,
@@ -41,26 +41,17 @@ const props = defineProps({
   }
 });
 
-const editions = ref([]);
-const loading = ref(true);
+const { filteredEditions, loading, fetchEditions } = useEditionsData();
+const { getColorForCategory, getBorderColor } = useColorPalette();
 
-// Fetch data from backend
-const fetchData = async () => {
-  try {
-    const response = await fetch('http://127.0.0.1:5000/texts');
-    editions.value = await response.json();
-    loading.value = false;
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    loading.value = false;
-  }
-};
-
-fetchData();
+// Fetch data on mount
+onMounted(() => {
+  fetchEditions();
+});
 
 // Process data for stacked bar chart
 const chartData = computed(() => {
-  if (loading.value || !editions.value.length) {
+  if (loading.value || !filteredEditions.value.length) {
     return { labels: [], datasets: [] };
   }
 
@@ -68,7 +59,7 @@ const chartData = computed(() => {
   const grouped = {};
   const categories = new Set();
 
-  editions.value.forEach(edition => {
+  filteredEditions.value.forEach(edition => {
     const xValue = edition[props.xAttribute] || 'Unknown';
     const categoryValue = edition[props.categoryAttribute] || 'Unknown';
     
@@ -140,11 +131,6 @@ const chartOptions = computed(() => ({
     }
   }
 }));
-
-// Watch for prop changes and refetch if needed
-watch([() => props.xAttribute, () => props.categoryAttribute], () => {
-  // Chart will automatically update via computed property
-});
 </script>
 
 <style scoped>
