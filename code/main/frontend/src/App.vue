@@ -8,6 +8,9 @@
     <div class="box sliders">
       <SlidersPanel />
     </div>
+    <div class="box tag-filter">
+      <TagFilter />
+    </div>
     <div class="box timeline">Timeline Plot</div>
 
     <!-- Column 3 (right) -->
@@ -40,6 +43,7 @@ import { ref } from 'vue';
 import BarChart from './components/BarChart.vue';
 import BarChartSelector from './components/BarChartSelector.vue';
 import SlidersPanel from './components/SlidersPanel.vue';
+import TagFilter from './components/TagFilter.vue';
 import ReliabilitySliders from './components/ReliabilitySliders.vue';
 
 const xAttribute = ref('Historical Period');
