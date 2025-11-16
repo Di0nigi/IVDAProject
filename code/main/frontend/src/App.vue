@@ -10,20 +10,46 @@
     <div class="box timeline">Timeline Plot</div>
 
     <!-- Column 3 (right) -->
-    <div class="box small-chart">Bar Chart</div>
-    <div class="box bar-select">Bar Chart Selection</div>
+    <div class="box small-chart">
+      <BarChart 
+        :xAttribute="xAttribute" 
+        :categoryAttribute="categoryAttribute"
+        :xLabel="xLabel"
+        :categoryLabel="categoryLabel"
+      />
+    </div>
+    <div class="box bar-select">
+      <BarChartSelector 
+        @update:xAttribute="xAttribute = $event"
+        @update:categoryAttribute="categoryAttribute = $event"
+        @update:xLabel="xLabel = $event"
+        @update:categoryLabel="categoryLabel = $event"
+      />
+    </div>
     <div class="box pca">PCA Plot</div>
     <div class="box reliability">Reliability Sliders</div>
 
   </div>
 </template>
 
+<script setup>
+import { ref } from 'vue';
+import BarChart from './components/BarChart.vue';
+import BarChartSelector from './components/BarChartSelector.vue';
+
+const xAttribute = ref('Historical Period');
+const categoryAttribute = ref('Scholarly');
+const xLabel = ref('Historical Period');
+const categoryLabel = ref('Scholarly');
+</script>
+
 <style scoped>
 .layout {
   display: grid;
   height: 100vh;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   gap: 20px;
+  width: 1400px;
 
   /* middle column ~2.5x the width of right column */
   grid-template-columns: 200px 2.5fr 1fr;
