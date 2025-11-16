@@ -16,6 +16,8 @@ import {
   CategoryScale,
   LinearScale
 } from 'chart.js';
+import { useEditionsData } from '../composables/useEditionsData';
+import { useColorPalette } from '../composables/useColorPalette';
 
 // Register Chart.js components
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
@@ -83,22 +85,11 @@ const chartData = computed(() => {
   const labels = Object.keys(grouped).sort();
   const categoryArray = Array.from(categories).sort();
 
-  // Generate colors for each category - we need to make that seperate in the longterm, so that color linking is ensured across graphs
-  const colors = [
-    'rgba(54, 162, 235, 0.8)',
-    'rgba(255, 99, 132, 0.8)',
-    'rgba(75, 192, 192, 0.8)',
-    'rgba(255, 206, 86, 0.8)',
-    'rgba(153, 102, 255, 0.8)',
-    'rgba(255, 159, 64, 0.8)',
-    'rgba(201, 203, 207, 0.8)'
-  ];
-
-  const datasets = categoryArray.map((category, index) => ({
+  const datasets = categoryArray.map((category) => ({
     label: category,
     data: labels.map(label => grouped[label][category] || 0),
-    backgroundColor: colors[index % colors.length],
-    borderColor: colors[index % colors.length].replace('0.8', '1'),
+    backgroundColor: getColorForCategory(category),
+    borderColor: getBorderColor(category),
     borderWidth: 1
   }));
 
