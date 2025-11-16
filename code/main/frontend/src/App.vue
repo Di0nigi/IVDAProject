@@ -11,7 +11,9 @@
     <div class="box tag-filter">
       <TagFilter />
     </div>
-    <div class="box timeline">Timeline Plot</div>
+    <div class="box timeline">
+      <TimelinePlot />
+    </div>
 
     <!-- Column 3 (right) -->
     <div class="box small-chart">
@@ -45,6 +47,7 @@ import BarChartSelector from './components/BarChartSelector.vue';
 import SlidersPanel from './components/SlidersPanel.vue';
 import TagFilter from './components/TagFilter.vue';
 import ReliabilitySliders from './components/ReliabilitySliders.vue';
+import TimelinePlot from './components/TimelinePlot.vue';
 
 const xAttribute = ref('Historical Period');
 const categoryAttribute = ref('Scholarly');
