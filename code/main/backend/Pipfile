@@ -12,6 +12,7 @@ numpy = "*"
 matplotlib = "*"
 pandas = "*"
 pymongo = "*"
+flask-cors = "*"
 
 [dev-packages]
 
