@@ -1,0 +1,14 @@
+# Python virtual environments
+env/
+.venv/
+venv/
+*.virtualenv
+
+# Pipenv
+.env
+Pipfile.lock
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class

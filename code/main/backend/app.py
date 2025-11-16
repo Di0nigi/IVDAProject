@@ -1,3 +1,3 @@
-from src.endPoints import app
+from src.endpoints import app
 if __name__ == '__main__':
     app.run(debug=True)
