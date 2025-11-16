@@ -1,6 +1,9 @@
 <template>
   <div class="sliders-container">
-    <h3>Filters</h3>
+    <div class="header">
+      <h3>Filters</h3>
+      <button @click="reset" class="reset-button">Reset Filters</button>
+    </div>
     
     <!-- Time/Century Range Slider -->
     <div class="slider-group">
@@ -90,10 +93,6 @@
       </div>
       </div>
     </div>
-
-    <div class="button-group">
-      <button @click="reset" class="reset-button">Reset Filters</button>
-    </div>
   </div>
 </template>
 
@@ -165,6 +164,12 @@ const reset = () => {
   gap: 20px;
   height: 100%;
   padding: 4px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h3 {
@@ -286,17 +291,13 @@ label {
   margin-top: 4px;
 }
 
-.button-group {
-  margin-top: auto;
-}
-
 .reset-button {
-  padding: 8px 16px;
+  padding: 6px 12px;
   background: #f44336;
   color: white;
   border: none;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
   transition: background 0.2s;
 }

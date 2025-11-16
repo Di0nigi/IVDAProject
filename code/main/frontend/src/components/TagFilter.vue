@@ -2,6 +2,7 @@
   <div class="tag-filter-container">
     <div class="search-bar">
       <input type="text" placeholder="Search..." v-model="searchQuery" />
+      <button @click="clearAllTags" class="clear-button">Clear All</button>
     </div>
     
     <div class="tag-panels">
@@ -122,6 +123,11 @@ const deselectTag = (tag) => {
   updateFilters();
 };
 
+const clearAllTags = () => {
+  selectedTagIds.value.clear();
+  updateFilters();
+};
+
 const updateFilters = () => {
   // Update filters based on selected tags
   const selected = Array.from(selectedTagIds.value);
@@ -166,6 +172,7 @@ const updateFilters = () => {
 .search-bar {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .search-bar input {
@@ -179,6 +186,22 @@ const updateFilters = () => {
 
 .search-bar input:focus {
   border-color: #4a90e2;
+}
+
+.clear-button {
+  padding: 8px 16px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.clear-button:hover {
+  background: #d32f2f;
 }
 
 .tag-panels {
