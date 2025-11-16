@@ -5,8 +5,9 @@
 
     <!-- Column 2 (middle) -->
     <div class="box graph">Key Words Relation Graph</div>
-    <div class="box sliders">Sliders Panel</div>
-    <div class="box tag-filter">Tag Filter</div>
+    <div class="box sliders">
+      <SlidersPanel />
+    </div>
     <div class="box timeline">Timeline Plot</div>
 
     <!-- Column 3 (right) -->
@@ -38,6 +39,7 @@
 import { ref } from 'vue';
 import BarChart from './components/BarChart.vue';
 import BarChartSelector from './components/BarChartSelector.vue';
+import SlidersPanel from './components/SlidersPanel.vue';
 import ReliabilitySliders from './components/ReliabilitySliders.vue';
 
 const xAttribute = ref('Historical Period');
