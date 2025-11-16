@@ -27,7 +27,9 @@
       />
     </div>
     <div class="box pca">PCA Plot</div>
-    <div class="box reliability">Reliability Sliders</div>
+    <div class="box reliability">
+      <ReliabilitySliders />
+    </div>
 
   </div>
 </template>
@@ -36,6 +38,7 @@
 import { ref } from 'vue';
 import BarChart from './components/BarChart.vue';
 import BarChartSelector from './components/BarChartSelector.vue';
+import ReliabilitySliders from './components/ReliabilitySliders.vue';
 
 const xAttribute = ref('Historical Period');
 const categoryAttribute = ref('Scholarly');
