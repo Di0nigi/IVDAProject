@@ -1,0 +1,1406 @@
+[
+  {
+    "id": 1,
+    "Edition name": "Digitale Edition der Handschrift Cod. Guelf. 64 Weiss."
+  },
+  {
+    "id": 2,
+    "Edition name": "The Thomas Gray Archive"
+  },
+  {
+    "id": 3,
+    "Edition name": "A critical edition of the poetry of Dafydd ap Gwilym"
+  },
+  {
+    "id": 4,
+    "Edition name": "Saint Patrick's Confessio"
+  },
+  {
+    "id": 5,
+    "Edition name": "Liber Matriculae - Il libro della matricola dei notai di Vercelli"
+  },
+  {
+    "id": 6,
+    "Edition name": "Correspondance de Pierre Bayle"
+  },
+  {
+    "id": 7,
+    "Edition name": "Vindolanda Tablets Online"
+  },
+  {
+    "id": 8,
+    "Edition name": "Vindolanda Tablets Online II"
+  },
+  {
+    "id": 9,
+    "Edition name": "Bérardier de Bataut, Essai sur le récit, Entretiens sur la manière de raconter"
+  },
+  {
+    "id": 10,
+    "Edition name": "Codex Sinaiticus"
+  },
+  {
+    "id": 11,
+    "Edition name": "The Saint-Aubins \"Book of Arses\": The Livre de Caricatures tant bonnes que mauvaises"
+  },
+  {
+    "id": 12,
+    "Edition name": "Catullus Online"
+  },
+  {
+    "id": 13,
+    "Edition name": "Digital edition of the Old Church Slavonic Codex Suprasliensis"
+  },
+  {
+    "id": 14,
+    "Edition name": "Becerro Galicano of San Millán de la Cogolla"
+  },
+  {
+    "id": 15,
+    "Edition name": "The Durham Liber Vitae Project"
+  },
+  {
+    "id": 16,
+    "Edition name": "Samuel Beckett Digital Manuscript Project"
+  },
+  {
+    "id": 17,
+    "Edition name": "Euripides Scholia"
+  },
+  {
+    "id": 18,
+    "Edition name": "Heimskringla"
+  },
+  {
+    "id": 19,
+    "Edition name": "Partonopeus de Blois"
+  },
+  {
+    "id": 20,
+    "Edition name": "Henry III Fine Rolls Project"
+  },
+  {
+    "id": 21,
+    "Edition name": "Die Briefwechsel der Mathematiker Bernoulli"
+  },
+  {
+    "id": 22,
+    "Edition name": "La Famiglia dell'Antiquario"
+  },
+  {
+    "id": 23,
+    "Edition name": "Die Glossen Ekkeharts IV. im Codex Sangallensis 621"
+  },
+  {
+    "id": 24,
+    "Edition name": "Inscriptions of the Northern Black Sea (IOSPE)"
+  },
+  {
+    "id": 25,
+    "Edition name": "La Entretenida Digital Edition"
+  },
+  {
+    "id": 26,
+    "Edition name": "A Survey of the Cities of London and Westminster by John Strype"
+  },
+  {
+    "id": 27,
+    "Edition name": "Letters of William Herle Project"
+  },
+  {
+    "id": 28,
+    "Edition name": "The Diplomatic Correspondence of Thomas Bodley"
+  },
+  {
+    "id": 29,
+    "Edition name": "The Hooke Folio Online"
+  },
+  {
+    "id": 30,
+    "Edition name": "The Workdiaries of Robert Boyle"
+  },
+  {
+    "id": 31,
+    "Edition name": "Jonathan Swift Archive"
+  },
+  {
+    "id": 32,
+    "Edition name": "The St Gall Priscian Glosses"
+  },
+  {
+    "id": 33,
+    "Edition name": "Nietzsche Source"
+  },
+  {
+    "id": 34,
+    "Edition name": "Early Irish Glossaries Database"
+  },
+  {
+    "id": 35,
+    "Edition name": "The Holinshed Project"
+  },
+  {
+    "id": 36,
+    "Edition name": "Alciato's Book of Emblems"
+  },
+  {
+    "id": 37,
+    "Edition name": "Electronic Variorum Edition of the Quixote"
+  },
+  {
+    "id": 38,
+    "Edition name": "Corpus Rhythmorum Musicum (SAEC. IV-IX) I - Songs from non-liturgical sources"
+  },
+  {
+    "id": 39,
+    "Edition name": "The Book of Ben Sira"
+  },
+  {
+    "id": 40,
+    "Edition name": "Christine de Pizan: The Making of the Queen's Manuscript"
+  },
+  {
+    "id": 41,
+    "Edition name": "Corpus of the Inscriptions of Campā (CIC)"
+  },
+  {
+    "id": 42,
+    "Edition name": "Dante Online"
+  },
+  {
+    "id": 43,
+    "Edition name": "Darwin Correspondence Project"
+  },
+  {
+    "id": 44,
+    "Edition name": "De Trein der Traagheid"
+  },
+  {
+    "id": 45,
+    "Edition name": "Early Stuart Libels"
+  },
+  {
+    "id": 46,
+    "Edition name": "Folger Shakespeare Editions"
+  },
+  {
+    "id": 47,
+    "Edition name": "Frankenstein"
+  },
+  {
+    "id": 48,
+    "Edition name": "Glossae.net"
+  },
+  {
+    "id": 49,
+    "Edition name": "Heinrich-Heine Portal"
+  },
+  {
+    "id": 50,
+    "Edition name": "Henrik Ibsens Skrifter"
+  },
+  {
+    "id": 51,
+    "Edition name": "Mark Twain Project"
+  },
+  {
+    "id": 52,
+    "Edition name": "Niccolò Canussio: De restitutione patriae"
+  },
+  {
+    "id": 53,
+    "Edition name": "Queste del Saint Graal"
+  },
+  {
+    "id": 54,
+    "Edition name": "The Auchinleck manuscript"
+  },
+  {
+    "id": 55,
+    "Edition name": "The Casebooks Project"
+  },
+  {
+    "id": 56,
+    "Edition name": "The Confessions of Augustine: An Electronic Edition"
+  },
+  {
+    "id": 57,
+    "Edition name": "The Derveni Papyrus"
+  },
+  {
+    "id": 58,
+    "Edition name": "The Gospel according to St. John"
+  },
+  {
+    "id": 59,
+    "Edition name": "The Proceedings of the Old Bailey"
+  },
+  {
+    "id": 60,
+    "Edition name": "The Richard Brome Project"
+  },
+  {
+    "id": 61,
+    "Edition name": "The Svoboda Diary Project"
+  },
+  {
+    "id": 62,
+    "Edition name": "William Godwin's Diary"
+  },
+  {
+    "id": 63,
+    "Edition name": "The Augsburg Web Edition of Llull's Electoral Writings"
+  },
+  {
+    "id": 64,
+    "Edition name": "Digital Mishnah"
+  },
+  {
+    "id": 65,
+    "Edition name": "The Online Critical Pseudepigrapha"
+  },
+  {
+    "id": 66,
+    "Edition name": "Dead Sea Scrolls"
+  },
+  {
+    "id": 67,
+    "Edition name": "Editions of the Registers of the counts of Holland 1299-1345"
+  },
+  {
+    "id": 68,
+    "Edition name": "Quijote Interactivo"
+  },
+  {
+    "id": 69,
+    "Edition name": "The Journals of the Lewis and Clark Expedition"
+  },
+  {
+    "id": 70,
+    "Edition name": "Electronic Boethius CDROM"
+  },
+  {
+    "id": 71,
+    "Edition name": "James Mill's Common Place Books"
+  },
+  {
+    "id": 72,
+    "Edition name": "A trial electronic edition of the Preface to 'Ancrene Wisse' for the Early English Text Society"
+  },
+  {
+    "id": 73,
+    "Edition name": "Digital Nestle-Aland"
+  },
+  {
+    "id": 74,
+    "Edition name": "Orlando Furioso Hypertext"
+  },
+  {
+    "id": 75,
+    "Edition name": "The Vergil project. Resources for Students, Teachers, and Readers of Vergil"
+  },
+  {
+    "id": 76,
+    "Edition name": "Cantar de mio Cid"
+  },
+  {
+    "id": 77,
+    "Edition name": "The Aberdeen Bestiary"
+  },
+  {
+    "id": 78,
+    "Edition name": "M. Valerii Martialis Epigrammaton Liber IV"
+  },
+  {
+    "id": 79,
+    "Edition name": "P. Ovidii Nasonis Heroides I"
+  },
+  {
+    "id": 80,
+    "Edition name": "Sexti Propertii Elegiae"
+  },
+  {
+    "id": 81,
+    "Edition name": "Sulpiciae Conquestio"
+  },
+  {
+    "id": 82,
+    "Edition name": "Claudii Claudiani Carmina Latina"
+  },
+  {
+    "id": 83,
+    "Edition name": "D. Iunii Iuvenalis Saturae"
+  },
+  {
+    "id": 84,
+    "Edition name": "Codice Diplomatico della Lombardia Medievale"
+  },
+  {
+    "id": 85,
+    "Edition name": "Geoffrey Chaucer's Book of the Duchess: A Hypertext Edition"
+  },
+  {
+    "id": 86,
+    "Edition name": "Inscriptiones Graecae in Croatia Repertae (IGCR)"
+  },
+  {
+    "id": 87,
+    "Edition name": "The Gascon Rolls Project"
+  },
+  {
+    "id": 88,
+    "Edition name": "The Hengwrt Chaucer Digital Facsimile"
+  },
+  {
+    "id": 89,
+    "Edition name": "Carl-Maria-von-Weber-Gesamtausgabe"
+  },
+  {
+    "id": 90,
+    "Edition name": "Livingstone's 1871 Field Diary"
+  },
+  {
+    "id": 91,
+    "Edition name": "Hyperdonat"
+  },
+  {
+    "id": 92,
+    "Edition name": "Inscriptions of Aphrodisias Project"
+  },
+  {
+    "id": 93,
+    "Edition name": "Inscriptions of Roman Cyrenaica"
+  },
+  {
+    "id": 94,
+    "Edition name": "Inscriptions of Roman Tripolitania"
+  },
+  {
+    "id": 95,
+    "Edition name": "e-sequence: Digital Edition of the Saint Gall corpus of Sequences by Notker Balbulus"
+  },
+  {
+    "id": 96,
+    "Edition name": "Phineas Fletcher's Sylva Poetica"
+  },
+  {
+    "id": 97,
+    "Edition name": "The Latin Prose and Poetry of Joseph Addison"
+  },
+  {
+    "id": 98,
+    "Edition name": "History in the Making: preparation of a genetic edition, dataset and hypertext of Part III, Chapter 1 of Flaubert's L'Education Sentimentale"
+  },
+  {
+    "id": 99,
+    "Edition name": "An electronic corpus of 15th century Castillian canconiero manuscripts"
+  },
+  {
+    "id": 100,
+    "Edition name": "Galenus' commentary on Hippocrates' \"On the articulations\""
+  },
+  {
+    "id": 101,
+    "Edition name": "Edition der falschen Kapitularien des Benedictus Levita"
+  },
+  {
+    "id": 102,
+    "Edition name": "The Royal Inscriptions of the Neo-Assyrian Period"
+  },
+  {
+    "id": 103,
+    "Edition name": "Book of Margery Kempe"
+  },
+  {
+    "id": 104,
+    "Edition name": "William of Ockham: Dialogus"
+  },
+  {
+    "id": 105,
+    "Edition name": "Domesday Explorer"
+  },
+  {
+    "id": 106,
+    "Edition name": "Chopin's First Editions Online"
+  },
+  {
+    "id": 107,
+    "Edition name": "Jane Austen's Fiction Manuscripts"
+  },
+  {
+    "id": 108,
+    "Edition name": "The Walt Whitman Archive"
+  },
+  {
+    "id": 109,
+    "Edition name": "Schenker Documents Online"
+  },
+  {
+    "id": 110,
+    "Edition name": "Online Chopin Variorum Edition"
+  },
+  {
+    "id": 111,
+    "Edition name": "John Foxe's The Acts and Monuments Online"
+  },
+  {
+    "id": 112,
+    "Edition name": "Oregon Petrarch Open Book Project"
+  },
+  {
+    "id": 113,
+    "Edition name": "Conclusiones CM"
+  },
+  {
+    "id": 114,
+    "Edition name": "Decameron Web"
+  },
+  {
+    "id": 115,
+    "Edition name": "Pico della Mirandola: De hominis dignitate"
+  },
+  {
+    "id": 116,
+    "Edition name": "Inscriptions of Israel/Palestine"
+  },
+  {
+    "id": 117,
+    "Edition name": "Parzival-Projekt"
+  },
+  {
+    "id": 118,
+    "Edition name": "Decameron Ipertestuale"
+  },
+  {
+    "id": 119,
+    "Edition name": "Percy Bysshe Shelley: The Devil's Walk"
+  },
+  {
+    "id": 120,
+    "Edition name": "Poems by Anna Laetitia Aikin"
+  },
+  {
+    "id": 121,
+    "Edition name": "The Letters of Robert Bloomfield"
+  },
+  {
+    "id": 122,
+    "Edition name": "The Shelley-Godwin Archive"
+  },
+  {
+    "id": 123,
+    "Edition name": "Thomas Lovell Beddoes: The Brides' Tragedy"
+  },
+  {
+    "id": 124,
+    "Edition name": "The Online Froissart"
+  },
+  {
+    "id": 125,
+    "Edition name": "Welsh Prose 1350-1425"
+  },
+  {
+    "id": 126,
+    "Edition name": "The Newton Project"
+  },
+  {
+    "id": 127,
+    "Edition name": "Vercelli Book Digitale"
+  },
+  {
+    "id": 128,
+    "Edition name": "I testimoni della Vita Nova"
+  },
+  {
+    "id": 129,
+    "Edition name": "Frankenstein; or, the Modern Prometheus"
+  },
+  {
+    "id": 130,
+    "Edition name": "Livingstone Online"
+  },
+  {
+    "id": 131,
+    "Edition name": "Edizione Critica Ipertestuale dello Zibaldone Laurenziano (Pluteo XXIX.8) autografo di Giovanni Boccaccio"
+  },
+  {
+    "id": 132,
+    "Edition name": "A Social Edition of the Devonshire MS (BL Add 17,492)"
+  },
+  {
+    "id": 133,
+    "Edition name": "Les Bibliothèques Virtuelles Humanistes"
+  },
+  {
+    "id": 134,
+    "Edition name": "The Paris Codex"
+  },
+  {
+    "id": 135,
+    "Edition name": "The Memorandoms of James Martin"
+  },
+  {
+    "id": 136,
+    "Edition name": "Actes Royaux"
+  },
+  {
+    "id": 137,
+    "Edition name": "American Verse Project"
+  },
+  {
+    "id": 138,
+    "Edition name": "Bernard Muir's CD-ROM facsimile of Bodleian Library MS Junius 11"
+  },
+  {
+    "id": 139,
+    "Edition name": "Candide 2.0"
+  },
+  {
+    "id": 140,
+    "Edition name": "Chronik des Gettos Łódź / Litzmannstadt"
+  },
+  {
+    "id": 141,
+    "Edition name": "Clotel by William Wells Brown"
+  },
+  {
+    "id": 142,
+    "Edition name": "DASI: Digital Archive for the Study of Pre-Islamic Arabian Inscriptions"
+  },
+  {
+    "id": 143,
+    "Edition name": "Datini, Lettere"
+  },
+  {
+    "id": 144,
+    "Edition name": "Digital Shikshapatri"
+  },
+  {
+    "id": 145,
+    "Edition name": "Electronic Beowulf 4.0"
+  },
+  {
+    "id": 146,
+    "Edition name": "Emily Dickinson's Archive"
+  },
+  {
+    "id": 147,
+    "Edition name": "Emily Dickinson's Correspondences"
+  },
+  {
+    "id": 148,
+    "Edition name": "Gabriel Harvey's Livy Online"
+  },
+  {
+    "id": 149,
+    "Edition name": "Galileo Galilei's Notes on Motion"
+  },
+  {
+    "id": 150,
+    "Edition name": "Göttinger Statuten (kundige bok 2)"
+  },
+  {
+    "id": 151,
+    "Edition name": "Herman Melville's Typee"
+  },
+  {
+    "id": 152,
+    "Edition name": "In Mozart's Words"
+  },
+  {
+    "id": 153,
+    "Edition name": "Intibah Edition and Transcription"
+  },
+  {
+    "id": 154,
+    "Edition name": "Jerilderie Letter"
+  },
+  {
+    "id": 155,
+    "Edition name": "John Barclay: Argenis"
+  },
+  {
+    "id": 156,
+    "Edition name": "Journal of Emily Shore"
+  },
+  {
+    "id": 157,
+    "Edition name": "Lautréamont / Ducasse"
+  },
+  {
+    "id": 158,
+    "Edition name": "Le Cartulaire de la seigneurie de Nesle"
+  },
+  {
+    "id": 159,
+    "Edition name": "Martha Ballard's Diary Online"
+  },
+  {
+    "id": 160,
+    "Edition name": "Olive Schreiner Letters Online"
+  },
+  {
+    "id": 161,
+    "Edition name": "Online Electronic Variorum of the Works of Rabindranath Tagore"
+  },
+  {
+    "id": 162,
+    "Edition name": "Ordonnances de l'hôtel du roi"
+  },
+  {
+    "id": 163,
+    "Edition name": "Septuaginta LXX"
+  },
+  {
+    "id": 164,
+    "Edition name": "Sirat Bani Hilal Digital Archive"
+  },
+  {
+    "id": 165,
+    "Edition name": "Søren Kierkegaards Skrifter"
+  },
+  {
+    "id": 166,
+    "Edition name": "Stijn Streuvels: De teleurgang van den Waterhoek (The decline of the Waterhoek) CDROM"
+  },
+  {
+    "id": 167,
+    "Edition name": "The Adams Papers"
+  },
+  {
+    "id": 168,
+    "Edition name": "The Alcalá Account Book Project"
+  },
+  {
+    "id": 169,
+    "Edition name": "The André Gide Editions Project"
+  },
+  {
+    "id": 170,
+    "Edition name": "The Benjamin Marston Diary Project"
+  },
+  {
+    "id": 171,
+    "Edition name": "The Bevan Family Letters"
+  },
+  {
+    "id": 172,
+    "Edition name": "The Burnet Psalter"
+  },
+  {
+    "id": 173,
+    "Edition name": "The Canterbury Tales Project"
+  },
+  {
+    "id": 174,
+    "Edition name": "The Digital Temple: A Documentary Edition of George Herbert's English Verse"
+  },
+  {
+    "id": 175,
+    "Edition name": "The Diriks Family Scrapbooks"
+  },
+  {
+    "id": 176,
+    "Edition name": "The Documentary History of the Ratification of the Constitution"
+  },
+  {
+    "id": 177,
+    "Edition name": "The Dolley Madison Digital Edition"
+  },
+  {
+    "id": 178,
+    "Edition name": "The Geese Book"
+  },
+  {
+    "id": 179,
+    "Edition name": "The Hartlib Papers Project"
+  },
+  {
+    "id": 180,
+    "Edition name": "The Letters of Christina Rossetti"
+  },
+  {
+    "id": 181,
+    "Edition name": "The Letters of Matthew Arnold"
+  },
+  {
+    "id": 182,
+    "Edition name": "The Malory Project"
+  },
+  {
+    "id": 183,
+    "Edition name": "The Papers of Alexander Hamilton"
+  },
+  {
+    "id": 184,
+    "Edition name": "The Papers of Eliza Lucas Pinckney and Harriot Pinckney Horry"
+  },
+  {
+    "id": 185,
+    "Edition name": "The Papers of George Washington"
+  },
+  {
+    "id": 186,
+    "Edition name": "The Papers of James Madison"
+  },
+  {
+    "id": 187,
+    "Edition name": "The Papers of Thomas Jefferson"
+  },
+  {
+    "id": 188,
+    "Edition name": "The Pérez Galdós Editions Project"
+  },
+  {
+    "id": 189,
+    "Edition name": "The Planctus for William Longsword"
+  },
+  {
+    "id": 190,
+    "Edition name": "The Zibaldone project"
+  },
+  {
+    "id": 191,
+    "Edition name": "Virginie Loveling’s Diary"
+  },
+  {
+    "id": 192,
+    "Edition name": "William Golder Electronic Edition"
+  },
+  {
+    "id": 193,
+    "Edition name": "William of Palerne"
+  },
+  {
+    "id": 194,
+    "Edition name": "Wittgensteins Nachlass: The Bergen Electronic Edition"
+  },
+  {
+    "id": 195,
+    "Edition name": "Zibaldone Europeo"
+  },
+  {
+    "id": 196,
+    "Edition name": "Pietro Mellini's Inventory in verse 1681"
+  },
+  {
+    "id": 197,
+    "Edition name": "Inscriptiones Alborum Amicorum"
+  },
+  {
+    "id": 198,
+    "Edition name": "George Etheridge's Encomium on Henry VIII addressed to Elizabeth II, British Library Royal MS 16 C X"
+  },
+  {
+    "id": 199,
+    "Edition name": "Digitalisierte Edition des Ältesten Appenzeller Landbuchs"
+  },
+  {
+    "id": 200,
+    "Edition name": "Corpus of Ioannes Dantiscus' Texts & Correspondence"
+  },
+  {
+    "id": 201,
+    "Edition name": "Dante's Commedia"
+  },
+  {
+    "id": 202,
+    "Edition name": "A London Provisioner's Chronicle, 1550–1563, by Henry Machyn: Manuscript, Transcription, and Modernization"
+  },
+  {
+    "id": 203,
+    "Edition name": "Collection of Swiss Law Sources"
+  },
+  {
+    "id": 204,
+    "Edition name": "El Cancionero digital de Gómez Manrique (páginas 11-44)"
+  },
+  {
+    "id": 205,
+    "Edition name": "ASChart Anglo-Saxon Charters"
+  },
+  {
+    "id": 206,
+    "Edition name": "Excerpts from the Chronicle of Matthew of Edessa"
+  },
+  {
+    "id": 207,
+    "Edition name": "Les Cours d’Antoine Desgodets"
+  },
+  {
+    "id": 208,
+    "Edition name": "Digitale Edition und Kommentierung der Tagebücher des Fürsten Christian II. von Anhalt-Bernburg"
+  },
+  {
+    "id": 209,
+    "Edition name": "Die Relatio Adelberts von Heidenheim und der Text Ilsungs"
+  },
+  {
+    "id": 210,
+    "Edition name": "Je chante ung chant"
+  },
+  {
+    "id": 211,
+    "Edition name": "Einstein Archives Online"
+  },
+  {
+    "id": 212,
+    "Edition name": "Codice Pelavicino"
+  },
+  {
+    "id": 213,
+    "Edition name": "Woolf Online"
+  },
+  {
+    "id": 214,
+    "Edition name": "Les manuscrits de Madame Bovary"
+  },
+  {
+    "id": 215,
+    "Edition name": "Digital Schomburg Editions: African American Women Writers of the 19th century"
+  },
+  {
+    "id": 216,
+    "Edition name": "Faust Edition"
+  },
+  {
+    "id": 217,
+    "Edition name": "Theodor Fontane: Notizbücher"
+  },
+  {
+    "id": 218,
+    "Edition name": "Johann Christian Senckenberg: Digital Edition of the Diaries"
+  },
+  {
+    "id": 219,
+    "Edition name": "Édition des journaux d'Alexandre Dumas"
+  },
+  {
+    "id": 220,
+    "Edition name": "Alexander von Humboldt Briefedition"
+  },
+  {
+    "id": 221,
+    "Edition name": "Jacob Burckhardt"
+  },
+  {
+    "id": 222,
+    "Edition name": "Key Documents of German-Jewish History"
+  },
+  {
+    "id": 223,
+    "Edition name": "Sappho’s Poems"
+  },
+  {
+    "id": 224,
+    "Edition name": "L’Orlando Furioso e la sua traduzione in immagini"
+  },
+  {
+    "id": 225,
+    "Edition name": "Schopenhauer’s Library: Annotations and marks in his Spanish books"
+  },
+  {
+    "id": 226,
+    "Edition name": "Clavius on the Web"
+  },
+  {
+    "id": 227,
+    "Edition name": "The Fleischmann Diaries"
+  },
+  {
+    "id": 228,
+    "Edition name": "Deutsches Textarchiv (DTA)"
+  },
+  {
+    "id": 229,
+    "Edition name": "Project Tarsian: First Corinthians in Vaticanus Arabicus 13"
+  },
+  {
+    "id": 230,
+    "Edition name": "Letters of 1916"
+  },
+  {
+    "id": 231,
+    "Edition name": "Bibliotheca Iuris Antiqui (BIA)"
+  },
+  {
+    "id": 232,
+    "Edition name": "The Wandering Jew's Chronicle"
+  },
+  {
+    "id": 233,
+    "Edition name": "Roman Inscriptions of Britain"
+  },
+  {
+    "id": 234,
+    "Edition name": "Teutsche Academie der Bau-, Bild- und Mahlerey-Künste, Joachim von Sandrart, Nürnberg 1675/1679/1680: Wissenschaftlich kommentierte Online-Edition"
+  },
+  {
+    "id": 235,
+    "Edition name": "ABaC:us - Austrian Baroque Corpus"
+  },
+  {
+    "id": 236,
+    "Edition name": "Darwin Online: Online Variorum of Darwin’s Origin of Species"
+  },
+  {
+    "id": 237,
+    "Edition name": "Dāmos Database of Mycenaean at Oslo"
+  },
+  {
+    "id": 238,
+    "Edition name": "Van Nu en Straks brieven"
+  },
+  {
+    "id": 239,
+    "Edition name": "Streuvels en zijn uitgevers – brieven"
+  },
+  {
+    "id": 240,
+    "Edition name": "Briefwechsel Sauer-Seuffert"
+  },
+  {
+    "id": 241,
+    "Edition name": "Ursus from Benevento, De nomine"
+  },
+  {
+    "id": 242,
+    "Edition name": "William F. Cody Archive"
+  },
+  {
+    "id": 243,
+    "Edition name": "Johannes Tinctoris: Complete Theoretical Works"
+  },
+  {
+    "id": 244,
+    "Edition name": "Digital Athenaeus"
+  },
+  {
+    "id": 245,
+    "Edition name": "Magistri Guillelmi Autissiodorensis Summa de officiis ecclesiasticis"
+  },
+  {
+    "id": 246,
+    "Edition name": "Musil Online"
+  },
+  {
+    "id": 247,
+    "Edition name": "A Comprehensive Edition of Tocharian Manuscripts"
+  },
+  {
+    "id": 248,
+    "Edition name": "Briefe und Texte aus dem Intellektuellen Berlin um 1800"
+  },
+  {
+    "id": 249,
+    "Edition name": "Biblioteca Digital del Pensamiento Novohispano"
+  },
+  {
+    "id": 250,
+    "Edition name": "Bliss-Tyler Correspondence"
+  },
+  {
+    "id": 251,
+    "Edition name": "edition humboldt digital"
+  },
+  {
+    "id": 252,
+    "Edition name": "Vespasiano da Bisticci, Lettere"
+  },
+  {
+    "id": 253,
+    "Edition name": "Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732)"
+  },
+  {
+    "id": 254,
+    "Edition name": "Jane Addams Digital Edition"
+  },
+  {
+    "id": 255,
+    "Edition name": "Les Pensées de Blaise Pascal"
+  },
+  {
+    "id": 256,
+    "Edition name": "Ödön von Horváth: Historisch-kritische Ausgabe – Digitale Edition"
+  },
+  {
+    "id": 257,
+    "Edition name": "Lament of St. Anselm"
+  },
+  {
+    "id": 258,
+    "Edition name": "Beethovens Werkstatt"
+  },
+  {
+    "id": 259,
+    "Edition name": "The Charles Harpur Critical Archive"
+  },
+  {
+    "id": 260,
+    "Edition name": "La Dama Boba"
+  },
+  {
+    "id": 261,
+    "Edition name": "En el ojo del huracán. Cartas de ultramar a España 1823"
+  },
+  {
+    "id": 262,
+    "Edition name": "Kosztolányi Dezső: Édes Anna"
+  },
+  {
+    "id": 263,
+    "Edition name": "Kosztolányi Dezső: Édes Anna"
+  },
+  {
+    "id": 264,
+    "Edition name": "Kassák Lajos: The Horse Dies the Birds Fly Away / A ló meghal a madarak kirepülnek"
+  },
+  {
+    "id": 265,
+    "Edition name": "Kosztolányi Dezső: Aranysárkány"
+  },
+  {
+    "id": 266,
+    "Edition name": "Kosztolányi Dezső: Esti Kornél"
+  },
+  {
+    "id": 267,
+    "Edition name": "Fanchali Jób-kódex"
+  },
+  {
+    "id": 268,
+    "Edition name": "Eötvös József: A falu jegyzóje"
+  },
+  {
+    "id": 269,
+    "Edition name": "József Attila összes tanulmánya és cikke"
+  },
+  {
+    "id": 270,
+    "Edition name": "József Attila összes tanulmánya és cikke. Szövegek 1930-1937"
+  },
+  {
+    "id": 271,
+    "Edition name": "Estoria de Espanna Digital"
+  },
+  {
+    "id": 272,
+    "Edition name": "Gergei Albert: Árgirus históriája (version 1)"
+  },
+  {
+    "id": 273,
+    "Edition name": "Wathay Ferenc összes műve"
+  },
+  {
+    "id": 274,
+    "Edition name": "Adriai tengernek syrénája, gróf Zrínyi Miklós"
+  },
+  {
+    "id": 275,
+    "Edition name": "Rimay János verseinek fragmentumi"
+  },
+  {
+    "id": 276,
+    "Edition name": "Rimay János ifjúkori versgyűjteménye"
+  },
+  {
+    "id": 277,
+    "Edition name": "Effectus amoris"
+  },
+  {
+    "id": 278,
+    "Edition name": "Érdy-kódex"
+  },
+  {
+    "id": 279,
+    "Edition name": "Régi Magyar Exemplumadatbázis/ Database of Old Hungarian Exempla"
+  },
+  {
+    "id": 280,
+    "Edition name": "Kazinczy Ferenc összes művei"
+  },
+  {
+    "id": 281,
+    "Edition name": "Csokonai Vitéz Mihály összes művei"
+  },
+  {
+    "id": 282,
+    "Edition name": "Opera Aesthetica Szerdahelyana / Szerdahely György Alajos esztétikai írásai"
+  },
+  {
+    "id": 283,
+    "Edition name": "Gyöngyössi János művei"
+  },
+  {
+    "id": 284,
+    "Edition name": "Berzsenyi Dániel levelezése"
+  },
+  {
+    "id": 285,
+    "Edition name": "Magyar írók levelezése"
+  },
+  {
+    "id": 286,
+    "Edition name": "A Ráday-család levelezése"
+  },
+  {
+    "id": 287,
+    "Edition name": "Margit-legenda (Szent Margit élete, 1510)"
+  },
+  {
+    "id": 288,
+    "Edition name": "Orpheus"
+  },
+  {
+    "id": 289,
+    "Edition name": "Magyar Museum"
+  },
+  {
+    "id": 290,
+    "Edition name": "DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde"
+  },
+  {
+    "id": 291,
+    "Edition name": "Balassi Bálint összes verse (hálózati kritikai kiadás: version 1.0 and 2.0)"
+  },
+  {
+    "id": 292,
+    "Edition name": "Lelki énekekről régi magyarok"
+  },
+  {
+    "id": 293,
+    "Edition name": "Szabó Lőrinc: Föld, erdő, isten; Kalibán; Fény, fény, fény; A sátán műremekei; Te meg a világ; Különbéke; Harc az ünnepért; Régen és most"
+  },
+  {
+    "id": 294,
+    "Edition name": "A Tett folyóirat (The Journal „A Tett”)"
+  },
+  {
+    "id": 295,
+    "Edition name": "Mikszáth Kálmán összes művei 39"
+  },
+  {
+    "id": 296,
+    "Edition name": "Mikszáth Kálmán összes művei 42"
+  },
+  {
+    "id": 297,
+    "Edition name": "P.S. Post Scriptum: A Digital Archive of Ordinary Writing"
+  },
+  {
+    "id": 298,
+    "Edition name": "Jean Paul – Sämtliche Briefe digital"
+  },
+  {
+    "id": 299,
+    "Edition name": "Armer Heinrich Digital"
+  },
+  {
+    "id": 300,
+    "Edition name": "Deux visages de L'Astrée"
+  },
+  {
+    "id": 302,
+    "Edition name": "travel!digital"
+  },
+  {
+    "id": 303,
+    "Edition name": "Mächtekongresse 1818–1822. Digitale Edition der Dokumente zu den Kongressen von Aachen (1818), Troppau (1820), Laibach (1821) und Verona (1822)"
+  },
+  {
+    "id": 304,
+    "Edition name": "Tagebücher von Andreas Okopenko. Digitale Edition"
+  },
+  {
+    "id": 305,
+    "Edition name": "Ulrich Richental die Chronik des Konzils von Konstanz"
+  },
+  {
+    "id": 306,
+    "Edition name": "Franco-Hungarian literary relations in the 20th century/Les relations littéraires entre la France et la Hongrie au XXe siècle"
+  },
+  {
+    "id": 307,
+    "Edition name": "Schnitzler Critical Digital Edition"
+  },
+  {
+    "id": 308,
+    "Edition name": "Johann Georg Hamann: Kommentierte Briefausgabe"
+  },
+  {
+    "id": 309,
+    "Edition name": "Grundtvigs Vaerker (The complete works of N.F.S. Grundtvig)"
+  },
+  {
+    "id": 310,
+    "Edition name": "Die Korrespondenz von Leo von Thun-Hohenstein"
+  },
+  {
+    "id": 311,
+    "Edition name": "Inscriptions of Greek Cyrenaica - Greek Verse Inscriptions of Cyrenaica"
+  },
+  {
+    "id": 312,
+    "Edition name": "Romualdus Beneventanus, Chronicon"
+  },
+  {
+    "id": 313,
+    "Edition name": "Samuel Hahnemann - Digitale kritische Edition - Krankenjournal DF5"
+  },
+  {
+    "id": 314,
+    "Edition name": "Arthur Schnitzler – Briefwechsel mit Autorinnen und Autoren"
+  },
+  {
+    "id": 315,
+    "Edition name": "Lazarraga eskuizkribua: edizioa eta azterketa"
+  },
+  {
+    "id": 316,
+    "Edition name": "Protokolle des Bayerischen Staatsrats"
+  },
+  {
+    "id": 317,
+    "Edition name": "The glosses to the first book of the Etymologiae of Isidore of Seville: a digital scholarly edition"
+  },
+  {
+    "id": 318,
+    "Edition name": "In Search of the Drowned: Testimonies and Testimonial Fragments of the Holocaust"
+  },
+  {
+    "id": 319,
+    "Edition name": "Alexander von Humboldt: Sämtliche Schriften digital"
+  },
+  {
+    "id": 320,
+    "Edition name": "Mystische Bücher in der Bibliothek der Kartause Erfurt. Digitale Edition"
+  },
+  {
+    "id": 321,
+    "Edition name": "Peter Handke Notizbücher. Digitale Edition"
+  },
+  {
+    "id": 322,
+    "Edition name": "Gottfried Semper. Critical and Commented Edition"
+  },
+  {
+    "id": 323,
+    "Edition name": "Thesaurus Inscriptionum Raeticarum"
+  },
+  {
+    "id": 324,
+    "Edition name": "Lexicon Leponticum"
+  },
+  {
+    "id": 325,
+    "Edition name": "Arthur Schnitzler – Chronik. Eine digitale Ressource zu den einzelnen Tagen seines Lebens"
+  },
+  {
+    "id": 326,
+    "Edition name": "Clara Katharina Pollaczek: Arthur Schnitzler und ich. Digitale Ausgabe"
+  },
+  {
+    "id": 327,
+    "Edition name": "Aufenthaltsorte von Arthur Schnitzler (1879–1931)"
+  },
+  {
+    "id": 328,
+    "Edition name": "Arthur Schnitzler: Lektüren. Digitale Edition der Leseliste von Arthur Schnitzler"
+  },
+  {
+    "id": 329,
+    "Edition name": "Arthur Schnitzler: Tagebuch. Digitale Edition"
+  },
+  {
+    "id": 330,
+    "Edition name": "Arthur Schnitzler: Archiv der Zeitungsausschnitte"
+  },
+  {
+    "id": 331,
+    "Edition name": "Personen der Moderne Basis"
+  },
+  {
+    "id": 332,
+    "Edition name": "Hermann Bahr – Arthur Schnitzler: Briefwechsel, Aufzeichnungen, Dokumente (1891–1931)"
+  },
+  {
+    "id": 333,
+    "Edition name": "Inscriptions of Roman Tripolitania (2021)"
+  },
+  {
+    "id": 334,
+    "Edition name": "SAWS Kekaumenos, Consilia et Narrationes"
+  },
+  {
+    "id": 335,
+    "Edition name": "SAWS Dynamic Library"
+  },
+  {
+    "id": 336,
+    "Edition name": "Die Urkunden und Akten des Klosters und des Oberamts Königsfelden"
+  },
+  {
+    "id": 337,
+    "Edition name": "MEGAdigital – Online-Abteilung der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels"
+  },
+  {
+    "id": 338,
+    "Edition name": "Auden Musulin Papers: A Digital Edition of W. H. Auden's Letters to Stella Musulin"
+  },
+  {
+    "id": 339,
+    "Edition name": "Patristic Text Archive (PTA)"
+  },
+  {
+    "id": 340,
+    "Edition name": "Open Arabic Periodical Editions (OpenArabicPE)"
+  },
+  {
+    "id": 341,
+    "Edition name": "Korespondencja Jana Lechonia i Kazimierza Wierzyńskiego. Naukowa Edycja Cyfrowa"
+  },
+  {
+    "id": 342,
+    "Edition name": "Korespondencja Mieczysława Grydzewskiego i Kazimierza i Haliny Wierzyńskich. Naukowa Edycja Cyfrowa"
+  },
+  {
+    "id": 343,
+    "Edition name": "Die Ministerratsprotokolle Österreichs und der österreichisch-ungarischen Monarchie 1848–1918 – Digitale Edition"
+  },
+  {
+    "id": 344,
+    "Edition name": "Digital Scholarly Edition of Habsburg-Ottoman Diplomatic Sources 1500–1918"
+  },
+  {
+    "id": 345,
+    "Edition name": "Familiensache? Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)"
+  },
+  {
+    "id": 346,
+    "Edition name": "Arthur Schnitzler: Mikroverfilmung des Cambridger Nachlasses"
+  },
+  {
+    "id": 347,
+    "Edition name": "Renan Source"
+  },
+  {
+    "id": 348,
+    "Edition name": "The Mary Hamilton Papers (c. 1740 – c. 1850)"
+  },
+  {
+    "id": 349,
+    "Edition name": "Bullinger Digital"
+  },
+  {
+    "id": 350,
+    "Edition name": "Akademieprotokolle"
+  },
+  {
+    "id": 351,
+    "Edition name": "Hanslick Online"
+  },
+  {
+    "id": 352,
+    "Edition name": "Staribacher  – Tagebücher"
+  }
+]
