@@ -38,7 +38,7 @@ code|
 - Database name: _*DigitalEditions*_
 - Collection name: _*editions*_
 - Click "ADD DATA" and "Import JSON or CSV"
-- Select _*data\processed_data.csv*_
+- Select _*data\final_digiEds.csv*_
 - Select delimiter "Comma"
 - Click "Import"
 

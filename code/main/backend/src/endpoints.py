@@ -2,10 +2,12 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
+from mlUtils import visModel,dataEncoder
 
 app = Flask(__name__)
 CORS(app)
 
+visM=visModel()
 
 
 client = MongoClient("mongodb://localhost:27017/")
@@ -52,6 +54,8 @@ def getPeriodName():
     timeList = list(texts.find({}, {"_id": 0,"id":1,"Historical Period":1}))  
     return timeList
 
+#   period
+
 @app.route("/texts/period", methods=["GET"])
 def getTimes():
     timeList = list(texts.find({}, {"_id": 0,"id":1,"Time/Century":1}))  
@@ -64,16 +68,29 @@ def getStartPeriod():
     timeList = list(texts.find({}, {"_id": 0,"id":1,"period_start":1}))  
     return timeList
 
+#   end
 @app.route("/texts/period/end", methods=["GET"])
 def getEndPeriod():
     timeList = list(texts.find({}, {"_id": 0,"id":1,"period_end":1}))  
     return timeList
 
 
+# ML endopoints
 
-#   end
+@app.route("/texts/graphPoints", methods=["GET"])
+def getAndComputeGraphPoints():
 
-#   period
+    keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"period_end":1}))
+
+
+
+    return
+
+
+
+
+
+
 
 
 # To get titles
