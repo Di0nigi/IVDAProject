@@ -1,7 +1,13 @@
 <template>
   <div class="layout">
 
-    <div class="box sidebar">Source List</div>
+    <div class="box summary">
+      <Summary :edition="selectedEdition" />
+    </div>
+
+    <div class="box sidebar">
+      <SourceList @select="selectedEdition = $event" />
+    </div>
 
     <!-- Column 2 (middle) -->
     <div class="box graph">Key Words Relation Graph</div>
@@ -48,11 +54,14 @@ import SlidersPanel from './components/SlidersPanel.vue';
 import TagFilter from './components/TagFilter.vue';
 import ReliabilitySliders from './components/ReliabilitySliders.vue';
 import TimelinePlot from './components/TimelinePlot.vue';
+import SourceList from './components/SourceList.vue';
+import Summary from './components/Summary.vue';
 
 const xAttribute = ref('Historical Period');
 const categoryAttribute = ref('Scholarly');
 const xLabel = ref('Historical Period');
 const categoryLabel = ref('Scholarly');
+const selectedEdition = ref(null)
 </script>
 
 <style scoped>
@@ -61,12 +70,11 @@ const categoryLabel = ref('Scholarly');
   height: 100vh;
   padding: 20px 0 20px 0;
   gap: 20px;
-  width: 1400px;
+  width: 100%;
+  max-width: 100%;
 
-  /* middle column ~2.5x the width of right column */
-  grid-template-columns: 200px 2.5fr 1fr;
+  grid-template-columns: 1fr 2.5fr 1fr;
 
-  /* four equal-height rows for each column */
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
@@ -77,12 +85,20 @@ const categoryLabel = ref('Scholarly');
   border: 1px solid #d5d9df;
 }
 
-/* Left sidebar spans all rows */
-.sidebar {
-  grid-row: 1 / 5;
+.summary {
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-/* Middle column */
+.sidebar {
+  grid-row: 2 / 5;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .graph {
   grid-column: 2;
   grid-row: 1;
