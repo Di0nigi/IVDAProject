@@ -1,0 +1,352 @@
+id,Edition name,Author Name,Content Description,Keywords (5 per row)
+1,Digitale Edition der Handschrift Cod. Guelf. 64 Weiss.,Not specified (Anonymous),"A digital facsimile and transcription of the Weissenburg manuscript, a significant 8th-century collection of catechetical texts, creeds, and glossaries.",Manuscript # Theology # Liturgy # Philology # Religion
+2,The Thomas Gray Archive,Thomas Gray,"A comprehensive archive of the 18th-century poet's complete poems, selected prose, and correspondence.",Poetry # Correspondence # Criticism # Biography # Philology
+3,A critical edition of the poetry of Dafydd ap Gwilym,Dafydd ap Gwilym,"A scholarly collection of the complete works of the 14th-century Welsh bard, known for his innovative nature poetry and love lyrics.",Poetry # Nature # Manuscript # Philology # Song
+4,Saint Patrick's Confessio,Saint Patrick,"The autobiographical writings of Ireland's patron saint, detailing his captivity, escape, and missionary work.",Religion # Biography # Hagiography # Theology # History
+5,Liber Matriculae - Il libro della matricola dei notai di Vercelli,Not specified (Notaries),"A digital edition of the register of notaries from Vercelli, offering insights into medieval Italian legal administration.",Law # Administration # History # Manuscript # Sociology
+6,Correspondance de Pierre Bayle,Pierre Bayle,"The extensive correspondence of the French philosopher, covering theological debates and the circulation of ideas.",Philosophy # Correspondence # Theology # Criticism # History
+7,Vindolanda Tablets Online,Not specified (Soldiers),"Thin wood tablets serving as the oldest surviving handwritten documents in Britain, revealing details of Roman military life.",Epigraphy # War # Archaeology # Administration # History
+8,Vindolanda Tablets Online II,Not specified (Soldiers),A continuation of the project digitizing further discoveries of wooden tablets from the Vindolanda fort.,Epigraphy # War # Archaeology # Administration # History
+9,"Bérardier de Bataut, Essai sur le récit",Bérardier de Bataut,A critical edition of an 18th-century treatise on the art of storytelling and narrative theory.,Rhetoric # Criticism # Philosophy # Education # Literature
+10,Codex Sinaiticus,Not specified (Scribes),"One of the oldest and most important biblical manuscripts, containing the Greek Old Testament and the New Testament.",Theology # Manuscript # Religion # Philology # History
+11,"The Saint-Aubins ""Book of Arses""",Gabriel de Saint-Aubin,A digitized sketchbook by the 18th-century artist featuring satirical and humorous caricatures.,Art # Satire # Manuscript # Sociology # History
+12,Catullus Online,Catullus,"A critical repertory of conjectures on the text of Catullus's poems, compiling scholarly emendations.",Poetry # Philology # Criticism # Manuscript # Translation
+13,Codex Suprasliensis,Not specified (Scribes),"A digital reunification of the largest surviving Old Church Slavonic manuscript, containing saints' lives and homilies.",Hagiography # Manuscript # Linguistics # Theology # Philology
+14,Becerro Galicano of San Millán de la Cogolla,Not specified (Monks),"A digital edition of the cartulary from the San Millán monastery, a crucial source for medieval history.",Manuscript # Law # Administration # Religion # History
+15,The Durham Liber Vitae Project,Not specified (Monks),"A comprehensive edition of the ""Book of Life"" from Durham Cathedral, listing the names of thousands of benefactors.",Liturgy # Genealogy # Religion # Manuscript # History
+16,Samuel Beckett Digital Manuscript Project,Samuel Beckett,"A genetic edition of Beckett's works, presenting digital facsimiles to trace the evolution of his texts.",Drama # Novel # Manuscript # Criticism # Philology
+17,Euripides Scholia,Not specified (Scholars),An edition of the ancient and medieval marginal commentaries on the plays of Euripides.,Drama # Commentary # Philology # Manuscript # Rhetoric
+18,Heimskringla,Snorri Sturluson,"A collection of sagas about the Norwegian kings, written in Old Norse, blending history and legend.",History # Mythology # Folklore # Genealogy # Politics
+19,Partonopeus de Blois,Not specified (Anonymous),"An electronic edition of the 12th-century Old French romance, a hybrid of Arthurian legend and classical mythology.",Novel # Mythology # Manuscript # Philology # Translation
+20,Henry III Fine Rolls Project,Not specified (Clerks),"A calendar and edition of the Fine Rolls of Henry III, recording payments made to the King for concessions.",Administration # Law # Economics # History # Politics
+21,Die Briefwechsel der Mathematiker Bernoulli,Bernoulli family,"The collected correspondence of the famous Bernoulli family of mathematicians, documenting the development of calculus.",Mathematics # Science # Correspondence # History # Philosophy
+22,La Famiglia dell'Antiquario,Carlo Goldoni,"A digital text of Goldoni's comedy about an obsessive collector, highlighting family conflict.",Drama # Satire # Sociology # Art # Economics
+23,Die Glossen Ekkeharts IV.,Ekkehard IV,An edition of the interlinear and marginal glosses by Ekkehard IV on the text of Orosius.,Commentary # Philology # Grammar # Education # Manuscript
+24,Inscriptions of the Northern Black Sea,Not specified (Inscribers),A corpus of ancient Greek and Latin inscriptions found on the northern coast of the Black Sea.,Epigraphy # Archaeology # History # Politics # Genealogy
+25,La Entretenida Digital Edition,Miguel de Cervantes,"A multimedia edition of Cervantes' play La Entretenida, featuring the text alongside performance materials.",Drama # Satire # Philology # Translation # Commentary
+26,A Survey of the Cities of London and Westminster,John Strype,"A digital version of Strype's 1720 update to Stow's survey, providing a detailed description of London.",History # Cartography # Architecture # Sociology # Economics
+27,Letters of William Herle Project,William Herle,"The correspondence of an Elizabethan intelligencer and diplomat, offering a look at 16th-century espionage.",Diplomacy # Politics # Correspondence # History # War
+28,Diplomatic Correspondence of Thomas Bodley,Thomas Bodley,The letters of the founder of the Bodleian Library during his time as Queen Elizabeth's ambassador.,Diplomacy # Correspondence # Politics # History # Travel
+29,The Hooke Folio Online,Robert Hooke,"A transcription of the folio of Robert Hooke, containing minutes of the Royal Society and scientific notes.",Science # Manuscript # History # Philosophy # Administration
+30,The Workdiaries of Robert Boyle,Robert Boyle,A digital edition of the laboratory notebooks and workdiaries of the father of modern chemistry.,Science # Diary # Philosophy # Manuscript # History
+31,Jonathan Swift Archive,Jonathan Swift,An archive containing transcriptions and facsimiles of Swift's major prose works.,Satire # Politics # Novel # Criticism # Manuscript
+32,The St Gall Priscian Glosses,Not specified (Scholars),A database of the Old Irish glosses found in the St. Gall manuscript of Priscian's Latin grammar.,Linguistics # Grammar # Philology # Manuscript # Education
+33,Nietzsche Source,Friedrich Nietzsche,"A comprehensive digital archive of Nietzsche's complete works, posthumous fragments, and correspondence.",Philosophy # Philology # Criticism # Manuscript # Correspondence
+34,Early Irish Glossaries Database,Not specified (Scholars),A searchable database of medieval Irish glossaries explaining difficult or archaic words.,Lexicography # Linguistics # Philology # Manuscript # History
+35,The Holinshed Project,Raphael Holinshed,A parallel text edition of the 1577 and 1587 editions of Holinshed's Chronicles.,History # Politics # Geography # Genealogy # Mythology
+36,Alciato's Book of Emblems,Andrea Alciato,A comparative edition of the various printings of Alciato's foundational emblem book.,Art # Philosophy # Poetry # Rhetoric # Philology
+37,Electronic Variorum Edition of the Quixote,Miguel de Cervantes,"A digital variorum edition of Don Quixote, allowing comparison of text versions.",Novel # Satire # Philology # Criticism # Translation
+38,Corpus Rhythmorum Musicum,Not specified (Various),A critical edition of non-liturgical Latin songs from late antiquity and the early Middle Ages.,Music # Song # Poetry # Philology # Manuscript
+39,The Book of Ben Sira,Jesus ben Sira,A project presenting the Hebrew manuscripts of the Book of Ben Sira (Ecclesiasticus).,Theology # Wisdom # Manuscript # Philology # Translation
+40,Christine de Pizan: The Queen's Manuscript,Christine de Pizan,A digital facsimile and analysis of the collected works of Christine de Pizan presented to Queen Isabeau.,Poetry # Politics # Gender # Manuscript # Art
+41,Corpus of the Inscriptions of Campā,Not specified (Inscribers),A collection of Sanskrit and vernacular inscriptions from the ancient Kingdom of Champa.,Epigraphy # History # Religion # Archaeology # Linguistics
+42,Dante Online,Dante Alighieri,A digital library containing the complete works of Dante Alighieri in the original Italian.,Poetry # Theology # Philosophy # Philology # Politics
+43,Darwin Correspondence Project,Charles Darwin,"The complete correspondence of Charles Darwin, contextualizing his theory of evolution.",Science # Correspondence # Nature # Biography # History
+44,De Trein der Traagheid,Johan Daisne,A scholarly electronic edition of Daisne's magic realist novel.,Novel # Magic # Manuscript # Philology # Criticism
+45,Early Stuart Libels,Not specified (Anonymous),A web-based edition of subversive poetry and political libels from the reigns of James I and Charles I.,Satire # Politics # Poetry # History # Sociology
+46,Folger Shakespeare Editions,William Shakespeare,"High-quality, searchable digital texts of Shakespeare's plays and poems.",Drama # Poetry # Philology # Education # Art
+47,Frankenstein,Mary Shelley,A comparative edition allowing users to view the 1818 and 1831 editions alongside original drafts.,Novel # Science # Manuscript # Philology # Philosophy
+48,Glossae.net,Not specified (Scholars),A resource dedicated to the study of medieval biblical and legal glosses.,Commentary # Theology # Law # Manuscript # Philology
+49,Heinrich-Heine Portal,Heinrich Heine,A digital gateway to the complete works and correspondence of Heinrich Heine.,Poetry # Satire # Correspondence # Journalism # Politics
+50,Henrik Ibsens Skrifter,Henrik Ibsen,"The complete writings of the Norwegian playwright Henrik Ibsen, including plays and poems.",Drama # Poetry # Correspondence # Criticism # Sociology
+51,Mark Twain Project,Mark Twain,"A massive critical edition of Mark Twain's private papers, letters, and published works.",Novel # Satire # Correspondence # Biography # Manuscript
+52,Niccolò Canussio: De restitutione patriae,Niccolò Canussio,An electronic edition of a 15th-century humanist dialogue on restoring the patriarchal see.,Rhetoric # Politics # History # Philosophy # Philology
+53,Queste del Saint Graal,Not specified (Anonymous),"A digital edition of the Quest for the Holy Grail, focusing on the spiritual journey of Galahad.",Novel # Theology # Mythology # Manuscript # Philology
+54,The Auchinleck manuscript,Not specified (Compilers),A digital facsimile of a key source for Middle English romances.,Poetry # Romance # Manuscript # Philology # Religion
+55,The Casebooks Project,Forman & Napier,A digital edition of the astrological medical records of two 17th-century practitioners.,Medicine # Magic # Astronomy # Sociology # Manuscript
+56,Confessions of Augustine,Augustine of Hippo,A hypertext edition of Augustine's spiritual autobiography with commentary.,Theology # Philosophy # Biography # Religion # Commentary
+57,The Derveni Papyrus,Not specified (Commentator),An edition of a papyrus roll containing an allegorical commentary on an Orphic poem.,Philosophy # Commentary # Mythology # Epigraphy # Religion
+58,The Gospel according to St. John,Not specified (Evangelist),A critical editing project focused on the Greek manuscripts of the Gospel of John.,Theology # Manuscript # Philology # Religion # History
+59,The Proceedings of the Old Bailey,Not specified (Recorders),A fully searchable edition of the proceedings of London's central criminal court.,Law # Sociology # History # Administration # Economics
+60,The Richard Brome Project,Richard Brome,A scholarly online edition of the complete plays of Richard Brome.,Drama # Satire # Philology # Art # Sociology
+61,The Svoboda Diary Project,Alexander Svoboda,The personal diaries of a teenager traveling from Baghdad to Europe.,Diary # Travel # History # Sociology # Geography
+62,William Godwin's Diary,William Godwin,A digital transcription of the diary kept by the philosopher William Godwin for 48 years.,Diary # Philosophy # Biography # Politics # History
+63,Llull's Electoral Writings,Ramon Llull,A digital edition of Llull's works on voting theory and electoral systems.,Politics # Mathematics # Philosophy # Logic # Law
+64,Digital Mishnah,Not specified (Rabbis),A project to create a dynamic critical edition of the Mishnah.,Law # Religion # Theology # Philology # Manuscript
+65,The Online Critical Pseudepigrapha,Not specified (Various),An electronic publication of ancient Jewish and Christian religious texts outside the canon.,Religion # Theology # Philology # History # Mythology
+66,Dead Sea Scrolls,Not specified (Scribes),A high-resolution digital library of the Dead Sea Scrolls.,Manuscript # Religion # Theology # Archaeology # History
+67,Registers of the counts of Holland,Not specified (Clerks),A digital edition of the chancery registers of the Counts of Holland.,Administration # Law # History # Politics # Economics
+68,Quijote Interactivo,Miguel de Cervantes,An interactive digital version of the first edition of Don Quixote.,Novel # Satire # Art # Technology # Education
+69,Journals of Lewis and Clark,Lewis & Clark,The complete journals of the Corps of Discovery's expedition across the western United States.,Exploration # Nature # Geography # Travel # Science
+70,Electronic Boethius CDROM,Alfred the Great,A digital edition of the Old English translation of Boethius's Consolation of Philosophy.,Philosophy # Translation # Philology # Manuscript # Politics
+71,James Mill's Common Place Books,James Mill,An edition of the intellectual notebooks of the Scottish philosopher James Mill.,Philosophy # Notebook # Education # History # Politics
+72,Preface to 'Ancrene Wisse',Not specified (Anonymous),A pilot project presenting the preface of a guide for female anchorites.,Religion # Gender # Manuscript # Philology # Rules
+73,Digital Nestle-Aland,Nestle-Aland,The digital version of the standard scholarly edition of the Greek New Testament.,Theology # Philology # Criticism # Manuscript # Religion
+74,Orlando Furioso Hypertext,Ludovico Ariosto,A hypertextual tool for studying Ariosto's Orlando Furioso and its narrative threads.,Poetry # Mythology # Romance # Philology # Commentary
+75,The Vergil project,Virgil,An interactive resource for studying the works of Virgil with linked texts and commentaries.,Poetry # Epic # Commentary # Education # Translation
+76,Cantar de mio Cid,Not specified (Anonymous),A digital presentation of the unique manuscript of the Poema de mio Cid.,Poetry # Epic # Manuscript # History # Philology
+77,The Aberdeen Bestiary,Not specified (Anonymous),A complete digital facsimile and transcription of a lavishly illuminated 12th-century bestiary.,Nature # Art # Theology # Manuscript # Symbolism
+78,M. Valerii Martialis Epigrammaton,Martial,A critical digital edition of the fourth book of Martial's Epigrams.,Poetry # Satire # Sociology # Philology # Commentary
+79,P. Ovidii Nasonis Heroides I,Ovid,A commentary and text of Ovid's first Heroide (Penelope to Ulysses).,Poetry # Mythology # Rhetoric # Gender # Philology
+80,Sexti Propertii Elegiae,Propertius,"A digital edition of the elegies of Propertius, focusing on his love poetry.",Poetry # Mythology # Philology # Criticism # Commentary
+81,Sulpiciae Conquestio,Sulpicia (Pseudo),An edition of a short satirical poem complaining about the state of the age under Domitian.,Poetry # Satire # Gender # Politics # Philology
+82,Claudii Claudiani Carmina Latina,Claudian,"A collection of the Latin poems of Claudian, including his political panegyrics.",Poetry # Politics # History # Mythology # Philology
+83,D. Iunii Iuvenalis Saturae,Juvenal,"An electronic text of Juvenal's Satires, critiquing the vices of Roman society.",Satire # Poetry # Sociology # Philology # Criticism
+84,Codice Diplomatico Lombardia,Not specified (Notaries),A massive collection of charters and diplomatic documents from medieval Lombardy.,Law # Administration # History # Manuscript # Diplomacy
+85,Chaucer's Book of the Duchess,Geoffrey Chaucer,A hypertext edition of Chaucer's elegy for Blanche of Lancaster.,Poetry # Dream # Philology # Manuscript # Criticism
+86,Inscriptiones Graecae in Croatia,Not specified (Inscribers),A digital corpus of Greek inscriptions found in the territory of modern Croatia.,Epigraphy # History # Archaeology # Geography # Genealogy
+87,The Gascon Rolls Project,Not specified (Clerks),"A calendar and edition of the Gascon Rolls, recording English administration of Aquitaine.",Administration # Law # History # Diplomacy # Politics
+88,The Hengwrt Chaucer,Geoffrey Chaucer,High-resolution images and transcripts of the Hengwrt manuscript of the Canterbury Tales.,Poetry # Manuscript # Philology # Art # Paleography
+89,Carl-Maria-von-Weber-Gesamtausgabe,Carl Maria von Weber,"A complete critical edition of the musical works, letters, and diaries of Weber.",Music # Correspondence # Diary # Biography # Art
+90,Livingstone's 1871 Field Diary,David Livingstone,A multispectral imaging project recovering the faded text of Livingstone's field diary.,Exploration # Diary # Science # Geography # Manuscript
+91,Hyperdonat,Aelius Donatus,A hypertext edition of the commentaries on Terence attributed to Donatus.,Commentary # Grammar # Education # Drama # Philology
+92,Inscriptions of Aphrodisias Project,Not specified (Inscribers),A complete digital corpus of the inscriptions from the ancient city of Aphrodisias.,Epigraphy # Archaeology # History # Politics # Sociology
+93,Inscriptions of Roman Cyrenaica,Not specified (Inscribers),A comprehensive collection of Greek and Latin inscriptions from Roman Cyrenaica.,Epigraphy # Archaeology # History # Administration # Law
+94,Inscriptions of Roman Tripolitania,Not specified (Inscribers),A digital edition of the inscriptions from Roman Tripolitania (western Libya).,Epigraphy # Archaeology # History # Administration # Law
+95,e-sequence: Notker Balbulus,Notker Balbulus,A critical edition of the sequences (liturgical chants) composed by Notker of St. Gall.,Music # Liturgy # Poetry # Manuscript # Theology
+96,Phineas Fletcher's Sylva Poetica,Phineas Fletcher,An edition of the Latin poetry collection Sylva Poetica by Phineas Fletcher.,Poetry # Translation # Philology # Mythology # Religion
+97,Joseph Addison: Latin Prose/Poetry,Joseph Addison,A collection of the Latin writings of the essayist Joseph Addison.,Poetry # Rhetoric # Criticism # Philology # History
+98,Flaubert's Education Sentimentale,Gustave Flaubert,A genetic edition of a specific chapter of L'Éducation sentimentale.,Novel # Manuscript # Criticism # Philology # Art
+99,Castillian canconiero manuscripts,Not specified (Poets),"A digital archive of the cancioneros, songbooks of courtly lyric poetry.",Poetry # Song # Manuscript # Sociology # History
+100,Galen: On the articulations,Galen,An edition of the Arabic translation of Galen's commentary on Hippocrates.,Medicine # Commentary # Translation # Science # History
+101,False Capitularies (Benedictus Levita),Benedictus Levita,"A scholarly edition of the False Capitularies, a famous 9th-century forgery.",Law # Religion # Politics # Manuscript # Forgery
+102,Royal Inscriptions of Neo-Assyria,Not specified (Scribes),A standardized online corpus of the royal inscriptions of the Neo-Assyrian kings.,Epigraphy # History # War # Politics # Archaeology
+103,Book of Margery Kempe,Margery Kempe,A digital facsimile and transcription of the manuscript of The Book of Margery Kempe.,Hagiography # Biography # Mysticism # Manuscript # Gender
+104,William of Ockham: Dialogus,William of Ockham,"An edition of Ockham's treatise on heresy, papal power, and rights.",Philosophy # Politics # Theology # Law # Logic
+105,Domesday Explorer,Not specified (Scribes),A digital database of the Domesday Book survey commissioned by William the Conqueror.,Administration # Economics # History # Geography # Law
+106,Chopin's First Editions Online,Frédéric Chopin,A resource uniting all the diverse first impressions of Chopin's music.,Music # Art # Publishing # Criticism # Philology
+107,Jane Austen's Fiction Manuscripts,Jane Austen,A digital reunification of all surviving fiction manuscripts of Jane Austen.,Novel # Manuscript # Philology # Criticism # Art
+108,The Walt Whitman Archive,Walt Whitman,"An exhaustive archive of Whitman's work, including editions, manuscripts, and letters.",Poetry # Manuscript # Correspondence # Biography # Criticism
+109,Schenker Documents Online,Heinrich Schenker,An edition of the personal papers and diaries of the music theorist Heinrich Schenker.,Music # Theory # Diary # Education # Biography
+110,Online Chopin Variorum Edition,Frédéric Chopin,A tool for comparing the various early printed sources of Chopin's music.,Music # Criticism # Philology # Publishing # Art
+111,John Foxe's Acts and Monuments,John Foxe,"A digital edition of the four massive editions of Foxe's ""Book of Martyrs"".",History # Religion # Hagiography # Politics # Printing
+112,Oregon Petrarch Open Book Project,Francesco Petrarca,"A hypertext edition of Petrarch's Canzoniere, exploring its structure.",Poetry # Philosophy # Philology # Manuscript # Art
+113,Conclusiones CM,Giovanni Pico,A digital text of the 900 Theses proposing a universal syncretism.,Philosophy # Theology # Religion # Logic # Rhetoric
+114,Decameron Web,Giovanni Boccaccio,"A comprehensive project dedicated to the Decameron, featuring text and context.",Novel # History # Sociology # Criticism # Art
+115,Pico: De hominis dignitate,Giovanni Pico,"An edition of the Oration on the Dignity of Man, the manifesto of the Renaissance.",Philosophy # Rhetoric # Theology # Humanism # Ethics
+116,Inscriptions of Israel/Palestine,Not specified (Inscribers),A database of inscriptions from the region dating from the Persian to Islamic periods.,Epigraphy # Religion # History # Archaeology # Linguistics
+117,Parzival-Projekt,Wolfram von Eschenbach,An electronic edition of the medieval Grail romance Parzival.,Romance # Mythology # Manuscript # Philology # Poetry
+118,Decameron Ipertestuale,Giovanni Boccaccio,A hypertextual edition of the Decameron focusing on intertextual relationships.,Novel # Criticism # Philology # Structure # Literature
+119,Shelley: The Devil's Walk,Percy Bysshe Shelley,An edition of Shelley's broadside ballad satire.,Poetry # Satire # Politics # History # Manuscript
+120,Poems by Anna Laetitia Aikin,Anna Laetitia Barbauld,A digital edition of the 1773 collection of poems.,Poetry # Religion # Gender # Criticism # History
+121,Letters of Robert Bloomfield,Robert Bloomfield,"The collected correspondence of the ""peasant poet"" Robert Bloomfield.",Correspondence # Poetry # Biography # Sociology # History
+122,The Shelley-Godwin Archive,Shelley & Godwin,An archive digitizing the manuscripts of the Shelley-Godwin circle.,Manuscript # Poetry # Novel # Philosophy # Biography
+123,Beddoes: The Brides' Tragedy,Thomas Lovell Beddoes,An edition of Beddoes' macabre tragedy.,Drama # Poetry # Gothic # Criticism # Art
+124,The Online Froissart,Jean Froissart,A digital edition of Froissart's Chronicles with manuscript illuminations.,History # War # Manuscript # Art # Politics
+125,Welsh Prose 1350-1425,Not specified (Various),A corpus of Middle Welsh prose texts for linguistic analysis.,Linguistics # Prose # Religion # Law # History
+126,The Newton Project,Isaac Newton,"A complete online edition of Newton's scientific, theological, and alchemical writings.",Science # Theology # Magic # Mathematics # Philosophy
+127,Vercelli Book Digitale,Not specified (Compilers),A digital facsimile and edition of the Vercelli Book of Old English poetry.,Poetry # Manuscript # Religion # Philology # Hagiography
+128,I testimoni della Vita Nova,Dante Alighieri,A project analyzing the manuscript tradition of Dante's Vita Nova.,Poetry # Biography # Manuscript # Philology # Love
+129,Frankenstein,Mary Shelley,A specialized resource focusing on the text of Frankenstein.,Novel # Science # Criticism # Manuscript # Philosophy
+130,Livingstone Online,David Livingstone,"A digital museum featuring Livingstone's field diaries, letters, and maps.",Exploration # Diary # Correspondence # Geography # Science
+131,Zibaldone Laurenziano,Giovanni Boccaccio,A critical hypertext edition of Boccaccio's autograph notebook.,Manuscript # Philology # Literature # Biography # Education
+132,The Devonshire MS,Not specified (Court),An edition of a verse miscellany compiled by women at the court of Anne Boleyn.,Poetry # Gender # Manuscript # Sociology # Court
+133,Bibliothèques Virtuelles Humanistes,Not specified (Humanists),A digital library of French Renaissance books and manuscripts.,Philosophy # Literature # Manuscript # History # Education
+134,The Paris Codex,Not specified (Scribes),A digital presentation of a Maya book detailing zodiacal constellations.,Astronomy # Mythology # Manuscript # Religion # Science
+135,Memorandoms of James Martin,James Martin,"The only known First Fleet convict narrative, recounting an escape from Botany Bay.",Biography # Travel # History # Law # Sociology
+136,Actes Royaux,Not specified (Clerks),A database of French royal acts and charters from the Middle Ages.,Law # Administration # History # Politics # Diplomacy
+137,American Verse Project,Not specified (Poets),An electronic archive of volumes of American poetry prior to 1920.,Poetry # History # Literature # Anthology # Culture
+138,Bodleian Library MS Junius 11,Not specified (Various),"A digital facsimile of the ""Caedmon manuscript"" of Old English biblical poetry.",Poetry # Religion # Manuscript # Art # Philology
+139,Candide 2.0,Voltaire,An enriched digital edition of Voltaire's Candide.,Novel # Satire # Philosophy # Criticism # Manuscript
+140,Chronik des Gettos Łódź,Not specified (Inhabitants),A digital edition of the chronicle kept by Jewish inhabitants of the Łódź Ghetto.,History # War # Sociology # Diary # Politics
+141,Clotel,William Wells Brown,An electronic edition of the first novel published by an African American.,Novel # Politics # Sociology # History # Gender
+142,DASI: Arabian Inscriptions,Not specified (Inscribers),An archive of inscriptions from pre-Islamic Arabia.,Epigraphy # Linguistics # History # Religion # Archaeology
+143,"Datini, Lettere",Francesco Datini,The massive business and personal correspondence of a medieval merchant.,Correspondence # Economics # History # Sociology # Trade
+144,Digital Shikshapatri,Swaminarayan,A digital presentation of a key scripture of the Swaminarayan sect.,Religion # Law # Ethics # Manuscript # Commentary
+145,Electronic Beowulf 4.0,Not specified (Poet),A celebrated digital edition of the Beowulf manuscript.,Poetry # Epic # Manuscript # Philology # Mythology
+146,Emily Dickinson's Archive,Emily Dickinson,An open-access collection of images of Dickinson’s manuscripts.,Poetry # Manuscript # Art # Biography # Criticism
+147,Emily Dickinson's Correspondences,Emily Dickinson,"A digital edition of Dickinson's letters, treating them as literary texts.",Correspondence # Biography # Poetry # Literature # Gender
+148,Gabriel Harvey's Livy Online,Gabriel Harvey,An edition of Harvey's annotated copy of Livy's History of Rome.,History # Commentary # Reading # Politics # Marginalia
+149,Galileo Galilei's Notes on Motion,Galileo Galilei,A digital reconstruction of Galileo's manuscript notes on motion.,Science # Physics # Manuscript # Philosophy # Math
+150,Göttinger Statuten,Not specified (Council),An edition of the statute book of the city of Göttingen.,Law # Administration # History # Politics # Sociology
+151,Herman Melville's Typee,Herman Melville,A fluid-text edition of Melville's first novel showing revisions.,Novel # Travel # Manuscript # Philology # Exploration
+152,In Mozart's Words,Mozart,A multilingual digital edition of the correspondence of Mozart.,Music # Correspondence # Biography # Travel # History
+153,Intibah Edition and Transcription,Namık Kemal,A digital transcription of the first literary novel of the Ottoman Tanzimat.,Novel # Literature # Philology # Translation # History
+154,Jerilderie Letter,Ned Kelly,A digital presentation of the famous letter dictated by the outlaw Ned Kelly.,Biography # Law # Politics # History # Manifesto
+155,John Barclay: Argenis,John Barclay,An online edition of a highly influential 17th-century political romance.,Novel # Politics # Allegory # Latin # Satire
+156,Journal of Emily Shore,Emily Shore,The diary of a precocious young Englishwoman recording natural history.,Diary # Nature # Science # Biography # Education
+157,Lautréamont / Ducasse,Lautréamont,A digital archive of the works of the precursor to Surrealism.,Poetry # Prose # Manuscript # Criticism # Art
+158,Le Cartulaire de Nesle,Not specified (Clerics),An edition of the cartulary of the Lordship of Nesle.,Law # Administration # History # Genealogy # Economics
+159,Martha Ballard's Diary Online,Martha Ballard,The diary of a Maine midwife recording births and domestic economy.,Diary # Medicine # Sociology # History # Economics
+160,Olive Schreiner Letters Online,Olive Schreiner,The collected letters of the South African writer and feminist.,Correspondence # Politics # Gender # Literature # History
+161,Rabindranath Tagore Variorum,Rabindranath Tagore,A variorum edition of the works of the Nobel laureate Tagore.,Poetry # Song # Philology # Manuscript # Literature
+162,Ordonnances de l'hôtel du roi,Not specified (Clerks),An edition of the ordinances regulating the French King's household.,Law # Administration # History # Politics # Court
+163,Septuaginta LXX,Not specified (Translators),A project providing the text of the Septuagint alongside translations.,Religion # Theology # Translation # Philology # History
+164,Sirat Bani Hilal Digital Archive,Not specified (Poets),An archive preserving audio recordings of a massive Arabic oral epic.,Epic # Poetry # Folklore # Orality # History
+165,Søren Kierkegaards Skrifter,Søren Kierkegaard,The complete works and journals of the Danish philosopher.,Philosophy # Theology # Diary # Literature # Criticism
+166,Stijn Streuvels: Waterhoek,Stijn Streuvels,A genetic edition of Streuvels' novel documenting its evolution.,Novel # Manuscript # Philology # Criticism # Literature
+167,The Adams Papers,Adams Family,A digital edition of the diaries and papers of the Adams family.,Politics # History # Diary # Correspondence # Biography
+168,The Alcalá Account Book Project,Not specified (Admins),An edition of the account books of the Irish College at Alcalá.,Economics # Administration # History # Education # Religion
+169,The André Gide Editions Project,André Gide,A project focusing on the genetic editing of Gide's works.,Novel # Diary # Manuscript # Philology # Criticism
+170,Benjamin Marston Diary,Benjamin Marston,The diary of a Loyalist exile in Canada.,Diary # History # Politics # Travel # Biography
+171,The Bevan Family Letters,Bevan Family,A collection of letters from a prominent English banking family.,Correspondence # Sociology # History # Economics # Family
+172,The Burnet Psalter,Not specified (Scribes),A digital facsimile of a 15th-century psalter from Aberdeen.,Liturgy # Art # Manuscript # Religion # Music
+173,The Canterbury Tales Project,Geoffrey Chaucer,A project transcribing all manuscripts of the Canterbury Tales.,Poetry # Manuscript # Philology # Criticism # Story
+174,The Digital Temple,George Herbert,A digital edition of Herbert's The Temple with manuscripts.,Poetry # Religion # Manuscript # Philology # Art
+175,The Diriks Family Scrapbooks,Diriks Family,Digital scrapbooks documenting Norwegian cultural life.,Art # History # Genealogy # Sociology # Ephemera
+176,Documentary History of Ratification,Not specified (Founders),Documents recording the debates on the U.S. Constitution.,Law # Politics # History # Government # Democracy
+177,Dolley Madison Digital Edition,Dolley Madison,The complete correspondence of First Lady Dolley Madison.,Correspondence # Politics # History # Biography # Gender
+178,The Geese Book,Not specified (Scribes),An illuminated gradual famous for its whimsical illustrations.,Liturgy # Music # Art # Manuscript # Religion
+179,The Hartlib Papers Project,Samuel Hartlib,The archive of a polymath's correspondence network.,Science # Correspondence # Education # Agriculture # Reform
+180,Letters of Christina Rossetti,Christina Rossetti,The complete collected letters of the poet Christina Rossetti.,Correspondence # Poetry # Religion # Biography # Art
+181,Letters of Matthew Arnold,Matthew Arnold,A comprehensive edition of the letters of the poet and critic.,Correspondence # Criticism # Education # Poetry # Society
+182,The Malory Project,Thomas Malory,An electronic edition of Le Morte Darthur.,Romance # Manuscript # Philology # Mythology # Literature
+183,Papers of Alexander Hamilton,Alexander Hamilton,The collected writings of Founding Father Alexander Hamilton.,Politics # Law # Economics # History # Biography
+184,Papers of Pinckney & Horry,Pinckney & Horry,The papers of two prominent South Carolinian women.,Agriculture # History # Gender # Sociology # Economy
+185,Papers of George Washington,George Washington,The comprehensive edition of Washington's diaries and letters.,Politics # War # History # Correspondence # Biography
+186,Papers of James Madison,James Madison,The collected papers of the fourth U.S. President.,Politics # Law # History # Constitution # Presidency
+187,Papers of Thomas Jefferson,Thomas Jefferson,The definitive edition of the writings of Thomas Jefferson.,Politics # Science # Architecture # Diplomacy # History
+188,Pérez Galdós Editions Project,Benito Pérez Galdós,Digital scholarly editions of the novels of Pérez Galdós.,Novel # Realism # History # Sociology # Literature
+189,Planctus for William Longsword,Not specified (Poet),An edition of a lament for the assassinated Duke of Normandy.,Poetry # History # War # Lament # Politics
+190,The Zibaldone project,Giacomo Leopardi,A project dedicated to Leopardi's massive intellectual diary.,Philosophy # Philology # Diary # Literature # Criticism
+191,Virginie Loveling’s Diary,Virginie Loveling,The war diary of the Flemish author Virginie Loveling.,Diary # War # History # Literature # Sociology
+192,William Golder Electronic Edition,William Golder,An edition of the works of an early NZ settler poet.,Poetry # History # Migration # Literature # Colonialism
+193,William of Palerne,Not specified (Anonymous),An electronic edition of the alliterative romance.,Romance # Poetry # Manuscript # Philology # Folklore
+194,Wittgensteins Nachlass,Ludwig Wittgenstein,A complete transcription of Wittgenstein's literary estate.,Philosophy # Logic # Manuscript # Language # Notebook
+195,Zibaldone Europeo,Giacomo Leopardi,A study of Leopardi's diary in a European context.,Philosophy # Comparative # Literature # Diary # Ideas
+196,Pietro Mellini's Inventory,Pietro Mellini,An edition of a rhymed inventory of an art collection.,Poetry # Art # History # Collection # Catalogue
+197,Inscriptiones Alborum Amicorum,Not specified (Various),"A database of inscriptions in ""friendship albums"".",Manuscript # Sociology # Travel # Network # History
+198,Etheridge's Encomium,George Etheridge,A digital edition of a Greek encomium praising Henry VIII.,Poetry # Politics # Rhetoric # Manuscript # Royalty
+199,Ältesten Appenzeller Landbuchs,Not specified (Scribes),An edition of the oldest code of law of Appenzell.,Law # Administration # History # Manuscript # Governance
+200,Corpus of Ioannes Dantiscus,Ioannes Dantiscus,The collected texts of a Polish diplomat and poet.,Correspondence # Diplomacy # Poetry # Humanism # Politics
+201,Dante's Commedia,Dante Alighieri,A digital edition of the Divine Comedy manuscript tradition.,Poetry # Theology # Manuscript # Philology # Allegory
+202,Henry Machyn's Chronicle,Henry Machyn,The diary of a London merchant undertaker.,Diary # History # Sociology # Death # Ceremony
+203,Collection of Swiss Law Sources,Not specified (Various),A repository of historical legal sources from Switzerland.,Law # History # Administration # Politics # Society
+204,Cancionero of Gómez Manrique,Gómez Manrique,A digital edition of the songbook of a 15th-century poet.,Poetry # Song # Court # Manuscript # Literature
+205,ASChart Anglo-Saxon Charters,Not specified (Scribes),A database of Anglo-Saxon legal land grants.,Law # Administration # History # Geography # Manuscript
+206,Chronicle of Matthew of Edessa,Matthew of Edessa,An edition of a chronicle of the Crusades.,History # War # Religion # Chronicle # Armenia
+207,Les Cours d’Antoine Desgodets,Antoine Desgodets,The lecture notes of an architect at the Royal Academy.,Architecture # Education # Theory # Manuscript # Art
+208,Diaries of Christian II,Christian II,The diaries of a German prince during the 30 Years' War.,Diary # War # Politics # Court # History
+209,Relatio Adelberts,Adalbert,An edition of a report on the miracles of St. Walpurga.,Hagiography # Religion # Manuscript # History # Miracle
+210,Je chante ung chant,Not specified (Composers),An archive of a corpus of medieval songs.,Music # Song # Poetry # Manuscript # Philology
+211,Einstein Archives Online,Albert Einstein,A digital archive of Einstein's scientific manuscripts.,Science # Physics # Manuscript # Math # Correspondence
+212,Codice Pelavicino,Not specified (Scribes),A digital edition of a medieval bishopric's rights register.,Law # Administration # History # Manuscript # Church
+213,Woolf Online,Virginia Woolf,A scholarly platform dedicated to To the Lighthouse.,Novel # Manuscript # Criticism # Modernism # Literature
+214,Manuscrits de Madame Bovary,Gustave Flaubert,A transcription of the manuscripts of Madame Bovary.,Novel # Manuscript # Philology # Criticism # Genesis
+215,Digital Schomburg Editions,Not specified (Women),A collection of 19th-century Black women's writing.,Literature # Gender # History # Sociology # Race
+216,Faust Edition,Johann Wolfgang von Goethe,A historical-critical edition of Goethe's Faust.,Drama # Poetry # Manuscript # Philology # Philosophy
+217,Theodor Fontane: Notizbücher,Theodor Fontane,A genetic edition of the notebooks of the novelist.,Notebook # Novel # Manuscript # Realism # Literature
+218,Senckenberg Diaries,Johann Christian Senckenberg,The diaries of a Frankfurt physician and naturalist.,Diary # Medicine # Science # History # Society
+219,Journaux d'Alexandre Dumas,Alexandre Dumas,An edition of the newspapers founded by Dumas.,Journalism # Politics # Literature # Criticism # History
+220,Alexander von Humboldt Briefedition,Alexander von Humboldt,A project digitizing Humboldt's vast correspondence.,Science # Correspondence # Exploration # Network # History
+221,Jacob Burckhardt,Jacob Burckhardt,A critical edition of the works of the cultural historian.,History # Art # Culture # Criticism # Philosophy
+222,German-Jewish History,Not specified (Various),A source edition documenting German-Jewish history.,History # Religion # Sociology # Politics # Diaspora
+223,Sappho’s Poems,Sappho,A digital collection of the fragments of Sappho's poetry.,Poetry # Gender # Philology # Classics # Fragment
+224,Orlando Furioso in Images,Ludovico Ariosto,A project exploring the visual reception of the epic.,Art # Poetry # Reception # Illustration # Literature
+225,Schopenhauer’s Library,Arthur Schopenhauer,An analysis of Schopenhauer's book annotations.,Philosophy # Reading # Marginalia # Library # Criticism
+226,Clavius on the Web,Christoph Clavius,A portal dedicated to the Jesuit mathematician.,Mathematics # Astronomy # Science # Religion # History
+227,The Fleischmann Diaries,Aloys Fleischmann,The diaries of an Irish composer and professor.,Music # Diary # Culture # History # Education
+228,Deutsches Textarchiv,Not specified (Various),A massive corpus of German texts for linguistic research.,Linguistics # Literature # Science # History # Corpus
+229,Project Tarsian,Paul the Apostle,An edition of an Arabic manuscript of 1 Corinthians.,Theology # Bible # Manuscript # Translation # Philology
+230,Letters of 1916,Not specified (Various),A crowd-sourced archive of letters from the Easter Rising era.,Correspondence # History # War # Politics # Society
+231,Bibliotheca Iuris Antiqui,Not specified (Jurists),A database of ancient legal texts.,Law # History # Latin # Text # Justice
+232,Wandering Jew's Chronicle,Not specified (Anonymous),An edition of the ballad tracing the legend's history.,Folklore # Song # Print # Legend # History
+233,Roman Inscriptions of Britain,Not specified (Inscribers),The standard corpus of Roman inscriptions in Britain.,Epigraphy # Archaeology # History # Military # Society
+234,Teutsche Academie,Joachim von Sandrart,An edition of a monumental 17th-century art history.,Art # Biography # History # Theory # Architecture
+235,Austrian Baroque Corpus,Not specified (Various),A digital corpus of Austrian Baroque texts.,Literature # Religion # History # Linguistics # Culture
+236,Darwin Online Variorum,Charles Darwin,A comparison of the six editions of Origin of Species.,Science # Biology # Evolution # Text # History
+237,Dāmos Database,Not specified (Scribes),A database of Linear B texts.,Epigraphy # Linguistics # Archaeology # Greek # Administration
+238,Van Nu en Straks brieven,Not specified (Editors),Correspondence of a Flemish literary journal.,Correspondence # Literature # Art # Magazine # Belgium
+239,Streuvels en zijn uitgevers,Stijn Streuvels,Correspondence between an author and his publishers.,Correspondence # Publishing # Economics # Literature # History
+240,Briefwechsel Sauer-Seuffert,Sauer & Seuffert,Correspondence establishing German philology.,Philology # Correspondence # Education # Science # History
+241,Ursus from Benevento,Ursus of Benevento,An edition of a 9th-century grammatical treatise.,Grammar # Education # Manuscript # Philology # Latin
+242,William F. Cody Archive,William F. Cody,"An archive documenting the life of ""Buffalo Bill"".",History # Entertainment # West # Myth # Biography
+243,Tinctoris: Theoretical Works,Johannes Tinctoris,A critical edition of music theory treatises.,Music # Theory # Notation # Manuscript # Education
+244,Digital Athenaeus,Athenaeus,A project on the Deipnosophists compilation.,Literature # Food # Philosophy # History # Quotation
+245,William of Auxerre's Summa,William of Auxerre,An edition of a treatise on ecclesiastical offices.,Theology # Liturgy # Religion # Manuscript # Law
+246,Musil Online,Robert Musil,A digital edition of the works of Robert Musil.,Novel # Philosophy # Essay # Manuscript # Modernism
+247,Tocharian Manuscripts,Not specified (Scribes),A project editing manuscripts in extinct Tocharian languages.,Linguistics # Manuscript # Religion # Philology # Buddhism
+248,Intellectual Berlin,Not specified (Intellectuals),Letters and texts from Berlin circles around 1800.,Philosophy # Literature # Correspondence # Science # Society
+249,Pensamiento Novohispano,Not specified (Various),Philosophical texts from colonial Mexico.,Philosophy # Theology # Colonialism # History # Mexico
+250,Bliss-Tyler Correspondence,Bliss & Tyler,Correspondence on diplomacy and art collecting.,Diplomacy # Art # Correspondence # Politics # History
+251,edition humboldt digital,Alexander von Humboldt,The central edition of Humboldt's travel journals.,Science # Exploration # Travel # Geography # Nature
+252,Vespasiano da Bisticci,Vespasiano da Bisticci,Letters of a Florentine bookseller and humanist.,Humanism # Book # Correspondence # History # Biography
+253,Erdmuthe Benigna Letters,Erdmuthe Benigna,Correspondence of a Pietist noblewoman.,Religion # Gender # Correspondence # Politics # Network
+254,Jane Addams Digital Edition,Jane Addams,The collected papers of the social reformer.,Sociology # Politics # Peace # Reform # Women
+255,Pensées de Pascal,Blaise Pascal,A digital edition of Pascal's fragmentary apologetics.,Philosophy # Theology # Religion # Fragment # Manuscript
+256,Ödön von Horváth Edition,Ödön von Horváth,A critical edition of Horváth's plays and prose.,Drama # Novel # Politics # Society # Satire
+257,Lament of St. Anselm,Anselm of Canterbury,An edition of a medieval devotional text.,Religion # Prayer # Emotion # Manuscript # Latin
+258,Beethovens Werkstatt,Ludwig van Beethoven,A genetic project analyzing Beethoven's sketches.,Music # Composition # Manuscript # Genesis # Art
+259,Charles Harpur Archive,Charles Harpur,An archive of the works of an Australian poet.,Poetry # Nature # Politics # Colonialism # Manuscript
+260,La Dama Boba,Lope de Vega,A critical edition of a Spanish Golden Age comedy.,Drama # Comedy # Manuscript # Performance # Philology
+261,Cartas de ultramar,Not specified (Various),Letters from Spanish colonies in 1823.,Correspondence # Politics # History # Colonialism # War
+262,Édes Anna (Variant 1),Dezső Kosztolányi,A critical edition of a psychological novel.,Novel # Psychology # Murder # Society # Politics
+263,Édes Anna (Variant 2),Dezső Kosztolányi,Another module of the critical edition.,Novel # Text # Philology # Manuscript # Literature
+264,Kassák: The Horse Dies,Lajos Kassák,A digital edition of a constructivist poem.,Poetry # Avant-garde # Travel # Art # Memoir
+265,Aranysárkány,Dezső Kosztolányi,A critical edition of Golden Kite.,Novel # Education # Tragedy # Society # Psychology
+266,Esti Kornél,Dezső Kosztolányi,A critical edition of the Esti Kornél stories.,Novel # ShortStory # Identity # Travel # Irony
+267,Fanchali Jób-kódex,Not specified (Scribe),An edition of a 16th-century Hungarian manuscript.,Song # Poetry # History # Manuscript # Religion
+268,The Village Notary,József Eötvös,A critical edition of a satirical novel.,Novel # Satire # Politics # Law # Society
+269,József Attila Essays,Attila József,Collected essays of the poet.,Criticism # Aesthetics # Politics # Psychology # Theory
+270,József Attila Prose,Attila József,Prose writings from the 1930s.,Politics # Journalism # Marxism # Society # Polemic
+271,Estoria de Espanna,Alfonso X,A digital edition of the first history of Spain.,History # Chronicle # Politics # King # Medieval
+272,Árgirus históriája,Albert Gergei,An edition of a 16th-century verse romance.,Romance # FairyTale # Poetry # Legend # Love
+273,Wathay Ferenc Works,Ferenc Wathay,Works of a soldier-poet in captivity.,Poetry # Song # War # Prison # Religion
+274,Siege of Sziget,Miklós Zrínyi,An edition of a Baroque epic poem.,Epic # War # Poetry # Heroism # History
+275,Rimay Fragments,János Rimay,A collection of fragmentary verses.,Poetry # Fragment # Manuscript # Philology # Religion
+276,Rimay Early Poems,János Rimay,An edition of Rimay's early poetry.,Poetry # Love # Mannerism # Youth # Literature
+277,Effectus amoris,Not specified (Anonymous),An edition of a 16th-century prose romance.,Romance # Love # Prose # Fiction # Literature
+278,Érdy-kódex,Not specified (Translator),A major manuscript of legends and sermons.,Sermon # Legend # Hagiography # Religion # Manuscript
+279,Hungarian Exempla,Not specified (Various),A database of moral anecdotes.,Story # Moral # Religion # Preaching # Folklore
+280,Kazinczy Works,Ferenc Kazinczy,Complete works of the language reformer.,Literature # Reform # Correspondence # Criticism # Translation
+281,Csokonai Works,Mihály Csokonai Vitéz,Complete works of the Enlightenment poet.,Poetry # Drama # Philosophy # Folk # Nature
+282,Szerdahely Aesthetics,György Szerdahely,An edition of aesthetic writings.,Aesthetics # Philosophy # Art # Education # Latin
+283,Gyöngyössi Works,János Gyöngyössi,Collected works of a poet.,Poetry # Nature # Occasion # Literature # Society
+284,Berzsenyi Letters,Dániel Berzsenyi,Correspondence of a Romantic poet.,Correspondence # Poetry # Philosophy # Isolation # Farming
+285,Hungarian Writers Letters,Not specified (Various),Correspondence between writers.,Correspondence # Literature # Network # History # Culture
+286,Ráday Letters,Ráday Family,Correspondence of an aristocratic family.,Correspondence # Family # Politics # Religion # Patronage
+287,Margaret Legend,Not specified (Scribe),A legend of a medieval princess-nun.,Hagiography # Religion # Women # Miracle # Monasticism
+288,Orpheus Journal,Not specified (Kazinczy),A literary journal edited by Kazinczy.,Journalism # Literature # Enlightenment # Translation # Criticism
+289,Magyar Museum,Not specified (Kazinczy),A significant literary journal.,Journalism # Literature # Science # Culture # Reform
+290,DER STURM,Herwarth Walden,A digital edition of an avant-garde magazine.,Art # Literature # Modernism # Magazine # Network
+291,Balassi Poems,Bálint Balassi,A critical edition of complete poems.,Poetry # Love # Religion # War # Renaissance
+292,Old Hungarian Hymns,Not specified (Various),A collection of spiritual songs.,Song # Religion # Poetry # Music # Worship
+293,Szabó Lőrinc Poems,Lőrinc Szabó,Critical editions of poetry volumes.,Poetry # Modernism # Philosophy # Nature # City
+294,A Tett Journal,Lajos Kassák,An avant-garde journal.,Journalism # Art # Politics # War # Activism
+295,Mikszáth Works 39,Kálmán Mikszáth,A volume of works.,Novel # Story # Humor # Politics # Society
+296,Mikszáth Works 42,Kálmán Mikszáth,A volume of works.,Novel # Journalism # Anecdote # History # Realism
+297,P.S. Post Scriptum,Not specified (Civilians),An archive of private letters.,Correspondence # Society # History # Censorship # Family
+298,Jean Paul Letters,Jean Paul,Complete correspondence of the writer.,Correspondence # Literature # Humor # Philosophy # Network
+299,Armer Heinrich,Hartmann von Aue,A medieval narrative poem.,Poetry # Romance # Religion # Miracle # Ethics
+300,L'Astrée,Honoré d'Urfé,A pastoral novel.,Novel # Pastoral # Love # Politics # Allegory
+302,travel!digital,Not specified (Various),A corpus of travel writings.,Travel # Guide # Geography # Tourism # Culture
+303,Congress Documents,Not specified (Diplomats),Diplomatic documents from post-Napoleonic congresses.,Diplomacy # Politics # History # Europe # Law
+304,Okopenko Diaries,Andreas Okopenko,Diaries of an experimental writer.,Diary # Literature # Experiment # Society # Avant-garde
+305,Council of Constance,Ulrich Richental,An illustrated chronicle of the council.,Chronicle # Religion # Politics # History # Art
+306,Franco-Hungarian Relations,Not specified (Various),Documents on literary interaction.,Literature # Translation # Reception # Network # History
+307,Schnitzler Edition,Arthur Schnitzler,Genetic edition of works.,Drama # Novel # Psychology # Manuscript # Genesis
+308,Hamann Letters,Johann Georg Hamann,Correspondence of the philosopher.,Correspondence # Philosophy # Theology # Language # Criticism
+309,Grundtvig Works,N.F.S. Grundtvig,Collected works of the Danish icon.,Theology # Poetry # Politics # Education # Hymn
+310,Thun-Hohenstein Letters,Leo von Thun,Correspondence of an Austrian minister.,Correspondence # Politics # Education # Reform # History
+311,Cyrenaica Verse,Not specified (Inscribers),Poetic inscriptions from Cyrenaica.,Epigraphy # Poetry # Greek # Culture # History
+312,Romualdus Chronicle,Romuald of Salerno,A universal chronicle.,Chronicle # History # Normans # Church # Politics
+313,Hahnemann Casebooks,Samuel Hahnemann,Case journals of the homeopath.,Medicine # Diary # Patient # Science # History
+314,Schnitzler Letters,Arthur Schnitzler,Correspondence with writers.,Correspondence # Literature # Network # Modernism # Friendship
+315,Lazarraga Manuscript,Juan Pérez,Oldest Basque pastoral romance.,Romance # Poetry # Manuscript # Basque # Pastoral
+316,Bavarian Council Minutes,Not specified (Ministers),Minutes of the State Council.,Politics # Administration # Law # History # Government
+317,Isidore Glosses,Isidore (Text),Glosses on the Etymologies.,Commentary # Education # Science # Manuscript # Latin
+318,Holocaust Testimonies,Not specified (Survivors),Oral history of survivors.,History # War # Trauma # Memory # Orality
+319,Humboldt Writings,Alexander von Humboldt,Complete published writings.,Science # Exploration # Geography # Nature # Essay
+320,Erfurt Mysticism,Not specified (Monks),Mystical texts from a library.,Mysticism # Theology # Manuscript # Library # Religion
+321,Handke Notebooks,Peter Handke,Notebooks of the author.,Notebook # Literature # Observation # Genesis # Art
+322,Semper Writings,Gottfried Semper,Writings of the architect.,Architecture # Theory # Art # Style # History
+323,Raetic Inscriptions,Not specified (Inscribers),Corpus of Raetic inscriptions.,Epigraphy # Linguistics # Archaeology # Alps # Language
+324,Lexicon Leponticum,Not specified (Inscribers),Etymological lexicon of Lepontic.,Linguistics # Epigraphy # Celtic # Dictionary # History
+325,Schnitzler Chronology,Arthur Schnitzler,Detailed biographical chronology.,Biography # History # Diary # Time # Life
+326,Pollaczek Memoirs,Clara Pollaczek,Memoirs of Schnitzler's partner.,Memoir # Relationship # Literature # Vienna # Biography
+327,Schnitzler Places,Arthur Schnitzler,Geospatial visualization of places.,Geography # Biography # Map # Travel # City
+328,Schnitzler Readings,Arthur Schnitzler,Database of books read.,Reading # Literature # Influence # Library # Culture
+329,Schnitzler Diaries,Arthur Schnitzler,Complete diaries.,Diary # Psychology # Society # Literature # History
+330,Schnitzler Clippings,Arthur Schnitzler,Archive of newspaper clippings.,Journalism # Reception # Criticism # Archive # Media
+331,Persons of Modernism,Not specified (Various),Prosopographical database.,Biography # Network # History # Society # Directory
+332,Bahr-Schnitzler Letters,Bahr & Schnitzler,Correspondence between critics.,Correspondence # Criticism # Modernism # Theater # Debate
+333,Tripolitania Inscriptions,Not specified (Inscribers),Updated corpus of inscriptions.,Epigraphy # Archaeology # History # Rome # Libya
+334,Kekaumenos,Kekaumenos,Advice book for aristocrats.,Advice # War # Family # Administration # Byzantine
+335,SAWS Wisdom,Not specified (Various),Gnomologies and wisdom literature.,Philosophy # Aphorism # Translation # Wisdom # Arabic
+336,Königsfelden Charters,Not specified (Scribes),Charters of a monastery.,Law # Administration # Monasticism # History # Economy
+337,Marx-Engels MEGA,Marx & Engels,Complete works of Marx and Engels.,Philosophy # Politics # Economics # Communism # History
+338,Auden-Musulin Letters,W. H. Auden,Letters to Stella Musulin.,Correspondence # Poetry # Literature # Friendship # Biography
+339,Patristic Archive,Not specified (Fathers),Texts by Church Fathers.,Theology # Religion # Greek # History # Philosophy
+340,Arabic Periodicals,Not specified (Journalists),Early Arabic periodicals.,Journalism # Culture # Modernity # Politics # History
+341,Lechoń-Wierzyński Letters,Lechoń & Wierzyński,Letters between poets.,Correspondence # Poetry # Exile # Literature # Friendship
+342,Grydzewski-Wierzyński Letters,Grydzewski & Wierzyński,Letters between editor and poet.,Correspondence # Publishing # Literature # Exile # Press
+343,Minister Council Minutes,Not specified (Ministers),Minutes of the Austrian cabinet.,Politics # Administration # Law # Empire # Government
+344,Habsburg-Ottoman Diplomacy,Not specified (Diplomats),Diplomatic documents.,Diplomacy # Politics # War # History # Turkey
+345,Empress Eleonora Letters,Eleonora Magdalena,Correspondence of the Empress.,Correspondence # Court # Politics # Family # Women
+346,Schnitzler Microfilms,Arthur Schnitzler,Microfilm archive of estate.,Archive # Manuscript # Literature # Photography # Heritage
+347,Renan Source,Ernest Renan,Works of the philologist.,Philology # History # Religion # Science # Philosophy
+348,Mary Hamilton Papers,Mary Hamilton,Diaries and letters of a courtier.,Diary # Correspondence # Court # Literature # Society
+349,Bullinger Digital,Heinrich Bullinger,Correspondence of the Reformer.,Correspondence # Theology # Reformation # Network # Church
+350,Academy Minutes,Not specified (Academics),Minutes of the Academy of Sciences.,Science # Administration # History # Research # Education
+351,Hanslick Online,Eduard Hanslick,Writings of the music critic.,Music # Criticism # Aesthetics # Journalism # History
+352,Staribacher Diaries,Josef Staribacher,Diaries of a trade minister.,Diary # Politics # Government # Economy # History

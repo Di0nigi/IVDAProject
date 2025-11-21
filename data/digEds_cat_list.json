@@ -1,0 +1,4916 @@
+[
+  {
+    "id": 1,
+    "Edition name": "Digitale Edition der Handschrift Cod. Guelf. 64 Weiss.",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Gerda Henkel Stiftung",
+      "yes",
+      "http://diglib.hab.de/edoc/ed000006/startx.htm",
+      "Torsten Schaßan"
+    ]
+  },
+  {
+    "id": 2,
+    "Edition name": "The Thomas Gray Archive",
+    "Author": "Thomas Gray",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Institutional funding",
+      "yes",
+      "http://www.thomasgray.org/",
+      "Alexander Huber"
+    ]
+  },
+  {
+    "id": 3,
+    "Edition name": "A critical edition of the poetry of Dafydd ap Gwilym",
+    "Author": "Dafydd ap Gwilym",
+    "attributes": [
+      "Students of Celtic Studies",
+      "yes",
+      "yes",
+      "AHRC",
+      "yes",
+      "http://www.dafyddapgwilym.net/",
+      "Alexander Roberts; Dafydd Johnston"
+    ]
+  },
+  {
+    "id": 4,
+    "Edition name": "Saint Patrick's Confessio",
+    "Author": "Saint Patrick",
+    "attributes": [
+      "Scholars; general public",
+      "yes",
+      "partly",
+      "Higher Education Authority; European Regional Development Fund",
+      "partly",
+      "http://www.confessio.ie/#",
+      "Franz Fischer; Anthony Harvey"
+    ]
+  },
+  {
+    "id": 5,
+    "Edition name": "Liber Matriculae - Il libro della matricola dei notai di Vercelli",
+    "Author": "Not specified (Notaries)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://scrineum.unipv.it/LM/home.html",
+      "Antonio Olivieri"
+    ]
+  },
+  {
+    "id": 6,
+    "Edition name": "Correspondance de Pierre Bayle",
+    "Author": "Pierre Bayle",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://bayle-correspondance.univ-st-etienne.fr/?lang=fr",
+      "Antony McKenna"
+    ]
+  },
+  {
+    "id": 7,
+    "Edition name": "Vindolanda Tablets Online",
+    "Author": "Not specified (Roman Soldiers)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Andrew W. Mellon Foundation",
+      "yes",
+      "http://vindolanda.csad.ox.ac.uk/index.shtml",
+      "Charles Crowther; Alan Bowman"
+    ]
+  },
+  {
+    "id": 8,
+    "Edition name": "Vindolanda Tablets Online II",
+    "Author": "Not specified (Roman Soldiers)",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "Andrew W. Mellon Foundation",
+      "yes",
+      "http://vto2.classics.ox.ac.uk/",
+      "Charles Crowther; Alan Bowman"
+    ]
+  },
+  {
+    "id": 9,
+    "Edition name": "Bérardier de Bataut, Essai sur le récit, Entretiens sur la manière de raconter",
+    "Author": "Jean-Baptiste Bérardier de Bataut",
+    "attributes": [
+      "not provided",
+      "yes",
+      "no",
+      "not provided",
+      "no",
+      "http://www.berardier.org/",
+      "Christof Schöch"
+    ]
+  },
+  {
+    "id": 10,
+    "Edition name": "Codex Sinaiticus",
+    "Author": "Not specified (Biblical Scribes)",
+    "attributes": [
+      "Global audience",
+      "yes",
+      "yes",
+      "AHRC; Deutsche Forschungsgemeinschaft; Stavros Niarchos Foundation; A.G. Leventis Foundation",
+      "not provided",
+      "http://codexsinaiticus.org/en/",
+      "Claire Breay; Leander Seige; Father Justin; Ekaterina Krushelnitskaya"
+    ]
+  },
+  {
+    "id": 11,
+    "Edition name": "The Saint-Aubins \"Book of Arses\": The Livre de Caricatures tant bonnes que mauvaises",
+    "Author": "Gabriel de Saint-Aubin",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "AHRC",
+      "not provided",
+      "http://www.waddesdon.org.uk/collection/special-projects/st.-aubin",
+      "Colin Jones"
+    ]
+  },
+  {
+    "id": 12,
+    "Edition name": "Catullus Online",
+    "Author": "Gaius Valerius Catullus",
+    "attributes": [
+      "Specialists; researchers; students",
+      "partly",
+      "yes",
+      "Ludwig-Maximilians-Universität München",
+      "not provided",
+      "http://www.catullusonline.org/CatullusOnline/index.php",
+      "Dániel Kiss"
+    ]
+  },
+  {
+    "id": 13,
+    "Edition name": "Digital edition of the Old Church Slavonic Codex Suprasliensis",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "Global audience",
+      "yes",
+      "yes",
+      "UNESCO",
+      "yes",
+      "http://suprasliensis.obdurodon.org/",
+      "David J. Birnbaum"
+    ]
+  },
+  {
+    "id": 14,
+    "Edition name": "Becerro Galicano of San Millán de la Cogolla",
+    "Author": "Not specified (Monks)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Fundación San Millán Cogolla",
+      "not provided",
+      "http://www.ehu.es/galicano/?l=en",
+      "David Peterson"
+    ]
+  },
+  {
+    "id": 15,
+    "Edition name": "The Durham Liber Vitae Project",
+    "Author": "Not specified (Monks)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.dlv.org.uk/index.html",
+      "David Rollason"
+    ]
+  },
+  {
+    "id": 16,
+    "Edition name": "Samuel Beckett Digital Manuscript Project",
+    "Author": "Samuel Beckett",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "European Research Coucil",
+      "not provided",
+      "http://www.beckettarchive.org/login.html",
+      "Dirk Van Hulle"
+    ]
+  },
+  {
+    "id": 17,
+    "Edition name": "Euripides Scholia",
+    "Author": "Not specified (Scholars)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Loeb Classical Library Foundation (in part)",
+      "partly",
+      "http://euripidesscholia.org",
+      "Donald J. Mastronarde"
+    ]
+  },
+  {
+    "id": 18,
+    "Edition name": "Heimskringla",
+    "Author": "Snorri Sturluson",
+    "attributes": [
+      "not provided",
+      "partly",
+      "no",
+      "not provided",
+      "no",
+      "http://omacl.org/Heimskringla/",
+      "Douglas B. Killings"
+    ]
+  },
+  {
+    "id": 19,
+    "Edition name": "Partonopeus de Blois",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "Scholars of Old French texts and manuscripts",
+      "partly",
+      "yes",
+      "AHRC",
+      "not provided",
+      "https://hridigital.shef.ac.uk/partonopeus/",
+      "Penny Simons"
+    ]
+  },
+  {
+    "id": 20,
+    "Edition name": "Henry III Fine Rolls Project",
+    "Author": "Not specified (Royal Clerks)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "AHRC",
+      "no",
+      "http://www.finerollshenry3.org.uk/",
+      "Beth Hartland; Harold Short; Arianna Ciula; David Carpenter; David Crook; Sean Cunningham; Paul Dryburgh; Louise Wilkinson"
+    ]
+  },
+  {
+    "id": 21,
+    "Edition name": "Die Briefwechsel der Mathematiker Bernoulli",
+    "Author": "Bernoulli family",
+    "attributes": [
+      "Mathematicians; physicists; historians of science or local history; partner editions (e.g. The Euler Edition, the Leibniz Edition, the Dalambert Edition); biographers",
+      "yes",
+      "yes",
+      "Schweizerischer Nationalfonds zur Förderung der wissenschaftlichen Forschung (SNF)",
+      "not provided",
+      "http://www.ub.unibas.ch/bernoulli/index.php/Hauptseite",
+      "Fritz Nagel"
+    ]
+  },
+  {
+    "id": 22,
+    "Edition name": "La Famiglia dell'Antiquario",
+    "Author": "Carlo Goldoni",
+    "attributes": [
+      "not provided",
+      "no",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.intratext.com/X/ITA0763.HTM",
+      "Giuseppe Bonghi"
+    ]
+  },
+  {
+    "id": 23,
+    "Edition name": "Die Glossen Ekkeharts IV. im Codex Sangallensis 621",
+    "Author": "Ekkehard IV of St. Gall",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Schweizerischer Nationalfonds zur Förderung der wissenschaftlichen Forschung (SNF); Stiftsbibliothek St. Gallen (STBSG)",
+      "not provided",
+      "http://orosius.monumenta.ch/",
+      "Heidi Eisenhut"
+    ]
+  },
+  {
+    "id": 24,
+    "Edition name": "Inscriptions of the Northern Black Sea (IOSPE)",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "Researchers",
+      "partly",
+      "yes",
+      "A. G. Leventis Foundation; Loeb Library Foundation; British Academy (2008-2009); Russian Foundation for the Humanities;  Russian Foundation for Basic Research; Swiss National Science Foundation (SNSF); Ministère des Affaires étrangères et européennes (MAEE); Centre nationale de la recherche scientifique",
+      "not provided",
+      "http://iospe.kcl.ac.uk/corpus/index.html",
+      "Irene Polinskaya"
+    ]
+  },
+  {
+    "id": 25,
+    "Edition name": "La Entretenida Digital Edition",
+    "Author": "Miguel de Cervantes",
+    "attributes": [
+      "Academics; theatre practitioners; translators",
+      "yes",
+      "yes",
+      "AHRC",
+      "not provided",
+      "http://entretenida.outofthewings.org/index.html",
+      "John O'Neill"
+    ]
+  },
+  {
+    "id": 26,
+    "Edition name": "A Survey of the Cities of London and Westminster by John Strype",
+    "Author": "John Strype",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "The Leverhulme Trust; University of Sheffield",
+      "not provided",
+      "http://www.hrionline.ac.uk/strype/",
+      "Julia Merritt"
+    ]
+  },
+  {
+    "id": 27,
+    "Edition name": "Letters of William Herle Project",
+    "Author": "William Herle",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "AHRC",
+      "not provided",
+      "http://www.livesandletters.ac.uk/herle/index.html",
+      "Matthew Symonds"
+    ]
+  },
+  {
+    "id": 28,
+    "Edition name": "The Diplomatic Correspondence of Thomas Bodley",
+    "Author": "Thomas Bodley",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.livesandletters.ac.uk/bodley/bodley.html",
+      "Matthew Symonds"
+    ]
+  },
+  {
+    "id": 29,
+    "Edition name": "The Hooke Folio Online",
+    "Author": "Robert Hooke",
+    "attributes": [
+      "Students; scholars; general public",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.livesandletters.ac.uk/cell/Hooke/Hooke.html",
+      "Matthew Symonds"
+    ]
+  },
+  {
+    "id": 30,
+    "Edition name": "The Workdiaries of Robert Boyle",
+    "Author": "Robert Boyle",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "The Wellcome Trust; Heritage Lottery Fund",
+      "not provided",
+      "http://www.livesandletters.ac.uk/wd/index.html",
+      "Matthew Symonds"
+    ]
+  },
+  {
+    "id": 31,
+    "Edition name": "Jonathan Swift Archive",
+    "Author": "Jonathan Swift",
+    "attributes": [
+      "not provided",
+      "partly",
+      "partly",
+      "AHRC",
+      "partly",
+      "http://jonathanswiftarchive.org.uk/index.html",
+      "Paddy Bullard"
+    ]
+  },
+  {
+    "id": 32,
+    "Edition name": "The St Gall Priscian Glosses",
+    "Author": "Not specified (Irish Scholars)",
+    "attributes": [
+      "Scholars; research students in the fields of Celtic linguistics, Late Antique and medieval Latin, history of linguistics",
+      "partly",
+      "yes",
+      "Irish Research Council for Humanities and Social Sciences",
+      "not provided",
+      "http://www.stgallpriscian.ie",
+      "Pádraic Moran"
+    ]
+  },
+  {
+    "id": 33,
+    "Edition name": "Nietzsche Source",
+    "Author": "Friedrich Nietzsche",
+    "attributes": [
+      "Scholars",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "http://www.nietzschesource.org/",
+      "Paolo D'Iorio"
+    ]
+  },
+  {
+    "id": 34,
+    "Edition name": "Early Irish Glossaries Database",
+    "Author": "Not specified (Irish Scholars)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "AHRC",
+      "yes",
+      "http://www.asnc.cam.ac.uk/irishglossaries/",
+      "Paul Russell"
+    ]
+  },
+  {
+    "id": 35,
+    "Edition name": "The Holinshed Project",
+    "Author": "Raphael Holinshed",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "partly",
+      "http://www.cems.ox.ac.uk/holinshed/index.shtml",
+      "Paulina Kewes"
+    ]
+  },
+  {
+    "id": 36,
+    "Edition name": "Alciato's Book of Emblems",
+    "Author": "Andrea Alciato",
+    "attributes": [
+      "not provided",
+      "partly",
+      "partly",
+      "not provided",
+      "partly",
+      "http://www.mun.ca/alciato/",
+      "William Barker"
+    ]
+  },
+  {
+    "id": 37,
+    "Edition name": "Electronic Variorum Edition of the Quixote",
+    "Author": "Miguel de Cervantes",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.csdl.tamu.edu:8080/veri/index-en.html",
+      "Eduardo Urbina"
+    ]
+  },
+  {
+    "id": 38,
+    "Edition name": "Corpus Rhythmorum Musicum (SAEC. IV-IX) I - Songs from non-liturgical sources",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Università di Siena; Società Internazionale per lo Studio del Medioevo Latino",
+      "not provided",
+      "http://www.corimu.unisi.it/",
+      "Francesco Stella"
+    ]
+  },
+  {
+    "id": 39,
+    "Edition name": "The Book of Ben Sira",
+    "Author": "Jesus ben Sira",
+    "attributes": [
+      "Scholars; laypeople",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.bensira.org/",
+      "Gary A. Rendsburg"
+    ]
+  },
+  {
+    "id": 40,
+    "Edition name": "Christine de Pizan: The Making of the Queen's Manuscript",
+    "Author": "Christine de Pizan",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "AHRC",
+      "not provided",
+      "http://www.pizan.lib.ed.ac.uk/",
+      "James Laidlaw"
+    ]
+  },
+  {
+    "id": 41,
+    "Edition name": "Corpus of the Inscriptions of Campā (CIC)",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Toyota Foundation (grant number D10-ID-1026); École française d'Extrème-Orient (EFEO); Center for Khmer Studies (Siem Reap, Cambodia)",
+      "not provided",
+      "http://isaw.nyu.edu/publications/inscriptions/campa/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 42,
+    "Edition name": "Dante Online",
+    "Author": "Dante Alighieri",
+    "attributes": [
+      "not provided",
+      "no",
+      "yes",
+      "Ente Cassa di Risparmio di Firenze",
+      "not provided",
+      "http://www.danteonline.it/italiano/home_ita.asp",
+      "not provided"
+    ]
+  },
+  {
+    "id": 43,
+    "Edition name": "Darwin Correspondence Project",
+    "Author": "Charles Darwin",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Andrew W. Mellon Foundation; Alfred P. Sloan Foundation; AHRC; The Bonita Trust; British Academy; British Ecological Society; Evolution Education Trust; Golden Family Foundation; Isaac Newton Trust; John Templeton Foundation; National Science Foundation; National Endowment for the Humanities; Natural Environment Research Council; Pew Charitable Trusts; Pilgrim Trust; Royal Society; Stifterverband für die Deutsche Wissenschaft; Wellcome Trust",
+      "not provided",
+      "http://www.darwinproject.ac.uk/",
+      "James A. Secord"
+    ]
+  },
+  {
+    "id": 44,
+    "Edition name": "De Trein der Traagheid",
+    "Author": "Johan Daisne",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://edities.kantl.be/daisne/",
+      "Edward Vanhoutte"
+    ]
+  },
+  {
+    "id": 45,
+    "Edition name": "Early Stuart Libels",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "AHRC; Rutgers University; University of Exeter; Australian Research Council; British Academy; Mrs. Giles M. Whiting Foundation; Princeton University; University of Sydney",
+      "not provided",
+      "http://www.earlystuartlibels.net/htdocs/index.html",
+      "Alastair Bellany; Andrew McRae"
+    ]
+  },
+  {
+    "id": 46,
+    "Edition name": "Folger Shakespeare Editions",
+    "Author": "William Shakespeare",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.folgerdigitaltexts.org/",
+      "Barbara Mowat; Paul Werstine"
+    ]
+  },
+  {
+    "id": 47,
+    "Edition name": "Frankenstein",
+    "Author": "Mary Shelley",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "https://romantic-circles.org/editions/frankenstein/editions.2009.frankenstein",
+      "Stuart Curran"
+    ]
+  },
+  {
+    "id": 48,
+    "Edition name": "Glossae.net",
+    "Author": "Not specified (Scholars)",
+    "attributes": [
+      "General public",
+      "partly",
+      "yes",
+      "CNRS (Centre national de la recherche scientifique); TGE Adonis; Cluster de Recherche 13 \"Recherche Patrimoine Création\"; Institut Universitaire de France; Laboratoire d'excellence HASTEC; UMR 5648 CIHAM; UMR 8584 LEM",
+      "not provided",
+      "http://www.glossae.net",
+      "Martin Morard; Marjorie Burghart"
+    ]
+  },
+  {
+    "id": 49,
+    "Edition name": "Heinrich-Heine Portal",
+    "Author": "Heinrich Heine",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Kunststiftung NRW; Deutsche Forshungsgemeinschaft",
+      "not provided",
+      "http://www.heine-portal.de",
+      "Thomas Burch"
+    ]
+  },
+  {
+    "id": 50,
+    "Edition name": "Henrik Ibsens Skrifter",
+    "Author": "Henrik Ibsen",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Norsk Kulturråd",
+      "not provided",
+      "http://www.ibsen.uio.no/forside.xhtml",
+      "Jan Halvor Undlien; Frode Helland"
+    ]
+  },
+  {
+    "id": 51,
+    "Edition name": "Mark Twain Project",
+    "Author": "Mark Twain",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.marktwainproject.org/homepage.html",
+      "Anh Q. Bui; Victor Fischer; et al."
+    ]
+  },
+  {
+    "id": 52,
+    "Edition name": "Niccolò Canussio: De restitutione patriae",
+    "Author": "Niccolò Canussio",
+    "attributes": [
+      "not provided",
+      "partly",
+      "partly",
+      "not provided",
+      "not provided",
+      "http://www.fondazionecanussio.org/patria.htm",
+      "Roberto Gusmani"
+    ]
+  },
+  {
+    "id": 53,
+    "Edition name": "Queste del Saint Graal",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://txm.bfm-corpus.org/?command=documentation&path=/GRAAL",
+      "Christiane Marchello-Nizia; Alexei Lavrentiev"
+    ]
+  },
+  {
+    "id": 54,
+    "Edition name": "The Auchinleck manuscript",
+    "Author": "Not specified (Compilers)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Professor David Burnley from Department of English Language and Linguistics at University of Sheffield",
+      "yes",
+      "http://auchinleck.nls.uk/index.html",
+      "David Burnley; Alison Wiggins"
+    ]
+  },
+  {
+    "id": 55,
+    "Edition name": "The Casebooks Project",
+    "Author": "Simon Forman & Richard Napier",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.magicandmedicine.hps.cam.ac.uk/",
+      "Lauren Kassell"
+    ]
+  },
+  {
+    "id": 56,
+    "Edition name": "The Confessions of Augustine: An Electronic Edition",
+    "Author": "Augustine of Hippo",
+    "attributes": [
+      "not provided",
+      "partly",
+      "partly",
+      "Stoa Consortium",
+      "not provided",
+      "http://www.stoa.org/hippo/",
+      "James J. O'Donnell"
+    ]
+  },
+  {
+    "id": 57,
+    "Edition name": "The Derveni Papyrus",
+    "Author": "Not specified (Commentator)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "partly",
+      "not provided",
+      "not provided",
+      "http://chs.harvard.edu/CHS/article/display/5418",
+      "Ioanna Papadopoulou"
+    ]
+  },
+  {
+    "id": 58,
+    "Edition name": "The Gospel according to St. John",
+    "Author": "Not specified (Evangelist)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "AHRC; British Academy; International Greek New Testament Project; United Bible Societies, University of Birmingham (Institute for Textual Scholarship and Electronic Editing)",
+      "not provided",
+      "http://www.iohannes.com/",
+      "Various"
+    ]
+  },
+  {
+    "id": 59,
+    "Edition name": "The Proceedings of the Old Bailey",
+    "Author": "Not specified (Court Recorders)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.oldbaileyonline.org/",
+      "Clive Emsley; Tim Hitchcock; Robert Shoemaker"
+    ]
+  },
+  {
+    "id": 60,
+    "Edition name": "The Richard Brome Project",
+    "Author": "Richard Brome",
+    "attributes": [
+      "Scholars; theatre practitioners",
+      "yes",
+      "yes",
+      "AHRC",
+      "not provided",
+      "http://www.hrionline.ac.uk/brome/",
+      "Richard Cave"
+    ]
+  },
+  {
+    "id": 61,
+    "Edition name": "The Svoboda Diary Project",
+    "Author": "Alexander Svoboda",
+    "attributes": [
+      "not provided",
+      "no",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://courses.washington.edu/otap/svoboda/public/index.html",
+      "Mehmet Kalpakli; Walter G. Andrews"
+    ]
+  },
+  {
+    "id": 62,
+    "Edition name": "William Godwin's Diary",
+    "Author": "William Godwin",
+    "attributes": [
+      "General public",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://godwindiary.bodleian.ox.ac.uk/index2.html",
+      "David O’Shaughnessy; Mark Philp; Victoria Myers"
+    ]
+  },
+  {
+    "id": 63,
+    "Edition name": "The Augsburg Web Edition of Llull's Electoral Writings",
+    "Author": "Ramon Llull",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.math.uni-augsburg.de/stochastik/llull/",
+      "Gerlinde Wolsleben"
+    ]
+  },
+  {
+    "id": 64,
+    "Edition name": "Digital Mishnah",
+    "Author": "Not specified (Rabbis)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Maryland Institute of Technology in the Humanities (MITH); Amazon Web Services",
+      "yes",
+      "http://www.digitalmishnah.org/",
+      "Hayim Lapin"
+    ]
+  },
+  {
+    "id": 65,
+    "Edition name": "The Online Critical Pseudepigrapha",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://ocp.tyndale.ca/",
+      "Ian W. Scott"
+    ]
+  },
+  {
+    "id": 66,
+    "Edition name": "Dead Sea Scrolls",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "George Blumenthal and the Center for Online Judaic Studies",
+      "not provided",
+      "http://dss.collections.imj.org.il/",
+      "James S. Snyder"
+    ]
+  },
+  {
+    "id": 67,
+    "Edition name": "Editions of the Registers of the counts of Holland 1299-1345",
+    "Author": "Not specified (Clerks)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "External scolars made up of Ms Prof. dr. Th. de Hemptinne, Prof. P.A. Henderikx, G. van Herwijnen, Prof.P.C.M. Hoppenbrouwers and Prof. J.G. Smit. - See more at: http://www.historici.nl/Onderzoek/Projecten/RegistersVanDeHollandseGrafelijkheid1299-1345/en/colofon#sthash.HhPd6Esd.dpuf",
+      "not provided",
+      "http://www.historici.nl/Onderzoek/Projecten/RegistersVanDeHollandseGrafelijkheid1299-1345",
+      "Jan Burgers"
+    ]
+  },
+  {
+    "id": 68,
+    "Edition name": "Quijote Interactivo",
+    "Author": "Miguel de Cervantes",
+    "attributes": [
+      "General public",
+      "partly",
+      "partly",
+      "Telefonica",
+      "no",
+      "http://quijote.bne.es/libro.html",
+      "José Manuel Lucía Megías"
+    ]
+  },
+  {
+    "id": 69,
+    "Edition name": "The Journals of the Lewis and Clark Expedition",
+    "Author": "Lewis and Clark",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://lewisandclarkjournals.unl.edu",
+      "Katherine Walter"
+    ]
+  },
+  {
+    "id": 70,
+    "Edition name": "Electronic Boethius CDROM",
+    "Author": "Alfred the Great (Translator)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "National Endowment for the Humanities; Andrew W. Mellon Foundation",
+      "not provided",
+      "http://beowulf.engl.uky.edu/~kiernan/eBoethius/inlad.htm",
+      "Kevin Kiernan"
+    ]
+  },
+  {
+    "id": 71,
+    "Edition name": "James Mill's Common Place Books",
+    "Author": "James Mill",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "not provided",
+      "AHRC; British Academy",
+      "not provided",
+      "http://www.intellectualhistory.net/mill/",
+      "Kristopher Grint"
+    ]
+  },
+  {
+    "id": 72,
+    "Edition name": "A trial electronic edition of the Preface to 'Ancrene Wisse' for the Early English Text Society",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "AHRC",
+      "not provided",
+      "http://tei.oucs.ox.ac.uk/Projects/EETS/soton/",
+      "Lou Burnard"
+    ]
+  },
+  {
+    "id": 73,
+    "Edition name": "Digital Nestle-Aland",
+    "Author": "Nestle-Aland (Editors)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "Deutsche Forschungsgemeinschaft",
+      "not provided",
+      "http://nestlealand.uni-muenster.de/",
+      "Luc Herren"
+    ]
+  },
+  {
+    "id": 74,
+    "Edition name": "Orlando Furioso Hypertext",
+    "Author": "Ludovico Ariosto",
+    "attributes": [
+      "Scholars; students (higher education) of history of art, literary studies and of the book.",
+      "partly",
+      "partly",
+      "not provided",
+      "not provided",
+      "http://stel.ub.edu/orlando/",
+      "María de las Nieves Muñiz"
+    ]
+  },
+  {
+    "id": 75,
+    "Edition name": "The Vergil project. Resources for Students, Teachers, and Readers of Vergil",
+    "Author": "Virgil",
+    "attributes": [
+      "Students; teachers; general public",
+      "yes",
+      "partly",
+      "The National Endowment for the Humanities; The Pew Charitable Trusts; The Edmund J. and Louise W. Kahn Fund for Faculty Excellence; Mr. Joseph B. Glossberg, Department of Classical Studies, The School of Arts and Sciences, University of Pennsylvania; Center for the Computer Analysis of Texts, University of Pennsylvania",
+      "partly",
+      "http://vergil.classics.upenn.edu/",
+      "Mary Costigan"
+    ]
+  },
+  {
+    "id": 76,
+    "Edition name": "Cantar de mio Cid",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "General public",
+      "yes",
+      "yes",
+      "Liberal Arts Instructional Technology Services (LAITS) @UT Austin",
+      "yes",
+      "http://www.laits.utexas.edu/cid/index2.php?v=nor",
+      "Matthew Bailey"
+    ]
+  },
+  {
+    "id": 77,
+    "Edition name": "The Aberdeen Bestiary",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "no",
+      "http://www.abdn.ac.uk/bestiary/",
+      "Michael Arnott"
+    ]
+  },
+  {
+    "id": 78,
+    "Edition name": "M. Valerii Martialis Epigrammaton Liber IV",
+    "Author": "Martial",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.curculio.org/Martial/Martial04.html",
+      "Michael Hendry"
+    ]
+  },
+  {
+    "id": 79,
+    "Edition name": "P. Ovidii Nasonis Heroides I",
+    "Author": "Ovid",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.curculio.org/Ovid/h01.html",
+      "Michael Hendry"
+    ]
+  },
+  {
+    "id": 80,
+    "Edition name": "Sexti Propertii Elegiae",
+    "Author": "Propertius",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.curculio.org/Propertius/index.html",
+      "Michael Hendry"
+    ]
+  },
+  {
+    "id": 81,
+    "Edition name": "Sulpiciae Conquestio",
+    "Author": "Sulpicia (Pseudo)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.curculio.org/Sulpiciae/index.html",
+      "Michael Hendry"
+    ]
+  },
+  {
+    "id": 82,
+    "Edition name": "Claudii Claudiani Carmina Latina",
+    "Author": "Claudian",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.curculio.org/Claudian/index.html",
+      "Michael Hendry"
+    ]
+  },
+  {
+    "id": 83,
+    "Edition name": "D. Iunii Iuvenalis Saturae",
+    "Author": "Juvenal",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.curculio.org/Juvenal/index.html",
+      "Michael Hendry"
+    ]
+  },
+  {
+    "id": 84,
+    "Edition name": "Codice Diplomatico della Lombardia Medievale",
+    "Author": "Not specified (Notaries)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Fondazione Cariplo; Provincia di Sondrio; Centro Internazionale di Ricerca per le Storie Locali e le Diversità Culturali dell’ Università degli Studi dell' Insubria",
+      "partly",
+      "http://cdlm.unipv.it/",
+      "Michele Ansani"
+    ]
+  },
+  {
+    "id": 85,
+    "Edition name": "Geoffrey Chaucer's Book of the Duchess: A Hypertext Edition",
+    "Author": "Geoffrey Chaucer",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://press.ucalgary.ca/books/9781552380369",
+      "Murray McGillivray"
+    ]
+  },
+  {
+    "id": 86,
+    "Edition name": "Inscriptiones Graecae in Croatia Repertae (IGCR)",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Department of Classical Philology of the Faculty of Humanities and Social Sciences at the University of Zagreb",
+      "not provided",
+      "http://www.ffzg.unizg.hr/klafil/dokuwiki/doku.php/z:epidoc-hrvatska",
+      "Nino Zubović"
+    ]
+  },
+  {
+    "id": 87,
+    "Edition name": "The Gascon Rolls Project",
+    "Author": "Not specified (Royal Clerks)",
+    "attributes": [
+      "General public",
+      "partly",
+      "yes",
+      "Laboratoire d'excellence LaScArBx; Banque Numérique des Savoirs d'Aquitaine; Chateau Ausone (Saint-Emilion) and Jonathan Sumption",
+      "not provided",
+      "http://www.gasconrolls.org/en/",
+      "Paul Spence"
+    ]
+  },
+  {
+    "id": 88,
+    "Edition name": "The Hengwrt Chaucer Digital Facsimile",
+    "Author": "Geoffrey Chaucer",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.sd-editions.com/AnaAdditional/HengwrtEx/images/hgopen.html",
+      "Peter Robinson"
+    ]
+  },
+  {
+    "id": 89,
+    "Edition name": "Carl-Maria-von-Weber-Gesamtausgabe",
+    "Author": "Carl Maria von Weber",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Akademie der Wissenschaften und der Literatur Mainz",
+      "yes",
+      "http://www.weber-gesamtausgabe.de/en/Index",
+      "Joachim Veit; Peter Stadler"
+    ]
+  },
+  {
+    "id": 90,
+    "Edition name": "Livingstone's 1871 Field Diary",
+    "Author": "David Livingstone",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "National Endowment for the Humanities; British Academy",
+      "not provided",
+      "http://livingstone.library.ucla.edu/1871diary/manuscript1.htm",
+      "Adrian S. Wisnicki"
+    ]
+  },
+  {
+    "id": 91,
+    "Edition name": "Hyperdonat",
+    "Author": "Aelius Donatus",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Région Rhône-Alpes; ENS de Lyon; Atelier des Humanités Numériques; UMR 5189 (HiSoMA)",
+      "not provided",
+      "http://hyperdonat.ens-lyon.fr/",
+      "Bruno Bureau"
+    ]
+  },
+  {
+    "id": 92,
+    "Edition name": "Inscriptions of Aphrodisias Project",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Leverhulme Trust",
+      "partly",
+      "http://insaph.kcl.ac.uk/index.html",
+      "Charlotte Roueché"
+    ]
+  },
+  {
+    "id": 93,
+    "Edition name": "Inscriptions of Roman Cyrenaica",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Leverhume Trust",
+      "not provided",
+      "http://ircyr.kcl.ac.uk/",
+      "Charlotte Roueché"
+    ]
+  },
+  {
+    "id": 94,
+    "Edition name": "Inscriptions of Roman Tripolitania",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "partly",
+      "JISC; The Leverhulme Trust; National Endowment for the Humanities",
+      "not provided",
+      "http://irt.kcl.ac.uk/irt2009/",
+      "Charlotte Roueché"
+    ]
+  },
+  {
+    "id": 95,
+    "Edition name": "e-sequence: Digital Edition of the Saint Gall corpus of Sequences by Notker Balbulus",
+    "Author": "Notker Balbulus",
+    "attributes": [
+      "Musicologists and manuscript researchers; general public",
+      "partly",
+      "yes",
+      "Accentus Foundation; Ernst Goehner Foundation",
+      "not provided",
+      "http://www.e-sequence.eu/en/",
+      "Christoph Flüeler"
+    ]
+  },
+  {
+    "id": 96,
+    "Edition name": "Phineas Fletcher's Sylva Poetica",
+    "Author": "Phineas Fletcher",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.philological.bham.ac.uk/sylva/",
+      "Dana Sutton"
+    ]
+  },
+  {
+    "id": 97,
+    "Edition name": "The Latin Prose and Poetry of Joseph Addison",
+    "Author": "Joseph Addison",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.philological.bham.ac.uk/Addison/",
+      "Dana Sutton"
+    ]
+  },
+  {
+    "id": 98,
+    "Edition name": "History in the Making: preparation of a genetic edition, dataset and hypertext of Part III, Chapter 1 of Flaubert's L'Education Sentimentale",
+    "Author": "Gustave Flaubert",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Arts and Humanities Research Board; University of Hull; Leverhulme Trust",
+      "not provided",
+      "http://www.hull.ac.uk/hitm/",
+      "David Williams"
+    ]
+  },
+  {
+    "id": 99,
+    "Edition name": "An electronic corpus of 15th century Castillian canconiero manuscripts",
+    "Author": "Not specified (Poets)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "AHRC; MHRA; University of Liverpool",
+      "not provided",
+      "http://cancionerovirtual.liv.ac.uk/",
+      "Dorothy Severin"
+    ]
+  },
+  {
+    "id": 100,
+    "Edition name": "Galenus' commentary on Hippocrates' \"On the articulations\"",
+    "Author": "Galen",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Berlin-Brandenburgische Akademie der Wissenschaften",
+      "not provided",
+      "http://pom.bbaw.de/cmg/",
+      "Günter Stock"
+    ]
+  },
+  {
+    "id": 101,
+    "Edition name": "Edition der falschen Kapitularien des Benedictus Levita",
+    "Author": "Benedictus Levita",
+    "attributes": [
+      "scholars",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "http://www.benedictus.mgh.de/",
+      "Gerhard Schmitz;Veronika Lukas"
+    ]
+  },
+  {
+    "id": 102,
+    "Edition name": "The Royal Inscriptions of the Neo-Assyrian Period",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "National Endowment for the Humanities",
+      "not provided",
+      "http://oracc.museum.upenn.edu/rinap/",
+      "Grant Frame"
+    ]
+  },
+  {
+    "id": 103,
+    "Edition name": "Book of Margery Kempe",
+    "Author": "Margery Kempe",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "http://english.selu.edu/humanitiesonline/kempe/index.php",
+      "Joel W. Fredell"
+    ]
+  },
+  {
+    "id": 104,
+    "Edition name": "William of Ockham: Dialogus",
+    "Author": "William of Ockham",
+    "attributes": [
+      "General public",
+      "yes",
+      "not provided",
+      "British Academy",
+      "not provided",
+      "http://www.britac.ac.uk/pubs/dialogus/ockdial.html",
+      "John Kilcullen"
+    ]
+  },
+  {
+    "id": 105,
+    "Edition name": "Domesday Explorer",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "not provided",
+      "AHRC",
+      "not provided",
+      "http://www.domesdaybook.net",
+      "John Palmer"
+    ]
+  },
+  {
+    "id": 106,
+    "Edition name": "Chopin's First Editions Online",
+    "Author": "Frédéric Chopin",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "AHRC",
+      "not provided",
+      "http://www.cfeo.org.uk/index.html",
+      "John Rink"
+    ]
+  },
+  {
+    "id": 107,
+    "Edition name": "Jane Austen's Fiction Manuscripts",
+    "Author": "Jane Austen",
+    "attributes": [
+      "Scholars",
+      "partly",
+      "not provided",
+      "AHRC",
+      "not provided",
+      "http://www.janeausten.ac.uk/index.html",
+      "Kathryn Sutherland"
+    ]
+  },
+  {
+    "id": 108,
+    "Edition name": "The Walt Whitman Archive",
+    "Author": "Walt Whitman",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.whitmanarchive.org/",
+      "Kenneth M. Price"
+    ]
+  },
+  {
+    "id": 109,
+    "Edition name": "Schenker Documents Online",
+    "Author": "Heinrich Schenker",
+    "attributes": [
+      "Scholars; librarians; archivists; general public",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.schenkerdocumentsonline.org",
+      "Marilyn Deegan"
+    ]
+  },
+  {
+    "id": 110,
+    "Edition name": "Online Chopin Variorum Edition",
+    "Author": "Frédéric Chopin",
+    "attributes": [
+      "Scholars; general public",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.ocve.org.uk/index.html",
+      "Marilyn Deegan; John Rink"
+    ]
+  },
+  {
+    "id": 111,
+    "Edition name": "John Foxe's The Acts and Monuments Online",
+    "Author": "John Foxe",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "AHRC; British Academy",
+      "not provided",
+      "http://www.johnfoxe.org/",
+      "Mark Greengrass"
+    ]
+  },
+  {
+    "id": 112,
+    "Edition name": "Oregon Petrarch Open Book Project",
+    "Author": "Francesco Petrarca",
+    "attributes": [
+      "Scholars; students; teachers; translators",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://petrarch.uoregon.edu/",
+      "Massimo Lollini"
+    ]
+  },
+  {
+    "id": 113,
+    "Edition name": "Conclusiones CM",
+    "Author": "Giovanni Pico della Mirandola",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "not provided",
+      "Computing and Information Services at Brown University",
+      "not provided",
+      "http://www.stg.brown.edu/projects/pico/about.php",
+      "Massimo Riva"
+    ]
+  },
+  {
+    "id": 114,
+    "Edition name": "Decameron Web",
+    "Author": "Giovanni Boccaccio",
+    "attributes": [
+      "College and high school teachers and students; independent readers and scholars",
+      "no",
+      "not provided",
+      "National Endowment for the Humanties",
+      "not provided",
+      "http://www.brown.edu/Departments/Italian_Studies/dweb/index.php",
+      "Massimo Riva"
+    ]
+  },
+  {
+    "id": 115,
+    "Edition name": "Pico della Mirandola: De hominis dignitate",
+    "Author": "Giovanni Pico della Mirandola",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.brown.edu/Departments/Italian_Studies/pico/index.html",
+      "Massimo Riva"
+    ]
+  },
+  {
+    "id": 116,
+    "Edition name": "Inscriptions of Israel/Palestine",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Center of Digital Scholarship and the Office of the Vice President of Research at Brown University",
+      "not provided",
+      "http://www.stg.brown.edu/projects/Inscriptions/index.shtml",
+      "Michael Satlow; Elli Mylonas"
+    ]
+  },
+  {
+    "id": 117,
+    "Edition name": "Parzival-Projekt",
+    "Author": "Wolfram von Eschenbach",
+    "attributes": [
+      "Literary and linguistic historians",
+      "partly",
+      "not provided",
+      "Swiss National Science Foundation",
+      "not provided",
+      "http://www.parzival.unibe.ch/home.html",
+      "Michael Stolz"
+    ]
+  },
+  {
+    "id": 118,
+    "Edition name": "Decameron Ipertestuale",
+    "Author": "Giovanni Boccaccio",
+    "attributes": [
+      "Specialists; university students and staff; high school students",
+      "partly",
+      "not provided",
+      "Fondo Nazionale Svizzero per la Ricerca Scientifica",
+      "not provided",
+      "http://www.rose.uzh.ch/static/decameron/index3.htm",
+      "Michelangelo Picone"
+    ]
+  },
+  {
+    "id": 119,
+    "Edition name": "Percy Bysshe Shelley: The Devil's Walk",
+    "Author": "Percy Bysshe Shelley",
+    "attributes": [
+      "Teachers",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.rc.umd.edu/editions/shelley/devil/index.html",
+      "Neil Fraistat"
+    ]
+  },
+  {
+    "id": 120,
+    "Edition name": "Poems by Anna Laetitia Aikin",
+    "Author": "Anna Laetitia Barbauld",
+    "attributes": [
+      "Scholars; students",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.rc.umd.edu/editions/contemps/barbauld/poems1773/",
+      "Neil Fraistat"
+    ]
+  },
+  {
+    "id": 121,
+    "Edition name": "The Letters of Robert Bloomfield",
+    "Author": "Robert Bloomfield",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.rc.umd.edu/editions/bloomfield_letters/",
+      "Neil Fraistat"
+    ]
+  },
+  {
+    "id": 122,
+    "Edition name": "The Shelley-Godwin Archive",
+    "Author": "Shelley & Godwin",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.shelleygodwinarchive.org/",
+      "Neil Fraistat"
+    ]
+  },
+  {
+    "id": 123,
+    "Edition name": "Thomas Lovell Beddoes: The Brides' Tragedy",
+    "Author": "Thomas Lovell Beddoes",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.rc.umd.edu/editions/beddoes/intro.html",
+      "Neil Fraistat"
+    ]
+  },
+  {
+    "id": 124,
+    "Edition name": "The Online Froissart",
+    "Author": "Jean Froissart",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "AHRC",
+      "not provided",
+      "http://www.hrionline.ac.uk/onlinefroissart/index.jsp",
+      "Peter Ainsworth"
+    ]
+  },
+  {
+    "id": 125,
+    "Edition name": "Welsh Prose 1350-1425",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "AHRC",
+      "not provided",
+      "http://www.rhyddiaithganoloesol.caerdydd.ac.uk/en/",
+      "Peter Wynn Thomas"
+    ]
+  },
+  {
+    "id": 126,
+    "Edition name": "The Newton Project",
+    "Author": "Isaac Newton",
+    "attributes": [
+      "General public",
+      "yes",
+      "yes",
+      "University of Sussex; AHRC; JISC; The Royal Society; CORDIS: Community Research and Development Information Service",
+      "yes",
+      "http://www.newtonproject.sussex.ac.uk/prism.php?id=1",
+      "Robert Iliffe"
+    ]
+  },
+  {
+    "id": 127,
+    "Edition name": "Vercelli Book Digitale",
+    "Author": "Not specified (Compilers)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Chamber of Commerce Vercelli; Fondazione CRT",
+      "not provided",
+      "http://vbd.humnet.unipi.it",
+      "Roberto Rosselli Del Turco"
+    ]
+  },
+  {
+    "id": 128,
+    "Edition name": "I testimoni della Vita Nova",
+    "Author": "Dante Alighieri",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "MURST - Cofin 1999/2001",
+      "not provided",
+      "http://vitanova.unipv.it/",
+      "Simone Albonico"
+    ]
+  },
+  {
+    "id": 129,
+    "Edition name": "Frankenstein; or, the Modern Prometheus",
+    "Author": "Mary Shelley",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://knarf.english.upenn.edu/",
+      "Stuart Curran"
+    ]
+  },
+  {
+    "id": 130,
+    "Edition name": "Livingstone Online",
+    "Author": "David Livingstone",
+    "attributes": [
+      "Scholars; students; general public; teachers; scientists; librarians; digital humanists; information technology experts",
+      "yes",
+      "not provided",
+      "Wellcome Trust",
+      "not provided",
+      "http://www.livingstoneonline.ucl.ac.uk",
+      "Christopher Lawrence"
+    ]
+  },
+  {
+    "id": 131,
+    "Edition name": "Edizione Critica Ipertestuale dello Zibaldone Laurenziano (Pluteo XXIX.8) autografo di Giovanni Boccaccio",
+    "Author": "Giovanni Boccaccio",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "MIUR",
+      "not provided",
+      "http://rmcisadu.let.uniroma1.it/boccaccio/",
+      "Raul Mordenti"
+    ]
+  },
+  {
+    "id": 132,
+    "Edition name": "A Social Edition of the Devonshire MS (BL Add 17,492)",
+    "Author": "Not specified (Tudor Court)",
+    "attributes": [
+      "Citizen scholars",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://en.wikibooks.org/wiki/The_Devonshire_Manuscript",
+      "Raymond Siemens"
+    ]
+  },
+  {
+    "id": 133,
+    "Edition name": "Les Bibliothèques Virtuelles Humanistes",
+    "Author": "Not specified (Humanists)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.bvh.univ-tours.fr/#",
+      "Sandrine Breuil"
+    ]
+  },
+  {
+    "id": 134,
+    "Edition name": "The Paris Codex",
+    "Author": "Not specified (Maya Scribes)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://digital.library.northwestern.edu/codex/index.html",
+      "Scott Garton"
+    ]
+  },
+  {
+    "id": 135,
+    "Edition name": "The Memorandoms of James Martin",
+    "Author": "James Martin",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "https://www.ucl.ac.uk/Bentham-Project/publications/martins-memorandoms/martins-memorandoms.html",
+      "Tim Causer"
+    ]
+  },
+  {
+    "id": 136,
+    "Edition name": "Actes Royaux",
+    "Author": "Not specified (Royal Clerks)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.cn-telma.fr/actesroyaux/index/",
+      "Xavier Hélary"
+    ]
+  },
+  {
+    "id": 137,
+    "Edition name": "American Verse Project",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "General public",
+      "partly",
+      "not provided",
+      "not provided",
+      "no",
+      "http://quod.lib.umich.edu/a/amverse/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 138,
+    "Edition name": "Bernard Muir's CD-ROM facsimile of Bodleian Library MS Junius 11",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars and students of Anglo-Saxon literature, art, history, and culture; bibliophiles; collectors",
+      "partly",
+      "not provided",
+      "Bodleian Library",
+      "not provided",
+      "http://www.bodleianshop.co.uk/a-digital-facsimile-of-oxford-bodleian-library-ms-junius-11.html",
+      "Bernard J. Muir"
+    ]
+  },
+  {
+    "id": 139,
+    "Edition name": "Candide 2.0",
+    "Author": "Voltaire",
+    "attributes": [
+      "General public",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://candide.nypl.org/text/",
+      "Alice Boone; Ben Vershbow; Eddie A. Tejeda"
+    ]
+  },
+  {
+    "id": 140,
+    "Edition name": "Chronik des Gettos Łódź / Litzmannstadt",
+    "Author": "Not specified (Ghetto Inhabitants)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.getto-chronik.de/de/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 141,
+    "Edition name": "Clotel by William Wells Brown",
+    "Author": "William Wells Brown",
+    "attributes": [
+      "Scholars; Students",
+      "partly",
+      "not provided",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://www.upress.virginia.edu/content/clotel-william-wells-brown-electronic-scholarly-edition",
+      "Christopher Mulvey"
+    ]
+  },
+  {
+    "id": 142,
+    "Edition name": "DASI: Digital Archive for the Study of Pre-Islamic Arabian Inscriptions",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "General public",
+      "yes",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://dasi.humnet.unipi.it/",
+      "Alessandra Avanzini"
+    ]
+  },
+  {
+    "id": 143,
+    "Edition name": "Datini, Lettere",
+    "Author": "Francesco Datini",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Archivio di Stato di Prato",
+      "not provided",
+      "http://datini.archiviodistato.prato.it/la-ricerca/le-edizioni-delle-lettere#n",
+      "not provided"
+    ]
+  },
+  {
+    "id": 144,
+    "Edition name": "Digital Shikshapatri",
+    "Author": "Swaminarayan",
+    "attributes": [
+      "General public",
+      "partly",
+      "not provided",
+      "New Opportunities Fund",
+      "not provided",
+      "http://www.shikshapatri.org.uk/",
+      "Gillian Evison; Marilyn Deegan"
+    ]
+  },
+  {
+    "id": 145,
+    "Edition name": "Electronic Beowulf 4.0",
+    "Author": "Not specified (Poet)",
+    "attributes": [
+      "Students; general public; scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://ebeowulf.uky.edu/",
+      "Kevin Kiernan"
+    ]
+  },
+  {
+    "id": 146,
+    "Edition name": "Emily Dickinson's Archive",
+    "Author": "Emily Dickinson",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "The Sidney Verba Fund, Harvard Library; the Emily Dickinson Fund, Houghton Library; Harvard University Press",
+      "not provided",
+      "http://www.edickinson.org/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 147,
+    "Edition name": "Emily Dickinson's Correspondences",
+    "Author": "Emily Dickinson",
+    "attributes": [
+      "Dickinson scholars",
+      "yes",
+      "not provided",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/edc/",
+      "Martha Nell Smith; Lara Vetter"
+    ]
+  },
+  {
+    "id": 148,
+    "Edition name": "Gabriel Harvey's Livy Online",
+    "Author": "Gabriel Harvey",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://abo.annotatedbooksonline.com/#binding-5-1",
+      "Paul Dijstelberge; Anthony Grafton; Lisa Jardine; Bart Jaski; Jürgen Pieters; William Sherman; Els Stronks; Matthew Symonds; Arnoud Visser"
+    ]
+  },
+  {
+    "id": 149,
+    "Edition name": "Galileo Galilei's Notes on Motion",
+    "Author": "Galileo Galilei",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.mpiwg-berlin.mpg.de/Galileo_Prototype/MAIN.HTM",
+      "Isabella Truci; Paolo Galluzzi; Jürgen Renn"
+    ]
+  },
+  {
+    "id": 150,
+    "Edition name": "Göttinger Statuten (kundige bok 2)",
+    "Author": "Not specified (City Council)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://kundigebok.stadtarchiv.goettingen.de/kb2Web/html/",
+      "Malte Rehbein"
+    ]
+  },
+  {
+    "id": 151,
+    "Edition name": "Herman Melville's Typee",
+    "Author": "Herman Melville",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/melville/",
+      "John Bryant"
+    ]
+  },
+  {
+    "id": 152,
+    "Edition name": "In Mozart's Words",
+    "Author": "Mozart",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://letters.mozartways.com/",
+      "Cliff Eisen"
+    ]
+  },
+  {
+    "id": 153,
+    "Edition name": "Intibah Edition and Transcription",
+    "Author": "Namık Kemal",
+    "attributes": [
+      "not provided",
+      "partly",
+      "partly",
+      "not provided",
+      "not provided",
+      "http://courses.washington.edu/otap/intibah/intibah.html",
+      "Selim S. Kuru"
+    ]
+  },
+  {
+    "id": 154,
+    "Edition name": "Jerilderie Letter",
+    "Author": "Ned Kelly",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.nma.gov.au/collections/collection_interactives/jerilderie_letter",
+      "not provided"
+    ]
+  },
+  {
+    "id": 155,
+    "Edition name": "John Barclay: Argenis",
+    "Author": "John Barclay",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.chlt.org/sandbox/colloquia/argenis/index.html",
+      "not provided"
+    ]
+  },
+  {
+    "id": 156,
+    "Edition name": "Journal of Emily Shore",
+    "Author": "Emily Shore",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/EmilyShore/make-page.xqy",
+      "Barbara Timm Gates"
+    ]
+  },
+  {
+    "id": 157,
+    "Edition name": "Lautréamont / Ducasse",
+    "Author": "Lautréamont",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.phalese.fr/Maldoror/index.php?title=Accueil",
+      "not provided"
+    ]
+  },
+  {
+    "id": 158,
+    "Edition name": "Le Cartulaire de la seigneurie de Nesle",
+    "Author": "Not specified (Clerics)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.cn-telma.fr/nesle/index/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 159,
+    "Edition name": "Martha Ballard's Diary Online",
+    "Author": "Martha Ballard",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "National Endowment for the Humanities; Maine Humanities Council",
+      "not provided",
+      "http://dohistory.org/diary/index.html",
+      "Richard P. Rogers"
+    ]
+  },
+  {
+    "id": 160,
+    "Edition name": "Olive Schreiner Letters Online",
+    "Author": "Olive Schreiner",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "Economic and Social Research Council",
+      "not provided",
+      "http://www.oliveschreiner.org/",
+      "Liz Stanley"
+    ]
+  },
+  {
+    "id": 161,
+    "Edition name": "Online Electronic Variorum of the Works of Rabindranath Tagore",
+    "Author": "Rabindranath Tagore",
+    "attributes": [
+      "Scholars; general public; professionals",
+      "partly",
+      "partly",
+      "not provided",
+      "not provided",
+      "http://rabindranathtagore-150.gov.in/online-voriourum.html",
+      "R. N. Tripathy"
+    ]
+  },
+  {
+    "id": 162,
+    "Edition name": "Ordonnances de l'hôtel du roi",
+    "Author": "Not specified (Royal Clerks)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.cn-telma.fr/ordonnances/index/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 163,
+    "Edition name": "Septuaginta LXX",
+    "Author": "Not specified (Translators)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://septuaginta.net/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 164,
+    "Edition name": "Sirat Bani Hilal Digital Archive",
+    "Author": "Not specified (Oral Poets)",
+    "attributes": [
+      "Scholars",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.siratbanihilal.ucsb.edu/start-0",
+      "Dwight F. Reynolds"
+    ]
+  },
+  {
+    "id": 165,
+    "Edition name": "Søren Kierkegaards Skrifter",
+    "Author": "Søren Kierkegaard",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://sks.dk/forside/indhold.asp",
+      "Karsten Kynde"
+    ]
+  },
+  {
+    "id": 166,
+    "Edition name": "Stijn Streuvels: De teleurgang van den Waterhoek (The decline of the Waterhoek) CDROM",
+    "Author": "Stijn Streuvels",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://ctb.kantl.be/publicaties/de-teleurgang-van-den-waterhoek-elektronisch-kritische-editie-electronic-c",
+      "Edward Vanhoutte"
+    ]
+  },
+  {
+    "id": 167,
+    "Edition name": "The Adams Papers",
+    "Author": "Adams Family",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/founders/ADMS.html",
+      "C. James Taylor"
+    ]
+  },
+  {
+    "id": 168,
+    "Edition name": "The Alcalá Account Book Project",
+    "Author": "Not specified (Administrators)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://drapier.dho.ie/node/232",
+      "not provided"
+    ]
+  },
+  {
+    "id": 169,
+    "Edition name": "The André Gide Editions Project",
+    "Author": "André Gide",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Arts and Humanities Research Board",
+      "not provided",
+      "http://hridigital.shef.ac.uk/gide",
+      "David Walker; Pascal Mercier; Michael Pidd"
+    ]
+  },
+  {
+    "id": 170,
+    "Edition name": "The Benjamin Marston Diary Project",
+    "Author": "Benjamin Marston",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.lib.unb.ca/Texts/marston/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 171,
+    "Edition name": "The Bevan Family Letters",
+    "Author": "Bevan Family",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://rth.org.uk/collections/bevan-dewar-letters",
+      "not provided"
+    ]
+  },
+  {
+    "id": 172,
+    "Edition name": "The Burnet Psalter",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "General public",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.abdn.ac.uk/diss/historic/collects/bps/index.html",
+      "not provided"
+    ]
+  },
+  {
+    "id": 173,
+    "Edition name": "The Canterbury Tales Project",
+    "Author": "Geoffrey Chaucer",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.textualcommunities.usask.ca/web/canterbury-tales",
+      "Peter Robinson"
+    ]
+  },
+  {
+    "id": 174,
+    "Edition name": "The Digital Temple: A Documentary Edition of George Herbert's English Verse",
+    "Author": "George Herbert",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "National Endowment for the Humanities",
+      "not provided",
+      "http://digitaltemple.rotunda.upress.virginia.edu/",
+      "Robert Whalen; Christipher Hodgkins"
+    ]
+  },
+  {
+    "id": 175,
+    "Edition name": "The Diriks Family Scrapbooks",
+    "Author": "Diriks Family",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.nb.no/baser/diriks/virtuellealbum/index.html",
+      "not provided"
+    ]
+  },
+  {
+    "id": 176,
+    "Edition name": "The Documentary History of the Ratification of the Constitution",
+    "Author": "Not specified (Founding Fathers)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/founders/RNCN.html",
+      "John P. Kaminski; Gaspare J. Saladino; Richard Leffler; Charles H. Schoenleber; Margaret A. Hogan"
+    ]
+  },
+  {
+    "id": 177,
+    "Edition name": "The Dolley Madison Digital Edition",
+    "Author": "Dolley Madison",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/dmde/",
+      "Holly C. Schulman"
+    ]
+  },
+  {
+    "id": 178,
+    "Edition name": "The Geese Book",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "Samuel H. Kress Foundation; National Endowment for the Humanities; Sparda Bank Nürnberg; Zukunftsstiftung der Stadtsparkasse Nürnberg; Kulturfonds der Dr. Lorenz Tucher'schen Stiftung; Freiherr von Haller'sche Forschungsstiftung; Arizona State University - Herberger Institute for Design and the Arts - Institute for Humanities Research; Erzbistum Bamberg: Verlag Nürnberger Presse; Bezirk Mittelfranken, Stiftung Natur-Kultur-Struktur; Sigma (Deutschland) GmbH; Wolf Photo Media, Fürth.",
+      "not provided",
+      "http://geesebook.asu.edu",
+      "Volker Schier; Corine Schleif"
+    ]
+  },
+  {
+    "id": 179,
+    "Edition name": "The Hartlib Papers Project",
+    "Author": "Samuel Hartlib",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "https://www.hrionline.ac.uk/hartlib/",
+      "Mark Greengrass"
+    ]
+  },
+  {
+    "id": 180,
+    "Edition name": "The Letters of Christina Rossetti",
+    "Author": "Christina Rossetti",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/crossetti/",
+      "Antony H. Harrison"
+    ]
+  },
+  {
+    "id": 181,
+    "Edition name": "The Letters of Matthew Arnold",
+    "Author": "Matthew Arnold",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/arnold/",
+      "Cecil Y. Lang"
+    ]
+  },
+  {
+    "id": 182,
+    "Edition name": "The Malory Project",
+    "Author": "Thomas Malory",
+    "attributes": [
+      "Malory and manuscript scholars; teachers",
+      "yes",
+      "not provided",
+      "Digital Research Centre, Keio University",
+      "not provided",
+      "http://www.maloryproject.com/",
+      "Takako Kato"
+    ]
+  },
+  {
+    "id": 183,
+    "Edition name": "The Papers of Alexander Hamilton",
+    "Author": "Alexander Hamilton",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/founders/ARHN.html",
+      "Harold C. Syrett"
+    ]
+  },
+  {
+    "id": 184,
+    "Edition name": "The Papers of Eliza Lucas Pinckney and Harriot Pinckney Horry",
+    "Author": "Eliza Pinckney & Harriot Horry",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia; National Endowment for the Humanities",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/PinckneyHorry/",
+      "Constance Schulz"
+    ]
+  },
+  {
+    "id": 185,
+    "Edition name": "The Papers of George Washington",
+    "Author": "George Washington",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/founders/GEWN.html",
+      "Edward G. Lengel"
+    ]
+  },
+  {
+    "id": 186,
+    "Edition name": "The Papers of James Madison",
+    "Author": "James Madison",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/founders/JSMN.html",
+      "J. C. A. Stagg"
+    ]
+  },
+  {
+    "id": 187,
+    "Edition name": "The Papers of Thomas Jefferson",
+    "Author": "Thomas Jefferson",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://rotunda.upress.virginia.edu/founders/TSJN.html",
+      "James P. McClure; J. Jefferson Looney"
+    ]
+  },
+  {
+    "id": 188,
+    "Edition name": "The Pérez Galdós Editions Project",
+    "Author": "Benito Pérez Galdós",
+    "attributes": [
+      "Scholars of Galdós",
+      "yes",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://hridigital.shef.ac.uk/galdos",
+      "N. G. Round; Rhian Davies; Jamie McLaughlin"
+    ]
+  },
+  {
+    "id": 189,
+    "Edition name": "The Planctus for William Longsword",
+    "Author": "Not specified (Poet)",
+    "attributes": [
+      "not provided",
+      "not provided",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://vlib.iue.it/carrie/documents/planctus/planctus/index.html",
+      "Robert Helmerichs"
+    ]
+  },
+  {
+    "id": 190,
+    "Edition name": "The Zibaldone project",
+    "Author": "Giacomo Leopardi",
+    "attributes": [
+      "not provided",
+      "not provided",
+      "partly",
+      "Ministerio de Ciencia y Innovacion (MICINN)",
+      "not provided",
+      "http://www.birmingham.ac.uk/research/activity/leopardi/projects/index.aspx",
+      "not provided"
+    ]
+  },
+  {
+    "id": 191,
+    "Edition name": "Virginie Loveling’s Diary",
+    "Author": "Virginie Loveling",
+    "attributes": [
+      "General public",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "http://edities.kantl.be/loveling/",
+      "Edward Vanhoutte"
+    ]
+  },
+  {
+    "id": 192,
+    "Edition name": "William Golder Electronic Edition",
+    "Author": "William Golder",
+    "attributes": [
+      "not provided",
+      "yes",
+      "not provided",
+      "Victoria University of Wellington; Alexander Turnbull Library",
+      "not provided",
+      "http://nzetc.victoria.ac.nz/tm/scholarly/tei-corpus-golder.html",
+      "Jamie Norrish"
+    ]
+  },
+  {
+    "id": 193,
+    "Edition name": "William of Palerne",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://trove.nla.gov.au/work/33020507",
+      "Gerrit H.V. Bunt"
+    ]
+  },
+  {
+    "id": 194,
+    "Edition name": "Wittgensteins Nachlass: The Bergen Electronic Edition",
+    "Author": "Ludwig Wittgenstein",
+    "attributes": [
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "not provided",
+      "http://www.nlx.com/collections/124",
+      "not provided"
+    ]
+  },
+  {
+    "id": 195,
+    "Edition name": "Zibaldone Europeo",
+    "Author": "Giacomo Leopardi",
+    "attributes": [
+      "Scholars",
+      "not provided",
+      "partly",
+      "not provided",
+      "not provided",
+      "http://www.birmingham.ac.uk/research/activity/leopardi/projects/barcelona.aspx",
+      "Maria de las Nieves Muñiz Muñiz"
+    ]
+  },
+  {
+    "id": 196,
+    "Edition name": "Pietro Mellini's Inventory in verse 1681",
+    "Author": "Pietro Mellini",
+    "attributes": [
+      "Scholarly; general public",
+      "partly",
+      "yes",
+      "Getty Research Trust",
+      "not provided",
+      "http://www.getty.edu/research/mellini/",
+      "Murtha Baca; Nuria Rodríguez Ortega"
+    ]
+  },
+  {
+    "id": 197,
+    "Edition name": "Inscriptiones Alborum Amicorum",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Experts; general public",
+      "partly",
+      "yes",
+      "Dr. Miklós Latzkovits; Dr. Tünde Katona",
+      "yes",
+      "http://iaa.bibl.u-szeged.hu/index.php",
+      "Anita Fajt"
+    ]
+  },
+  {
+    "id": 198,
+    "Edition name": "George Etheridge's Encomium on Henry VIII addressed to Elizabeth II, British Library Royal MS 16 C X",
+    "Author": "George Etheridge",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "no",
+      "Royal Holloway, University of London",
+      "no",
+      "http://hellenic-institute.rhul.ac.uk/Research/Etheridge/",
+      "Charalambos Dendrinos"
+    ]
+  },
+  {
+    "id": 199,
+    "Edition name": "Digitalisierte Edition des Ältesten Appenzeller Landbuchs",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "Experts; Scholars",
+      "partly",
+      "not provided",
+      "Law Sources Foundation of the Swiss Lawyers Society",
+      "partly",
+      "http://www.ssrq-sds-fds.ch/teiviewer/",
+      "Pascale Sutter"
+    ]
+  },
+  {
+    "id": 200,
+    "Edition name": "Corpus of Ioannes Dantiscus' Texts & Correspondence",
+    "Author": "Ioannes Dantiscus",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "not provided",
+      "Polish Ministry of Science",
+      "partly",
+      "http://dantiscus.al.uw.edu.pl/",
+      "Anna Skolimowska"
+    ]
+  },
+  {
+    "id": 201,
+    "Edition name": "Dante's Commedia",
+    "Author": "Dante Alighieri",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "AHRC; British Academy; De Montfort University; University of Birmingham; University of Saskatchewan",
+      "yes",
+      "http://sd-editions.com/AnaAdditional/commediaonline/home.html",
+      "Peter Robinson"
+    ]
+  },
+  {
+    "id": 202,
+    "Edition name": "A London Provisioner's Chronicle, 1550–1563, by Henry Machyn: Manuscript, Transcription, and Modernization",
+    "Author": "Henry Machyn",
+    "attributes": [
+      "Scholars; general public",
+      "yes",
+      "yes",
+      "University of Michigan Library",
+      "yes",
+      "http://quod.lib.umich.edu/m/machyn/",
+      "Kevin Hawkins"
+    ]
+  },
+  {
+    "id": 203,
+    "Edition name": "Collection of Swiss Law Sources",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Experts; Scholars",
+      "yes",
+      "partly",
+      "Law Sources Foundation of the Swiss Lawyers Society",
+      "no",
+      "http://www.ssrq-sds-fds.ch/online/",
+      "Pascale Sutter"
+    ]
+  },
+  {
+    "id": 204,
+    "Edition name": "El Cancionero digital de Gómez Manrique (páginas 11-44)",
+    "Author": "Gómez Manrique",
+    "attributes": [
+      "Experts; Scholars",
+      "partly",
+      "yes",
+      "not provided",
+      "not provided",
+      "http://www.realbiblioteca.es/gomez_manrique/cancionero.html",
+      "Andrea Iantorno"
+    ]
+  },
+  {
+    "id": 205,
+    "Edition name": "ASChart Anglo-Saxon Charters",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "Historians",
+      "yes",
+      "yes",
+      "British Academy",
+      "yes",
+      "http://www.aschart.kcl.ac.uk/index.html",
+      "Janet L. Nelson; Alex Burghart"
+    ]
+  },
+  {
+    "id": 206,
+    "Edition name": "Excerpts from the Chronicle of Matthew of Edessa",
+    "Author": "Matthew of Edessa",
+    "attributes": [
+      "Expert; scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://byzantini.st/ChronicleME/",
+      "Tara Andrews"
+    ]
+  },
+  {
+    "id": 207,
+    "Edition name": "Les Cours d’Antoine Desgodets",
+    "Author": "Antoine Desgodets",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "partly",
+      "Agence Nationale de Recherche ANR (France)",
+      "yes",
+      "http://www.desgodets.net",
+      "Robert Carvais; Emmanuel Château-Dutier"
+    ]
+  },
+  {
+    "id": 208,
+    "Edition name": "Digitale Edition und Kommentierung der Tagebücher des Fürsten Christian II. von Anhalt-Bernburg",
+    "Author": "Christian II of Anhalt-Bernburg",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "DFG",
+      "yes",
+      "http://diglib.hab.de/wdb.php?dir=edoc/ed000228&lang=en",
+      "Arndt Schreiber; Antoine Odier"
+    ]
+  },
+  {
+    "id": 209,
+    "Edition name": "Die Relatio Adelberts von Heidenheim und der Text Ilsungs",
+    "Author": "Adalbert of Heidenheim",
+    "attributes": [
+      "Scholars; general public",
+      "yes",
+      "yes",
+      "Deutsche Forschungsgemeinschaft",
+      "yes",
+      "http://www.forschungsdatenarchiv.escience.uni-tuebingen.de/adlils/",
+      "Christian Schwaderer"
+    ]
+  },
+  {
+    "id": 210,
+    "Edition name": "Je chante ung chant",
+    "Author": "Not specified (Composers)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "AHRC",
+      "yes",
+      "http://jechante.exeter.ac.uk/archive/index.html",
+      "Yolanda Plumley; Giuliano Di Bacco; Tamsyn Rose-Steel; Gary Stringer"
+    ]
+  },
+  {
+    "id": 211,
+    "Edition name": "Einstein Archives Online",
+    "Author": "Albert Einstein",
+    "attributes": [
+      "Scholars; general public",
+      "partly",
+      "yes",
+      "The Polonsky Foundation",
+      "not provided",
+      "http://www.alberteinstein.info/",
+      "Dalia Mendelsson"
+    ]
+  },
+  {
+    "id": 212,
+    "Edition name": "Codice Pelavicino",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "Scholars; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://pelavicino.labcd.unipi.it/",
+      "Enrica Salvatori"
+    ]
+  },
+  {
+    "id": 213,
+    "Edition name": "Woolf Online",
+    "Author": "Virginia Woolf",
+    "attributes": [
+      "Scholars; general public",
+      "partly",
+      "yes",
+      "National Endowment for the Humanities",
+      "not provided",
+      "http://www.woolfonline.com/",
+      "Pamela L. Caughie; George K. Thiruvathukal"
+    ]
+  },
+  {
+    "id": 214,
+    "Edition name": "Les manuscrits de Madame Bovary",
+    "Author": "Gustave Flaubert",
+    "attributes": [
+      "Specialists; Students; general public; teachers",
+      "yes",
+      "yes",
+      "not provided",
+      "partly",
+      "http://www.bovary.fr/",
+      "Françoise Legendre"
+    ]
+  },
+  {
+    "id": 215,
+    "Edition name": "Digital Schomburg Editions: African American Women Writers of the 19th century",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "General public; Scholars; Teachers",
+      "yes",
+      "partly",
+      "The Rockefeller Foundation; the Electronic Doorway Library Services program of the New York State Department of Education; Inso Corporation",
+      "no",
+      "http://digital.nypl.org/schomburg/writers_aa19/",
+      "Howard Dodson"
+    ]
+  },
+  {
+    "id": 216,
+    "Edition name": "Faust Edition",
+    "Author": "Johann Wolfgang von Goethe",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "DFG",
+      "yes",
+      "http://beta.faustedition.net/",
+      "Anne Bohnenkamp; Silke Henke; Fotis Jannidis"
+    ]
+  },
+  {
+    "id": 217,
+    "Edition name": "Theodor Fontane: Notizbücher",
+    "Author": "Theodor Fontane",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "DFG",
+      "yes",
+      "https://fontane-nb.dariah.eu/index.html",
+      "Gabriele Radecke"
+    ]
+  },
+  {
+    "id": 218,
+    "Edition name": "Johann Christian Senckenberg: Digital Edition of the Diaries",
+    "Author": "Johann Christian Senckenberg",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Dr. Senckenbergische Stiftung; Stiftung Polytechnische Gesellschaft; Gemeinnützigen Hertie-Stiftung",
+      "yes",
+      "http://senckenberg.ub.uni-frankfurt.de/s/startpage",
+      "not provided"
+    ]
+  },
+  {
+    "id": 219,
+    "Edition name": "Édition des journaux d'Alexandre Dumas",
+    "Author": "Alexandre Dumas",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "no",
+      "Ministère délégué à l'Enseignement supérieur et à la Recherche",
+      "no",
+      "http://alexandredumas.org/",
+      "Sarah Mombert"
+    ]
+  },
+  {
+    "id": 220,
+    "Edition name": "Alexander von Humboldt Briefedition",
+    "Author": "Alexander von Humboldt",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://telota.bbaw.de/AvHBriefedition/index.html",
+      "Martin Grötschel"
+    ]
+  },
+  {
+    "id": 221,
+    "Edition name": "Jacob Burckhardt",
+    "Author": "Jacob Burckhardt",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "European Research Advanced Grant Project EUROCORR",
+      "yes",
+      "http://burckhardtsource.org/",
+      "Maurizio Ghelardi"
+    ]
+  },
+  {
+    "id": 222,
+    "Edition name": "Key Documents of German-Jewish History",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "College students; researchers; teachers; interested public; high school students",
+      "yes",
+      "yes",
+      "Akademie der Wissenschaften Hamburg; DFG",
+      "yes",
+      "http://jewish-history-online.net/",
+      "Miriam Rürup"
+    ]
+  },
+  {
+    "id": 223,
+    "Edition name": "Sappho’s Poems",
+    "Author": "Sappho",
+    "attributes": [
+      "General public; scholars; teachers; students",
+      "no",
+      "partly",
+      "not provided",
+      "no",
+      "http://inamidst.com/stuff/sappho/",
+      "Sean B. Palmer"
+    ]
+  },
+  {
+    "id": 224,
+    "Edition name": "L’Orlando Furioso e la sua traduzione in immagini",
+    "Author": "Ludovico Ariosto",
+    "attributes": [
+      "Scholars; students; teachers",
+      "partly",
+      "partly",
+      "not provided",
+      "no",
+      "http://www.orlandofurioso.org/",
+      "Lina Bolzoni"
+    ]
+  },
+  {
+    "id": 225,
+    "Edition name": "Schopenhauer’s Library: Annotations and marks in his Spanish books",
+    "Author": "Arthur Schopenhauer",
+    "attributes": [
+      "not provided",
+      "yes",
+      "no",
+      "not provided",
+      "no",
+      "http://www.schopenhauer.uni.wroc.pl/",
+      "José Luis Losada Palenzuela"
+    ]
+  },
+  {
+    "id": 226,
+    "Edition name": "Clavius on the Web",
+    "Author": "Christoph Clavius",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://claviusontheweb.it/",
+      "Irene Pedretti"
+    ]
+  },
+  {
+    "id": 227,
+    "Edition name": "The Fleischmann Diaries",
+    "Author": "Aloys Fleischmann",
+    "attributes": [
+      "Scholars; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://fleischmanndiaries.ucc.ie/",
+      "Róisín O’Brien"
+    ]
+  },
+  {
+    "id": 228,
+    "Edition name": "Deutsches Textarchiv (DTA)",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Experts; general public",
+      "yes",
+      "yes",
+      "DFG",
+      "yes",
+      "http://www.deutschestextarchiv.de/",
+      "Martin Grötschel; Wolfgang Klein; Alexander Geyken"
+    ]
+  },
+  {
+    "id": 229,
+    "Edition name": "Project Tarsian: First Corinthians in Vaticanus Arabicus 13",
+    "Author": "Paul the Apostle (Text)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Swiss National Science Foundation",
+      "yes",
+      "http://tarsian.vital-it.ch/",
+      "Claire Clivaz"
+    ]
+  },
+  {
+    "id": 230,
+    "Edition name": "Letters of 1916",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Maynooth University; European Commission; Trinity College Dublin; Digital Repository of Ireland; Digital Scholarly Editions Initial Training Network",
+      "yes",
+      "http://dh.tcd.ie/letters1916/",
+      "Susan Schreibman"
+    ]
+  },
+  {
+    "id": 231,
+    "Edition name": "Bibliotheca Iuris Antiqui (BIA)",
+    "Author": "Not specified (Jurists)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "partly",
+      "Ministero dell’Istruzione, dell’Università e della Ricerca (MIUR)",
+      "no",
+      "http://www.ittig.cnr.it",
+      "Nicola Palazzolo"
+    ]
+  },
+  {
+    "id": 232,
+    "Edition name": "The Wandering Jew's Chronicle",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "Book historians; ballad scholars; folk scholars; cultural historians",
+      "yes",
+      "yes",
+      "British Academy",
+      "yes",
+      "http://wjc.bodleian.ox.ac.uk",
+      "Giles Bergel"
+    ]
+  },
+  {
+    "id": 233,
+    "Edition name": "Roman Inscriptions of Britain",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "not provided",
+      "partly",
+      "https://romaninscriptionsofbritain.org/",
+      "Scott Vanderbilt"
+    ]
+  },
+  {
+    "id": 234,
+    "Edition name": "Teutsche Academie der Bau-, Bild- und Mahlerey-Künste, Joachim von Sandrart, Nürnberg 1675/1679/1680: Wissenschaftlich kommentierte Online-Edition",
+    "Author": "Joachim von Sandrart",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "DFG",
+      "yes",
+      "http://ta.sandrart.net/de/",
+      "Thomas Kirchner; Alessandro Nova"
+    ]
+  },
+  {
+    "id": 235,
+    "Edition name": "ABaC:us - Austrian Baroque Corpus",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars (literary studies; linguistic studies; religious studies; history; art history); students; general public",
+      "yes",
+      "yes",
+      "City of Vienna, Anniversary fund of the Österreichische Nationalbank",
+      "yes",
+      "https://acdh.oeaw.ac.at/abacus/",
+      "Claudia Resch"
+    ]
+  },
+  {
+    "id": 236,
+    "Edition name": "Darwin Online: Online Variorum of Darwin’s Origin of Species",
+    "Author": "Charles Darwin",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "partly",
+      "not provided",
+      "yes",
+      "http://darwin-online.org.uk/Variorum/",
+      "Barbara Bordalejo"
+    ]
+  },
+  {
+    "id": 237,
+    "Edition name": "Dāmos Database of Mycenaean at Oslo",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "https://www2.hf.uio.no/damos/",
+      "Federico Aurora"
+    ]
+  },
+  {
+    "id": 238,
+    "Edition name": "Van Nu en Straks brieven",
+    "Author": "Not specified (Editors)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://www.vnsbrieven.org/VNS/",
+      "Edward Vanhoutte"
+    ]
+  },
+  {
+    "id": 239,
+    "Edition name": "Streuvels en zijn uitgevers – brieven",
+    "Author": "Stijn Streuvels",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://edities.kantl.be/streuvels/",
+      "Edward Vanhoutte"
+    ]
+  },
+  {
+    "id": 240,
+    "Edition name": "Briefwechsel Sauer-Seuffert",
+    "Author": "Sauer & Seuffert",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "DFG; Austrian Science Fund (FWF)",
+      "yes",
+      "http://sauer-seuffert.onb.ac.at/",
+      "Bernhard Fetz; Hans Harald Müller"
+    ]
+  },
+  {
+    "id": 241,
+    "Edition name": "Ursus from Benevento, De nomine",
+    "Author": "Ursus of Benevento",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Progetti di Rilevante Interesse Nazionale (PRIN)",
+      "yes",
+      "http://www1.unipa.it/paolo.monella/ursus/transcription.html",
+      "Paolo Monella"
+    ]
+  },
+  {
+    "id": 242,
+    "Edition name": "William F. Cody Archive",
+    "Author": "William F. Cody",
+    "attributes": [
+      "Scholars; general public",
+      "yes",
+      "yes",
+      "National Endowment for the Humanities; Geraldine W. & Robert J. Dellenback Foundation",
+      "yes",
+      "http://codyarchive.org/",
+      "Jeremy Johnston; Frank Christianson; Douglas Seefeldt; Katherine Walter"
+    ]
+  },
+  {
+    "id": 243,
+    "Edition name": "Johannes Tinctoris: Complete Theoretical Works",
+    "Author": "Johannes Tinctoris",
+    "attributes": [
+      "Scholars; performers; teachers; students",
+      "partly",
+      "yes",
+      "AHRC; Birmingham Conservatoire of Birmingham City University",
+      "yes",
+      "http://earlymusictheory.org/Tinctoris/",
+      "Ronald Woodley"
+    ]
+  },
+  {
+    "id": 244,
+    "Edition name": "Digital Athenaeus",
+    "Author": "Athenaeus",
+    "attributes": [
+      "not provided",
+      "yes",
+      "partly",
+      "Humboldt Foundation",
+      "partly",
+      "http://digitalathenaeus.org/",
+      "Monica Berti"
+    ]
+  },
+  {
+    "id": 245,
+    "Edition name": "Magistri Guillelmi Autissiodorensis Summa de officiis ecclesiasticis",
+    "Author": "William of Auxerre",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "DFG-Graduiertenkolleg Vormoderne Konzepte von Zeit und Vergangenheit (Universität zu Köln, 2001-2004)",
+      "yes",
+      "http://guillelmus.uni-koeln.de/",
+      "Franz Fischer"
+    ]
+  },
+  {
+    "id": 246,
+    "Edition name": "Musil Online",
+    "Author": "Robert Musil",
+    "attributes": [
+      "not provided",
+      "yes",
+      "no",
+      "not provided",
+      "no",
+      "http://musilonline.at/",
+      "Anke Bosse; Artur Boerderl; Walter Fanta"
+    ]
+  },
+  {
+    "id": 247,
+    "Edition name": "A Comprehensive Edition of Tocharian Manuscripts",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Austrian Science Fund (FWF)",
+      "yes",
+      "http://www.univie.ac.at/tocharian/",
+      "Bernhard Koller"
+    ]
+  },
+  {
+    "id": 248,
+    "Edition name": "Briefe und Texte aus dem Intellektuellen Berlin um 1800",
+    "Author": "Not specified (Intellectuals)",
+    "attributes": [
+      "Scientists; scholars",
+      "yes",
+      "yes",
+      "DFG",
+      "yes",
+      "http://www.berliner-intellektuelle.eu/",
+      "Anne Baillot"
+    ]
+  },
+  {
+    "id": 249,
+    "Edition name": "Biblioteca Digital del Pensamiento Novohispano",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Students; researchers; academics",
+      "yes",
+      "yes",
+      "Programa de Apoyo para la Innovación y el Mejoramiento de la Enseñanza (PAPIME); Consejo Nacional de Ciencia y Tecnología (CONACyT)",
+      "yes",
+      "http://www.bdpn.unam.mx/",
+      "Ernesto Priani Saisó"
+    ]
+  },
+  {
+    "id": 250,
+    "Edition name": "Bliss-Tyler Correspondence",
+    "Author": "Bliss & Tyler",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "http://www.doaks.org/resources/bliss-tyler-correspondence/",
+      "not provided"
+    ]
+  },
+  {
+    "id": 251,
+    "Edition name": "edition humboldt digital",
+    "Author": "Alexander von Humboldt",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Das Akademienvorhaben „Alexander von Humboldt auf Reisen – Wissenschaft aus der Bewegung“ ist Teil des von Bund und Ländern geförderten Akademienprogramms, das der Erhaltung, Sicherung und Vergegenwärtigung unseres kulturellen Erbes dient. Koordiniert wird das Programm von der Union der Deutschen Akademien der Wissenschaften.",
+      "yes",
+      "https://edition-humboldt.de/",
+      "Ottmar Ette"
+    ]
+  },
+  {
+    "id": 252,
+    "Edition name": "Vespasiano da Bisticci, Lettere",
+    "Author": "Vespasiano da Bisticci",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://vespasianodabisticciletters.unibo.it",
+      "Francesca Tomasi"
+    ]
+  },
+  {
+    "id": 253,
+    "Edition name": "Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732)",
+    "Author": "Erdmuthe Benigna",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Friedrich-Schiller-Universität Jena",
+      "yes",
+      "http://erdmuthe.thulb.uni-jena.de",
+      "Julia A. Schmidt-Funke; Martin Prell"
+    ]
+  },
+  {
+    "id": 254,
+    "Edition name": "Jane Addams Digital Edition",
+    "Author": "Jane Addams",
+    "attributes": [
+      "Scholars; students; teachers; general public; genealogists",
+      "partly",
+      "yes",
+      "National Historical Publications and Records Commission (USA); National Endowment for the Humanities (USA); Ramapo College of New Jersey; Gladys Krieble Delmas Foundation; Ruth McCormick Tankersley Foundation;",
+      "yes",
+      "https://digital.janeaddams.ramapo.edu/",
+      "Cathy Moran Hajo"
+    ]
+  },
+  {
+    "id": 255,
+    "Edition name": "Les Pensées de Blaise Pascal",
+    "Author": "Blaise Pascal",
+    "attributes": [
+      "General public; students; teachers; researchers",
+      "partly",
+      "partly",
+      "not provided",
+      "partly",
+      "http://www.penseesdepascal.fr",
+      "Dominique Descotes; Gilles Proust"
+    ]
+  },
+  {
+    "id": 256,
+    "Edition name": "Ödön von Horváth: Historisch-kritische Ausgabe – Digitale Edition",
+    "Author": "Ödön von Horváth",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "partly",
+      "Austrian Science Fund (FWF)",
+      "yes",
+      "http://gams.uni-graz.at/horvath-edition",
+      "Klaus Kastberger"
+    ]
+  },
+  {
+    "id": 257,
+    "Edition name": "Lament of St. Anselm",
+    "Author": "Anselm of Canterbury",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://library.trinity.edu/lament/index.html",
+      "Andrew Kraebel"
+    ]
+  },
+  {
+    "id": 258,
+    "Edition name": "Beethovens Werkstatt",
+    "Author": "Ludwig van Beethoven",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Akademie der Wissenschaften und der Literatur Mainz",
+      "yes",
+      "http://beethovens-werkstatt.de/",
+      "Bernhard R. Appel; Joachim Veit"
+    ]
+  },
+  {
+    "id": 259,
+    "Edition name": "The Charles Harpur Critical Archive",
+    "Author": "Charles Harpur",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "Australian Research Council; Loyola University",
+      "yes",
+      "http://charles-harpur.org/",
+      "Paul Eggert"
+    ]
+  },
+  {
+    "id": 260,
+    "Edition name": "La Dama Boba",
+    "Author": "Lope de Vega",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://damaboba.unibo.it/",
+      "Marco Presotto"
+    ]
+  },
+  {
+    "id": 261,
+    "Edition name": "En el ojo del huracán. Cartas de ultramar a España 1823",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://www.cartas-de-ultramar.net/",
+      "Werner Stangl"
+    ]
+  },
+  {
+    "id": 262,
+    "Edition name": "Kosztolányi Dezső: Édes Anna",
+    "Author": "Dezső Kosztolányi",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://magyar-irodalom.elte.hu/gepesk/kd/edesanna/",
+      "Veres András"
+    ]
+  },
+  {
+    "id": 263,
+    "Edition name": "Kosztolányi Dezső: Édes Anna",
+    "Author": "Dezső Kosztolányi",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "partly",
+      "not provided",
+      "partly",
+      "http://digiphil.hu/context:edesanna",
+      "Veres András"
+    ]
+  },
+  {
+    "id": 264,
+    "Edition name": "Kassák Lajos: The Horse Dies the Birds Fly Away / A ló meghal a madarak kirepülnek",
+    "Author": "Lajos Kassák",
+    "attributes": [
+      "Scholars; students; general public",
+      "no",
+      "no",
+      "not provided",
+      "no",
+      "http://digiphil.hu/context:alomeghal",
+      "Fellegi Zsófia"
+    ]
+  },
+  {
+    "id": 265,
+    "Edition name": "Kosztolányi Dezső: Aranysárkány",
+    "Author": "Dezső Kosztolányi",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "partly",
+      "not provided",
+      "partly",
+      "http://digiphil.hu/context:aranysarkany",
+      "Bengi László; Parádi Andrea"
+    ]
+  },
+  {
+    "id": 266,
+    "Edition name": "Kosztolányi Dezső: Esti Kornél",
+    "Author": "Dezső Kosztolányi",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "partly",
+      "not provided",
+      "partly",
+      "http://digiphil.hu/context:estikornel",
+      "Palkó Gábor; Veres András"
+    ]
+  },
+  {
+    "id": 267,
+    "Edition name": "Fanchali Jób-kódex",
+    "Author": "Not specified (Scribe)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://www.tankonyvtar.hu/hu/tartalom/tkt/fanchali-job-kodex/adatok.html",
+      "Tóth Tünde; Földes Zsuzsa"
+    ]
+  },
+  {
+    "id": 268,
+    "Edition name": "Eötvös József: A falu jegyzóje",
+    "Author": "József Eötvös",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://magyar-irodalom.elte.hu/totnes/eotvos/",
+      "Devescovi Balázs"
+    ]
+  },
+  {
+    "id": 269,
+    "Edition name": "József Attila összes tanulmánya és cikke",
+    "Author": "Attila József",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://magyar-irodalom.elte.hu/ja/",
+      "Horváth Iván; Devescovi Balázs, Golden Dániel"
+    ]
+  },
+  {
+    "id": 270,
+    "Edition name": "József Attila összes tanulmánya és cikke. Szövegek 1930-1937",
+    "Author": "Attila József",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://textus.elte.hu/ja/",
+      "Horváth Iván"
+    ]
+  },
+  {
+    "id": 271,
+    "Edition name": "Estoria de Espanna Digital",
+    "Author": "Alfonso X",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Arts and Humanities Research Council",
+      "yes",
+      "http://estoria.bham.ac.uk/",
+      "Aengus Ward"
+    ]
+  },
+  {
+    "id": 272,
+    "Edition name": "Gergei Albert: Árgirus históriája (version 1)",
+    "Author": "Albert Gergei",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://www.tankonyvtar.hu/en/tartalom/tkt/argirus-historiaja/adatok.html",
+      "Parádi Andrea"
+    ]
+  },
+  {
+    "id": 273,
+    "Edition name": "Wathay Ferenc összes műve",
+    "Author": "Ferenc Wathay",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://magyar-irodalom.elte.hu/gepesk/wathay/",
+      "Tóth Csilla; Tóth Tünde"
+    ]
+  },
+  {
+    "id": 274,
+    "Edition name": "Adriai tengernek syrénája, gróf Zrínyi Miklós",
+    "Author": "Miklós Zrínyi",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://magyar-irodalom.elte.hu/gepesk/zrinyi/",
+      "Orlovszky Géza"
+    ]
+  },
+  {
+    "id": 275,
+    "Edition name": "Rimay János verseinek fragmentumi",
+    "Author": "János Rimay",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://magyar-irodalom.elte.hu/gepesk/rimay/",
+      "Tóth Tünde"
+    ]
+  },
+  {
+    "id": 276,
+    "Edition name": "Rimay János ifjúkori versgyűjteménye",
+    "Author": "János Rimay",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://www.tankonyvtar.hu/hu/tartalom/tkt/rimay-janos-ifjukori/",
+      "Tóth Tünde"
+    ]
+  },
+  {
+    "id": 277,
+    "Edition name": "Effectus amoris",
+    "Author": "Not specified (Anonymous)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://magyar-irodalom.elte.hu/effectus/",
+      "Szegedi Béla"
+    ]
+  },
+  {
+    "id": 278,
+    "Edition name": "Érdy-kódex",
+    "Author": "Not specified (Translator)",
+    "attributes": [
+      "Scholars",
+      "partly",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://sermones.elte.hu/erdy/",
+      "Bárczi Ildikó"
+    ]
+  },
+  {
+    "id": 279,
+    "Edition name": "Régi Magyar Exemplumadatbázis/ Database of Old Hungarian Exempla",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "0.5; 1",
+      "not provided",
+      "yes",
+      "http://sermones.elte.hu/exemplumadatbazis/",
+      "Bartók Zsófia Ágnes"
+    ]
+  },
+  {
+    "id": 280,
+    "Edition name": "Kazinczy Ferenc összes művei",
+    "Author": "Ferenc Kazinczy",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://deba.unideb.hu/deba/kazinczy_muvei/",
+      "Bodrogi Ferenc Máté; Orbán László"
+    ]
+  },
+  {
+    "id": 281,
+    "Edition name": "Csokonai Vitéz Mihály összes művei",
+    "Author": "Mihály Csokonai Vitéz",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://deba.unideb.hu/deba/csokonai_muvei/",
+      "Tóth Barna"
+    ]
+  },
+  {
+    "id": 282,
+    "Edition name": "Opera Aesthetica Szerdahelyana / Szerdahely György Alajos esztétikai írásai",
+    "Author": "György Alajos Szerdahely",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://deba.unideb.hu/deba/szerdahely/",
+      "Debreczeni Attila"
+    ]
+  },
+  {
+    "id": 283,
+    "Edition name": "Gyöngyössi János művei",
+    "Author": "János Gyöngyössi",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://deba.unideb.hu/deba/gyongyossi/",
+      "Debreczeni Attila"
+    ]
+  },
+  {
+    "id": 284,
+    "Edition name": "Berzsenyi Dániel levelezése",
+    "Author": "Dániel Berzsenyi",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://deba.unideb.hu/deba/berzsenyi/",
+      "Tóth Barna"
+    ]
+  },
+  {
+    "id": 285,
+    "Edition name": "Magyar írók levelezése",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://deba.unideb.hu/deba/levelezes/",
+      "Orbán László"
+    ]
+  },
+  {
+    "id": 286,
+    "Edition name": "A Ráday-család levelezése",
+    "Author": "Ráday Family",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://deba.unideb.hu/deba/raday/",
+      "Veisz Bettina"
+    ]
+  },
+  {
+    "id": 287,
+    "Edition name": "Margit-legenda (Szent Margit élete, 1510)",
+    "Author": "Not specified (Scribe)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://deba.unideb.hu/deba/Margit-legenda_Szent_Margit_elete_1510/index.html",
+      "M. Nagy Ilona; Boda István Károly; Porkoláb Judit; Varga Teréz"
+    ]
+  },
+  {
+    "id": 288,
+    "Edition name": "Orpheus",
+    "Author": "Not specified (Kazinczy)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "partly",
+      "not provided",
+      "partly",
+      "http://deba.unideb.hu/deba/orpheus/",
+      "Debreczeni Attila"
+    ]
+  },
+  {
+    "id": 289,
+    "Edition name": "Magyar Museum",
+    "Author": "Not specified (Kazinczy et al.)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "partly",
+      "not provided",
+      "partly",
+      "http://deba.unideb.hu/deba/magyar_museum/",
+      "Debreczeni Attila"
+    ]
+  },
+  {
+    "id": 290,
+    "Edition name": "DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde",
+    "Author": "Herwarth Walden (Editor)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "https://sturm-edition.de",
+      "Torsten Schrade; Marjam Trautmann"
+    ]
+  },
+  {
+    "id": 291,
+    "Edition name": "Balassi Bálint összes verse (hálózati kritikai kiadás: version 1.0 and 2.0)",
+    "Author": "Bálint Balassi",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://magyar-irodalom.elte.hu/gepesk/bbom/itart.htm",
+      "Horváth Iván; Tóth Tünde; Vadai István"
+    ]
+  },
+  {
+    "id": 292,
+    "Edition name": "Lelki énekekről régi magyarok",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://magyar-irodalom.elte.hu/gepesk/eloszo/",
+      "H. Hubert Gabriella"
+    ]
+  },
+  {
+    "id": 293,
+    "Edition name": "Szabó Lőrinc: Föld, erdő, isten; Kalibán; Fény, fény, fény; A sátán műremekei; Te meg a világ; Különbéke; Harc az ünnepért; Régen és most",
+    "Author": "Lőrinc Szabó",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://krk.szabolorinc.hu/dokumentumok.htm",
+      "Kabdebó Lóránt"
+    ]
+  },
+  {
+    "id": 294,
+    "Edition name": "A Tett folyóirat (The Journal „A Tett”)",
+    "Author": "Lajos Kassák (Editor)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "http://digiphil.hu/context:atett",
+      "not provided"
+    ]
+  },
+  {
+    "id": 295,
+    "Edition name": "Mikszáth Kálmán összes művei 39",
+    "Author": "Kálmán Mikszáth",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "partly",
+      "not provided",
+      "partly",
+      "http://digiphil.hu/context:mkk39",
+      "Labádi Gergely"
+    ]
+  },
+  {
+    "id": 296,
+    "Edition name": "Mikszáth Kálmán összes művei 42",
+    "Author": "Kálmán Mikszáth",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "partly",
+      "not provided",
+      "partly",
+      "http://digiphil.hu/context:mkk42",
+      "not provided"
+    ]
+  },
+  {
+    "id": 297,
+    "Edition name": "P.S. Post Scriptum: A Digital Archive of Ordinary Writing",
+    "Author": "Not specified (Civilians)",
+    "attributes": [
+      "not provided",
+      "yes",
+      "yes",
+      "European Research Council",
+      "yes",
+      "http://ps.clul.ul.pt/",
+      "Rita Marquilhas"
+    ]
+  },
+  {
+    "id": 298,
+    "Edition name": "Jean Paul – Sämtliche Briefe digital",
+    "Author": "Jean Paul",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "partly",
+      "Deutsche Forschungsgemeinschaft",
+      "partly",
+      "https://www.jeanpaul-edition.de/",
+      "Norbert Miller; Markus Bernauer; Frederike Neuber"
+    ]
+  },
+  {
+    "id": 299,
+    "Edition name": "Armer Heinrich Digital",
+    "Author": "Hartmann von Aue",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Ministerio de Economía y Competitividad de España",
+      "yes",
+      "http://digi.ub.uni-heidelberg.de/ahd/",
+      "Victor Millet"
+    ]
+  },
+  {
+    "id": 300,
+    "Edition name": "Deux visages de L'Astrée",
+    "Author": "Honoré d'Urfé",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Tufts University",
+      "yes",
+      "https://astree.tufts.edu",
+      "Eglal Henein"
+    ]
+  },
+  {
+    "id": 302,
+    "Edition name": "travel!digital",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Austrian Academy of Sciences",
+      "yes",
+      "https://traveldigital.acdh.oeaw.ac.at/",
+      "Ulrike Czeitschner"
+    ]
+  },
+  {
+    "id": 303,
+    "Edition name": "Mächtekongresse 1818–1822. Digitale Edition der Dokumente zu den Kongressen von Aachen (1818), Troppau (1820), Laibach (1821) und Verona (1822)",
+    "Author": "Not specified (Diplomats)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Austrian Science Fund (FWF); Austrian Academy of Sciences",
+      "yes",
+      "https://maechtekongresse.acdh.oeaw.ac.at/",
+      "Karin Schneider"
+    ]
+  },
+  {
+    "id": 304,
+    "Edition name": "Tagebücher von Andreas Okopenko. Digitale Edition",
+    "Author": "Andreas Okopenko",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Austrian Science Fund (FWF)",
+      "yes",
+      "https://edition.onb.ac.at/okopenko",
+      "Roland Innerhofer"
+    ]
+  },
+  {
+    "id": 305,
+    "Edition name": "Ulrich Richental die Chronik des Konzils von Konstanz",
+    "Author": "Ulrich Richental",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "DFG",
+      "partly",
+      "https://edition.mgh.de/001/",
+      "Thomas Martin Buck"
+    ]
+  },
+  {
+    "id": 306,
+    "Edition name": "Franco-Hungarian literary relations in the 20th century/Les relations littéraires entre la France et la Hongrie au XXe siècle",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "General public",
+      "partly",
+      "yes",
+      "Hungarian Government",
+      "yes",
+      "http://frhu20.iti.btk.mta.hu/",
+      "Újvári Tüskés Anna"
+    ]
+  },
+  {
+    "id": 307,
+    "Edition name": "Schnitzler Critical Digital Edition",
+    "Author": "Arthur Schnitzler",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "MHRA",
+      "yes",
+      "https://www.arthur-schnitzler.de/edition/genetisch",
+      "Andrew Webber"
+    ]
+  },
+  {
+    "id": 308,
+    "Edition name": "Johann Georg Hamann: Kommentierte Briefausgabe",
+    "Author": "Johann Georg Hamann",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Theodor Springmann Stiftung",
+      "yes",
+      "https://www.hamann-ausgabe.de",
+      "Janina Reibold"
+    ]
+  },
+  {
+    "id": 309,
+    "Edition name": "Grundtvigs Vaerker (The complete works of N.F.S. Grundtvig)",
+    "Author": "N.F.S. Grundtvig",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Danish Government",
+      "no",
+      "http://grundtvigsvaerker.dk",
+      "Katrine Froekjaer Baunvig"
+    ]
+  },
+  {
+    "id": 310,
+    "Edition name": "Die Korrespondenz von Leo von Thun-Hohenstein",
+    "Author": "Leo von Thun-Hohenstein",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "Austrian Science Fund (FWF); Austrian Academy of Sciences",
+      "yes",
+      "https://thun-korrespondenz.acdh.oeaw.ac.at/",
+      "Brigitte Mazohl; Christof Aichner; Peter Andorfer"
+    ]
+  },
+  {
+    "id": 311,
+    "Edition name": "Inscriptions of Greek Cyrenaica - Greek Verse Inscriptions of Cyrenaica",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "https://igcyr.unibo.it",
+      "Catherine Dobias-Lalou"
+    ]
+  },
+  {
+    "id": 312,
+    "Edition name": "Romualdus Beneventanus, Chronicon",
+    "Author": "Romuald of Salerno",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "ALIM (Archivio della Latinità Italiana del Medioevo), Università degli Studi di Palermo",
+      "yes",
+      "http://www1.unipa.it/paolo.monella/romualdus/",
+      "Paolo Monella"
+    ]
+  },
+  {
+    "id": 313,
+    "Edition name": "Samuel Hahnemann - Digitale kritische Edition - Krankenjournal DF5",
+    "Author": "Samuel Hahnemann",
+    "attributes": [
+      "General public; historians; physicians; homeopaths",
+      "yes",
+      "yes",
+      "Institut für Geschichte der Medizin der Robert Bosch Stiftung",
+      "yes",
+      "https://www.hahnemann-edition.de/index.html",
+      "Arnold Michalowski"
+    ]
+  },
+  {
+    "id": 314,
+    "Edition name": "Arthur Schnitzler – Briefwechsel mit Autorinnen und Autoren",
+    "Author": "Arthur Schnitzler",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "FWF",
+      "yes",
+      "https://schnitzler-briefe.acdh.oeaw.ac.at",
+      "Martin Anton Müller"
+    ]
+  },
+  {
+    "id": 315,
+    "Edition name": "Lazarraga eskuizkribua: edizioa eta azterketa",
+    "Author": "Juan Pérez de Lazarraga",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "Spanish Ministerio de Ciencia e Innovación; Spanish Ministerio de Economía y Competitividad; Eusko Jaurlaritza / Gobierno Vasco; Universidad del País Vasco / Euskal Herriko Unibertsitatea (UPV/EHU)",
+      "partly",
+      "http://www.ehu.eus/monumenta/lazarraga/index.html",
+      "Joseba A. Lakarra"
+    ]
+  },
+  {
+    "id": 316,
+    "Edition name": "Protokolle des Bayerischen Staatsrats",
+    "Author": "Not specified (Ministers)",
+    "attributes": [
+      "Scholars; general public",
+      "partly",
+      "no",
+      "not provided",
+      "partly",
+      "https://www.bayerischer-staatsrat.de",
+      "Matthias Reinert"
+    ]
+  },
+  {
+    "id": 317,
+    "Edition name": "The glosses to the first book of the Etymologiae of Isidore of Seville: a digital scholarly edition",
+    "Author": "Isidore of Seville (Text)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO)",
+      "yes",
+      "https://db.innovatingknowledge.nl/edition",
+      "Evina Steinová"
+    ]
+  },
+  {
+    "id": 318,
+    "Edition name": "In Search of the Drowned: Testimonies and Testimonial Fragments of the Holocaust",
+    "Author": "Not specified (Survivors)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "not provided",
+      "Yale Fortunoff Archive",
+      "yes",
+      "https://lts.fortunoff.library.yale.edu/",
+      "Gabor Mihaly Toth"
+    ]
+  },
+  {
+    "id": 319,
+    "Edition name": "Alexander von Humboldt: Sämtliche Schriften digital",
+    "Author": "Alexander von Humboldt",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Schweizerischer Nationalfonds; Schweizerische Akademie der Geistes- und Sozialwissenschaften",
+      "yes",
+      "https://humboldt.unibe.ch/text",
+      "Thomas Nehrlich"
+    ]
+  },
+  {
+    "id": 320,
+    "Edition name": "Mystische Bücher in der Bibliothek der Kartause Erfurt. Digitale Edition",
+    "Author": "Not specified (Monks)",
+    "attributes": [
+      "Scholars",
+      "yes",
+      "yes",
+      "Deutsche Forschungsgemeinschaft",
+      "yes",
+      "https://making-mysticism.org/edition/1.0/html/",
+      "Marieke Abram; Susanne Bernhardt; Gilbert Fournier; Martin Hinze; Antje Kellersohn; Balázs J. Nemes; Saher Semaan"
+    ]
+  },
+  {
+    "id": 321,
+    "Edition name": "Peter Handke Notizbücher. Digitale Edition",
+    "Author": "Peter Handke",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Austrian Science Fund (FWF); Deutsche Forschungsgemeinschaft (DFG)",
+      "yes",
+      "http://edition.onb.ac.at/handke-notizbuecher",
+      "Bernhard Fetz; Ulrich von Bülow"
+    ]
+  },
+  {
+    "id": 322,
+    "Edition name": "Gottfried Semper. Critical and Commented Edition",
+    "Author": "Gottfried Semper",
+    "attributes": [
+      "Scholars; students; architects; general public",
+      "partly",
+      "yes",
+      "Swiss National Science Foundation",
+      "yes",
+      "https://semper-edition.ch/",
+      "Elena Chestnova"
+    ]
+  },
+  {
+    "id": 323,
+    "Edition name": "Thesaurus Inscriptionum Raeticarum",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "FWF",
+      "yes",
+      "https://tir.univie.ac.at",
+      "Corinna Salomon"
+    ]
+  },
+  {
+    "id": 324,
+    "Edition name": "Lexicon Leponticum",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "FWF; ÖAW",
+      "yes",
+      "https://lexlep.univie.ac.at",
+      "David Stifter"
+    ]
+  },
+  {
+    "id": 325,
+    "Edition name": "Arthur Schnitzler – Chronik. Eine digitale Ressource zu den einzelnen Tagen seines Lebens",
+    "Author": "Arthur Schnitzler",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "https://schnitzler-chronik.acdh.oeaw.ac.at/",
+      "Martin Anton Müller"
+    ]
+  },
+  {
+    "id": 326,
+    "Edition name": "Clara Katharina Pollaczek: Arthur Schnitzler und ich. Digitale Ausgabe",
+    "Author": "Clara Katharina Pollaczek",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "yes",
+      "https://pollaczek.acdh.oeaw.ac.at/",
+      "Martin Anton Müller"
+    ]
+  },
+  {
+    "id": 327,
+    "Edition name": "Aufenthaltsorte von Arthur Schnitzler (1879–1931)",
+    "Author": "Arthur Schnitzler",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "https://schnitzler-orte.acdh.oeaw.ac.at/",
+      "Martin Anton Müller"
+    ]
+  },
+  {
+    "id": 328,
+    "Edition name": "Arthur Schnitzler: Lektüren. Digitale Edition der Leseliste von Arthur Schnitzler",
+    "Author": "Arthur Schnitzler",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "no",
+      "https://schnitzler-lektueren.acdh.oeaw.ac.at/",
+      "Martin Anton Müller"
+    ]
+  },
+  {
+    "id": 329,
+    "Edition name": "Arthur Schnitzler: Tagebuch. Digitale Edition",
+    "Author": "Arthur Schnitzler",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "not provided",
+      "no",
+      "https://schnitzler-tagebuch.acdh.oeaw.ac.at/",
+      "Martin Anton Müller"
+    ]
+  },
+  {
+    "id": 330,
+    "Edition name": "Arthur Schnitzler: Archiv der Zeitungsausschnitte",
+    "Author": "Arthur Schnitzler",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "https://schnitzler-zeitungen.acdh.oeaw.ac.at/",
+      "Peter Andorfer"
+    ]
+  },
+  {
+    "id": 331,
+    "Edition name": "Personen der Moderne Basis",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars; students",
+      "no",
+      "not provided",
+      "multiple",
+      "yes",
+      "https://pmb.acdh.oeaw.ac.at/",
+      "Peter Andorfer"
+    ]
+  },
+  {
+    "id": 332,
+    "Edition name": "Hermann Bahr – Arthur Schnitzler: Briefwechsel, Aufzeichnungen, Dokumente (1891–1931)",
+    "Author": "Bahr & Schnitzler",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "not provided",
+      "partly",
+      "https://schnitzler-bahr.acdh.oeaw.ac.at/",
+      "Martin Anton Müller"
+    ]
+  },
+  {
+    "id": 333,
+    "Edition name": "Inscriptions of Roman Tripolitania (2021)",
+    "Author": "Not specified (Inscribers)",
+    "attributes": [
+      "Scholars; archaeologists",
+      "yes",
+      "yes",
+      "British Institute for Libyan and North African Studies",
+      "yes",
+      "https://irt2021.inslib.kcl.ac.uk/",
+      "Charlotte Roueché"
+    ]
+  },
+  {
+    "id": 334,
+    "Edition name": "SAWS Kekaumenos, Consilia et Narrationes",
+    "Author": "Kekaumenos",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "HERA",
+      "yes",
+      "https://ancientwisdoms.ac.uk/library/kekaumenos-consilia-et-narrationes/index.html",
+      "Charlotte Roueché"
+    ]
+  },
+  {
+    "id": 335,
+    "Edition name": "SAWS Dynamic Library",
+    "Author": "Not specified (Various)",
+    "attributes": [
+      "Scholars; students",
+      "yes",
+      "yes",
+      "HERA",
+      "yes",
+      "https://ancientwisdoms.ac.uk/library/",
+      "Charlotte Roueché; Denis Searby; Elvira Wakelnig"
+    ]
+  },
+  {
+    "id": 336,
+    "Edition name": "Die Urkunden und Akten des Klosters und des Oberamts Königsfelden",
+    "Author": "Not specified (Scribes)",
+    "attributes": [
+      "Scholars; general public",
+      "yes",
+      "yes",
+      "Schweizerischer Nationalfonds",
+      "yes",
+      "https://www.koenigsfelden.uzh.ch",
+      "Colette Halter-Pernet; Tobias Hodel; Simon Teuscher"
+    ]
+  },
+  {
+    "id": 337,
+    "Edition name": "MEGAdigital – Online-Abteilung der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels",
+    "Author": "Marx & Engels",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "BBAW; IMES",
+      "yes",
+      "https://megadigital.bbaw.de/",
+      "Gerald Hubmann"
+    ]
+  },
+  {
+    "id": 338,
+    "Edition name": "Auden Musulin Papers: A Digital Edition of W. H. Auden's Letters to Stella Musulin",
+    "Author": "W. H. Auden",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "FWF Austrian Science Fund",
+      "yes",
+      "https://amp.acdh.oeaw.ac.at",
+      "Sandra Mayer"
+    ]
+  },
+  {
+    "id": 339,
+    "Edition name": "Patristic Text Archive (PTA)",
+    "Author": "Not specified (Church Fathers)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Akademienprogramm",
+      "yes",
+      "https://pta.bbaw.de",
+      "Annette von Stockhausen"
+    ]
+  },
+  {
+    "id": 340,
+    "Edition name": "Open Arabic Periodical Editions (OpenArabicPE)",
+    "Author": "Not specified (Journalists)",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "not provided",
+      "not provided",
+      "yes",
+      "https://openarabicpe.github.io/",
+      "Till Grallert"
+    ]
+  },
+  {
+    "id": 341,
+    "Edition name": "Korespondencja Jana Lechonia i Kazimierza Wierzyńskiego. Naukowa Edycja Cyfrowa",
+    "Author": "Lechoń & Wierzyński",
+    "attributes": [
+      "Scholars; Students; Polonia Communities; Emigration Circles",
+      "yes",
+      "partly",
+      "Narodowy Program Rozwoju Humanistyki - funding number 1aH 15 0173 83",
+      "yes",
+      "https://tei.nplp.pl/categories/korespondencja-jana-lechonia-i-kazimierza-wierzynskiego",
+      "Beata Dorosz; Bartłomiej Szleszyński"
+    ]
+  },
+  {
+    "id": 342,
+    "Edition name": "Korespondencja Mieczysława Grydzewskiego i Kazimierza i Haliny Wierzyńskich. Naukowa Edycja Cyfrowa",
+    "Author": "Grydzewski & Wierzyński",
+    "attributes": [
+      "Scholars; Students; Polonia Communities; Emigration Circles",
+      "yes",
+      "partly",
+      "Narodowy Program Rozwoju Humanistyki - funding number 1aH 15 0173 83",
+      "yes",
+      "https://tei.nplp.pl/categories/korespondencja-mieczyslawa-grydzewskiego-i-kazimierza-i-haliny-wierzynski",
+      "Beata Dorosz; Bartłomiej Szleszyński"
+    ]
+  },
+  {
+    "id": 343,
+    "Edition name": "Die Ministerratsprotokolle Österreichs und der österreichisch-ungarischen Monarchie 1848–1918 – Digitale Edition",
+    "Author": "Not specified (Ministers)",
+    "attributes": [
+      "Scholars; general public",
+      "partly",
+      "yes",
+      "Austrian Academy of Sciences",
+      "yes",
+      "https://mrp.oeaw.ac.at",
+      "Franz Adlgasser; Anatol Schmied-Kowarzik; Stephan Kurz (digital edition)"
+    ]
+  },
+  {
+    "id": 344,
+    "Edition name": "Digital Scholarly Edition of Habsburg-Ottoman Diplomatic Sources 1500–1918",
+    "Author": "Not specified (Diplomats)",
+    "attributes": [
+      "Scholars; general public",
+      "partly",
+      "yes",
+      "Austrian Academy of Sciences",
+      "yes",
+      "https://qhod.net/",
+      "Arno Strohmeyer (editor); Stephan Kurz (technical)"
+    ]
+  },
+  {
+    "id": 345,
+    "Edition name": "Familiensache? Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)",
+    "Author": "Eleonora Magdalena",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "not provided",
+      "FWF",
+      "yes",
+      "https://kaiserin-eleonora.oeaw.ac.at/",
+      "Katrin Keller; Ines Peper; Anna Spitzbart"
+    ]
+  },
+  {
+    "id": 346,
+    "Edition name": "Arthur Schnitzler: Mikroverfilmung des Cambridger Nachlasses",
+    "Author": "Arthur Schnitzler",
+    "attributes": [
+      "Scholars; students; general public",
+      "partly",
+      "yes",
+      "not provided",
+      "yes",
+      "https://schnitzler-mikrofilme.acdh.oeaw.ac.at/",
+      "Peter Andorfer; Martin Anton Müller; Laura Untner"
+    ]
+  },
+  {
+    "id": 347,
+    "Edition name": "Renan Source",
+    "Author": "Ernest Renan",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Ville de Paris; CNRS; Ecole normale Supérieure",
+      "yes",
+      "http://www.renansource.org",
+      "Domenico Paone"
+    ]
+  },
+  {
+    "id": 348,
+    "Edition name": "The Mary Hamilton Papers (c. 1740 – c. 1850)",
+    "Author": "Mary Hamilton",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "Arts and Humanities Research Council",
+      "yes",
+      "https://www.digitalcollections.manchester.ac.uk/collections/maryhamilton/",
+      "David Denison; Nuria Yáñez-Bouza; Tino Oudesluijs; Cassandra Ulph; Christine Wallis; Hannah Barker; Sophie Coulombeau"
+    ]
+  },
+  {
+    "id": 349,
+    "Edition name": "Bullinger Digital",
+    "Author": "Heinrich Bullinger",
+    "attributes": [
+      "general public",
+      "yes",
+      "partly",
+      "UZH Foundation",
+      "yes",
+      "https://www.bullinger-digital.ch",
+      "Patricia Scheurer; Martin Volk;"
+    ]
+  },
+  {
+    "id": 350,
+    "Edition name": "Akademieprotokolle",
+    "Author": "Not specified (Academics)",
+    "attributes": [
+      "not provided",
+      "partly",
+      "yes",
+      "Magistratsabteilung 7 (Kultur, Wissenschafts- und Forschungsförderung) der Stadt Wien",
+      "yes",
+      "https://akademieprotokolle.acdh.oeaw.ac.at/",
+      "Stefan Sienell"
+    ]
+  },
+  {
+    "id": 351,
+    "Edition name": "Hanslick Online",
+    "Author": "Eduard Hanslick",
+    "attributes": [
+      "Scholars; students; general public",
+      "yes",
+      "yes",
+      "FWF",
+      "yes",
+      "https://hanslick.acdh.oeaw.ac.at/",
+      "Alexander Wilfing; Christoph Landerer"
+    ]
+  },
+  {
+    "id": 352,
+    "Edition name": "Staribacher  – Tagebücher",
+    "Author": "Josef Staribacher",
+    "attributes": [
+      "Scholars;students;general public",
+      "partly",
+      "yes",
+      "Österreichische Nationalbank",
+      "no",
+      "https://staribacher.acdh.oeaw.ac.at",
+      "Maria Mesner"
+    ]
+  }
+]

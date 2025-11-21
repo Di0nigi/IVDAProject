@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 # Read the CSV file
-csv_path = 'digEds_cat.csv'
+csv_path = 'processed_data.csv'
 df = pd.read_csv(csv_path)
 
 # Convert to list of dictionaries with id, Edition name, and attributes for authoritativeness and renown
@@ -11,6 +11,7 @@ for _, row in df.iterrows():
     item = {
         'id': int(row['id']),
         'Edition name': None if pd.isna(row['Edition name']) else row['Edition name'],
+        'Author': None if pd.isna(row['author']) else row['author'],
         'Audience': None if pd.isna(row['Audience']) else row['Audience'],
         'Philological statement': None if pd.isna(row['Philological statement']) else row['Philological statement'],
         'Value of witnesses': None if pd.isna(row['Value of witnesses']) else row['Value of witnesses'],

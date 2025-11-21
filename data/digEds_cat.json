@@ -1,1406 +1,4214 @@
 [
   {
     "id": 1,
-    "Edition name": "Digitale Edition der Handschrift Cod. Guelf. 64 Weiss."
+    "Edition name": "Digitale Edition der Handschrift Cod. Guelf. 64 Weiss.",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Gerda Henkel Stiftung",
+    "Account of textual variance": "yes",
+    "URL": "http://diglib.hab.de/edoc/ed000006/startx.htm",
+    "Manager or Editor": "Torsten Schaßan"
   },
   {
     "id": 2,
-    "Edition name": "The Thomas Gray Archive"
+    "Edition name": "The Thomas Gray Archive",
+    "Author": "Thomas Gray",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Institutional funding",
+    "Account of textual variance": "yes",
+    "URL": "http://www.thomasgray.org/",
+    "Manager or Editor": "Alexander Huber"
   },
   {
     "id": 3,
-    "Edition name": "A critical edition of the poetry of Dafydd ap Gwilym"
+    "Edition name": "A critical edition of the poetry of Dafydd ap Gwilym",
+    "Author": "Dafydd ap Gwilym",
+    "Audience": "Students of Celtic Studies",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "yes",
+    "URL": "http://www.dafyddapgwilym.net/",
+    "Manager or Editor": "Alexander Roberts; Dafydd Johnston"
   },
   {
     "id": 4,
-    "Edition name": "Saint Patrick's Confessio"
+    "Edition name": "Saint Patrick's Confessio",
+    "Author": "Saint Patrick",
+    "Audience": "Scholars; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Higher Education Authority; European Regional Development Fund",
+    "Account of textual variance": "partly",
+    "URL": "http://www.confessio.ie/#",
+    "Manager or Editor": "Franz Fischer; Anthony Harvey"
   },
   {
     "id": 5,
-    "Edition name": "Liber Matriculae - Il libro della matricola dei notai di Vercelli"
+    "Edition name": "Liber Matriculae - Il libro della matricola dei notai di Vercelli",
+    "Author": "Not specified (Notaries)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://scrineum.unipv.it/LM/home.html",
+    "Manager or Editor": "Antonio Olivieri"
   },
   {
     "id": 6,
-    "Edition name": "Correspondance de Pierre Bayle"
+    "Edition name": "Correspondance de Pierre Bayle",
+    "Author": "Pierre Bayle",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://bayle-correspondance.univ-st-etienne.fr/?lang=fr",
+    "Manager or Editor": "Antony McKenna"
   },
   {
     "id": 7,
-    "Edition name": "Vindolanda Tablets Online"
+    "Edition name": "Vindolanda Tablets Online",
+    "Author": "Not specified (Roman Soldiers)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation",
+    "Account of textual variance": "yes",
+    "URL": "http://vindolanda.csad.ox.ac.uk/index.shtml",
+    "Manager or Editor": "Charles Crowther; Alan Bowman"
   },
   {
     "id": 8,
-    "Edition name": "Vindolanda Tablets Online II"
+    "Edition name": "Vindolanda Tablets Online II",
+    "Author": "Not specified (Roman Soldiers)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation",
+    "Account of textual variance": "yes",
+    "URL": "http://vto2.classics.ox.ac.uk/",
+    "Manager or Editor": "Charles Crowther; Alan Bowman"
   },
   {
     "id": 9,
-    "Edition name": "Bérardier de Bataut, Essai sur le récit, Entretiens sur la manière de raconter"
+    "Edition name": "Bérardier de Bataut, Essai sur le récit, Entretiens sur la manière de raconter",
+    "Author": "Jean-Baptiste Bérardier de Bataut",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "no",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://www.berardier.org/",
+    "Manager or Editor": "Christof Schöch"
   },
   {
     "id": 10,
-    "Edition name": "Codex Sinaiticus"
+    "Edition name": "Codex Sinaiticus",
+    "Author": "Not specified (Biblical Scribes)",
+    "Audience": "Global audience",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC; Deutsche Forschungsgemeinschaft; Stavros Niarchos Foundation; A.G. Leventis Foundation",
+    "Account of textual variance": "not provided",
+    "URL": "http://codexsinaiticus.org/en/",
+    "Manager or Editor": "Claire Breay; Leander Seige; Father Justin; Ekaterina Krushelnitskaya"
   },
   {
     "id": 11,
-    "Edition name": "The Saint-Aubins \"Book of Arses\": The Livre de Caricatures tant bonnes que mauvaises"
+    "Edition name": "The Saint-Aubins \"Book of Arses\": The Livre de Caricatures tant bonnes que mauvaises",
+    "Author": "Gabriel de Saint-Aubin",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.waddesdon.org.uk/collection/special-projects/st.-aubin",
+    "Manager or Editor": "Colin Jones"
   },
   {
     "id": 12,
-    "Edition name": "Catullus Online"
+    "Edition name": "Catullus Online",
+    "Author": "Gaius Valerius Catullus",
+    "Audience": "Specialists; researchers; students",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Ludwig-Maximilians-Universität München",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.catullusonline.org/CatullusOnline/index.php",
+    "Manager or Editor": "Dániel Kiss"
   },
   {
     "id": 13,
-    "Edition name": "Digital edition of the Old Church Slavonic Codex Suprasliensis"
+    "Edition name": "Digital edition of the Old Church Slavonic Codex Suprasliensis",
+    "Author": "Not specified (Scribes)",
+    "Audience": "Global audience",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "UNESCO",
+    "Account of textual variance": "yes",
+    "URL": "http://suprasliensis.obdurodon.org/",
+    "Manager or Editor": "David J. Birnbaum"
   },
   {
     "id": 14,
-    "Edition name": "Becerro Galicano of San Millán de la Cogolla"
+    "Edition name": "Becerro Galicano of San Millán de la Cogolla",
+    "Author": "Not specified (Monks)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Fundación San Millán Cogolla",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.ehu.es/galicano/?l=en",
+    "Manager or Editor": "David Peterson"
   },
   {
     "id": 15,
-    "Edition name": "The Durham Liber Vitae Project"
+    "Edition name": "The Durham Liber Vitae Project",
+    "Author": "Not specified (Monks)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.dlv.org.uk/index.html",
+    "Manager or Editor": "David Rollason"
   },
   {
     "id": 16,
-    "Edition name": "Samuel Beckett Digital Manuscript Project"
+    "Edition name": "Samuel Beckett Digital Manuscript Project",
+    "Author": "Samuel Beckett",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "European Research Coucil",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.beckettarchive.org/login.html",
+    "Manager or Editor": "Dirk Van Hulle"
   },
   {
     "id": 17,
-    "Edition name": "Euripides Scholia"
+    "Edition name": "Euripides Scholia",
+    "Author": "Not specified (Scholars)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Loeb Classical Library Foundation (in part)",
+    "Account of textual variance": "partly",
+    "URL": "http://euripidesscholia.org",
+    "Manager or Editor": "Donald J. Mastronarde"
   },
   {
     "id": 18,
-    "Edition name": "Heimskringla"
+    "Edition name": "Heimskringla",
+    "Author": "Snorri Sturluson",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "no",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://omacl.org/Heimskringla/",
+    "Manager or Editor": "Douglas B. Killings"
   },
   {
     "id": 19,
-    "Edition name": "Partonopeus de Blois"
+    "Edition name": "Partonopeus de Blois",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "Scholars of Old French texts and manuscripts",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "https://hridigital.shef.ac.uk/partonopeus/",
+    "Manager or Editor": "Penny Simons"
   },
   {
     "id": 20,
-    "Edition name": "Henry III Fine Rolls Project"
+    "Edition name": "Henry III Fine Rolls Project",
+    "Author": "Not specified (Royal Clerks)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "no",
+    "URL": "http://www.finerollshenry3.org.uk/",
+    "Manager or Editor": "Beth Hartland; Harold Short; Arianna Ciula; David Carpenter; David Crook; Sean Cunningham; Paul Dryburgh; Louise Wilkinson"
   },
   {
     "id": 21,
-    "Edition name": "Die Briefwechsel der Mathematiker Bernoulli"
+    "Edition name": "Die Briefwechsel der Mathematiker Bernoulli",
+    "Author": "Bernoulli family",
+    "Audience": "Mathematicians; physicists; historians of science or local history; partner editions (e.g. The Euler Edition, the Leibniz Edition, the Dalambert Edition); biographers",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Schweizerischer Nationalfonds zur Förderung der wissenschaftlichen Forschung (SNF)",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.ub.unibas.ch/bernoulli/index.php/Hauptseite",
+    "Manager or Editor": "Fritz Nagel"
   },
   {
     "id": 22,
-    "Edition name": "La Famiglia dell'Antiquario"
+    "Edition name": "La Famiglia dell'Antiquario",
+    "Author": "Carlo Goldoni",
+    "Audience": "not provided",
+    "Philological statement": "no",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.intratext.com/X/ITA0763.HTM",
+    "Manager or Editor": "Giuseppe Bonghi"
   },
   {
     "id": 23,
-    "Edition name": "Die Glossen Ekkeharts IV. im Codex Sangallensis 621"
+    "Edition name": "Die Glossen Ekkeharts IV. im Codex Sangallensis 621",
+    "Author": "Ekkehard IV of St. Gall",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Schweizerischer Nationalfonds zur Förderung der wissenschaftlichen Forschung (SNF); Stiftsbibliothek St. Gallen (STBSG)",
+    "Account of textual variance": "not provided",
+    "URL": "http://orosius.monumenta.ch/",
+    "Manager or Editor": "Heidi Eisenhut"
   },
   {
     "id": 24,
-    "Edition name": "Inscriptions of the Northern Black Sea (IOSPE)"
+    "Edition name": "Inscriptions of the Northern Black Sea (IOSPE)",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "Researchers",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "A. G. Leventis Foundation; Loeb Library Foundation; British Academy (2008-2009); Russian Foundation for the Humanities;  Russian Foundation for Basic Research; Swiss National Science Foundation (SNSF); Ministère des Affaires étrangères et européennes (MAEE); Centre nationale de la recherche scientifique",
+    "Account of textual variance": "not provided",
+    "URL": "http://iospe.kcl.ac.uk/corpus/index.html",
+    "Manager or Editor": "Irene Polinskaya"
   },
   {
     "id": 25,
-    "Edition name": "La Entretenida Digital Edition"
+    "Edition name": "La Entretenida Digital Edition",
+    "Author": "Miguel de Cervantes",
+    "Audience": "Academics; theatre practitioners; translators",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://entretenida.outofthewings.org/index.html",
+    "Manager or Editor": "John O'Neill"
   },
   {
     "id": 26,
-    "Edition name": "A Survey of the Cities of London and Westminster by John Strype"
+    "Edition name": "A Survey of the Cities of London and Westminster by John Strype",
+    "Author": "John Strype",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "The Leverhulme Trust; University of Sheffield",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.hrionline.ac.uk/strype/",
+    "Manager or Editor": "Julia Merritt"
   },
   {
     "id": 27,
-    "Edition name": "Letters of William Herle Project"
+    "Edition name": "Letters of William Herle Project",
+    "Author": "William Herle",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.livesandletters.ac.uk/herle/index.html",
+    "Manager or Editor": "Matthew Symonds"
   },
   {
     "id": 28,
-    "Edition name": "The Diplomatic Correspondence of Thomas Bodley"
+    "Edition name": "The Diplomatic Correspondence of Thomas Bodley",
+    "Author": "Thomas Bodley",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.livesandletters.ac.uk/bodley/bodley.html",
+    "Manager or Editor": "Matthew Symonds"
   },
   {
     "id": 29,
-    "Edition name": "The Hooke Folio Online"
+    "Edition name": "The Hooke Folio Online",
+    "Author": "Robert Hooke",
+    "Audience": "Students; scholars; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.livesandletters.ac.uk/cell/Hooke/Hooke.html",
+    "Manager or Editor": "Matthew Symonds"
   },
   {
     "id": 30,
-    "Edition name": "The Workdiaries of Robert Boyle"
+    "Edition name": "The Workdiaries of Robert Boyle",
+    "Author": "Robert Boyle",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "The Wellcome Trust; Heritage Lottery Fund",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.livesandletters.ac.uk/wd/index.html",
+    "Manager or Editor": "Matthew Symonds"
   },
   {
     "id": 31,
-    "Edition name": "Jonathan Swift Archive"
+    "Edition name": "Jonathan Swift Archive",
+    "Author": "Jonathan Swift",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "partly",
+    "URL": "http://jonathanswiftarchive.org.uk/index.html",
+    "Manager or Editor": "Paddy Bullard"
   },
   {
     "id": 32,
-    "Edition name": "The St Gall Priscian Glosses"
+    "Edition name": "The St Gall Priscian Glosses",
+    "Author": "Not specified (Irish Scholars)",
+    "Audience": "Scholars; research students in the fields of Celtic linguistics, Late Antique and medieval Latin, history of linguistics",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Irish Research Council for Humanities and Social Sciences",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.stgallpriscian.ie",
+    "Manager or Editor": "Pádraic Moran"
   },
   {
     "id": 33,
-    "Edition name": "Nietzsche Source"
+    "Edition name": "Nietzsche Source",
+    "Author": "Friedrich Nietzsche",
+    "Audience": "Scholars",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://www.nietzschesource.org/",
+    "Manager or Editor": "Paolo D'Iorio"
   },
   {
     "id": 34,
-    "Edition name": "Early Irish Glossaries Database"
+    "Edition name": "Early Irish Glossaries Database",
+    "Author": "Not specified (Irish Scholars)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "yes",
+    "URL": "http://www.asnc.cam.ac.uk/irishglossaries/",
+    "Manager or Editor": "Paul Russell"
   },
   {
     "id": 35,
-    "Edition name": "The Holinshed Project"
+    "Edition name": "The Holinshed Project",
+    "Author": "Raphael Holinshed",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://www.cems.ox.ac.uk/holinshed/index.shtml",
+    "Manager or Editor": "Paulina Kewes"
   },
   {
     "id": 36,
-    "Edition name": "Alciato's Book of Emblems"
+    "Edition name": "Alciato's Book of Emblems",
+    "Author": "Andrea Alciato",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://www.mun.ca/alciato/",
+    "Manager or Editor": "William Barker"
   },
   {
     "id": 37,
-    "Edition name": "Electronic Variorum Edition of the Quixote"
+    "Edition name": "Electronic Variorum Edition of the Quixote",
+    "Author": "Miguel de Cervantes",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.csdl.tamu.edu:8080/veri/index-en.html",
+    "Manager or Editor": "Eduardo Urbina"
   },
   {
     "id": 38,
-    "Edition name": "Corpus Rhythmorum Musicum (SAEC. IV-IX) I - Songs from non-liturgical sources"
+    "Edition name": "Corpus Rhythmorum Musicum (SAEC. IV-IX) I - Songs from non-liturgical sources",
+    "Author": "Not specified (Various)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Università di Siena; Società Internazionale per lo Studio del Medioevo Latino",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.corimu.unisi.it/",
+    "Manager or Editor": "Francesco Stella"
   },
   {
     "id": 39,
-    "Edition name": "The Book of Ben Sira"
+    "Edition name": "The Book of Ben Sira",
+    "Author": "Jesus ben Sira",
+    "Audience": "Scholars; laypeople",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.bensira.org/",
+    "Manager or Editor": "Gary A. Rendsburg"
   },
   {
     "id": 40,
-    "Edition name": "Christine de Pizan: The Making of the Queen's Manuscript"
+    "Edition name": "Christine de Pizan: The Making of the Queen's Manuscript",
+    "Author": "Christine de Pizan",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.pizan.lib.ed.ac.uk/",
+    "Manager or Editor": "James Laidlaw"
   },
   {
     "id": 41,
-    "Edition name": "Corpus of the Inscriptions of Campā (CIC)"
+    "Edition name": "Corpus of the Inscriptions of Campā (CIC)",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Toyota Foundation (grant number D10-ID-1026); École française d'Extrème-Orient (EFEO); Center for Khmer Studies (Siem Reap, Cambodia)",
+    "Account of textual variance": "not provided",
+    "URL": "http://isaw.nyu.edu/publications/inscriptions/campa/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 42,
-    "Edition name": "Dante Online"
+    "Edition name": "Dante Online",
+    "Author": "Dante Alighieri",
+    "Audience": "not provided",
+    "Philological statement": "no",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Ente Cassa di Risparmio di Firenze",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.danteonline.it/italiano/home_ita.asp",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 43,
-    "Edition name": "Darwin Correspondence Project"
+    "Edition name": "Darwin Correspondence Project",
+    "Author": "Charles Darwin",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; Alfred P. Sloan Foundation; AHRC; The Bonita Trust; British Academy; British Ecological Society; Evolution Education Trust; Golden Family Foundation; Isaac Newton Trust; John Templeton Foundation; National Science Foundation; National Endowment for the Humanities; Natural Environment Research Council; Pew Charitable Trusts; Pilgrim Trust; Royal Society; Stifterverband für die Deutsche Wissenschaft; Wellcome Trust",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.darwinproject.ac.uk/",
+    "Manager or Editor": "James A. Secord"
   },
   {
     "id": 44,
-    "Edition name": "De Trein der Traagheid"
+    "Edition name": "De Trein der Traagheid",
+    "Author": "Johan Daisne",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://edities.kantl.be/daisne/",
+    "Manager or Editor": "Edward Vanhoutte"
   },
   {
     "id": 45,
-    "Edition name": "Early Stuart Libels"
+    "Edition name": "Early Stuart Libels",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC; Rutgers University; University of Exeter; Australian Research Council; British Academy; Mrs. Giles M. Whiting Foundation; Princeton University; University of Sydney",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.earlystuartlibels.net/htdocs/index.html",
+    "Manager or Editor": "Alastair Bellany; Andrew McRae"
   },
   {
     "id": 46,
-    "Edition name": "Folger Shakespeare Editions"
+    "Edition name": "Folger Shakespeare Editions",
+    "Author": "William Shakespeare",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.folgerdigitaltexts.org/",
+    "Manager or Editor": "Barbara Mowat; Paul Werstine"
   },
   {
     "id": 47,
-    "Edition name": "Frankenstein"
+    "Edition name": "Frankenstein",
+    "Author": "Mary Shelley",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "https://romantic-circles.org/editions/frankenstein/editions.2009.frankenstein",
+    "Manager or Editor": "Stuart Curran"
   },
   {
     "id": 48,
-    "Edition name": "Glossae.net"
+    "Edition name": "Glossae.net",
+    "Author": "Not specified (Scholars)",
+    "Audience": "General public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "CNRS (Centre national de la recherche scientifique); TGE Adonis; Cluster de Recherche 13 \"Recherche Patrimoine Création\"; Institut Universitaire de France; Laboratoire d'excellence HASTEC; UMR 5648 CIHAM; UMR 8584 LEM",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.glossae.net",
+    "Manager or Editor": "Martin Morard; Marjorie Burghart"
   },
   {
     "id": 49,
-    "Edition name": "Heinrich-Heine Portal"
+    "Edition name": "Heinrich-Heine Portal",
+    "Author": "Heinrich Heine",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Kunststiftung NRW; Deutsche Forshungsgemeinschaft",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.heine-portal.de",
+    "Manager or Editor": "Thomas Burch"
   },
   {
     "id": 50,
-    "Edition name": "Henrik Ibsens Skrifter"
+    "Edition name": "Henrik Ibsens Skrifter",
+    "Author": "Henrik Ibsen",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Norsk Kulturråd",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.ibsen.uio.no/forside.xhtml",
+    "Manager or Editor": "Jan Halvor Undlien; Frode Helland"
   },
   {
     "id": 51,
-    "Edition name": "Mark Twain Project"
+    "Edition name": "Mark Twain Project",
+    "Author": "Mark Twain",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.marktwainproject.org/homepage.html",
+    "Manager or Editor": "Anh Q. Bui; Victor Fischer; et al."
   },
   {
     "id": 52,
-    "Edition name": "Niccolò Canussio: De restitutione patriae"
+    "Edition name": "Niccolò Canussio: De restitutione patriae",
+    "Author": "Niccolò Canussio",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.fondazionecanussio.org/patria.htm",
+    "Manager or Editor": "Roberto Gusmani"
   },
   {
     "id": 53,
-    "Edition name": "Queste del Saint Graal"
+    "Edition name": "Queste del Saint Graal",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://txm.bfm-corpus.org/?command=documentation&path=/GRAAL",
+    "Manager or Editor": "Christiane Marchello-Nizia; Alexei Lavrentiev"
   },
   {
     "id": 54,
-    "Edition name": "The Auchinleck manuscript"
+    "Edition name": "The Auchinleck manuscript",
+    "Author": "Not specified (Compilers)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Professor David Burnley from Department of English Language and Linguistics at University of Sheffield",
+    "Account of textual variance": "yes",
+    "URL": "http://auchinleck.nls.uk/index.html",
+    "Manager or Editor": "David Burnley; Alison Wiggins"
   },
   {
     "id": 55,
-    "Edition name": "The Casebooks Project"
+    "Edition name": "The Casebooks Project",
+    "Author": "Simon Forman & Richard Napier",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.magicandmedicine.hps.cam.ac.uk/",
+    "Manager or Editor": "Lauren Kassell"
   },
   {
     "id": 56,
-    "Edition name": "The Confessions of Augustine: An Electronic Edition"
+    "Edition name": "The Confessions of Augustine: An Electronic Edition",
+    "Author": "Augustine of Hippo",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Stoa Consortium",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.stoa.org/hippo/",
+    "Manager or Editor": "James J. O'Donnell"
   },
   {
     "id": 57,
-    "Edition name": "The Derveni Papyrus"
+    "Edition name": "The Derveni Papyrus",
+    "Author": "Not specified (Commentator)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://chs.harvard.edu/CHS/article/display/5418",
+    "Manager or Editor": "Ioanna Papadopoulou"
   },
   {
     "id": 58,
-    "Edition name": "The Gospel according to St. John"
+    "Edition name": "The Gospel according to St. John",
+    "Author": "Not specified (Evangelist)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC; British Academy; International Greek New Testament Project; United Bible Societies, University of Birmingham (Institute for Textual Scholarship and Electronic Editing)",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.iohannes.com/",
+    "Manager or Editor": "Various"
   },
   {
     "id": 59,
-    "Edition name": "The Proceedings of the Old Bailey"
+    "Edition name": "The Proceedings of the Old Bailey",
+    "Author": "Not specified (Court Recorders)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.oldbaileyonline.org/",
+    "Manager or Editor": "Clive Emsley; Tim Hitchcock; Robert Shoemaker"
   },
   {
     "id": 60,
-    "Edition name": "The Richard Brome Project"
+    "Edition name": "The Richard Brome Project",
+    "Author": "Richard Brome",
+    "Audience": "Scholars; theatre practitioners",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.hrionline.ac.uk/brome/",
+    "Manager or Editor": "Richard Cave"
   },
   {
     "id": 61,
-    "Edition name": "The Svoboda Diary Project"
+    "Edition name": "The Svoboda Diary Project",
+    "Author": "Alexander Svoboda",
+    "Audience": "not provided",
+    "Philological statement": "no",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://courses.washington.edu/otap/svoboda/public/index.html",
+    "Manager or Editor": "Mehmet Kalpakli; Walter G. Andrews"
   },
   {
     "id": 62,
-    "Edition name": "William Godwin's Diary"
+    "Edition name": "William Godwin's Diary",
+    "Author": "William Godwin",
+    "Audience": "General public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://godwindiary.bodleian.ox.ac.uk/index2.html",
+    "Manager or Editor": "David O’Shaughnessy; Mark Philp; Victoria Myers"
   },
   {
     "id": 63,
-    "Edition name": "The Augsburg Web Edition of Llull's Electoral Writings"
+    "Edition name": "The Augsburg Web Edition of Llull's Electoral Writings",
+    "Author": "Ramon Llull",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.math.uni-augsburg.de/stochastik/llull/",
+    "Manager or Editor": "Gerlinde Wolsleben"
   },
   {
     "id": 64,
-    "Edition name": "Digital Mishnah"
+    "Edition name": "Digital Mishnah",
+    "Author": "Not specified (Rabbis)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Maryland Institute of Technology in the Humanities (MITH); Amazon Web Services",
+    "Account of textual variance": "yes",
+    "URL": "http://www.digitalmishnah.org/",
+    "Manager or Editor": "Hayim Lapin"
   },
   {
     "id": 65,
-    "Edition name": "The Online Critical Pseudepigrapha"
+    "Edition name": "The Online Critical Pseudepigrapha",
+    "Author": "Not specified (Various)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://ocp.tyndale.ca/",
+    "Manager or Editor": "Ian W. Scott"
   },
   {
     "id": 66,
-    "Edition name": "Dead Sea Scrolls"
+    "Edition name": "Dead Sea Scrolls",
+    "Author": "Not specified (Scribes)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "George Blumenthal and the Center for Online Judaic Studies",
+    "Account of textual variance": "not provided",
+    "URL": "http://dss.collections.imj.org.il/",
+    "Manager or Editor": "James S. Snyder"
   },
   {
     "id": 67,
-    "Edition name": "Editions of the Registers of the counts of Holland 1299-1345"
+    "Edition name": "Editions of the Registers of the counts of Holland 1299-1345",
+    "Author": "Not specified (Clerks)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "External scolars made up of Ms Prof. dr. Th. de Hemptinne, Prof. P.A. Henderikx, G. van Herwijnen, Prof.P.C.M. Hoppenbrouwers and Prof. J.G. Smit. - See more at: http://www.historici.nl/Onderzoek/Projecten/RegistersVanDeHollandseGrafelijkheid1299-1345/en/colofon#sthash.HhPd6Esd.dpuf",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.historici.nl/Onderzoek/Projecten/RegistersVanDeHollandseGrafelijkheid1299-1345",
+    "Manager or Editor": "Jan Burgers"
   },
   {
     "id": 68,
-    "Edition name": "Quijote Interactivo"
+    "Edition name": "Quijote Interactivo",
+    "Author": "Miguel de Cervantes",
+    "Audience": "General public",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Telefonica",
+    "Account of textual variance": "no",
+    "URL": "http://quijote.bne.es/libro.html",
+    "Manager or Editor": "José Manuel Lucía Megías"
   },
   {
     "id": 69,
-    "Edition name": "The Journals of the Lewis and Clark Expedition"
+    "Edition name": "The Journals of the Lewis and Clark Expedition",
+    "Author": "Lewis and Clark",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://lewisandclarkjournals.unl.edu",
+    "Manager or Editor": "Katherine Walter"
   },
   {
     "id": 70,
-    "Edition name": "Electronic Boethius CDROM"
+    "Edition name": "Electronic Boethius CDROM",
+    "Author": "Alfred the Great (Translator)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "National Endowment for the Humanities; Andrew W. Mellon Foundation",
+    "Account of textual variance": "not provided",
+    "URL": "http://beowulf.engl.uky.edu/~kiernan/eBoethius/inlad.htm",
+    "Manager or Editor": "Kevin Kiernan"
   },
   {
     "id": 71,
-    "Edition name": "James Mill's Common Place Books"
+    "Edition name": "James Mill's Common Place Books",
+    "Author": "James Mill",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "AHRC; British Academy",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.intellectualhistory.net/mill/",
+    "Manager or Editor": "Kristopher Grint"
   },
   {
     "id": 72,
-    "Edition name": "A trial electronic edition of the Preface to 'Ancrene Wisse' for the Early English Text Society"
+    "Edition name": "A trial electronic edition of the Preface to 'Ancrene Wisse' for the Early English Text Society",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://tei.oucs.ox.ac.uk/Projects/EETS/soton/",
+    "Manager or Editor": "Lou Burnard"
   },
   {
     "id": 73,
-    "Edition name": "Digital Nestle-Aland"
+    "Edition name": "Digital Nestle-Aland",
+    "Author": "Nestle-Aland (Editors)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Deutsche Forschungsgemeinschaft",
+    "Account of textual variance": "not provided",
+    "URL": "http://nestlealand.uni-muenster.de/",
+    "Manager or Editor": "Luc Herren"
   },
   {
     "id": 74,
-    "Edition name": "Orlando Furioso Hypertext"
+    "Edition name": "Orlando Furioso Hypertext",
+    "Author": "Ludovico Ariosto",
+    "Audience": "Scholars; students (higher education) of history of art, literary studies and of the book.",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://stel.ub.edu/orlando/",
+    "Manager or Editor": "María de las Nieves Muñiz"
   },
   {
     "id": 75,
-    "Edition name": "The Vergil project. Resources for Students, Teachers, and Readers of Vergil"
+    "Edition name": "The Vergil project. Resources for Students, Teachers, and Readers of Vergil",
+    "Author": "Virgil",
+    "Audience": "Students; teachers; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "The National Endowment for the Humanities; The Pew Charitable Trusts; The Edmund J. and Louise W. Kahn Fund for Faculty Excellence; Mr. Joseph B. Glossberg, Department of Classical Studies, The School of Arts and Sciences, University of Pennsylvania; Center for the Computer Analysis of Texts, University of Pennsylvania",
+    "Account of textual variance": "partly",
+    "URL": "http://vergil.classics.upenn.edu/",
+    "Manager or Editor": "Mary Costigan"
   },
   {
     "id": 76,
-    "Edition name": "Cantar de mio Cid"
+    "Edition name": "Cantar de mio Cid",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "General public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Liberal Arts Instructional Technology Services (LAITS) @UT Austin",
+    "Account of textual variance": "yes",
+    "URL": "http://www.laits.utexas.edu/cid/index2.php?v=nor",
+    "Manager or Editor": "Matthew Bailey"
   },
   {
     "id": 77,
-    "Edition name": "The Aberdeen Bestiary"
+    "Edition name": "The Aberdeen Bestiary",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://www.abdn.ac.uk/bestiary/",
+    "Manager or Editor": "Michael Arnott"
   },
   {
     "id": 78,
-    "Edition name": "M. Valerii Martialis Epigrammaton Liber IV"
+    "Edition name": "M. Valerii Martialis Epigrammaton Liber IV",
+    "Author": "Martial",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.curculio.org/Martial/Martial04.html",
+    "Manager or Editor": "Michael Hendry"
   },
   {
     "id": 79,
-    "Edition name": "P. Ovidii Nasonis Heroides I"
+    "Edition name": "P. Ovidii Nasonis Heroides I",
+    "Author": "Ovid",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.curculio.org/Ovid/h01.html",
+    "Manager or Editor": "Michael Hendry"
   },
   {
     "id": 80,
-    "Edition name": "Sexti Propertii Elegiae"
+    "Edition name": "Sexti Propertii Elegiae",
+    "Author": "Propertius",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.curculio.org/Propertius/index.html",
+    "Manager or Editor": "Michael Hendry"
   },
   {
     "id": 81,
-    "Edition name": "Sulpiciae Conquestio"
+    "Edition name": "Sulpiciae Conquestio",
+    "Author": "Sulpicia (Pseudo)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.curculio.org/Sulpiciae/index.html",
+    "Manager or Editor": "Michael Hendry"
   },
   {
     "id": 82,
-    "Edition name": "Claudii Claudiani Carmina Latina"
+    "Edition name": "Claudii Claudiani Carmina Latina",
+    "Author": "Claudian",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.curculio.org/Claudian/index.html",
+    "Manager or Editor": "Michael Hendry"
   },
   {
     "id": 83,
-    "Edition name": "D. Iunii Iuvenalis Saturae"
+    "Edition name": "D. Iunii Iuvenalis Saturae",
+    "Author": "Juvenal",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.curculio.org/Juvenal/index.html",
+    "Manager or Editor": "Michael Hendry"
   },
   {
     "id": 84,
-    "Edition name": "Codice Diplomatico della Lombardia Medievale"
+    "Edition name": "Codice Diplomatico della Lombardia Medievale",
+    "Author": "Not specified (Notaries)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Fondazione Cariplo; Provincia di Sondrio; Centro Internazionale di Ricerca per le Storie Locali e le Diversità Culturali dell’ Università degli Studi dell' Insubria",
+    "Account of textual variance": "partly",
+    "URL": "http://cdlm.unipv.it/",
+    "Manager or Editor": "Michele Ansani"
   },
   {
     "id": 85,
-    "Edition name": "Geoffrey Chaucer's Book of the Duchess: A Hypertext Edition"
+    "Edition name": "Geoffrey Chaucer's Book of the Duchess: A Hypertext Edition",
+    "Author": "Geoffrey Chaucer",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://press.ucalgary.ca/books/9781552380369",
+    "Manager or Editor": "Murray McGillivray"
   },
   {
     "id": 86,
-    "Edition name": "Inscriptiones Graecae in Croatia Repertae (IGCR)"
+    "Edition name": "Inscriptiones Graecae in Croatia Repertae (IGCR)",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Department of Classical Philology of the Faculty of Humanities and Social Sciences at the University of Zagreb",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.ffzg.unizg.hr/klafil/dokuwiki/doku.php/z:epidoc-hrvatska",
+    "Manager or Editor": "Nino Zubović"
   },
   {
     "id": 87,
-    "Edition name": "The Gascon Rolls Project"
+    "Edition name": "The Gascon Rolls Project",
+    "Author": "Not specified (Royal Clerks)",
+    "Audience": "General public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Laboratoire d'excellence LaScArBx; Banque Numérique des Savoirs d'Aquitaine; Chateau Ausone (Saint-Emilion) and Jonathan Sumption",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.gasconrolls.org/en/",
+    "Manager or Editor": "Paul Spence"
   },
   {
     "id": 88,
-    "Edition name": "The Hengwrt Chaucer Digital Facsimile"
+    "Edition name": "The Hengwrt Chaucer Digital Facsimile",
+    "Author": "Geoffrey Chaucer",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.sd-editions.com/AnaAdditional/HengwrtEx/images/hgopen.html",
+    "Manager or Editor": "Peter Robinson"
   },
   {
     "id": 89,
-    "Edition name": "Carl-Maria-von-Weber-Gesamtausgabe"
+    "Edition name": "Carl-Maria-von-Weber-Gesamtausgabe",
+    "Author": "Carl Maria von Weber",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Akademie der Wissenschaften und der Literatur Mainz",
+    "Account of textual variance": "yes",
+    "URL": "http://www.weber-gesamtausgabe.de/en/Index",
+    "Manager or Editor": "Joachim Veit; Peter Stadler"
   },
   {
     "id": 90,
-    "Edition name": "Livingstone's 1871 Field Diary"
+    "Edition name": "Livingstone's 1871 Field Diary",
+    "Author": "David Livingstone",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "National Endowment for the Humanities; British Academy",
+    "Account of textual variance": "not provided",
+    "URL": "http://livingstone.library.ucla.edu/1871diary/manuscript1.htm",
+    "Manager or Editor": "Adrian S. Wisnicki"
   },
   {
     "id": 91,
-    "Edition name": "Hyperdonat"
+    "Edition name": "Hyperdonat",
+    "Author": "Aelius Donatus",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Région Rhône-Alpes; ENS de Lyon; Atelier des Humanités Numériques; UMR 5189 (HiSoMA)",
+    "Account of textual variance": "not provided",
+    "URL": "http://hyperdonat.ens-lyon.fr/",
+    "Manager or Editor": "Bruno Bureau"
   },
   {
     "id": 92,
-    "Edition name": "Inscriptions of Aphrodisias Project"
+    "Edition name": "Inscriptions of Aphrodisias Project",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Leverhulme Trust",
+    "Account of textual variance": "partly",
+    "URL": "http://insaph.kcl.ac.uk/index.html",
+    "Manager or Editor": "Charlotte Roueché"
   },
   {
     "id": 93,
-    "Edition name": "Inscriptions of Roman Cyrenaica"
+    "Edition name": "Inscriptions of Roman Cyrenaica",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Leverhume Trust",
+    "Account of textual variance": "not provided",
+    "URL": "http://ircyr.kcl.ac.uk/",
+    "Manager or Editor": "Charlotte Roueché"
   },
   {
     "id": 94,
-    "Edition name": "Inscriptions of Roman Tripolitania"
+    "Edition name": "Inscriptions of Roman Tripolitania",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "JISC; The Leverhulme Trust; National Endowment for the Humanities",
+    "Account of textual variance": "not provided",
+    "URL": "http://irt.kcl.ac.uk/irt2009/",
+    "Manager or Editor": "Charlotte Roueché"
   },
   {
     "id": 95,
-    "Edition name": "e-sequence: Digital Edition of the Saint Gall corpus of Sequences by Notker Balbulus"
+    "Edition name": "e-sequence: Digital Edition of the Saint Gall corpus of Sequences by Notker Balbulus",
+    "Author": "Notker Balbulus",
+    "Audience": "Musicologists and manuscript researchers; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Accentus Foundation; Ernst Goehner Foundation",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.e-sequence.eu/en/",
+    "Manager or Editor": "Christoph Flüeler"
   },
   {
     "id": 96,
-    "Edition name": "Phineas Fletcher's Sylva Poetica"
+    "Edition name": "Phineas Fletcher's Sylva Poetica",
+    "Author": "Phineas Fletcher",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.philological.bham.ac.uk/sylva/",
+    "Manager or Editor": "Dana Sutton"
   },
   {
     "id": 97,
-    "Edition name": "The Latin Prose and Poetry of Joseph Addison"
+    "Edition name": "The Latin Prose and Poetry of Joseph Addison",
+    "Author": "Joseph Addison",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.philological.bham.ac.uk/Addison/",
+    "Manager or Editor": "Dana Sutton"
   },
   {
     "id": 98,
-    "Edition name": "History in the Making: preparation of a genetic edition, dataset and hypertext of Part III, Chapter 1 of Flaubert's L'Education Sentimentale"
+    "Edition name": "History in the Making: preparation of a genetic edition, dataset and hypertext of Part III, Chapter 1 of Flaubert's L'Education Sentimentale",
+    "Author": "Gustave Flaubert",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Arts and Humanities Research Board; University of Hull; Leverhulme Trust",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.hull.ac.uk/hitm/",
+    "Manager or Editor": "David Williams"
   },
   {
     "id": 99,
-    "Edition name": "An electronic corpus of 15th century Castillian canconiero manuscripts"
+    "Edition name": "An electronic corpus of 15th century Castillian canconiero manuscripts",
+    "Author": "Not specified (Poets)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC; MHRA; University of Liverpool",
+    "Account of textual variance": "not provided",
+    "URL": "http://cancionerovirtual.liv.ac.uk/",
+    "Manager or Editor": "Dorothy Severin"
   },
   {
     "id": 100,
-    "Edition name": "Galenus' commentary on Hippocrates' \"On the articulations\""
+    "Edition name": "Galenus' commentary on Hippocrates' \"On the articulations\"",
+    "Author": "Galen",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Berlin-Brandenburgische Akademie der Wissenschaften",
+    "Account of textual variance": "not provided",
+    "URL": "http://pom.bbaw.de/cmg/",
+    "Manager or Editor": "Günter Stock"
   },
   {
     "id": 101,
-    "Edition name": "Edition der falschen Kapitularien des Benedictus Levita"
+    "Edition name": "Edition der falschen Kapitularien des Benedictus Levita",
+    "Author": "Benedictus Levita",
+    "Audience": "scholars",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://www.benedictus.mgh.de/",
+    "Manager or Editor": "Gerhard Schmitz;Veronika Lukas"
   },
   {
     "id": 102,
-    "Edition name": "The Royal Inscriptions of the Neo-Assyrian Period"
+    "Edition name": "The Royal Inscriptions of the Neo-Assyrian Period",
+    "Author": "Not specified (Scribes)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "National Endowment for the Humanities",
+    "Account of textual variance": "not provided",
+    "URL": "http://oracc.museum.upenn.edu/rinap/",
+    "Manager or Editor": "Grant Frame"
   },
   {
     "id": 103,
-    "Edition name": "Book of Margery Kempe"
+    "Edition name": "Book of Margery Kempe",
+    "Author": "Margery Kempe",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://english.selu.edu/humanitiesonline/kempe/index.php",
+    "Manager or Editor": "Joel W. Fredell"
   },
   {
     "id": 104,
-    "Edition name": "William of Ockham: Dialogus"
+    "Edition name": "William of Ockham: Dialogus",
+    "Author": "William of Ockham",
+    "Audience": "General public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "British Academy",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.britac.ac.uk/pubs/dialogus/ockdial.html",
+    "Manager or Editor": "John Kilcullen"
   },
   {
     "id": 105,
-    "Edition name": "Domesday Explorer"
+    "Edition name": "Domesday Explorer",
+    "Author": "Not specified (Scribes)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.domesdaybook.net",
+    "Manager or Editor": "John Palmer"
   },
   {
     "id": 106,
-    "Edition name": "Chopin's First Editions Online"
+    "Edition name": "Chopin's First Editions Online",
+    "Author": "Frédéric Chopin",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.cfeo.org.uk/index.html",
+    "Manager or Editor": "John Rink"
   },
   {
     "id": 107,
-    "Edition name": "Jane Austen's Fiction Manuscripts"
+    "Edition name": "Jane Austen's Fiction Manuscripts",
+    "Author": "Jane Austen",
+    "Audience": "Scholars",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.janeausten.ac.uk/index.html",
+    "Manager or Editor": "Kathryn Sutherland"
   },
   {
     "id": 108,
-    "Edition name": "The Walt Whitman Archive"
+    "Edition name": "The Walt Whitman Archive",
+    "Author": "Walt Whitman",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.whitmanarchive.org/",
+    "Manager or Editor": "Kenneth M. Price"
   },
   {
     "id": 109,
-    "Edition name": "Schenker Documents Online"
+    "Edition name": "Schenker Documents Online",
+    "Author": "Heinrich Schenker",
+    "Audience": "Scholars; librarians; archivists; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.schenkerdocumentsonline.org",
+    "Manager or Editor": "Marilyn Deegan"
   },
   {
     "id": 110,
-    "Edition name": "Online Chopin Variorum Edition"
+    "Edition name": "Online Chopin Variorum Edition",
+    "Author": "Frédéric Chopin",
+    "Audience": "Scholars; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.ocve.org.uk/index.html",
+    "Manager or Editor": "Marilyn Deegan; John Rink"
   },
   {
     "id": 111,
-    "Edition name": "John Foxe's The Acts and Monuments Online"
+    "Edition name": "John Foxe's The Acts and Monuments Online",
+    "Author": "John Foxe",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "AHRC; British Academy",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.johnfoxe.org/",
+    "Manager or Editor": "Mark Greengrass"
   },
   {
     "id": 112,
-    "Edition name": "Oregon Petrarch Open Book Project"
+    "Edition name": "Oregon Petrarch Open Book Project",
+    "Author": "Francesco Petrarca",
+    "Audience": "Scholars; students; teachers; translators",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://petrarch.uoregon.edu/",
+    "Manager or Editor": "Massimo Lollini"
   },
   {
     "id": 113,
-    "Edition name": "Conclusiones CM"
+    "Edition name": "Conclusiones CM",
+    "Author": "Giovanni Pico della Mirandola",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Computing and Information Services at Brown University",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.stg.brown.edu/projects/pico/about.php",
+    "Manager or Editor": "Massimo Riva"
   },
   {
     "id": 114,
-    "Edition name": "Decameron Web"
+    "Edition name": "Decameron Web",
+    "Author": "Giovanni Boccaccio",
+    "Audience": "College and high school teachers and students; independent readers and scholars",
+    "Philological statement": "no",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "National Endowment for the Humanties",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.brown.edu/Departments/Italian_Studies/dweb/index.php",
+    "Manager or Editor": "Massimo Riva"
   },
   {
     "id": 115,
-    "Edition name": "Pico della Mirandola: De hominis dignitate"
+    "Edition name": "Pico della Mirandola: De hominis dignitate",
+    "Author": "Giovanni Pico della Mirandola",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.brown.edu/Departments/Italian_Studies/pico/index.html",
+    "Manager or Editor": "Massimo Riva"
   },
   {
     "id": 116,
-    "Edition name": "Inscriptions of Israel/Palestine"
+    "Edition name": "Inscriptions of Israel/Palestine",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Center of Digital Scholarship and the Office of the Vice President of Research at Brown University",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.stg.brown.edu/projects/Inscriptions/index.shtml",
+    "Manager or Editor": "Michael Satlow; Elli Mylonas"
   },
   {
     "id": 117,
-    "Edition name": "Parzival-Projekt"
+    "Edition name": "Parzival-Projekt",
+    "Author": "Wolfram von Eschenbach",
+    "Audience": "Literary and linguistic historians",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Swiss National Science Foundation",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.parzival.unibe.ch/home.html",
+    "Manager or Editor": "Michael Stolz"
   },
   {
     "id": 118,
-    "Edition name": "Decameron Ipertestuale"
+    "Edition name": "Decameron Ipertestuale",
+    "Author": "Giovanni Boccaccio",
+    "Audience": "Specialists; university students and staff; high school students",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Fondo Nazionale Svizzero per la Ricerca Scientifica",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.rose.uzh.ch/static/decameron/index3.htm",
+    "Manager or Editor": "Michelangelo Picone"
   },
   {
     "id": 119,
-    "Edition name": "Percy Bysshe Shelley: The Devil's Walk"
+    "Edition name": "Percy Bysshe Shelley: The Devil's Walk",
+    "Author": "Percy Bysshe Shelley",
+    "Audience": "Teachers",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.rc.umd.edu/editions/shelley/devil/index.html",
+    "Manager or Editor": "Neil Fraistat"
   },
   {
     "id": 120,
-    "Edition name": "Poems by Anna Laetitia Aikin"
+    "Edition name": "Poems by Anna Laetitia Aikin",
+    "Author": "Anna Laetitia Barbauld",
+    "Audience": "Scholars; students",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.rc.umd.edu/editions/contemps/barbauld/poems1773/",
+    "Manager or Editor": "Neil Fraistat"
   },
   {
     "id": 121,
-    "Edition name": "The Letters of Robert Bloomfield"
+    "Edition name": "The Letters of Robert Bloomfield",
+    "Author": "Robert Bloomfield",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.rc.umd.edu/editions/bloomfield_letters/",
+    "Manager or Editor": "Neil Fraistat"
   },
   {
     "id": 122,
-    "Edition name": "The Shelley-Godwin Archive"
+    "Edition name": "The Shelley-Godwin Archive",
+    "Author": "Shelley & Godwin",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.shelleygodwinarchive.org/",
+    "Manager or Editor": "Neil Fraistat"
   },
   {
     "id": 123,
-    "Edition name": "Thomas Lovell Beddoes: The Brides' Tragedy"
+    "Edition name": "Thomas Lovell Beddoes: The Brides' Tragedy",
+    "Author": "Thomas Lovell Beddoes",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.rc.umd.edu/editions/beddoes/intro.html",
+    "Manager or Editor": "Neil Fraistat"
   },
   {
     "id": 124,
-    "Edition name": "The Online Froissart"
+    "Edition name": "The Online Froissart",
+    "Author": "Jean Froissart",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.hrionline.ac.uk/onlinefroissart/index.jsp",
+    "Manager or Editor": "Peter Ainsworth"
   },
   {
     "id": 125,
-    "Edition name": "Welsh Prose 1350-1425"
+    "Edition name": "Welsh Prose 1350-1425",
+    "Author": "Not specified (Various)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.rhyddiaithganoloesol.caerdydd.ac.uk/en/",
+    "Manager or Editor": "Peter Wynn Thomas"
   },
   {
     "id": 126,
-    "Edition name": "The Newton Project"
+    "Edition name": "The Newton Project",
+    "Author": "Isaac Newton",
+    "Audience": "General public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "University of Sussex; AHRC; JISC; The Royal Society; CORDIS: Community Research and Development Information Service",
+    "Account of textual variance": "yes",
+    "URL": "http://www.newtonproject.sussex.ac.uk/prism.php?id=1",
+    "Manager or Editor": "Robert Iliffe"
   },
   {
     "id": 127,
-    "Edition name": "Vercelli Book Digitale"
+    "Edition name": "Vercelli Book Digitale",
+    "Author": "Not specified (Compilers)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Chamber of Commerce Vercelli; Fondazione CRT",
+    "Account of textual variance": "not provided",
+    "URL": "http://vbd.humnet.unipi.it",
+    "Manager or Editor": "Roberto Rosselli Del Turco"
   },
   {
     "id": 128,
-    "Edition name": "I testimoni della Vita Nova"
+    "Edition name": "I testimoni della Vita Nova",
+    "Author": "Dante Alighieri",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "MURST - Cofin 1999/2001",
+    "Account of textual variance": "not provided",
+    "URL": "http://vitanova.unipv.it/",
+    "Manager or Editor": "Simone Albonico"
   },
   {
     "id": 129,
-    "Edition name": "Frankenstein; or, the Modern Prometheus"
+    "Edition name": "Frankenstein; or, the Modern Prometheus",
+    "Author": "Mary Shelley",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://knarf.english.upenn.edu/",
+    "Manager or Editor": "Stuart Curran"
   },
   {
     "id": 130,
-    "Edition name": "Livingstone Online"
+    "Edition name": "Livingstone Online",
+    "Author": "David Livingstone",
+    "Audience": "Scholars; students; general public; teachers; scientists; librarians; digital humanists; information technology experts",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Wellcome Trust",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.livingstoneonline.ucl.ac.uk",
+    "Manager or Editor": "Christopher Lawrence"
   },
   {
     "id": 131,
-    "Edition name": "Edizione Critica Ipertestuale dello Zibaldone Laurenziano (Pluteo XXIX.8) autografo di Giovanni Boccaccio"
+    "Edition name": "Edizione Critica Ipertestuale dello Zibaldone Laurenziano (Pluteo XXIX.8) autografo di Giovanni Boccaccio",
+    "Author": "Giovanni Boccaccio",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "MIUR",
+    "Account of textual variance": "not provided",
+    "URL": "http://rmcisadu.let.uniroma1.it/boccaccio/",
+    "Manager or Editor": "Raul Mordenti"
   },
   {
     "id": 132,
-    "Edition name": "A Social Edition of the Devonshire MS (BL Add 17,492)"
+    "Edition name": "A Social Edition of the Devonshire MS (BL Add 17,492)",
+    "Author": "Not specified (Tudor Court)",
+    "Audience": "Citizen scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://en.wikibooks.org/wiki/The_Devonshire_Manuscript",
+    "Manager or Editor": "Raymond Siemens"
   },
   {
     "id": 133,
-    "Edition name": "Les Bibliothèques Virtuelles Humanistes"
+    "Edition name": "Les Bibliothèques Virtuelles Humanistes",
+    "Author": "Not specified (Humanists)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.bvh.univ-tours.fr/#",
+    "Manager or Editor": "Sandrine Breuil"
   },
   {
     "id": 134,
-    "Edition name": "The Paris Codex"
+    "Edition name": "The Paris Codex",
+    "Author": "Not specified (Maya Scribes)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://digital.library.northwestern.edu/codex/index.html",
+    "Manager or Editor": "Scott Garton"
   },
   {
     "id": 135,
-    "Edition name": "The Memorandoms of James Martin"
+    "Edition name": "The Memorandoms of James Martin",
+    "Author": "James Martin",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "https://www.ucl.ac.uk/Bentham-Project/publications/martins-memorandoms/martins-memorandoms.html",
+    "Manager or Editor": "Tim Causer"
   },
   {
     "id": 136,
-    "Edition name": "Actes Royaux"
+    "Edition name": "Actes Royaux",
+    "Author": "Not specified (Royal Clerks)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.cn-telma.fr/actesroyaux/index/",
+    "Manager or Editor": "Xavier Hélary"
   },
   {
     "id": 137,
-    "Edition name": "American Verse Project"
+    "Edition name": "American Verse Project",
+    "Author": "Not specified (Various)",
+    "Audience": "General public",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://quod.lib.umich.edu/a/amverse/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 138,
-    "Edition name": "Bernard Muir's CD-ROM facsimile of Bodleian Library MS Junius 11"
+    "Edition name": "Bernard Muir's CD-ROM facsimile of Bodleian Library MS Junius 11",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars and students of Anglo-Saxon literature, art, history, and culture; bibliophiles; collectors",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Bodleian Library",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.bodleianshop.co.uk/a-digital-facsimile-of-oxford-bodleian-library-ms-junius-11.html",
+    "Manager or Editor": "Bernard J. Muir"
   },
   {
     "id": 139,
-    "Edition name": "Candide 2.0"
+    "Edition name": "Candide 2.0",
+    "Author": "Voltaire",
+    "Audience": "General public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://candide.nypl.org/text/",
+    "Manager or Editor": "Alice Boone; Ben Vershbow; Eddie A. Tejeda"
   },
   {
     "id": 140,
-    "Edition name": "Chronik des Gettos Łódź / Litzmannstadt"
+    "Edition name": "Chronik des Gettos Łódź / Litzmannstadt",
+    "Author": "Not specified (Ghetto Inhabitants)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.getto-chronik.de/de/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 141,
-    "Edition name": "Clotel by William Wells Brown"
+    "Edition name": "Clotel by William Wells Brown",
+    "Author": "William Wells Brown",
+    "Audience": "Scholars; Students",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.upress.virginia.edu/content/clotel-william-wells-brown-electronic-scholarly-edition",
+    "Manager or Editor": "Christopher Mulvey"
   },
   {
     "id": 142,
-    "Edition name": "DASI: Digital Archive for the Study of Pre-Islamic Arabian Inscriptions"
+    "Edition name": "DASI: Digital Archive for the Study of Pre-Islamic Arabian Inscriptions",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "General public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://dasi.humnet.unipi.it/",
+    "Manager or Editor": "Alessandra Avanzini"
   },
   {
     "id": 143,
-    "Edition name": "Datini, Lettere"
+    "Edition name": "Datini, Lettere",
+    "Author": "Francesco Datini",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Archivio di Stato di Prato",
+    "Account of textual variance": "not provided",
+    "URL": "http://datini.archiviodistato.prato.it/la-ricerca/le-edizioni-delle-lettere#n",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 144,
-    "Edition name": "Digital Shikshapatri"
+    "Edition name": "Digital Shikshapatri",
+    "Author": "Swaminarayan",
+    "Audience": "General public",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "New Opportunities Fund",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.shikshapatri.org.uk/",
+    "Manager or Editor": "Gillian Evison; Marilyn Deegan"
   },
   {
     "id": 145,
-    "Edition name": "Electronic Beowulf 4.0"
+    "Edition name": "Electronic Beowulf 4.0",
+    "Author": "Not specified (Poet)",
+    "Audience": "Students; general public; scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://ebeowulf.uky.edu/",
+    "Manager or Editor": "Kevin Kiernan"
   },
   {
     "id": 146,
-    "Edition name": "Emily Dickinson's Archive"
+    "Edition name": "Emily Dickinson's Archive",
+    "Author": "Emily Dickinson",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "The Sidney Verba Fund, Harvard Library; the Emily Dickinson Fund, Houghton Library; Harvard University Press",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.edickinson.org/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 147,
-    "Edition name": "Emily Dickinson's Correspondences"
+    "Edition name": "Emily Dickinson's Correspondences",
+    "Author": "Emily Dickinson",
+    "Audience": "Dickinson scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/edc/",
+    "Manager or Editor": "Martha Nell Smith; Lara Vetter"
   },
   {
     "id": 148,
-    "Edition name": "Gabriel Harvey's Livy Online"
+    "Edition name": "Gabriel Harvey's Livy Online",
+    "Author": "Gabriel Harvey",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://abo.annotatedbooksonline.com/#binding-5-1",
+    "Manager or Editor": "Paul Dijstelberge; Anthony Grafton; Lisa Jardine; Bart Jaski; Jürgen Pieters; William Sherman; Els Stronks; Matthew Symonds; Arnoud Visser"
   },
   {
     "id": 149,
-    "Edition name": "Galileo Galilei's Notes on Motion"
+    "Edition name": "Galileo Galilei's Notes on Motion",
+    "Author": "Galileo Galilei",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.mpiwg-berlin.mpg.de/Galileo_Prototype/MAIN.HTM",
+    "Manager or Editor": "Isabella Truci; Paolo Galluzzi; Jürgen Renn"
   },
   {
     "id": 150,
-    "Edition name": "Göttinger Statuten (kundige bok 2)"
+    "Edition name": "Göttinger Statuten (kundige bok 2)",
+    "Author": "Not specified (City Council)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://kundigebok.stadtarchiv.goettingen.de/kb2Web/html/",
+    "Manager or Editor": "Malte Rehbein"
   },
   {
     "id": 151,
-    "Edition name": "Herman Melville's Typee"
+    "Edition name": "Herman Melville's Typee",
+    "Author": "Herman Melville",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/melville/",
+    "Manager or Editor": "John Bryant"
   },
   {
     "id": 152,
-    "Edition name": "In Mozart's Words"
+    "Edition name": "In Mozart's Words",
+    "Author": "Mozart",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://letters.mozartways.com/",
+    "Manager or Editor": "Cliff Eisen"
   },
   {
     "id": 153,
-    "Edition name": "Intibah Edition and Transcription"
+    "Edition name": "Intibah Edition and Transcription",
+    "Author": "Namık Kemal",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://courses.washington.edu/otap/intibah/intibah.html",
+    "Manager or Editor": "Selim S. Kuru"
   },
   {
     "id": 154,
-    "Edition name": "Jerilderie Letter"
+    "Edition name": "Jerilderie Letter",
+    "Author": "Ned Kelly",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.nma.gov.au/collections/collection_interactives/jerilderie_letter",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 155,
-    "Edition name": "John Barclay: Argenis"
+    "Edition name": "John Barclay: Argenis",
+    "Author": "John Barclay",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.chlt.org/sandbox/colloquia/argenis/index.html",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 156,
-    "Edition name": "Journal of Emily Shore"
+    "Edition name": "Journal of Emily Shore",
+    "Author": "Emily Shore",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/EmilyShore/make-page.xqy",
+    "Manager or Editor": "Barbara Timm Gates"
   },
   {
     "id": 157,
-    "Edition name": "Lautréamont / Ducasse"
+    "Edition name": "Lautréamont / Ducasse",
+    "Author": "Lautréamont",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.phalese.fr/Maldoror/index.php?title=Accueil",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 158,
-    "Edition name": "Le Cartulaire de la seigneurie de Nesle"
+    "Edition name": "Le Cartulaire de la seigneurie de Nesle",
+    "Author": "Not specified (Clerics)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.cn-telma.fr/nesle/index/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 159,
-    "Edition name": "Martha Ballard's Diary Online"
+    "Edition name": "Martha Ballard's Diary Online",
+    "Author": "Martha Ballard",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "National Endowment for the Humanities; Maine Humanities Council",
+    "Account of textual variance": "not provided",
+    "URL": "http://dohistory.org/diary/index.html",
+    "Manager or Editor": "Richard P. Rogers"
   },
   {
     "id": 160,
-    "Edition name": "Olive Schreiner Letters Online"
+    "Edition name": "Olive Schreiner Letters Online",
+    "Author": "Olive Schreiner",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Economic and Social Research Council",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.oliveschreiner.org/",
+    "Manager or Editor": "Liz Stanley"
   },
   {
     "id": 161,
-    "Edition name": "Online Electronic Variorum of the Works of Rabindranath Tagore"
+    "Edition name": "Online Electronic Variorum of the Works of Rabindranath Tagore",
+    "Author": "Rabindranath Tagore",
+    "Audience": "Scholars; general public; professionals",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://rabindranathtagore-150.gov.in/online-voriourum.html",
+    "Manager or Editor": "R. N. Tripathy"
   },
   {
     "id": 162,
-    "Edition name": "Ordonnances de l'hôtel du roi"
+    "Edition name": "Ordonnances de l'hôtel du roi",
+    "Author": "Not specified (Royal Clerks)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.cn-telma.fr/ordonnances/index/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 163,
-    "Edition name": "Septuaginta LXX"
+    "Edition name": "Septuaginta LXX",
+    "Author": "Not specified (Translators)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://septuaginta.net/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 164,
-    "Edition name": "Sirat Bani Hilal Digital Archive"
+    "Edition name": "Sirat Bani Hilal Digital Archive",
+    "Author": "Not specified (Oral Poets)",
+    "Audience": "Scholars",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.siratbanihilal.ucsb.edu/start-0",
+    "Manager or Editor": "Dwight F. Reynolds"
   },
   {
     "id": 165,
-    "Edition name": "Søren Kierkegaards Skrifter"
+    "Edition name": "Søren Kierkegaards Skrifter",
+    "Author": "Søren Kierkegaard",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://sks.dk/forside/indhold.asp",
+    "Manager or Editor": "Karsten Kynde"
   },
   {
     "id": 166,
-    "Edition name": "Stijn Streuvels: De teleurgang van den Waterhoek (The decline of the Waterhoek) CDROM"
+    "Edition name": "Stijn Streuvels: De teleurgang van den Waterhoek (The decline of the Waterhoek) CDROM",
+    "Author": "Stijn Streuvels",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://ctb.kantl.be/publicaties/de-teleurgang-van-den-waterhoek-elektronisch-kritische-editie-electronic-c",
+    "Manager or Editor": "Edward Vanhoutte"
   },
   {
     "id": 167,
-    "Edition name": "The Adams Papers"
+    "Edition name": "The Adams Papers",
+    "Author": "Adams Family",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/founders/ADMS.html",
+    "Manager or Editor": "C. James Taylor"
   },
   {
     "id": 168,
-    "Edition name": "The Alcalá Account Book Project"
+    "Edition name": "The Alcalá Account Book Project",
+    "Author": "Not specified (Administrators)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://drapier.dho.ie/node/232",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 169,
-    "Edition name": "The André Gide Editions Project"
+    "Edition name": "The André Gide Editions Project",
+    "Author": "André Gide",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Arts and Humanities Research Board",
+    "Account of textual variance": "not provided",
+    "URL": "http://hridigital.shef.ac.uk/gide",
+    "Manager or Editor": "David Walker; Pascal Mercier; Michael Pidd"
   },
   {
     "id": 170,
-    "Edition name": "The Benjamin Marston Diary Project"
+    "Edition name": "The Benjamin Marston Diary Project",
+    "Author": "Benjamin Marston",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.lib.unb.ca/Texts/marston/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 171,
-    "Edition name": "The Bevan Family Letters"
+    "Edition name": "The Bevan Family Letters",
+    "Author": "Bevan Family",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://rth.org.uk/collections/bevan-dewar-letters",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 172,
-    "Edition name": "The Burnet Psalter"
+    "Edition name": "The Burnet Psalter",
+    "Author": "Not specified (Scribes)",
+    "Audience": "General public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.abdn.ac.uk/diss/historic/collects/bps/index.html",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 173,
-    "Edition name": "The Canterbury Tales Project"
+    "Edition name": "The Canterbury Tales Project",
+    "Author": "Geoffrey Chaucer",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.textualcommunities.usask.ca/web/canterbury-tales",
+    "Manager or Editor": "Peter Robinson"
   },
   {
     "id": 174,
-    "Edition name": "The Digital Temple: A Documentary Edition of George Herbert's English Verse"
+    "Edition name": "The Digital Temple: A Documentary Edition of George Herbert's English Verse",
+    "Author": "George Herbert",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "National Endowment for the Humanities",
+    "Account of textual variance": "not provided",
+    "URL": "http://digitaltemple.rotunda.upress.virginia.edu/",
+    "Manager or Editor": "Robert Whalen; Christipher Hodgkins"
   },
   {
     "id": 175,
-    "Edition name": "The Diriks Family Scrapbooks"
+    "Edition name": "The Diriks Family Scrapbooks",
+    "Author": "Diriks Family",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.nb.no/baser/diriks/virtuellealbum/index.html",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 176,
-    "Edition name": "The Documentary History of the Ratification of the Constitution"
+    "Edition name": "The Documentary History of the Ratification of the Constitution",
+    "Author": "Not specified (Founding Fathers)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/founders/RNCN.html",
+    "Manager or Editor": "John P. Kaminski; Gaspare J. Saladino; Richard Leffler; Charles H. Schoenleber; Margaret A. Hogan"
   },
   {
     "id": 177,
-    "Edition name": "The Dolley Madison Digital Edition"
+    "Edition name": "The Dolley Madison Digital Edition",
+    "Author": "Dolley Madison",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/dmde/",
+    "Manager or Editor": "Holly C. Schulman"
   },
   {
     "id": 178,
-    "Edition name": "The Geese Book"
+    "Edition name": "The Geese Book",
+    "Author": "Not specified (Scribes)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Samuel H. Kress Foundation; National Endowment for the Humanities; Sparda Bank Nürnberg; Zukunftsstiftung der Stadtsparkasse Nürnberg; Kulturfonds der Dr. Lorenz Tucher'schen Stiftung; Freiherr von Haller'sche Forschungsstiftung; Arizona State University - Herberger Institute for Design and the Arts - Institute for Humanities Research; Erzbistum Bamberg: Verlag Nürnberger Presse; Bezirk Mittelfranken, Stiftung Natur-Kultur-Struktur; Sigma (Deutschland) GmbH; Wolf Photo Media, Fürth.",
+    "Account of textual variance": "not provided",
+    "URL": "http://geesebook.asu.edu",
+    "Manager or Editor": "Volker Schier; Corine Schleif"
   },
   {
     "id": 179,
-    "Edition name": "The Hartlib Papers Project"
+    "Edition name": "The Hartlib Papers Project",
+    "Author": "Samuel Hartlib",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "https://www.hrionline.ac.uk/hartlib/",
+    "Manager or Editor": "Mark Greengrass"
   },
   {
     "id": 180,
-    "Edition name": "The Letters of Christina Rossetti"
+    "Edition name": "The Letters of Christina Rossetti",
+    "Author": "Christina Rossetti",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/crossetti/",
+    "Manager or Editor": "Antony H. Harrison"
   },
   {
     "id": 181,
-    "Edition name": "The Letters of Matthew Arnold"
+    "Edition name": "The Letters of Matthew Arnold",
+    "Author": "Matthew Arnold",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/arnold/",
+    "Manager or Editor": "Cecil Y. Lang"
   },
   {
     "id": 182,
-    "Edition name": "The Malory Project"
+    "Edition name": "The Malory Project",
+    "Author": "Thomas Malory",
+    "Audience": "Malory and manuscript scholars; teachers",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Digital Research Centre, Keio University",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.maloryproject.com/",
+    "Manager or Editor": "Takako Kato"
   },
   {
     "id": 183,
-    "Edition name": "The Papers of Alexander Hamilton"
+    "Edition name": "The Papers of Alexander Hamilton",
+    "Author": "Alexander Hamilton",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/founders/ARHN.html",
+    "Manager or Editor": "Harold C. Syrett"
   },
   {
     "id": 184,
-    "Edition name": "The Papers of Eliza Lucas Pinckney and Harriot Pinckney Horry"
+    "Edition name": "The Papers of Eliza Lucas Pinckney and Harriot Pinckney Horry",
+    "Author": "Eliza Pinckney & Harriot Horry",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia; National Endowment for the Humanities",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/PinckneyHorry/",
+    "Manager or Editor": "Constance Schulz"
   },
   {
     "id": 185,
-    "Edition name": "The Papers of George Washington"
+    "Edition name": "The Papers of George Washington",
+    "Author": "George Washington",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/founders/GEWN.html",
+    "Manager or Editor": "Edward G. Lengel"
   },
   {
     "id": 186,
-    "Edition name": "The Papers of James Madison"
+    "Edition name": "The Papers of James Madison",
+    "Author": "James Madison",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Andrew W. Mellon Foundation; President's Office of the University of Virginia",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/founders/JSMN.html",
+    "Manager or Editor": "J. C. A. Stagg"
   },
   {
     "id": 187,
-    "Edition name": "The Papers of Thomas Jefferson"
+    "Edition name": "The Papers of Thomas Jefferson",
+    "Author": "Thomas Jefferson",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://rotunda.upress.virginia.edu/founders/TSJN.html",
+    "Manager or Editor": "James P. McClure; J. Jefferson Looney"
   },
   {
     "id": 188,
-    "Edition name": "The Pérez Galdós Editions Project"
+    "Edition name": "The Pérez Galdós Editions Project",
+    "Author": "Benito Pérez Galdós",
+    "Audience": "Scholars of Galdós",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://hridigital.shef.ac.uk/galdos",
+    "Manager or Editor": "N. G. Round; Rhian Davies; Jamie McLaughlin"
   },
   {
     "id": 189,
-    "Edition name": "The Planctus for William Longsword"
+    "Edition name": "The Planctus for William Longsword",
+    "Author": "Not specified (Poet)",
+    "Audience": "not provided",
+    "Philological statement": "not provided",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://vlib.iue.it/carrie/documents/planctus/planctus/index.html",
+    "Manager or Editor": "Robert Helmerichs"
   },
   {
     "id": 190,
-    "Edition name": "The Zibaldone project"
+    "Edition name": "The Zibaldone project",
+    "Author": "Giacomo Leopardi",
+    "Audience": "not provided",
+    "Philological statement": "not provided",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Ministerio de Ciencia y Innovacion (MICINN)",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.birmingham.ac.uk/research/activity/leopardi/projects/index.aspx",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 191,
-    "Edition name": "Virginie Loveling’s Diary"
+    "Edition name": "Virginie Loveling’s Diary",
+    "Author": "Virginie Loveling",
+    "Audience": "General public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://edities.kantl.be/loveling/",
+    "Manager or Editor": "Edward Vanhoutte"
   },
   {
     "id": 192,
-    "Edition name": "William Golder Electronic Edition"
+    "Edition name": "William Golder Electronic Edition",
+    "Author": "William Golder",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Victoria University of Wellington; Alexander Turnbull Library",
+    "Account of textual variance": "not provided",
+    "URL": "http://nzetc.victoria.ac.nz/tm/scholarly/tei-corpus-golder.html",
+    "Manager or Editor": "Jamie Norrish"
   },
   {
     "id": 193,
-    "Edition name": "William of Palerne"
+    "Edition name": "William of Palerne",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://trove.nla.gov.au/work/33020507",
+    "Manager or Editor": "Gerrit H.V. Bunt"
   },
   {
     "id": 194,
-    "Edition name": "Wittgensteins Nachlass: The Bergen Electronic Edition"
+    "Edition name": "Wittgensteins Nachlass: The Bergen Electronic Edition",
+    "Author": "Ludwig Wittgenstein",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.nlx.com/collections/124",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 195,
-    "Edition name": "Zibaldone Europeo"
+    "Edition name": "Zibaldone Europeo",
+    "Author": "Giacomo Leopardi",
+    "Audience": "Scholars",
+    "Philological statement": "not provided",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.birmingham.ac.uk/research/activity/leopardi/projects/barcelona.aspx",
+    "Manager or Editor": "Maria de las Nieves Muñiz Muñiz"
   },
   {
     "id": 196,
-    "Edition name": "Pietro Mellini's Inventory in verse 1681"
+    "Edition name": "Pietro Mellini's Inventory in verse 1681",
+    "Author": "Pietro Mellini",
+    "Audience": "Scholarly; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Getty Research Trust",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.getty.edu/research/mellini/",
+    "Manager or Editor": "Murtha Baca; Nuria Rodríguez Ortega"
   },
   {
     "id": 197,
-    "Edition name": "Inscriptiones Alborum Amicorum"
+    "Edition name": "Inscriptiones Alborum Amicorum",
+    "Author": "Not specified (Various)",
+    "Audience": "Experts; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Dr. Miklós Latzkovits; Dr. Tünde Katona",
+    "Account of textual variance": "yes",
+    "URL": "http://iaa.bibl.u-szeged.hu/index.php",
+    "Manager or Editor": "Anita Fajt"
   },
   {
     "id": 198,
-    "Edition name": "George Etheridge's Encomium on Henry VIII addressed to Elizabeth II, British Library Royal MS 16 C X"
+    "Edition name": "George Etheridge's Encomium on Henry VIII addressed to Elizabeth II, British Library Royal MS 16 C X",
+    "Author": "George Etheridge",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "no",
+    "Sponsor/Funding body": "Royal Holloway, University of London",
+    "Account of textual variance": "no",
+    "URL": "http://hellenic-institute.rhul.ac.uk/Research/Etheridge/",
+    "Manager or Editor": "Charalambos Dendrinos"
   },
   {
     "id": 199,
-    "Edition name": "Digitalisierte Edition des Ältesten Appenzeller Landbuchs"
+    "Edition name": "Digitalisierte Edition des Ältesten Appenzeller Landbuchs",
+    "Author": "Not specified (Scribes)",
+    "Audience": "Experts; Scholars",
+    "Philological statement": "partly",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Law Sources Foundation of the Swiss Lawyers Society",
+    "Account of textual variance": "partly",
+    "URL": "http://www.ssrq-sds-fds.ch/teiviewer/",
+    "Manager or Editor": "Pascale Sutter"
   },
   {
     "id": 200,
-    "Edition name": "Corpus of Ioannes Dantiscus' Texts & Correspondence"
+    "Edition name": "Corpus of Ioannes Dantiscus' Texts & Correspondence",
+    "Author": "Ioannes Dantiscus",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Polish Ministry of Science",
+    "Account of textual variance": "partly",
+    "URL": "http://dantiscus.al.uw.edu.pl/",
+    "Manager or Editor": "Anna Skolimowska"
   },
   {
     "id": 201,
-    "Edition name": "Dante's Commedia"
+    "Edition name": "Dante's Commedia",
+    "Author": "Dante Alighieri",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC; British Academy; De Montfort University; University of Birmingham; University of Saskatchewan",
+    "Account of textual variance": "yes",
+    "URL": "http://sd-editions.com/AnaAdditional/commediaonline/home.html",
+    "Manager or Editor": "Peter Robinson"
   },
   {
     "id": 202,
-    "Edition name": "A London Provisioner's Chronicle, 1550–1563, by Henry Machyn: Manuscript, Transcription, and Modernization"
+    "Edition name": "A London Provisioner's Chronicle, 1550–1563, by Henry Machyn: Manuscript, Transcription, and Modernization",
+    "Author": "Henry Machyn",
+    "Audience": "Scholars; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "University of Michigan Library",
+    "Account of textual variance": "yes",
+    "URL": "http://quod.lib.umich.edu/m/machyn/",
+    "Manager or Editor": "Kevin Hawkins"
   },
   {
     "id": 203,
-    "Edition name": "Collection of Swiss Law Sources"
+    "Edition name": "Collection of Swiss Law Sources",
+    "Author": "Not specified (Various)",
+    "Audience": "Experts; Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Law Sources Foundation of the Swiss Lawyers Society",
+    "Account of textual variance": "no",
+    "URL": "http://www.ssrq-sds-fds.ch/online/",
+    "Manager or Editor": "Pascale Sutter"
   },
   {
     "id": 204,
-    "Edition name": "El Cancionero digital de Gómez Manrique (páginas 11-44)"
+    "Edition name": "El Cancionero digital de Gómez Manrique (páginas 11-44)",
+    "Author": "Gómez Manrique",
+    "Audience": "Experts; Scholars",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.realbiblioteca.es/gomez_manrique/cancionero.html",
+    "Manager or Editor": "Andrea Iantorno"
   },
   {
     "id": 205,
-    "Edition name": "ASChart Anglo-Saxon Charters"
+    "Edition name": "ASChart Anglo-Saxon Charters",
+    "Author": "Not specified (Scribes)",
+    "Audience": "Historians",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "British Academy",
+    "Account of textual variance": "yes",
+    "URL": "http://www.aschart.kcl.ac.uk/index.html",
+    "Manager or Editor": "Janet L. Nelson; Alex Burghart"
   },
   {
     "id": 206,
-    "Edition name": "Excerpts from the Chronicle of Matthew of Edessa"
+    "Edition name": "Excerpts from the Chronicle of Matthew of Edessa",
+    "Author": "Matthew of Edessa",
+    "Audience": "Expert; scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://byzantini.st/ChronicleME/",
+    "Manager or Editor": "Tara Andrews"
   },
   {
     "id": 207,
-    "Edition name": "Les Cours d’Antoine Desgodets"
+    "Edition name": "Les Cours d’Antoine Desgodets",
+    "Author": "Antoine Desgodets",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Agence Nationale de Recherche ANR (France)",
+    "Account of textual variance": "yes",
+    "URL": "http://www.desgodets.net",
+    "Manager or Editor": "Robert Carvais; Emmanuel Château-Dutier"
   },
   {
     "id": 208,
-    "Edition name": "Digitale Edition und Kommentierung der Tagebücher des Fürsten Christian II. von Anhalt-Bernburg"
+    "Edition name": "Digitale Edition und Kommentierung der Tagebücher des Fürsten Christian II. von Anhalt-Bernburg",
+    "Author": "Christian II of Anhalt-Bernburg",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG",
+    "Account of textual variance": "yes",
+    "URL": "http://diglib.hab.de/wdb.php?dir=edoc/ed000228&lang=en",
+    "Manager or Editor": "Arndt Schreiber; Antoine Odier"
   },
   {
     "id": 209,
-    "Edition name": "Die Relatio Adelberts von Heidenheim und der Text Ilsungs"
+    "Edition name": "Die Relatio Adelberts von Heidenheim und der Text Ilsungs",
+    "Author": "Adalbert of Heidenheim",
+    "Audience": "Scholars; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Deutsche Forschungsgemeinschaft",
+    "Account of textual variance": "yes",
+    "URL": "http://www.forschungsdatenarchiv.escience.uni-tuebingen.de/adlils/",
+    "Manager or Editor": "Christian Schwaderer"
   },
   {
     "id": 210,
-    "Edition name": "Je chante ung chant"
+    "Edition name": "Je chante ung chant",
+    "Author": "Not specified (Composers)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC",
+    "Account of textual variance": "yes",
+    "URL": "http://jechante.exeter.ac.uk/archive/index.html",
+    "Manager or Editor": "Yolanda Plumley; Giuliano Di Bacco; Tamsyn Rose-Steel; Gary Stringer"
   },
   {
     "id": 211,
-    "Edition name": "Einstein Archives Online"
+    "Edition name": "Einstein Archives Online",
+    "Author": "Albert Einstein",
+    "Audience": "Scholars; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "The Polonsky Foundation",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.alberteinstein.info/",
+    "Manager or Editor": "Dalia Mendelsson"
   },
   {
     "id": 212,
-    "Edition name": "Codice Pelavicino"
+    "Edition name": "Codice Pelavicino",
+    "Author": "Not specified (Scribes)",
+    "Audience": "Scholars; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://pelavicino.labcd.unipi.it/",
+    "Manager or Editor": "Enrica Salvatori"
   },
   {
     "id": 213,
-    "Edition name": "Woolf Online"
+    "Edition name": "Woolf Online",
+    "Author": "Virginia Woolf",
+    "Audience": "Scholars; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "National Endowment for the Humanities",
+    "Account of textual variance": "not provided",
+    "URL": "http://www.woolfonline.com/",
+    "Manager or Editor": "Pamela L. Caughie; George K. Thiruvathukal"
   },
   {
     "id": 214,
-    "Edition name": "Les manuscrits de Madame Bovary"
+    "Edition name": "Les manuscrits de Madame Bovary",
+    "Author": "Gustave Flaubert",
+    "Audience": "Specialists; Students; general public; teachers",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://www.bovary.fr/",
+    "Manager or Editor": "Françoise Legendre"
   },
   {
     "id": 215,
-    "Edition name": "Digital Schomburg Editions: African American Women Writers of the 19th century"
+    "Edition name": "Digital Schomburg Editions: African American Women Writers of the 19th century",
+    "Author": "Not specified (Various)",
+    "Audience": "General public; Scholars; Teachers",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "The Rockefeller Foundation; the Electronic Doorway Library Services program of the New York State Department of Education; Inso Corporation",
+    "Account of textual variance": "no",
+    "URL": "http://digital.nypl.org/schomburg/writers_aa19/",
+    "Manager or Editor": "Howard Dodson"
   },
   {
     "id": 216,
-    "Edition name": "Faust Edition"
+    "Edition name": "Faust Edition",
+    "Author": "Johann Wolfgang von Goethe",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG",
+    "Account of textual variance": "yes",
+    "URL": "http://beta.faustedition.net/",
+    "Manager or Editor": "Anne Bohnenkamp; Silke Henke; Fotis Jannidis"
   },
   {
     "id": 217,
-    "Edition name": "Theodor Fontane: Notizbücher"
+    "Edition name": "Theodor Fontane: Notizbücher",
+    "Author": "Theodor Fontane",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG",
+    "Account of textual variance": "yes",
+    "URL": "https://fontane-nb.dariah.eu/index.html",
+    "Manager or Editor": "Gabriele Radecke"
   },
   {
     "id": 218,
-    "Edition name": "Johann Christian Senckenberg: Digital Edition of the Diaries"
+    "Edition name": "Johann Christian Senckenberg: Digital Edition of the Diaries",
+    "Author": "Johann Christian Senckenberg",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Dr. Senckenbergische Stiftung; Stiftung Polytechnische Gesellschaft; Gemeinnützigen Hertie-Stiftung",
+    "Account of textual variance": "yes",
+    "URL": "http://senckenberg.ub.uni-frankfurt.de/s/startpage",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 219,
-    "Edition name": "Édition des journaux d'Alexandre Dumas"
+    "Edition name": "Édition des journaux d'Alexandre Dumas",
+    "Author": "Alexandre Dumas",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "no",
+    "Sponsor/Funding body": "Ministère délégué à l'Enseignement supérieur et à la Recherche",
+    "Account of textual variance": "no",
+    "URL": "http://alexandredumas.org/",
+    "Manager or Editor": "Sarah Mombert"
   },
   {
     "id": 220,
-    "Edition name": "Alexander von Humboldt Briefedition"
+    "Edition name": "Alexander von Humboldt Briefedition",
+    "Author": "Alexander von Humboldt",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://telota.bbaw.de/AvHBriefedition/index.html",
+    "Manager or Editor": "Martin Grötschel"
   },
   {
     "id": 221,
-    "Edition name": "Jacob Burckhardt"
+    "Edition name": "Jacob Burckhardt",
+    "Author": "Jacob Burckhardt",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "European Research Advanced Grant Project EUROCORR",
+    "Account of textual variance": "yes",
+    "URL": "http://burckhardtsource.org/",
+    "Manager or Editor": "Maurizio Ghelardi"
   },
   {
     "id": 222,
-    "Edition name": "Key Documents of German-Jewish History"
+    "Edition name": "Key Documents of German-Jewish History",
+    "Author": "Not specified (Various)",
+    "Audience": "College students; researchers; teachers; interested public; high school students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Akademie der Wissenschaften Hamburg; DFG",
+    "Account of textual variance": "yes",
+    "URL": "http://jewish-history-online.net/",
+    "Manager or Editor": "Miriam Rürup"
   },
   {
     "id": 223,
-    "Edition name": "Sappho’s Poems"
+    "Edition name": "Sappho’s Poems",
+    "Author": "Sappho",
+    "Audience": "General public; scholars; teachers; students",
+    "Philological statement": "no",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://inamidst.com/stuff/sappho/",
+    "Manager or Editor": "Sean B. Palmer"
   },
   {
     "id": 224,
-    "Edition name": "L’Orlando Furioso e la sua traduzione in immagini"
+    "Edition name": "L’Orlando Furioso e la sua traduzione in immagini",
+    "Author": "Ludovico Ariosto",
+    "Audience": "Scholars; students; teachers",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://www.orlandofurioso.org/",
+    "Manager or Editor": "Lina Bolzoni"
   },
   {
     "id": 225,
-    "Edition name": "Schopenhauer’s Library: Annotations and marks in his Spanish books"
+    "Edition name": "Schopenhauer’s Library: Annotations and marks in his Spanish books",
+    "Author": "Arthur Schopenhauer",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "no",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://www.schopenhauer.uni.wroc.pl/",
+    "Manager or Editor": "José Luis Losada Palenzuela"
   },
   {
     "id": 226,
-    "Edition name": "Clavius on the Web"
+    "Edition name": "Clavius on the Web",
+    "Author": "Christoph Clavius",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://claviusontheweb.it/",
+    "Manager or Editor": "Irene Pedretti"
   },
   {
     "id": 227,
-    "Edition name": "The Fleischmann Diaries"
+    "Edition name": "The Fleischmann Diaries",
+    "Author": "Aloys Fleischmann",
+    "Audience": "Scholars; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://fleischmanndiaries.ucc.ie/",
+    "Manager or Editor": "Róisín O’Brien"
   },
   {
     "id": 228,
-    "Edition name": "Deutsches Textarchiv (DTA)"
+    "Edition name": "Deutsches Textarchiv (DTA)",
+    "Author": "Not specified (Various)",
+    "Audience": "Experts; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG",
+    "Account of textual variance": "yes",
+    "URL": "http://www.deutschestextarchiv.de/",
+    "Manager or Editor": "Martin Grötschel; Wolfgang Klein; Alexander Geyken"
   },
   {
     "id": 229,
-    "Edition name": "Project Tarsian: First Corinthians in Vaticanus Arabicus 13"
+    "Edition name": "Project Tarsian: First Corinthians in Vaticanus Arabicus 13",
+    "Author": "Paul the Apostle (Text)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Swiss National Science Foundation",
+    "Account of textual variance": "yes",
+    "URL": "http://tarsian.vital-it.ch/",
+    "Manager or Editor": "Claire Clivaz"
   },
   {
     "id": 230,
-    "Edition name": "Letters of 1916"
+    "Edition name": "Letters of 1916",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Maynooth University; European Commission; Trinity College Dublin; Digital Repository of Ireland; Digital Scholarly Editions Initial Training Network",
+    "Account of textual variance": "yes",
+    "URL": "http://dh.tcd.ie/letters1916/",
+    "Manager or Editor": "Susan Schreibman"
   },
   {
     "id": 231,
-    "Edition name": "Bibliotheca Iuris Antiqui (BIA)"
+    "Edition name": "Bibliotheca Iuris Antiqui (BIA)",
+    "Author": "Not specified (Jurists)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Ministero dell’Istruzione, dell’Università e della Ricerca (MIUR)",
+    "Account of textual variance": "no",
+    "URL": "http://www.ittig.cnr.it",
+    "Manager or Editor": "Nicola Palazzolo"
   },
   {
     "id": 232,
-    "Edition name": "The Wandering Jew's Chronicle"
+    "Edition name": "The Wandering Jew's Chronicle",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "Book historians; ballad scholars; folk scholars; cultural historians",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "British Academy",
+    "Account of textual variance": "yes",
+    "URL": "http://wjc.bodleian.ox.ac.uk",
+    "Manager or Editor": "Giles Bergel"
   },
   {
     "id": 233,
-    "Edition name": "Roman Inscriptions of Britain"
+    "Edition name": "Roman Inscriptions of Britain",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "https://romaninscriptionsofbritain.org/",
+    "Manager or Editor": "Scott Vanderbilt"
   },
   {
     "id": 234,
-    "Edition name": "Teutsche Academie der Bau-, Bild- und Mahlerey-Künste, Joachim von Sandrart, Nürnberg 1675/1679/1680: Wissenschaftlich kommentierte Online-Edition"
+    "Edition name": "Teutsche Academie der Bau-, Bild- und Mahlerey-Künste, Joachim von Sandrart, Nürnberg 1675/1679/1680: Wissenschaftlich kommentierte Online-Edition",
+    "Author": "Joachim von Sandrart",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG",
+    "Account of textual variance": "yes",
+    "URL": "http://ta.sandrart.net/de/",
+    "Manager or Editor": "Thomas Kirchner; Alessandro Nova"
   },
   {
     "id": 235,
-    "Edition name": "ABaC:us - Austrian Baroque Corpus"
+    "Edition name": "ABaC:us - Austrian Baroque Corpus",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars (literary studies; linguistic studies; religious studies; history; art history); students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "City of Vienna, Anniversary fund of the Österreichische Nationalbank",
+    "Account of textual variance": "yes",
+    "URL": "https://acdh.oeaw.ac.at/abacus/",
+    "Manager or Editor": "Claudia Resch"
   },
   {
     "id": 236,
-    "Edition name": "Darwin Online: Online Variorum of Darwin’s Origin of Species"
+    "Edition name": "Darwin Online: Online Variorum of Darwin’s Origin of Species",
+    "Author": "Charles Darwin",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://darwin-online.org.uk/Variorum/",
+    "Manager or Editor": "Barbara Bordalejo"
   },
   {
     "id": 237,
-    "Edition name": "Dāmos Database of Mycenaean at Oslo"
+    "Edition name": "Dāmos Database of Mycenaean at Oslo",
+    "Author": "Not specified (Scribes)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://www2.hf.uio.no/damos/",
+    "Manager or Editor": "Federico Aurora"
   },
   {
     "id": 238,
-    "Edition name": "Van Nu en Straks brieven"
+    "Edition name": "Van Nu en Straks brieven",
+    "Author": "Not specified (Editors)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://www.vnsbrieven.org/VNS/",
+    "Manager or Editor": "Edward Vanhoutte"
   },
   {
     "id": 239,
-    "Edition name": "Streuvels en zijn uitgevers – brieven"
+    "Edition name": "Streuvels en zijn uitgevers – brieven",
+    "Author": "Stijn Streuvels",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://edities.kantl.be/streuvels/",
+    "Manager or Editor": "Edward Vanhoutte"
   },
   {
     "id": 240,
-    "Edition name": "Briefwechsel Sauer-Seuffert"
+    "Edition name": "Briefwechsel Sauer-Seuffert",
+    "Author": "Sauer & Seuffert",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG; Austrian Science Fund (FWF)",
+    "Account of textual variance": "yes",
+    "URL": "http://sauer-seuffert.onb.ac.at/",
+    "Manager or Editor": "Bernhard Fetz; Hans Harald Müller"
   },
   {
     "id": 241,
-    "Edition name": "Ursus from Benevento, De nomine"
+    "Edition name": "Ursus from Benevento, De nomine",
+    "Author": "Ursus of Benevento",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Progetti di Rilevante Interesse Nazionale (PRIN)",
+    "Account of textual variance": "yes",
+    "URL": "http://www1.unipa.it/paolo.monella/ursus/transcription.html",
+    "Manager or Editor": "Paolo Monella"
   },
   {
     "id": 242,
-    "Edition name": "William F. Cody Archive"
+    "Edition name": "William F. Cody Archive",
+    "Author": "William F. Cody",
+    "Audience": "Scholars; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "National Endowment for the Humanities; Geraldine W. & Robert J. Dellenback Foundation",
+    "Account of textual variance": "yes",
+    "URL": "http://codyarchive.org/",
+    "Manager or Editor": "Jeremy Johnston; Frank Christianson; Douglas Seefeldt; Katherine Walter"
   },
   {
     "id": 243,
-    "Edition name": "Johannes Tinctoris: Complete Theoretical Works"
+    "Edition name": "Johannes Tinctoris: Complete Theoretical Works",
+    "Author": "Johannes Tinctoris",
+    "Audience": "Scholars; performers; teachers; students",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "AHRC; Birmingham Conservatoire of Birmingham City University",
+    "Account of textual variance": "yes",
+    "URL": "http://earlymusictheory.org/Tinctoris/",
+    "Manager or Editor": "Ronald Woodley"
   },
   {
     "id": 244,
-    "Edition name": "Digital Athenaeus"
+    "Edition name": "Digital Athenaeus",
+    "Author": "Athenaeus",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Humboldt Foundation",
+    "Account of textual variance": "partly",
+    "URL": "http://digitalathenaeus.org/",
+    "Manager or Editor": "Monica Berti"
   },
   {
     "id": 245,
-    "Edition name": "Magistri Guillelmi Autissiodorensis Summa de officiis ecclesiasticis"
+    "Edition name": "Magistri Guillelmi Autissiodorensis Summa de officiis ecclesiasticis",
+    "Author": "William of Auxerre",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG-Graduiertenkolleg Vormoderne Konzepte von Zeit und Vergangenheit (Universität zu Köln, 2001-2004)",
+    "Account of textual variance": "yes",
+    "URL": "http://guillelmus.uni-koeln.de/",
+    "Manager or Editor": "Franz Fischer"
   },
   {
     "id": 246,
-    "Edition name": "Musil Online"
+    "Edition name": "Musil Online",
+    "Author": "Robert Musil",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "no",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://musilonline.at/",
+    "Manager or Editor": "Anke Bosse; Artur Boerderl; Walter Fanta"
   },
   {
     "id": 247,
-    "Edition name": "A Comprehensive Edition of Tocharian Manuscripts"
+    "Edition name": "A Comprehensive Edition of Tocharian Manuscripts",
+    "Author": "Not specified (Scribes)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Austrian Science Fund (FWF)",
+    "Account of textual variance": "yes",
+    "URL": "http://www.univie.ac.at/tocharian/",
+    "Manager or Editor": "Bernhard Koller"
   },
   {
     "id": 248,
-    "Edition name": "Briefe und Texte aus dem Intellektuellen Berlin um 1800"
+    "Edition name": "Briefe und Texte aus dem Intellektuellen Berlin um 1800",
+    "Author": "Not specified (Intellectuals)",
+    "Audience": "Scientists; scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG",
+    "Account of textual variance": "yes",
+    "URL": "http://www.berliner-intellektuelle.eu/",
+    "Manager or Editor": "Anne Baillot"
   },
   {
     "id": 249,
-    "Edition name": "Biblioteca Digital del Pensamiento Novohispano"
+    "Edition name": "Biblioteca Digital del Pensamiento Novohispano",
+    "Author": "Not specified (Various)",
+    "Audience": "Students; researchers; academics",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Programa de Apoyo para la Innovación y el Mejoramiento de la Enseñanza (PAPIME); Consejo Nacional de Ciencia y Tecnología (CONACyT)",
+    "Account of textual variance": "yes",
+    "URL": "http://www.bdpn.unam.mx/",
+    "Manager or Editor": "Ernesto Priani Saisó"
   },
   {
     "id": 250,
-    "Edition name": "Bliss-Tyler Correspondence"
+    "Edition name": "Bliss-Tyler Correspondence",
+    "Author": "Bliss & Tyler",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://www.doaks.org/resources/bliss-tyler-correspondence/",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 251,
-    "Edition name": "edition humboldt digital"
+    "Edition name": "edition humboldt digital",
+    "Author": "Alexander von Humboldt",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Das Akademienvorhaben „Alexander von Humboldt auf Reisen – Wissenschaft aus der Bewegung“ ist Teil des von Bund und Ländern geförderten Akademienprogramms, das der Erhaltung, Sicherung und Vergegenwärtigung unseres kulturellen Erbes dient. Koordiniert wird das Programm von der Union der Deutschen Akademien der Wissenschaften.",
+    "Account of textual variance": "yes",
+    "URL": "https://edition-humboldt.de/",
+    "Manager or Editor": "Ottmar Ette"
   },
   {
     "id": 252,
-    "Edition name": "Vespasiano da Bisticci, Lettere"
+    "Edition name": "Vespasiano da Bisticci, Lettere",
+    "Author": "Vespasiano da Bisticci",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://vespasianodabisticciletters.unibo.it",
+    "Manager or Editor": "Francesca Tomasi"
   },
   {
     "id": 253,
-    "Edition name": "Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732)"
+    "Edition name": "Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732)",
+    "Author": "Erdmuthe Benigna",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Friedrich-Schiller-Universität Jena",
+    "Account of textual variance": "yes",
+    "URL": "http://erdmuthe.thulb.uni-jena.de",
+    "Manager or Editor": "Julia A. Schmidt-Funke; Martin Prell"
   },
   {
     "id": 254,
-    "Edition name": "Jane Addams Digital Edition"
+    "Edition name": "Jane Addams Digital Edition",
+    "Author": "Jane Addams",
+    "Audience": "Scholars; students; teachers; general public; genealogists",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "National Historical Publications and Records Commission (USA); National Endowment for the Humanities (USA); Ramapo College of New Jersey; Gladys Krieble Delmas Foundation; Ruth McCormick Tankersley Foundation;",
+    "Account of textual variance": "yes",
+    "URL": "https://digital.janeaddams.ramapo.edu/",
+    "Manager or Editor": "Cathy Moran Hajo"
   },
   {
     "id": 255,
-    "Edition name": "Les Pensées de Blaise Pascal"
+    "Edition name": "Les Pensées de Blaise Pascal",
+    "Author": "Blaise Pascal",
+    "Audience": "General public; students; teachers; researchers",
+    "Philological statement": "partly",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://www.penseesdepascal.fr",
+    "Manager or Editor": "Dominique Descotes; Gilles Proust"
   },
   {
     "id": 256,
-    "Edition name": "Ödön von Horváth: Historisch-kritische Ausgabe – Digitale Edition"
+    "Edition name": "Ödön von Horváth: Historisch-kritische Ausgabe – Digitale Edition",
+    "Author": "Ödön von Horváth",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Austrian Science Fund (FWF)",
+    "Account of textual variance": "yes",
+    "URL": "http://gams.uni-graz.at/horvath-edition",
+    "Manager or Editor": "Klaus Kastberger"
   },
   {
     "id": 257,
-    "Edition name": "Lament of St. Anselm"
+    "Edition name": "Lament of St. Anselm",
+    "Author": "Anselm of Canterbury",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://library.trinity.edu/lament/index.html",
+    "Manager or Editor": "Andrew Kraebel"
   },
   {
     "id": 258,
-    "Edition name": "Beethovens Werkstatt"
+    "Edition name": "Beethovens Werkstatt",
+    "Author": "Ludwig van Beethoven",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Akademie der Wissenschaften und der Literatur Mainz",
+    "Account of textual variance": "yes",
+    "URL": "http://beethovens-werkstatt.de/",
+    "Manager or Editor": "Bernhard R. Appel; Joachim Veit"
   },
   {
     "id": 259,
-    "Edition name": "The Charles Harpur Critical Archive"
+    "Edition name": "The Charles Harpur Critical Archive",
+    "Author": "Charles Harpur",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Australian Research Council; Loyola University",
+    "Account of textual variance": "yes",
+    "URL": "http://charles-harpur.org/",
+    "Manager or Editor": "Paul Eggert"
   },
   {
     "id": 260,
-    "Edition name": "La Dama Boba"
+    "Edition name": "La Dama Boba",
+    "Author": "Lope de Vega",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://damaboba.unibo.it/",
+    "Manager or Editor": "Marco Presotto"
   },
   {
     "id": 261,
-    "Edition name": "En el ojo del huracán. Cartas de ultramar a España 1823"
+    "Edition name": "En el ojo del huracán. Cartas de ultramar a España 1823",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://www.cartas-de-ultramar.net/",
+    "Manager or Editor": "Werner Stangl"
   },
   {
     "id": 262,
-    "Edition name": "Kosztolányi Dezső: Édes Anna"
+    "Edition name": "Kosztolányi Dezső: Édes Anna",
+    "Author": "Dezső Kosztolányi",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/gepesk/kd/edesanna/",
+    "Manager or Editor": "Veres András"
   },
   {
     "id": 263,
-    "Edition name": "Kosztolányi Dezső: Édes Anna"
+    "Edition name": "Kosztolányi Dezső: Édes Anna",
+    "Author": "Dezső Kosztolányi",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://digiphil.hu/context:edesanna",
+    "Manager or Editor": "Veres András"
   },
   {
     "id": 264,
-    "Edition name": "Kassák Lajos: The Horse Dies the Birds Fly Away / A ló meghal a madarak kirepülnek"
+    "Edition name": "Kassák Lajos: The Horse Dies the Birds Fly Away / A ló meghal a madarak kirepülnek",
+    "Author": "Lajos Kassák",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "no",
+    "Value of witnesses": "no",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "http://digiphil.hu/context:alomeghal",
+    "Manager or Editor": "Fellegi Zsófia"
   },
   {
     "id": 265,
-    "Edition name": "Kosztolányi Dezső: Aranysárkány"
+    "Edition name": "Kosztolányi Dezső: Aranysárkány",
+    "Author": "Dezső Kosztolányi",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://digiphil.hu/context:aranysarkany",
+    "Manager or Editor": "Bengi László; Parádi Andrea"
   },
   {
     "id": 266,
-    "Edition name": "Kosztolányi Dezső: Esti Kornél"
+    "Edition name": "Kosztolányi Dezső: Esti Kornél",
+    "Author": "Dezső Kosztolányi",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://digiphil.hu/context:estikornel",
+    "Manager or Editor": "Palkó Gábor; Veres András"
   },
   {
     "id": 267,
-    "Edition name": "Fanchali Jób-kódex"
+    "Edition name": "Fanchali Jób-kódex",
+    "Author": "Not specified (Scribe)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://www.tankonyvtar.hu/hu/tartalom/tkt/fanchali-job-kodex/adatok.html",
+    "Manager or Editor": "Tóth Tünde; Földes Zsuzsa"
   },
   {
     "id": 268,
-    "Edition name": "Eötvös József: A falu jegyzóje"
+    "Edition name": "Eötvös József: A falu jegyzóje",
+    "Author": "József Eötvös",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/totnes/eotvos/",
+    "Manager or Editor": "Devescovi Balázs"
   },
   {
     "id": 269,
-    "Edition name": "József Attila összes tanulmánya és cikke"
+    "Edition name": "József Attila összes tanulmánya és cikke",
+    "Author": "Attila József",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/ja/",
+    "Manager or Editor": "Horváth Iván; Devescovi Balázs, Golden Dániel"
   },
   {
     "id": 270,
-    "Edition name": "József Attila összes tanulmánya és cikke. Szövegek 1930-1937"
+    "Edition name": "József Attila összes tanulmánya és cikke. Szövegek 1930-1937",
+    "Author": "Attila József",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://textus.elte.hu/ja/",
+    "Manager or Editor": "Horváth Iván"
   },
   {
     "id": 271,
-    "Edition name": "Estoria de Espanna Digital"
+    "Edition name": "Estoria de Espanna Digital",
+    "Author": "Alfonso X",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Arts and Humanities Research Council",
+    "Account of textual variance": "yes",
+    "URL": "http://estoria.bham.ac.uk/",
+    "Manager or Editor": "Aengus Ward"
   },
   {
     "id": 272,
-    "Edition name": "Gergei Albert: Árgirus históriája (version 1)"
+    "Edition name": "Gergei Albert: Árgirus históriája (version 1)",
+    "Author": "Albert Gergei",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://www.tankonyvtar.hu/en/tartalom/tkt/argirus-historiaja/adatok.html",
+    "Manager or Editor": "Parádi Andrea"
   },
   {
     "id": 273,
-    "Edition name": "Wathay Ferenc összes műve"
+    "Edition name": "Wathay Ferenc összes műve",
+    "Author": "Ferenc Wathay",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/gepesk/wathay/",
+    "Manager or Editor": "Tóth Csilla; Tóth Tünde"
   },
   {
     "id": 274,
-    "Edition name": "Adriai tengernek syrénája, gróf Zrínyi Miklós"
+    "Edition name": "Adriai tengernek syrénája, gróf Zrínyi Miklós",
+    "Author": "Miklós Zrínyi",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/gepesk/zrinyi/",
+    "Manager or Editor": "Orlovszky Géza"
   },
   {
     "id": 275,
-    "Edition name": "Rimay János verseinek fragmentumi"
+    "Edition name": "Rimay János verseinek fragmentumi",
+    "Author": "János Rimay",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/gepesk/rimay/",
+    "Manager or Editor": "Tóth Tünde"
   },
   {
     "id": 276,
-    "Edition name": "Rimay János ifjúkori versgyűjteménye"
+    "Edition name": "Rimay János ifjúkori versgyűjteménye",
+    "Author": "János Rimay",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://www.tankonyvtar.hu/hu/tartalom/tkt/rimay-janos-ifjukori/",
+    "Manager or Editor": "Tóth Tünde"
   },
   {
     "id": 277,
-    "Edition name": "Effectus amoris"
+    "Edition name": "Effectus amoris",
+    "Author": "Not specified (Anonymous)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/effectus/",
+    "Manager or Editor": "Szegedi Béla"
   },
   {
     "id": 278,
-    "Edition name": "Érdy-kódex"
+    "Edition name": "Érdy-kódex",
+    "Author": "Not specified (Translator)",
+    "Audience": "Scholars",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://sermones.elte.hu/erdy/",
+    "Manager or Editor": "Bárczi Ildikó"
   },
   {
     "id": 279,
-    "Edition name": "Régi Magyar Exemplumadatbázis/ Database of Old Hungarian Exempla"
+    "Edition name": "Régi Magyar Exemplumadatbázis/ Database of Old Hungarian Exempla",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "0.5; 1",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://sermones.elte.hu/exemplumadatbazis/",
+    "Manager or Editor": "Bartók Zsófia Ágnes"
   },
   {
     "id": 280,
-    "Edition name": "Kazinczy Ferenc összes művei"
+    "Edition name": "Kazinczy Ferenc összes művei",
+    "Author": "Ferenc Kazinczy",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://deba.unideb.hu/deba/kazinczy_muvei/",
+    "Manager or Editor": "Bodrogi Ferenc Máté; Orbán László"
   },
   {
     "id": 281,
-    "Edition name": "Csokonai Vitéz Mihály összes művei"
+    "Edition name": "Csokonai Vitéz Mihály összes művei",
+    "Author": "Mihály Csokonai Vitéz",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://deba.unideb.hu/deba/csokonai_muvei/",
+    "Manager or Editor": "Tóth Barna"
   },
   {
     "id": 282,
-    "Edition name": "Opera Aesthetica Szerdahelyana / Szerdahely György Alajos esztétikai írásai"
+    "Edition name": "Opera Aesthetica Szerdahelyana / Szerdahely György Alajos esztétikai írásai",
+    "Author": "György Alajos Szerdahely",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://deba.unideb.hu/deba/szerdahely/",
+    "Manager or Editor": "Debreczeni Attila"
   },
   {
     "id": 283,
-    "Edition name": "Gyöngyössi János művei"
+    "Edition name": "Gyöngyössi János művei",
+    "Author": "János Gyöngyössi",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://deba.unideb.hu/deba/gyongyossi/",
+    "Manager or Editor": "Debreczeni Attila"
   },
   {
     "id": 284,
-    "Edition name": "Berzsenyi Dániel levelezése"
+    "Edition name": "Berzsenyi Dániel levelezése",
+    "Author": "Dániel Berzsenyi",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://deba.unideb.hu/deba/berzsenyi/",
+    "Manager or Editor": "Tóth Barna"
   },
   {
     "id": 285,
-    "Edition name": "Magyar írók levelezése"
+    "Edition name": "Magyar írók levelezése",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://deba.unideb.hu/deba/levelezes/",
+    "Manager or Editor": "Orbán László"
   },
   {
     "id": 286,
-    "Edition name": "A Ráday-család levelezése"
+    "Edition name": "A Ráday-család levelezése",
+    "Author": "Ráday Family",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://deba.unideb.hu/deba/raday/",
+    "Manager or Editor": "Veisz Bettina"
   },
   {
     "id": 287,
-    "Edition name": "Margit-legenda (Szent Margit élete, 1510)"
+    "Edition name": "Margit-legenda (Szent Margit élete, 1510)",
+    "Author": "Not specified (Scribe)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://deba.unideb.hu/deba/Margit-legenda_Szent_Margit_elete_1510/index.html",
+    "Manager or Editor": "M. Nagy Ilona; Boda István Károly; Porkoláb Judit; Varga Teréz"
   },
   {
     "id": 288,
-    "Edition name": "Orpheus"
+    "Edition name": "Orpheus",
+    "Author": "Not specified (Kazinczy)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://deba.unideb.hu/deba/orpheus/",
+    "Manager or Editor": "Debreczeni Attila"
   },
   {
     "id": 289,
-    "Edition name": "Magyar Museum"
+    "Edition name": "Magyar Museum",
+    "Author": "Not specified (Kazinczy et al.)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://deba.unideb.hu/deba/magyar_museum/",
+    "Manager or Editor": "Debreczeni Attila"
   },
   {
     "id": 290,
-    "Edition name": "DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde"
+    "Edition name": "DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde",
+    "Author": "Herwarth Walden (Editor)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://sturm-edition.de",
+    "Manager or Editor": "Torsten Schrade; Marjam Trautmann"
   },
   {
     "id": 291,
-    "Edition name": "Balassi Bálint összes verse (hálózati kritikai kiadás: version 1.0 and 2.0)"
+    "Edition name": "Balassi Bálint összes verse (hálózati kritikai kiadás: version 1.0 and 2.0)",
+    "Author": "Bálint Balassi",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/gepesk/bbom/itart.htm",
+    "Manager or Editor": "Horváth Iván; Tóth Tünde; Vadai István"
   },
   {
     "id": 292,
-    "Edition name": "Lelki énekekről régi magyarok"
+    "Edition name": "Lelki énekekről régi magyarok",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://magyar-irodalom.elte.hu/gepesk/eloszo/",
+    "Manager or Editor": "H. Hubert Gabriella"
   },
   {
     "id": 293,
-    "Edition name": "Szabó Lőrinc: Föld, erdő, isten; Kalibán; Fény, fény, fény; A sátán műremekei; Te meg a világ; Különbéke; Harc az ünnepért; Régen és most"
+    "Edition name": "Szabó Lőrinc: Föld, erdő, isten; Kalibán; Fény, fény, fény; A sátán műremekei; Te meg a világ; Különbéke; Harc az ünnepért; Régen és most",
+    "Author": "Lőrinc Szabó",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://krk.szabolorinc.hu/dokumentumok.htm",
+    "Manager or Editor": "Kabdebó Lóránt"
   },
   {
     "id": 294,
-    "Edition name": "A Tett folyóirat (The Journal „A Tett”)"
+    "Edition name": "A Tett folyóirat (The Journal „A Tett”)",
+    "Author": "Lajos Kassák (Editor)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "http://digiphil.hu/context:atett",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 295,
-    "Edition name": "Mikszáth Kálmán összes művei 39"
+    "Edition name": "Mikszáth Kálmán összes művei 39",
+    "Author": "Kálmán Mikszáth",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://digiphil.hu/context:mkk39",
+    "Manager or Editor": "Labádi Gergely"
   },
   {
     "id": 296,
-    "Edition name": "Mikszáth Kálmán összes művei 42"
+    "Edition name": "Mikszáth Kálmán összes művei 42",
+    "Author": "Kálmán Mikszáth",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "http://digiphil.hu/context:mkk42",
+    "Manager or Editor": "not provided"
   },
   {
     "id": 297,
-    "Edition name": "P.S. Post Scriptum: A Digital Archive of Ordinary Writing"
+    "Edition name": "P.S. Post Scriptum: A Digital Archive of Ordinary Writing",
+    "Author": "Not specified (Civilians)",
+    "Audience": "not provided",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "European Research Council",
+    "Account of textual variance": "yes",
+    "URL": "http://ps.clul.ul.pt/",
+    "Manager or Editor": "Rita Marquilhas"
   },
   {
     "id": 298,
-    "Edition name": "Jean Paul – Sämtliche Briefe digital"
+    "Edition name": "Jean Paul – Sämtliche Briefe digital",
+    "Author": "Jean Paul",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Deutsche Forschungsgemeinschaft",
+    "Account of textual variance": "partly",
+    "URL": "https://www.jeanpaul-edition.de/",
+    "Manager or Editor": "Norbert Miller; Markus Bernauer; Frederike Neuber"
   },
   {
     "id": 299,
-    "Edition name": "Armer Heinrich Digital"
+    "Edition name": "Armer Heinrich Digital",
+    "Author": "Hartmann von Aue",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Ministerio de Economía y Competitividad de España",
+    "Account of textual variance": "yes",
+    "URL": "http://digi.ub.uni-heidelberg.de/ahd/",
+    "Manager or Editor": "Victor Millet"
   },
   {
     "id": 300,
-    "Edition name": "Deux visages de L'Astrée"
+    "Edition name": "Deux visages de L'Astrée",
+    "Author": "Honoré d'Urfé",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Tufts University",
+    "Account of textual variance": "yes",
+    "URL": "https://astree.tufts.edu",
+    "Manager or Editor": "Eglal Henein"
   },
   {
     "id": 302,
-    "Edition name": "travel!digital"
+    "Edition name": "travel!digital",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Austrian Academy of Sciences",
+    "Account of textual variance": "yes",
+    "URL": "https://traveldigital.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Ulrike Czeitschner"
   },
   {
     "id": 303,
-    "Edition name": "Mächtekongresse 1818–1822. Digitale Edition der Dokumente zu den Kongressen von Aachen (1818), Troppau (1820), Laibach (1821) und Verona (1822)"
+    "Edition name": "Mächtekongresse 1818–1822. Digitale Edition der Dokumente zu den Kongressen von Aachen (1818), Troppau (1820), Laibach (1821) und Verona (1822)",
+    "Author": "Not specified (Diplomats)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Austrian Science Fund (FWF); Austrian Academy of Sciences",
+    "Account of textual variance": "yes",
+    "URL": "https://maechtekongresse.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Karin Schneider"
   },
   {
     "id": 304,
-    "Edition name": "Tagebücher von Andreas Okopenko. Digitale Edition"
+    "Edition name": "Tagebücher von Andreas Okopenko. Digitale Edition",
+    "Author": "Andreas Okopenko",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Austrian Science Fund (FWF)",
+    "Account of textual variance": "yes",
+    "URL": "https://edition.onb.ac.at/okopenko",
+    "Manager or Editor": "Roland Innerhofer"
   },
   {
     "id": 305,
-    "Edition name": "Ulrich Richental die Chronik des Konzils von Konstanz"
+    "Edition name": "Ulrich Richental die Chronik des Konzils von Konstanz",
+    "Author": "Ulrich Richental",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "DFG",
+    "Account of textual variance": "partly",
+    "URL": "https://edition.mgh.de/001/",
+    "Manager or Editor": "Thomas Martin Buck"
   },
   {
     "id": 306,
-    "Edition name": "Franco-Hungarian literary relations in the 20th century/Les relations littéraires entre la France et la Hongrie au XXe siècle"
+    "Edition name": "Franco-Hungarian literary relations in the 20th century/Les relations littéraires entre la France et la Hongrie au XXe siècle",
+    "Author": "Not specified (Various)",
+    "Audience": "General public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Hungarian Government",
+    "Account of textual variance": "yes",
+    "URL": "http://frhu20.iti.btk.mta.hu/",
+    "Manager or Editor": "Újvári Tüskés Anna"
   },
   {
     "id": 307,
-    "Edition name": "Schnitzler Critical Digital Edition"
+    "Edition name": "Schnitzler Critical Digital Edition",
+    "Author": "Arthur Schnitzler",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "MHRA",
+    "Account of textual variance": "yes",
+    "URL": "https://www.arthur-schnitzler.de/edition/genetisch",
+    "Manager or Editor": "Andrew Webber"
   },
   {
     "id": 308,
-    "Edition name": "Johann Georg Hamann: Kommentierte Briefausgabe"
+    "Edition name": "Johann Georg Hamann: Kommentierte Briefausgabe",
+    "Author": "Johann Georg Hamann",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Theodor Springmann Stiftung",
+    "Account of textual variance": "yes",
+    "URL": "https://www.hamann-ausgabe.de",
+    "Manager or Editor": "Janina Reibold"
   },
   {
     "id": 309,
-    "Edition name": "Grundtvigs Vaerker (The complete works of N.F.S. Grundtvig)"
+    "Edition name": "Grundtvigs Vaerker (The complete works of N.F.S. Grundtvig)",
+    "Author": "N.F.S. Grundtvig",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Danish Government",
+    "Account of textual variance": "no",
+    "URL": "http://grundtvigsvaerker.dk",
+    "Manager or Editor": "Katrine Froekjaer Baunvig"
   },
   {
     "id": 310,
-    "Edition name": "Die Korrespondenz von Leo von Thun-Hohenstein"
+    "Edition name": "Die Korrespondenz von Leo von Thun-Hohenstein",
+    "Author": "Leo von Thun-Hohenstein",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Austrian Science Fund (FWF); Austrian Academy of Sciences",
+    "Account of textual variance": "yes",
+    "URL": "https://thun-korrespondenz.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Brigitte Mazohl; Christof Aichner; Peter Andorfer"
   },
   {
     "id": 311,
-    "Edition name": "Inscriptions of Greek Cyrenaica - Greek Verse Inscriptions of Cyrenaica"
+    "Edition name": "Inscriptions of Greek Cyrenaica - Greek Verse Inscriptions of Cyrenaica",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://igcyr.unibo.it",
+    "Manager or Editor": "Catherine Dobias-Lalou"
   },
   {
     "id": 312,
-    "Edition name": "Romualdus Beneventanus, Chronicon"
+    "Edition name": "Romualdus Beneventanus, Chronicon",
+    "Author": "Romuald of Salerno",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "ALIM (Archivio della Latinità Italiana del Medioevo), Università degli Studi di Palermo",
+    "Account of textual variance": "yes",
+    "URL": "http://www1.unipa.it/paolo.monella/romualdus/",
+    "Manager or Editor": "Paolo Monella"
   },
   {
     "id": 313,
-    "Edition name": "Samuel Hahnemann - Digitale kritische Edition - Krankenjournal DF5"
+    "Edition name": "Samuel Hahnemann - Digitale kritische Edition - Krankenjournal DF5",
+    "Author": "Samuel Hahnemann",
+    "Audience": "General public; historians; physicians; homeopaths",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Institut für Geschichte der Medizin der Robert Bosch Stiftung",
+    "Account of textual variance": "yes",
+    "URL": "https://www.hahnemann-edition.de/index.html",
+    "Manager or Editor": "Arnold Michalowski"
   },
   {
     "id": 314,
-    "Edition name": "Arthur Schnitzler – Briefwechsel mit Autorinnen und Autoren"
+    "Edition name": "Arthur Schnitzler – Briefwechsel mit Autorinnen und Autoren",
+    "Author": "Arthur Schnitzler",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "FWF",
+    "Account of textual variance": "yes",
+    "URL": "https://schnitzler-briefe.acdh.oeaw.ac.at",
+    "Manager or Editor": "Martin Anton Müller"
   },
   {
     "id": 315,
-    "Edition name": "Lazarraga eskuizkribua: edizioa eta azterketa"
+    "Edition name": "Lazarraga eskuizkribua: edizioa eta azterketa",
+    "Author": "Juan Pérez de Lazarraga",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Spanish Ministerio de Ciencia e Innovación; Spanish Ministerio de Economía y Competitividad; Eusko Jaurlaritza / Gobierno Vasco; Universidad del País Vasco / Euskal Herriko Unibertsitatea (UPV/EHU)",
+    "Account of textual variance": "partly",
+    "URL": "http://www.ehu.eus/monumenta/lazarraga/index.html",
+    "Manager or Editor": "Joseba A. Lakarra"
   },
   {
     "id": 316,
-    "Edition name": "Protokolle des Bayerischen Staatsrats"
+    "Edition name": "Protokolle des Bayerischen Staatsrats",
+    "Author": "Not specified (Ministers)",
+    "Audience": "Scholars; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "no",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "https://www.bayerischer-staatsrat.de",
+    "Manager or Editor": "Matthias Reinert"
   },
   {
     "id": 317,
-    "Edition name": "The glosses to the first book of the Etymologiae of Isidore of Seville: a digital scholarly edition"
+    "Edition name": "The glosses to the first book of the Etymologiae of Isidore of Seville: a digital scholarly edition",
+    "Author": "Isidore of Seville (Text)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO)",
+    "Account of textual variance": "yes",
+    "URL": "https://db.innovatingknowledge.nl/edition",
+    "Manager or Editor": "Evina Steinová"
   },
   {
     "id": 318,
-    "Edition name": "In Search of the Drowned: Testimonies and Testimonial Fragments of the Holocaust"
+    "Edition name": "In Search of the Drowned: Testimonies and Testimonial Fragments of the Holocaust",
+    "Author": "Not specified (Survivors)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "Yale Fortunoff Archive",
+    "Account of textual variance": "yes",
+    "URL": "https://lts.fortunoff.library.yale.edu/",
+    "Manager or Editor": "Gabor Mihaly Toth"
   },
   {
     "id": 319,
-    "Edition name": "Alexander von Humboldt: Sämtliche Schriften digital"
+    "Edition name": "Alexander von Humboldt: Sämtliche Schriften digital",
+    "Author": "Alexander von Humboldt",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Schweizerischer Nationalfonds; Schweizerische Akademie der Geistes- und Sozialwissenschaften",
+    "Account of textual variance": "yes",
+    "URL": "https://humboldt.unibe.ch/text",
+    "Manager or Editor": "Thomas Nehrlich"
   },
   {
     "id": 320,
-    "Edition name": "Mystische Bücher in der Bibliothek der Kartause Erfurt. Digitale Edition"
+    "Edition name": "Mystische Bücher in der Bibliothek der Kartause Erfurt. Digitale Edition",
+    "Author": "Not specified (Monks)",
+    "Audience": "Scholars",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Deutsche Forschungsgemeinschaft",
+    "Account of textual variance": "yes",
+    "URL": "https://making-mysticism.org/edition/1.0/html/",
+    "Manager or Editor": "Marieke Abram; Susanne Bernhardt; Gilbert Fournier; Martin Hinze; Antje Kellersohn; Balázs J. Nemes; Saher Semaan"
   },
   {
     "id": 321,
-    "Edition name": "Peter Handke Notizbücher. Digitale Edition"
+    "Edition name": "Peter Handke Notizbücher. Digitale Edition",
+    "Author": "Peter Handke",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Austrian Science Fund (FWF); Deutsche Forschungsgemeinschaft (DFG)",
+    "Account of textual variance": "yes",
+    "URL": "http://edition.onb.ac.at/handke-notizbuecher",
+    "Manager or Editor": "Bernhard Fetz; Ulrich von Bülow"
   },
   {
     "id": 322,
-    "Edition name": "Gottfried Semper. Critical and Commented Edition"
+    "Edition name": "Gottfried Semper. Critical and Commented Edition",
+    "Author": "Gottfried Semper",
+    "Audience": "Scholars; students; architects; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Swiss National Science Foundation",
+    "Account of textual variance": "yes",
+    "URL": "https://semper-edition.ch/",
+    "Manager or Editor": "Elena Chestnova"
   },
   {
     "id": 323,
-    "Edition name": "Thesaurus Inscriptionum Raeticarum"
+    "Edition name": "Thesaurus Inscriptionum Raeticarum",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "FWF",
+    "Account of textual variance": "yes",
+    "URL": "https://tir.univie.ac.at",
+    "Manager or Editor": "Corinna Salomon"
   },
   {
     "id": 324,
-    "Edition name": "Lexicon Leponticum"
+    "Edition name": "Lexicon Leponticum",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "FWF; ÖAW",
+    "Account of textual variance": "yes",
+    "URL": "https://lexlep.univie.ac.at",
+    "Manager or Editor": "David Stifter"
   },
   {
     "id": 325,
-    "Edition name": "Arthur Schnitzler – Chronik. Eine digitale Ressource zu den einzelnen Tagen seines Lebens"
+    "Edition name": "Arthur Schnitzler – Chronik. Eine digitale Ressource zu den einzelnen Tagen seines Lebens",
+    "Author": "Arthur Schnitzler",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://schnitzler-chronik.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Martin Anton Müller"
   },
   {
     "id": 326,
-    "Edition name": "Clara Katharina Pollaczek: Arthur Schnitzler und ich. Digitale Ausgabe"
+    "Edition name": "Clara Katharina Pollaczek: Arthur Schnitzler und ich. Digitale Ausgabe",
+    "Author": "Clara Katharina Pollaczek",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://pollaczek.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Martin Anton Müller"
   },
   {
     "id": 327,
-    "Edition name": "Aufenthaltsorte von Arthur Schnitzler (1879–1931)"
+    "Edition name": "Aufenthaltsorte von Arthur Schnitzler (1879–1931)",
+    "Author": "Arthur Schnitzler",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://schnitzler-orte.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Martin Anton Müller"
   },
   {
     "id": 328,
-    "Edition name": "Arthur Schnitzler: Lektüren. Digitale Edition der Leseliste von Arthur Schnitzler"
+    "Edition name": "Arthur Schnitzler: Lektüren. Digitale Edition der Leseliste von Arthur Schnitzler",
+    "Author": "Arthur Schnitzler",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "https://schnitzler-lektueren.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Martin Anton Müller"
   },
   {
     "id": 329,
-    "Edition name": "Arthur Schnitzler: Tagebuch. Digitale Edition"
+    "Edition name": "Arthur Schnitzler: Tagebuch. Digitale Edition",
+    "Author": "Arthur Schnitzler",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "no",
+    "URL": "https://schnitzler-tagebuch.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Martin Anton Müller"
   },
   {
     "id": 330,
-    "Edition name": "Arthur Schnitzler: Archiv der Zeitungsausschnitte"
+    "Edition name": "Arthur Schnitzler: Archiv der Zeitungsausschnitte",
+    "Author": "Arthur Schnitzler",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://schnitzler-zeitungen.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Peter Andorfer"
   },
   {
     "id": 331,
-    "Edition name": "Personen der Moderne Basis"
+    "Edition name": "Personen der Moderne Basis",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars; students",
+    "Philological statement": "no",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "multiple",
+    "Account of textual variance": "yes",
+    "URL": "https://pmb.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Peter Andorfer"
   },
   {
     "id": 332,
-    "Edition name": "Hermann Bahr – Arthur Schnitzler: Briefwechsel, Aufzeichnungen, Dokumente (1891–1931)"
+    "Edition name": "Hermann Bahr – Arthur Schnitzler: Briefwechsel, Aufzeichnungen, Dokumente (1891–1931)",
+    "Author": "Bahr & Schnitzler",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "partly",
+    "URL": "https://schnitzler-bahr.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Martin Anton Müller"
   },
   {
     "id": 333,
-    "Edition name": "Inscriptions of Roman Tripolitania (2021)"
+    "Edition name": "Inscriptions of Roman Tripolitania (2021)",
+    "Author": "Not specified (Inscribers)",
+    "Audience": "Scholars; archaeologists",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "British Institute for Libyan and North African Studies",
+    "Account of textual variance": "yes",
+    "URL": "https://irt2021.inslib.kcl.ac.uk/",
+    "Manager or Editor": "Charlotte Roueché"
   },
   {
     "id": 334,
-    "Edition name": "SAWS Kekaumenos, Consilia et Narrationes"
+    "Edition name": "SAWS Kekaumenos, Consilia et Narrationes",
+    "Author": "Kekaumenos",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "HERA",
+    "Account of textual variance": "yes",
+    "URL": "https://ancientwisdoms.ac.uk/library/kekaumenos-consilia-et-narrationes/index.html",
+    "Manager or Editor": "Charlotte Roueché"
   },
   {
     "id": 335,
-    "Edition name": "SAWS Dynamic Library"
+    "Edition name": "SAWS Dynamic Library",
+    "Author": "Not specified (Various)",
+    "Audience": "Scholars; students",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "HERA",
+    "Account of textual variance": "yes",
+    "URL": "https://ancientwisdoms.ac.uk/library/",
+    "Manager or Editor": "Charlotte Roueché; Denis Searby; Elvira Wakelnig"
   },
   {
     "id": 336,
-    "Edition name": "Die Urkunden und Akten des Klosters und des Oberamts Königsfelden"
+    "Edition name": "Die Urkunden und Akten des Klosters und des Oberamts Königsfelden",
+    "Author": "Not specified (Scribes)",
+    "Audience": "Scholars; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Schweizerischer Nationalfonds",
+    "Account of textual variance": "yes",
+    "URL": "https://www.koenigsfelden.uzh.ch",
+    "Manager or Editor": "Colette Halter-Pernet; Tobias Hodel; Simon Teuscher"
   },
   {
     "id": 337,
-    "Edition name": "MEGAdigital – Online-Abteilung der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels"
+    "Edition name": "MEGAdigital – Online-Abteilung der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels",
+    "Author": "Marx & Engels",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "BBAW; IMES",
+    "Account of textual variance": "yes",
+    "URL": "https://megadigital.bbaw.de/",
+    "Manager or Editor": "Gerald Hubmann"
   },
   {
     "id": 338,
-    "Edition name": "Auden Musulin Papers: A Digital Edition of W. H. Auden's Letters to Stella Musulin"
+    "Edition name": "Auden Musulin Papers: A Digital Edition of W. H. Auden's Letters to Stella Musulin",
+    "Author": "W. H. Auden",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "FWF Austrian Science Fund",
+    "Account of textual variance": "yes",
+    "URL": "https://amp.acdh.oeaw.ac.at",
+    "Manager or Editor": "Sandra Mayer"
   },
   {
     "id": 339,
-    "Edition name": "Patristic Text Archive (PTA)"
+    "Edition name": "Patristic Text Archive (PTA)",
+    "Author": "Not specified (Church Fathers)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Akademienprogramm",
+    "Account of textual variance": "yes",
+    "URL": "https://pta.bbaw.de",
+    "Manager or Editor": "Annette von Stockhausen"
   },
   {
     "id": 340,
-    "Edition name": "Open Arabic Periodical Editions (OpenArabicPE)"
+    "Edition name": "Open Arabic Periodical Editions (OpenArabicPE)",
+    "Author": "Not specified (Journalists)",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://openarabicpe.github.io/",
+    "Manager or Editor": "Till Grallert"
   },
   {
     "id": 341,
-    "Edition name": "Korespondencja Jana Lechonia i Kazimierza Wierzyńskiego. Naukowa Edycja Cyfrowa"
+    "Edition name": "Korespondencja Jana Lechonia i Kazimierza Wierzyńskiego. Naukowa Edycja Cyfrowa",
+    "Author": "Lechoń & Wierzyński",
+    "Audience": "Scholars; Students; Polonia Communities; Emigration Circles",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Narodowy Program Rozwoju Humanistyki - funding number 1aH 15 0173 83",
+    "Account of textual variance": "yes",
+    "URL": "https://tei.nplp.pl/categories/korespondencja-jana-lechonia-i-kazimierza-wierzynskiego",
+    "Manager or Editor": "Beata Dorosz; Bartłomiej Szleszyński"
   },
   {
     "id": 342,
-    "Edition name": "Korespondencja Mieczysława Grydzewskiego i Kazimierza i Haliny Wierzyńskich. Naukowa Edycja Cyfrowa"
+    "Edition name": "Korespondencja Mieczysława Grydzewskiego i Kazimierza i Haliny Wierzyńskich. Naukowa Edycja Cyfrowa",
+    "Author": "Grydzewski & Wierzyński",
+    "Audience": "Scholars; Students; Polonia Communities; Emigration Circles",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "Narodowy Program Rozwoju Humanistyki - funding number 1aH 15 0173 83",
+    "Account of textual variance": "yes",
+    "URL": "https://tei.nplp.pl/categories/korespondencja-mieczyslawa-grydzewskiego-i-kazimierza-i-haliny-wierzynski",
+    "Manager or Editor": "Beata Dorosz; Bartłomiej Szleszyński"
   },
   {
     "id": 343,
-    "Edition name": "Die Ministerratsprotokolle Österreichs und der österreichisch-ungarischen Monarchie 1848–1918 – Digitale Edition"
+    "Edition name": "Die Ministerratsprotokolle Österreichs und der österreichisch-ungarischen Monarchie 1848–1918 – Digitale Edition",
+    "Author": "Not specified (Ministers)",
+    "Audience": "Scholars; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Austrian Academy of Sciences",
+    "Account of textual variance": "yes",
+    "URL": "https://mrp.oeaw.ac.at",
+    "Manager or Editor": "Franz Adlgasser; Anatol Schmied-Kowarzik; Stephan Kurz (digital edition)"
   },
   {
     "id": 344,
-    "Edition name": "Digital Scholarly Edition of Habsburg-Ottoman Diplomatic Sources 1500–1918"
+    "Edition name": "Digital Scholarly Edition of Habsburg-Ottoman Diplomatic Sources 1500–1918",
+    "Author": "Not specified (Diplomats)",
+    "Audience": "Scholars; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Austrian Academy of Sciences",
+    "Account of textual variance": "yes",
+    "URL": "https://qhod.net/",
+    "Manager or Editor": "Arno Strohmeyer (editor); Stephan Kurz (technical)"
   },
   {
     "id": 345,
-    "Edition name": "Familiensache? Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)"
+    "Edition name": "Familiensache? Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)",
+    "Author": "Eleonora Magdalena",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "not provided",
+    "Sponsor/Funding body": "FWF",
+    "Account of textual variance": "yes",
+    "URL": "https://kaiserin-eleonora.oeaw.ac.at/",
+    "Manager or Editor": "Katrin Keller; Ines Peper; Anna Spitzbart"
   },
   {
     "id": 346,
-    "Edition name": "Arthur Schnitzler: Mikroverfilmung des Cambridger Nachlasses"
+    "Edition name": "Arthur Schnitzler: Mikroverfilmung des Cambridger Nachlasses",
+    "Author": "Arthur Schnitzler",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "not provided",
+    "Account of textual variance": "yes",
+    "URL": "https://schnitzler-mikrofilme.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Peter Andorfer; Martin Anton Müller; Laura Untner"
   },
   {
     "id": 347,
-    "Edition name": "Renan Source"
+    "Edition name": "Renan Source",
+    "Author": "Ernest Renan",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Ville de Paris; CNRS; Ecole normale Supérieure",
+    "Account of textual variance": "yes",
+    "URL": "http://www.renansource.org",
+    "Manager or Editor": "Domenico Paone"
   },
   {
     "id": 348,
-    "Edition name": "The Mary Hamilton Papers (c. 1740 – c. 1850)"
+    "Edition name": "The Mary Hamilton Papers (c. 1740 – c. 1850)",
+    "Author": "Mary Hamilton",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Arts and Humanities Research Council",
+    "Account of textual variance": "yes",
+    "URL": "https://www.digitalcollections.manchester.ac.uk/collections/maryhamilton/",
+    "Manager or Editor": "David Denison; Nuria Yáñez-Bouza; Tino Oudesluijs; Cassandra Ulph; Christine Wallis; Hannah Barker; Sophie Coulombeau"
   },
   {
     "id": 349,
-    "Edition name": "Bullinger Digital"
+    "Edition name": "Bullinger Digital",
+    "Author": "Heinrich Bullinger",
+    "Audience": "general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "partly",
+    "Sponsor/Funding body": "UZH Foundation",
+    "Account of textual variance": "yes",
+    "URL": "https://www.bullinger-digital.ch",
+    "Manager or Editor": "Patricia Scheurer; Martin Volk;"
   },
   {
     "id": 350,
-    "Edition name": "Akademieprotokolle"
+    "Edition name": "Akademieprotokolle",
+    "Author": "Not specified (Academics)",
+    "Audience": "not provided",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Magistratsabteilung 7 (Kultur, Wissenschafts- und Forschungsförderung) der Stadt Wien",
+    "Account of textual variance": "yes",
+    "URL": "https://akademieprotokolle.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Stefan Sienell"
   },
   {
     "id": 351,
-    "Edition name": "Hanslick Online"
+    "Edition name": "Hanslick Online",
+    "Author": "Eduard Hanslick",
+    "Audience": "Scholars; students; general public",
+    "Philological statement": "yes",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "FWF",
+    "Account of textual variance": "yes",
+    "URL": "https://hanslick.acdh.oeaw.ac.at/",
+    "Manager or Editor": "Alexander Wilfing; Christoph Landerer"
   },
   {
     "id": 352,
-    "Edition name": "Staribacher  – Tagebücher"
+    "Edition name": "Staribacher  – Tagebücher",
+    "Author": "Josef Staribacher",
+    "Audience": "Scholars;students;general public",
+    "Philological statement": "partly",
+    "Value of witnesses": "yes",
+    "Sponsor/Funding body": "Österreichische Nationalbank",
+    "Account of textual variance": "no",
+    "URL": "https://staribacher.acdh.oeaw.ac.at",
+    "Manager or Editor": "Maria Mesner"
   }
 ]
