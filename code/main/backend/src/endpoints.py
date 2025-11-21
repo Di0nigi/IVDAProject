@@ -2,12 +2,12 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-from mlUtils import visModel,dataEncoder
+from .mlUtils import visModel,dataEncoder
 
 app = Flask(__name__)
 CORS(app)
 
-visM=visModel()
+# visM=visModel()
 
 
 client = MongoClient("mongodb://localhost:27017/")
@@ -79,13 +79,35 @@ def getEndPeriod():
 
 @app.route("/texts/graphPoints", methods=["GET"])
 def getAndComputeGraphPoints():
+    dc = dataEncoder(textType='k')
+    keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1}))
+    formatted = dc.formatData(keyWordsList)
+    encoded = dc.encode(formatted)
+    
+    
+    print(encoded[0])
+    # dc.saveData(encoded, "keywordsEmbed", client, db, texts)
 
-    keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"period_end":1}))
 
 
 
     return
 
+@app.route("/texts/scatterPoints", methods=["GET"])
+def getAndComputeScatterPoints():
+    dc = dataEncoder(textType='d')
+    keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Content_Description":1}))
+    formatted = dc.formatData(keyWordsList)
+    encoded = dc.encode(formatted)
+    
+    
+    print(encoded[0])
+    # dc.saveData(encoded, "keywordsEmbed", client, db, texts)
+
+
+
+
+    return
 
 
 

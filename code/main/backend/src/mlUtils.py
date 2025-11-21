@@ -39,22 +39,24 @@ class dataEncoder():
                 with torch.no_grad():
                     outputs = self.model(**inputs)
                 
-                embeddings = outputs.last_hidden_state
-                out.append(embeddings)
+                embeddings = outputs.last_hidden_state[:, 0, :]
+                out.append(embeddings.squeeze(0))
+            print(out[0].shape)
         else:
             out=[]
             for elem in data:
                 wordRep=[]
                 for word in elem:
 
-                    inputs = self.tokenizer(elem, return_tensors="pt", padding=True, truncation=True)
+                    inputs = self.tokenizer(word, return_tensors="pt", padding=True, truncation=True)
                 
                     with torch.no_grad():
                         outputs = self.model(**inputs)
                 
-                    embedding = outputs.last_hidden_state
+                    embedding = outputs.last_hidden_state[:, 0, :]
                     wordRep.append(embedding)
-                out.append(torch.concat(wordRep))
+                out.append(torch.concat(wordRep).squeeze(0))
+            print(out[0].shape)
 
         return out 
     
@@ -72,6 +74,7 @@ class dataEncoder():
                 keywords=edition["Keywords"]
                 # Format: Manuscript # Theology # Liturgy # Philology # Religion
                 keywords=keywords.replace(" ","").split("#")
+                print(len(keywords))
                 dataPoints.append(keywords)
                 
         return dataPoints
