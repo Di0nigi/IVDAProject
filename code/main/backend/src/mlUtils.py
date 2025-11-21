@@ -92,11 +92,13 @@ class dataEncoder():
             )   
         
         return
+    
 
 
 class visModel():
-    def __init__(self,mode,nClusters):
+    def __init__(self,nClusters):
         self.kmodel = KMeans(n_clusters=nClusters, random_state=42)
+        self.model=None
         return
 
     def loadModel(self,path):
@@ -105,16 +107,30 @@ class visModel():
     def saveModel(self,path):
         return  
     
-    def train(self,data):
-        self.kmodel.fit(data)
-        
-        
+    def run(self,data):
 
+
+        
         return
     
-    def run(self,data):
-        
-        return
+    def train(self,data,mode):
+        if mode == "d":
+            self.model=self.kmodel.fit(data)
+            res=PCA(n_components=2).fit_transform(data)
+        else:
+            data = list(map(torch.flatten(),data))
+            self.model=self.kmodel.fit(data)
+            res=PCA(n_components=2).fit_transform(data)
+
+        labels = self.model.labels_
+
+        print(len(labels))
+        res= res.T
+
+
+     
+        return labels , res
+      
 
 
 

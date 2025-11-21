@@ -88,26 +88,24 @@ def getAndComputeGraphPoints():
     print(encoded[0])
     # dc.saveData(encoded, "keywordsEmbed", client, db, texts)
 
-
-
-
     return
 
 @app.route("/texts/scatterPoints", methods=["GET"])
 def getAndComputeScatterPoints():
     dc = dataEncoder(textType='d')
+    vM=visModel(nClusters=7)
     keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Content_Description":1}))
     formatted = dc.formatData(keyWordsList)
     encoded = dc.encode(formatted)
-    
-    
-    print(encoded[0])
+
+    labs , points = vM.train(encoded,"d")
+
+    ret = {"labels":labs,"xCoor":points[0],"yCoor":points[1]}
+
     # dc.saveData(encoded, "keywordsEmbed", client, db, texts)
 
 
-
-
-    return
+    return jsonify(ret)
 
 
 
