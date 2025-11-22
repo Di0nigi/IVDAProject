@@ -38,7 +38,7 @@
         @update:categoryLabel="categoryLabel = $event"
       />
     </div>
-    <div class="box pca">PCA Plot</div>
+    <div class="box pca"><PcaPlot /></div>
     <div class="box reliability">
       <ReliabilitySliders />
     </div>
@@ -56,6 +56,7 @@ import ReliabilitySliders from './components/ReliabilitySliders.vue';
 import TimelinePlot from './components/TimelinePlot.vue';
 import SourceList from './components/SourceList.vue';
 import Summary from './components/Summary.vue';
+import PcaPlot from './components/PcaPlot.vue';
 
 const xAttribute = ref('Historical Period');
 const categoryAttribute = ref('Scholarly');

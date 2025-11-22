@@ -100,7 +100,7 @@ def getAndComputeScatterPoints():
 
     labs , points = vM.train(encoded,"d")
 
-    ret = {"labels":labs,"xCoor":points[0],"yCoor":points[1]}
+    ret = {"labels":labs.tolist(),"xCoor":points[0].tolist(),"yCoor":points[1].tolist()}
 
     # dc.saveData(encoded, "keywordsEmbed", client, db, texts)
 
