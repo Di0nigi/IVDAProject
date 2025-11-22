@@ -58,9 +58,13 @@ drawScatterPlot(containerId, x, y, labels) {
     };
 
     const layout = {
-        xaxis: { title: "X" },
-        yaxis: { title: "Y" },
-        margin: { t: 20 }
+    margin: {
+      l: 0,  // left margin
+      r: 0,  // right margin
+      t: 0,  // top margin
+      b: 0   // bottom margin
+    },
+    autosize: true,
     };
 
     Plotly.newPlot(containerId, [trace], layout);

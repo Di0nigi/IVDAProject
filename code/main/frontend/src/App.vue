@@ -38,10 +38,10 @@
         @update:categoryLabel="categoryLabel = $event"
       />
     </div>
-    <div class="box pca"><PcaPlot /></div>
-    <div class="box reliability">
+    <div class="pca"><PcaPlot /></div>
+    <!-- <div class="box reliability">
       <ReliabilitySliders />
-    </div>
+    </div> -->
 
   </div>
 </template>
@@ -143,8 +143,10 @@ const selectedEdition = ref(null)
 }
 
 .pca {
-  grid-column: 3;
-  grid-row: 3;
+  grid-row: 3 / span 2;
+  overflow-y: off ;
+  overflow-x: off ;
+  border: 1px solid #d5d9df;
 }
 
 .reliability {
