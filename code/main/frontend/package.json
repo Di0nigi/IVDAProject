@@ -13,7 +13,8 @@
     "plotly": "^1.0.6",
     "plotly.js": "^3.3.0",
     "vue": "^3.5.24",
-    "vue-chartjs": "^5.3.3"
+    "vue-chartjs": "^5.3.3",
+    "vue-force-graph": "^0.1.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",

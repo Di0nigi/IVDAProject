@@ -10,7 +10,7 @@
     </div>
 
     <!-- Column 2 (middle) -->
-    <div class="box graph">Key Words Relation Graph</div>
+    <div class="box network"><NetworkPlot /></div>
     <div class="box sliders">
       <SlidersPanel />
     </div>
@@ -57,6 +57,7 @@ import TimelinePlot from './components/TimelinePlot.vue';
 import SourceList from './components/SourceList.vue';
 import Summary from './components/Summary.vue';
 import PcaPlot from './components/PcaPlot.vue';
+import NetworkPlot from './components/NetworkPlot.vue';
 
 const xAttribute = ref('Historical Period');
 const categoryAttribute = ref('Scholarly');
@@ -118,6 +119,14 @@ const selectedEdition = ref(null)
 .timeline {
   grid-column: 2;
   grid-row: 4;
+}
+
+.network {
+  grid-column: 2;
+  grid-row: 1 / span 4; 
+  width: 100%;
+  height: 100%;          
+  min-height: 400px;     
 }
 
 /* Right column */

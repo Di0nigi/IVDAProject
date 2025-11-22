@@ -23,7 +23,6 @@ methods: {
 
     const response = await fetch(reqUrl)
     const responseData = await response.json();
-    console.log(responseData)
 
     this.ScatterPlotData.xCoor = responseData.xCoor;
     this.ScatterPlotData.yCoor = responseData.yCoor;
