@@ -123,10 +123,11 @@ const selectedEdition = ref(null)
 
 .network {
   grid-column: 2;
-  grid-row: 1 / span 4; 
+  grid-row: 1;
   width: 100%;
   height: 100%;          
-  min-height: 400px;     
+  min-height: 200px;
+  overflow: auto;  
 }
 
 /* Right column */
