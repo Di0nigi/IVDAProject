@@ -11,6 +11,8 @@ from transformers import AutoTokenizer, AutoModel
 
 import pymongo
 
+from collections import defaultdict
+
 
 
 class dataEncoder():
@@ -74,7 +76,7 @@ class dataEncoder():
                 keywords=edition["Keywords"]
                 # Format: Manuscript # Theology # Liturgy # Philology # Religion
                 keywords=keywords.replace(" ","").split("#")
-                print(len(keywords))
+                #print(len(keywords))
                 dataPoints.append(keywords)
                 
         return dataPoints
@@ -93,6 +95,23 @@ class dataEncoder():
         
         return
     
+    def getGraphEncoding(self,data):
+        index = defaultdict(list)
+
+        for itemId, attrs in enumerate(data):
+            for a in attrs:
+                index[a].append(itemId)
+        edges = set()
+
+        for attr, itemList in index.items():
+            for i in range(len(itemList)):
+                for j in range(i + 1, len(itemList)):
+                    a, b = itemList[i], itemList[j]
+                    if a != b:
+                        edges.add((min(a, b), max(a, b))) 
+
+        return edges
+    
 
 
 class visModel():
@@ -109,8 +128,6 @@ class visModel():
     
     def run(self,data):
 
-
-        
         return
     
     def train(self,data,mode):
@@ -118,14 +135,16 @@ class visModel():
             self.model=self.kmodel.fit(data)
             res=PCA(n_components=2).fit_transform(data)
         else:
-            data = list(map(torch.flatten(),data))
+            data = list(map(lambda x: torch.flatten(x),data))
             self.model=self.kmodel.fit(data)
-            res=PCA(n_components=2).fit_transform(data)
+            #res=PCA(n_components=2).fit_transform(data)#
+            res=[]
 
         labels = self.model.labels_
 
         print(len(labels))
-        res= res.T
+        if len(res)>0:
+            res= res.T
 
 
      
