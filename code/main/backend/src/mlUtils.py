@@ -135,7 +135,11 @@ class visModel():
             self.model=self.kmodel.fit(data)
             res=PCA(n_components=2).fit_transform(data)
         else:
-            data = list(map(lambda x: torch.flatten(x),data))
+            if type(data[0]) == list:
+                data = list(map(lambda x: torch.flatten(torch.Tensor(x)),data))
+            else:
+                data = list(map(lambda x: torch.flatten(x),data))
+
             self.model=self.kmodel.fit(data)
             #res=PCA(n_components=2).fit_transform(data)#
             res=[]
