@@ -67,6 +67,7 @@ const selectedEdition = ref(null)
 </script>
 
 <style scoped>
+
 .layout {
   display: grid;
   height: 100vh;
@@ -149,5 +150,19 @@ const selectedEdition = ref(null)
 .reliability {
   grid-column: 3;
   grid-row: 4;
+}
+
+
+</style>
+
+<style>
+html {
+  color-scheme: light;
+}
+
+
+body {
+  background: #ffffff;
+  color: #000000;
 }
 </style>
