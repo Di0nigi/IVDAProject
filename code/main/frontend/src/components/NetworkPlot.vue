@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div>
-      <div ref='graphContainer' style="height: 100%; width: 100%;"></div>
-    </div>
+  <div style="width: 100%; height: 100%; overflow: hidden;">
+    <div ref='graphContainer' style="height: 100%; width: 100%;"></div>
   </div>
 </template>
 
@@ -35,6 +33,8 @@ methods: {
 
     this.graph = ForceGraph()(this.$refs.graphContainer)
       .graphData(this.graphData)
+      .width(this.$refs.graphContainer.clientWidth)
+      .height(this.$refs.graphContainer.clientHeight)
       .linkDirectionalArrowLength(0) // disables arrows for undirected feel
       .linkDirectionalArrowRelPos(0)
       .nodeLabel(node => node.label) // shows node label on hover

@@ -1,3 +1,9 @@
+<!--
+  DEPRECATED: This component is no longer used.
+  The functionality has been integrated directly into BarChart.vue as a settings popup.
+  This file can be safely deleted.
+-->
+
 <template>
   <div class="selector-container">
     <h3>Bar Chart Selection</h3>
@@ -44,20 +50,13 @@ const selectedCategory = ref('Scholarly');
 const attributes = [
   { value: 'Historical Period', label: 'Historical Period' },
   { value: 'Scholarly', label: 'Scholarly' },
-  { value: 'Digital', label: 'Digital' },
   { value: 'Writing support', label: 'Writing Support' },
   { value: 'Language', label: 'Language' },
   { value: 'Open source/Open access', label: 'Open Access' },
-  { value: 'XML-TEI Transcription', label: 'XML-TEI' },
-  { value: 'Images', label: 'Images' },
-  { value: 'Zoom images', label: 'Zoom Images' },
-  { value: 'Download', label: 'Download' },
   { value: 'OCR or keyed?', label: 'OCR/Keyed' },
   { value: 'Print facsimile (complementary output)', label: 'Print Facsimile' },
-  { value: 'API', label: 'API' },
   { value: 'Audience', label: 'Audience' },
   { value: 'Institution(s)', label: 'Institution' },
-  { value: 'Time/Century', label: 'Time/Century' }
 ];
 
 const emitSelection = () => {

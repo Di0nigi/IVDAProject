@@ -28,10 +28,6 @@
         :categoryAttribute="categoryAttribute"
         :xLabel="xLabel"
         :categoryLabel="categoryLabel"
-      />
-    </div>
-    <div class="box bar-select">
-      <BarChartSelector 
         @update:xAttribute="xAttribute = $event"
         @update:categoryAttribute="categoryAttribute = $event"
         @update:xLabel="xLabel = $event"
@@ -76,7 +72,7 @@ const selectedEdition = ref(null)
   width: 100%;
   max-width: 100%;
 
-  grid-template-columns: 1fr 2fr 0.5fr 1fr;
+  grid-template-columns: 1fr 2fr 1.5fr 1fr;
 
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
@@ -125,21 +121,12 @@ const selectedEdition = ref(null)
 .network {
   grid-column: 2;
   grid-row: 1 / 3;
-  width: 100%;
-  height: 100%;          
-  min-height: 200px;
-  overflow: auto;  
 }
 
 /* Right column */
 .small-chart {
   grid-column: 3;
-  grid-row: 1;
-}
-
-.bar-select {
-  grid-column: 3;
-  grid-row: 2;
+  grid-row: 1 / 3;
 }
 
 .pca {
