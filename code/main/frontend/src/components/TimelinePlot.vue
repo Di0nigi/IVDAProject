@@ -6,7 +6,10 @@
 
     <!-- Time/Century Range Slider -->
     <div class="slider-group">
-      <label>Time/Century</label>
+      <label>
+        Time/Century
+        <span class="info-icon" title="Items are shown if any part of their time period overlaps with the selected range">ⓘ</span>
+      </label>
       <div style="flex: 1;">
         <div class="range-slider-wrapper">
           <div class="range-track">
@@ -290,7 +293,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: 12px;
+  gap: 4px;
 }
 
 h3 {
@@ -315,7 +318,7 @@ canvas {
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 label {
@@ -326,6 +329,46 @@ label {
   flex-shrink: 0;
   align-self: flex-start;
   margin-top: -8px;
+}
+
+.info-icon {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 14px;
+  color: #888;
+  cursor: help;
+  font-style: normal;
+  position: relative;
+}
+
+.info-icon:hover {
+  color: #4a90e2;
+}
+
+.info-icon::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: normal;
+  white-space: normal;
+  width: 200px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 1000;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.info-icon:hover::after {
+  opacity: 1;
 }
 
 .range-slider-wrapper {

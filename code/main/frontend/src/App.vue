@@ -105,7 +105,7 @@ const selectedEdition = ref(null)
 
 .sliders {
   grid-column: 4;
-  grid-row: 3 / 5;
+  grid-row: 4;
 }
 
 .tag-filter {
@@ -114,7 +114,7 @@ const selectedEdition = ref(null)
 }
 
 .timeline {
-  grid-column: 2 / 4;
+  grid-column: 2 / 5;
   grid-row: 3;
 }
 

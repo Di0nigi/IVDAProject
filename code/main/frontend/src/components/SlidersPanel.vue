@@ -251,6 +251,8 @@ label {
   font-size: 12px;
   cursor: pointer;
   transition: background 0.2s;
+  align-self: center;
+  margin-left: 11px;
 }
 
 .reset-button:hover {
