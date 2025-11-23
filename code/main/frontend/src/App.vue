@@ -34,7 +34,7 @@
         @update:categoryLabel="categoryLabel = $event"
       />
     </div>
-    <div class="pca"><PcaPlot /></div>
+    <div class="box pca"><PcaPlot /></div>
     <!-- <div class="box reliability">
       <ReliabilitySliders />
     </div> -->
@@ -82,17 +82,19 @@ const selectedEdition = ref(null)
   border-radius: 12px;
   padding: 16px;
   border: 1px solid #d5d9df;
+  position: relative;
+  z-index: 1;
 }
 
 .summary {
-  grid-row: 1;
+  grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 .sidebar {
-  grid-row: 2 / 5;
+  grid-row: 3 / 5;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -114,13 +116,14 @@ const selectedEdition = ref(null)
 }
 
 .timeline {
-  grid-column: 2 / 5;
+  grid-column: 2 / 4;
   grid-row: 3;
 }
 
 .network {
   grid-column: 2;
   grid-row: 1 / 3;
+  overflow: hidden;
 }
 
 /* Right column */
@@ -131,10 +134,8 @@ const selectedEdition = ref(null)
 
 .pca {
   grid-column: 4;
-  grid-row: 1 / 3;
-  overflow-y: off ;
-  overflow-x: off ;
-  border: 1px solid #d5d9df;
+  grid-row: 1 / 4;
+  overflow: hidden;
 }
 
 .reliability {

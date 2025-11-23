@@ -1,6 +1,6 @@
 <template>
-  <div style="width: 100%; height: 100%; overflow: hidden;">
-    <div ref='graphContainer' style="height: 100%; width: 100%;"></div>
+  <div class="network-wrapper">
+    <div ref='graphContainer' class="graph-container"></div>
   </div>
 </template>
 
@@ -31,24 +31,32 @@ methods: {
     console.log("graph data : ")
     console.log(this.graphData)
 
+    // Wait a tick to ensure container is sized
+    await this.$nextTick();
+    
+    const containerWidth = this.$refs.graphContainer.clientWidth;
+    const containerHeight = this.$refs.graphContainer.clientHeight;
+    
+    console.log("Container dimensions:", containerWidth, containerHeight);
+
     this.graph = ForceGraph()(this.$refs.graphContainer)
       .graphData(this.graphData)
-      .width(this.$refs.graphContainer.clientWidth)
-      .height(this.$refs.graphContainer.clientHeight)
-      .linkDirectionalArrowLength(0) // disables arrows for undirected feel
+      .width(containerWidth)
+      .height(containerHeight)
+      .linkDirectionalArrowLength(0)
       .linkDirectionalArrowRelPos(0)
-      .nodeLabel(node => node.label) // shows node label on hover
-      .linkLabel(link => link.label) // shows link label on hover
+      .nodeLabel(node => node.label)
+      .linkLabel(link => link.label)
       .onNodeClick(node => {
         alert(`Node clicked: ${node.label}`);
       })
       .onLinkClick(link => {
         alert(`Link clicked: ${link.label}`);
       })
-      .d3Force('charge', d3.forceManyBody().strength(-60))     // nodes repel more strongly
-      .d3Force('link', d3.forceLink().distance(40))            // shorter links to compact clusters
-      .d3Force('x', d3.forceX().strength(1))                 // push nodes horizontally
-      .d3Force('y', d3.forceY().strength(0.01));;
+      .d3Force('charge', d3.forceManyBody().strength(-60))
+      .d3Force('link', d3.forceLink().distance(40))
+      .d3Force('x', d3.forceX().strength(1))
+      .d3Force('y', d3.forceY().strength(0.01));
   },
 },
 
@@ -58,3 +66,28 @@ methods: {
   },
 }
 </script>
+
+<style scoped>
+.network-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: white;
+}
+
+.graph-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.graph-container canvas {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  display: block;
+  background: white;
+}
+</style>
