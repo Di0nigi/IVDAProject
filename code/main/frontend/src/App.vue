@@ -76,7 +76,7 @@ const selectedEdition = ref(null)
   width: 100%;
   max-width: 100%;
 
-  grid-template-columns: 1fr 2.5fr 1fr;
+  grid-template-columns: 1fr 2fr 0.5fr 1fr;
 
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
@@ -108,23 +108,23 @@ const selectedEdition = ref(null)
 }
 
 .sliders {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 4;
+  grid-row: 3 / 5;
 }
 
 .tag-filter {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2 / 4;
+  grid-row: 4;
 }
 
 .timeline {
-  grid-column: 2;
-  grid-row: 4;
+  grid-column: 2 / 4;
+  grid-row: 3;
 }
 
 .network {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 1 / 3;
   width: 100%;
   height: 100%;          
   min-height: 200px;
@@ -143,7 +143,8 @@ const selectedEdition = ref(null)
 }
 
 .pca {
-  grid-row: 3 / span 2;
+  grid-column: 4;
+  grid-row: 1 / 3;
   overflow-y: off ;
   overflow-x: off ;
   border: 1px solid #d5d9df;

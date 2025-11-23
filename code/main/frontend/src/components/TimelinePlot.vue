@@ -1,7 +1,46 @@
 <template>
   <div class="timeline-container">
-        <div class="chart-wrapper">
+    <div class="chart-wrapper">
       <canvas ref="chartCanvas"></canvas>
+    </div>
+
+    <!-- Time/Century Range Slider -->
+    <div class="slider-group">
+      <label>Time/Century</label>
+      <div style="flex: 1;">
+        <div class="range-slider-wrapper">
+          <div class="range-track">
+            <div class="range-fill" :style="rangeStyle"></div>
+          </div>
+          <input
+            type="range"
+            v-model.number="periodRange[0]"
+            :min="-600"
+            :max="2000"
+            :step="100"
+            @input="updatePeriodFilter"
+            class="slider range-slider"
+          />
+          <input
+            type="range"
+            v-model.number="periodRange[1]"
+            :min="-600"
+            :max="2000"
+            :step="100"
+            @input="updatePeriodFilter"
+            class="slider range-slider"
+          />
+        </div>
+        <div class="range-labels">
+          <span>-600</span>
+          <span>0</span>
+          <span>400</span>
+          <span>800</span>
+          <span>1200</span>
+          <span>1600</span>
+          <span>2000</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -11,11 +50,15 @@ import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import { Chart, registerables } from 'chart.js';
 import { useEditionsData } from '../composables/useEditionsData';
 import { useColorPalette } from '../composables/useColorPalette';
+import { useFilters } from '../composables/useFilters';
 
 Chart.register(...registerables);
 
 const { filteredEditions } = useEditionsData();
 const { getColorForCategory } = useColorPalette();
+const { activeFilters, updateFilter } = useFilters();
+
+const periodRange = ref([-600, 2000]);
 
 const chartCanvas = ref(null);
 let chartInstance = null;
@@ -208,7 +251,30 @@ watch(chartData, () => {
   createChart();
 }, { deep: true });
 
+const rangeStyle = computed(() => {
+  const min = periodRange.value[0];
+  const max = periodRange.value[1];
+  const totalRange = 2000 - (-600);
+  const leftPercent = ((min - (-600)) / totalRange) * 100;
+  const rightPercent = ((max - (-600)) / totalRange) * 100;
+  
+  return {
+    left: `${leftPercent}%`,
+    width: `${rightPercent - leftPercent}%`
+  };
+});
+
+const updatePeriodFilter = () => {
+  if (periodRange.value[0] > periodRange.value[1]) {
+    const temp = periodRange.value[0];
+    periodRange.value[0] = periodRange.value[1];
+    periodRange.value[1] = temp;
+  }
+  updateFilter('periodRange', [...periodRange.value]);
+};
+
 onMounted(() => {
+  periodRange.value = [...activeFilters.periodRange];
   createChart();
 });
 
@@ -242,5 +308,101 @@ h3 {
 
 canvas {
   max-height: 100%;
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.range-slider-wrapper {
+  position: relative;
+  height: 6px;
+  flex: 1;
+}
+
+.range-track {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+}
+
+.range-fill {
+  position: absolute;
+  height: 6px;
+  background: #000000;
+  border-radius: 3px;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  top: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #000000;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  pointer-events: all;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #000000;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  pointer-events: all;
+}
+
+.slider::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 6px;
+}
+
+.slider::-moz-range-track {
+  background: transparent;
+  height: 6px;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
 }
 </style>
