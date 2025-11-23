@@ -315,7 +315,7 @@ canvas {
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  margin-top: 12px;
+  margin-top: 6px;
 }
 
 label {
@@ -324,6 +324,8 @@ label {
   color: #555;
   min-width: 120px;
   flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: -8px;
 }
 
 .range-slider-wrapper {

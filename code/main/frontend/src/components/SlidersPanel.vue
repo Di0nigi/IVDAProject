@@ -7,7 +7,7 @@
         <div class="slider-with-labels">
           <div class="single-slider-wrapper">
             <div class="single-track">
-              <div class="single-fill reverse" :style="authoritativenessStyle"></div>
+              <div class="single-fill" :style="authoritativenessStyle"></div>
             </div>
             <input
               type="range"
@@ -36,7 +36,7 @@
         <div class="slider-with-labels">
           <div class="single-slider-wrapper">
             <div class="single-track">
-              <div class="single-fill reverse" :style="renownStyle"></div>
+              <div class="single-fill" :style="renownStyle"></div>
             </div>
             <input
               type="range"
@@ -61,29 +61,27 @@ import { useFilters } from '../composables/useFilters';
 
 const { resetFilters } = useFilters();
 
-const authoritativeness = ref(50);
-const renown = ref(50);
+const authoritativeness = ref(0);
+const renown = ref(0);
 
 const authoritativenessStyle = computed(() => {
   const percent = authoritativeness.value;
   return {
-    height: `${100 - percent}%`,
-    bottom: `${percent}%`
+    height: `${percent}%`
   };
 });
 
 const renownStyle = computed(() => {
   const percent = renown.value;
   return {
-    height: `${100 - percent}%`,
-    bottom: `${percent}%`
+    height: `${percent}%`
   };
 });
 
 const reset = () => {
   resetFilters();
-  authoritativeness.value = 50;
-  renown.value = 50;
+  authoritativeness.value = 0;
+  renown.value = 0;
 };
 </script>
 
@@ -177,13 +175,10 @@ label {
 .single-fill {
   position: absolute;
   width: 6px;
-  background: #000000;
+  background: #dc2626;
   border-radius: 3px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.single-fill.reverse {
   bottom: 0;
 }
 
@@ -210,7 +205,7 @@ label {
   height: 16px;
   border-radius: 50%;
   background: white;
-  border: 2px solid #000000;
+  border: 2px solid #dc2626;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
@@ -220,7 +215,7 @@ label {
   height: 16px;
   border-radius: 50%;
   background: white;
-  border: 2px solid #000000;
+  border: 2px solid #dc2626;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
