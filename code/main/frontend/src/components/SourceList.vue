@@ -44,14 +44,16 @@ const searchFilteredEditions = computed(() => {
 .source-container {
   height: 100%;
   width: 100%;
-  overflow-y: auto;
-  padding-right: 6px;
+  display: flex;
+  flex-direction: column;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-shrink: 0;
+  margin-bottom: 12px;
 }
 
 .search-bar input {
@@ -71,17 +73,33 @@ const searchFilteredEditions = computed(() => {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-right: 6px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .source-list a {
-    color: black;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #d5d9df;
+  border-radius: 6px;
+  transition: all 0.2s;
 }
 
 .source-list a:hover {
-    color: #8f4e1f;
+  background: #f5f5f5;
+  border-color: #8f4e1f;
+  color: #8f4e1f;
 }
 
 .list-item {
-  border-bottom: 1px outset darkgrey;
+  list-style: none;
 }
 </style>

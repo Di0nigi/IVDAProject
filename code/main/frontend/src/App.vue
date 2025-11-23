@@ -66,8 +66,9 @@ const selectedEdition = ref(null)
 
 .layout {
   display: grid;
-  height: 100vh;
-  padding: 20px 0 20px 0;
+  height: 100dvh;
+  box-sizing: border-box;
+  padding: 8px 0 8px 0;
   gap: 20px;
   width: 100%;
   max-width: 100%;
