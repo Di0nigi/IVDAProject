@@ -7,9 +7,11 @@
 
 <script>
 
-import ForceGraph from 'force-graph';
+import { Network, DataSet } from "vis-network/standalone";
 
 export default {
+
+networkInstance: null,
 
 data: () => ({
   graphData: {nodes: [], links: []},
@@ -23,13 +25,12 @@ methods: {
     console.log("got response")
     const responseData = await response.json();
     console.log("got response data: ")
-    console.log(responseData)
 
     this.graphData.nodes = responseData.nodes;
     this.graphData.links = responseData.links;
 
-    console.log("graph data : ")
-    console.log(this.graphData)
+    // console.log("graph data : ")
+    // console.log(this.graphData.nodes[1]["label"])
 
     // Wait a tick to ensure container is sized
     await this.$nextTick();
@@ -39,37 +40,49 @@ methods: {
     
     console.log("Container dimensions:", containerWidth, containerHeight);
 
-    this.graph = ForceGraph()(this.$refs.graphContainer)
-      .graphData(this.graphData)
-      .nodeColor(node => {
-        switch(node.label) {
-          case 0: return 'red';
-          case 1: return 'green';
-          case 2: return 'blue';
-          case 3: return 'orange';
-          case 4: return 'purple';
-          case 5: return 'brown';
-          case 6: return 'maroon';
-          default: return 'gray';
+    const nodes = new DataSet(
+      this.graphData.nodes.map(n => ({
+        ...n,
+        group: n.label,
+        size: 50
+        
+      }))
+    );
+    const edges = new DataSet(this.graphData.links.slice(0,600));
+    console.log(nodes)
+
+    const data = { nodes, edges };
+    const options = {
+      nodes:{
+        shape : 'square',
+        size: 60.6
+        
+       
+      },
+      layout: {
+        improvedLayout: false
+      },
+      physics: {
+        enabled: true,
+        solver: "forceAtlas2Based", 
+        forceAtlas2Based: {
+          gravitationalConstant: -50, 
+          centralGravity: 0.008,       
+          springLength: 100,          
+          springConstant: 0.005,       
+          damping: 0.4,               
+          avoidOverlap: 0.9,
+             
+        },
+        stabilization: {
+          iterations: 500,            
+          updateInterval: 25
         }
-      })
-      .width(containerWidth)
-      .height(containerHeight)
-      .linkDirectionalArrowLength(0)
-      .linkDirectionalArrowRelPos(0)
-      .nodeLabel(node => node.label)
-      .linkLabel(link => link.label)
-      .onNodeClick(node => {
-        alert(`Node clicked: ${node.label}`);
-      })
-      .onLinkClick(link => {
-        alert(`Link clicked: ${link.label}`);
-      })
-      .d3Force('charge', d3.forceManyBody().strength(-60))
-      .d3Force('link', d3.forceLink().distance(50).strength(0.8))
-      .d3Force('x', d3.forceX().strength(1))
-      .d3Force('y', d3.forceY().strength(0.01))
-  },
+      }
+    };
+
+    this.networkInstance = new Network(this.$refs.graphContainer, data, options);
+  }
 },
 
   mounted() {

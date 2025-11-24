@@ -43,6 +43,8 @@
 </template>
 
 <script setup>
+import { VueForceGraph2D, VueForceGraph3D, VueForceGraphVR, VueForceGraphAR, GraphContextMenu } from 'vue-force-graph';
+//app.use(VueForceGraph2D)
 import { ref } from 'vue';
 import BarChart from './components/BarChart.vue';
 import BarChartSelector from './components/BarChartSelector.vue';
