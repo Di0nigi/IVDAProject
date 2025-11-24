@@ -48,7 +48,7 @@ methods: {
         
       }))
     );
-    const edges = new DataSet(this.graphData.links.slice(0,600));
+    const edges = new DataSet(this.graphData.links.slice(0,1000));
     console.log(nodes)
 
     const data = { nodes, edges };

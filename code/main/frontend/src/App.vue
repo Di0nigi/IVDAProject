@@ -10,7 +10,7 @@
     </div>
 
     <!-- Column 2 (middle) -->
-    <div class="box network"><NetworkPlot /></div>
+    <div class="boxMlPlots network"><NetworkPlot /></div>
     <div class="box sliders">
       <SlidersPanel />
     </div>
@@ -34,7 +34,7 @@
         @update:categoryLabel="categoryLabel = $event"
       />
     </div>
-    <div class="boxScatter pca"><PcaPlot /></div>
+    <div class="boxMlPlots pca"><PcaPlot /></div>
     <!-- <div class="box reliability">
       <ReliabilitySliders />
     </div> -->
@@ -89,7 +89,7 @@ const selectedEdition = ref(null)
   z-index: 1;
 }
 
-.boxScatter {
+.boxMlPlots {
   background: #f2f4f7;
   border-radius: 12px;
   padding: 0px;
@@ -97,6 +97,10 @@ const selectedEdition = ref(null)
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
   
 }
 
@@ -150,6 +154,9 @@ const selectedEdition = ref(null)
   grid-column: 5;
   grid-row: 3;
 
+  width: 100%;
+  height: 100%;
+
 
   border: 1px solid #d5d9df;
 
@@ -157,7 +164,6 @@ const selectedEdition = ref(null)
 
 .reliability {
   grid-column: 3;
-  grid-row: 4;
 }
 
 

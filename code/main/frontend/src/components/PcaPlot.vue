@@ -14,6 +14,9 @@ data: () => ({
   ScatterPlotData: {xCoor: [], yCoor: [], labels: []},
 }),
 mounted() {
+  
+
+    
   this.fetchData()
 },
 methods: {
@@ -32,6 +35,12 @@ methods: {
   },
 
 drawScatterPlot(containerId, x, y, labels) {
+    const parent = this.$el.parentElement;
+    const parentWidth = parent.clientWidth;
+    const parentHeight = parent.clientHeight;
+
+    console.log(parentWidth);
+    console.log(parentHeight);
     const uniqueLabels = [...new Set(labels)];
 
     const colorMap = {};
@@ -67,8 +76,8 @@ drawScatterPlot(containerId, x, y, labels) {
     const yMax2 = Math.max(yMax, 0);
 
     const layout = {
-      width: 600,
-      height: 400,
+      width: parentWidth,
+      height: parentHeight,
 
 
       margin: { l: 0, r: 0, t: 0, b: 0 },
@@ -76,20 +85,20 @@ drawScatterPlot(containerId, x, y, labels) {
   autosize: true,
 
 xaxis: {
-  fixedrange: false,
+  /*fixedrange: false,
   autorange: false,
-    range: [-5, 25], 
-    zeroline: false,
+    range: [-5, 25], */
+    zeroline: true,
     showline: true,
     label: false,
     linecolor: "black",
     anchor: "y"     // force crossing
   },
   yaxis: {
-    autorange: false,
+    /*autorange: false,
     fixedrange: false ,
-    range: [-15, 5], 
-    zeroline: false,
+    range: [-15, 5], */
+    zeroline: true,
     showline: true,
     label: false,
     linecolor: "black",
@@ -112,10 +121,7 @@ xaxis: {
 
 <style>
 
-.myScatterPlot {
-  width: 100%;
-  height: 100%;
-}
+
 
 </style>
 
