@@ -181,7 +181,7 @@ label {
 .single-fill {
   position: absolute;
   height: 6px;
-  background: #dc2626;
+  background: #000;
   border-radius: 3px;
   top: 50%;
   transform: translateY(-50%);
@@ -209,7 +209,7 @@ label {
   height: 16px;
   border-radius: 50%;
   background: white;
-  border: 2px solid #dc2626;
+  border: 2px solid #000;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
@@ -219,7 +219,7 @@ label {
   height: 16px;
   border-radius: 50%;
   background: white;
-  border: 2px solid #dc2626;
+  border: 2px solid #000;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
