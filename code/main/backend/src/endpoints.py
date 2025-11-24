@@ -93,7 +93,7 @@ def getAndComputeGraphPoints():
     #ret={"labels":labs.tolist(),"edges":list(edges),"nodes":ids}
 
     nodeList=[{"id":elem["id"],"label":labs[ind]} for ind,elem in enumerate(keyWordsList)]
-    linkList=[{"source":ed[0],"target":ed[1]} for ed in list(edges)]
+    linkList=[{"from":ed[0],"to":ed[1]} for ed in list(edges)]
 
     ret = {"nodes":nodeList,"links":linkList}
     #ret={}
