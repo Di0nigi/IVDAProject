@@ -6,8 +6,8 @@
         <button
           v-for="tag in languageTags"
           :key="tag.id"
-          @click="toggleTag(tag)"
-          :class="getTagClass(tag)"
+          @click="toggleTag(tag, 'language')"
+          :class="getTagClass(tag, 'language')"
         >
           {{ tag.label }}
         </button>
@@ -19,8 +19,8 @@
         <button
           v-for="tag in supportTags"
           :key="tag.id"
-          @click="toggleTag(tag)"
-          :class="getTagClass(tag)"
+          @click="toggleTag(tag, 'support')"
+          :class="getTagClass(tag, 'support')"
         >
           {{ tag.label }}
         </button>
@@ -32,8 +32,8 @@
         <button
           v-for="tag in periodTags"
           :key="tag.id"
-          @click="toggleTag(tag)"
-          :class="getTagClass(tag)"
+          @click="toggleTag(tag, 'period')"
+          :class="getTagClass(tag, 'period')"
         >
           {{ tag.label }}
         </button>
@@ -45,8 +45,8 @@
         <button
           v-for="tag in keywordTags"
           :key="tag.id"
-          @click="toggleTag(tag)"
-          :class="getTagClass(tag)"
+          @click="toggleTag(tag, 'keyword')"
+          :class="getTagClass(tag, 'keyword')"
         >
           {{ tag.label }}
         </button>
@@ -56,106 +56,102 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import { useFilters } from '../composables/useFilters';
 
 const { updateFilter } = useFilters();
-
 const selectedTagIds = ref(new Set());
 
-// Placeholder tags, divided by category
-const allTags = [
-  // Languages
-  { id: 'lat', label: 'LAT', category: 'language' },
-  { id: 'eng', label: 'ENG', category: 'language' },
-  { id: 'gre', label: 'GRE', category: 'language' },
-  { id: 'grc', label: 'GRC', category: 'language' },
-  { id: 'ger', label: 'GER', category: 'language' },
-  { id: 'fre', label: 'FRE', category: 'language' },
-  { id: 'ita', label: 'ITA', category: 'language' },
-  { id: 'spa', label: 'SPA', category: 'language' },
-  { id: 'wel', label: 'WEL', category: 'language' },
-  { id: 'ara', label: 'ARA', category: 'language' },
-  { id: 'heb', label: 'HEB', category: 'language' },
-  { id: 'non', label: 'NON', category: 'language' },
-  { id: 'dut', label: 'DUT', category: 'language' },
-  
-  // Historical Periods
-  { id: 'antiquity', label: 'Antiquity', category: 'period' },
-  { id: 'middle-ages', label: 'Middle Ages', category: 'period' },
-  { id: 'early-modern', label: 'Early Modern', category: 'period' },
-  { id: 'long-nineteenth', label: 'Long Nineteenth Century', category: 'period' },
-  { id: 'modern', label: 'Modern', category: 'period' },
-  { id: 'contemporary', label: 'Contemporary', category: 'period' },
-  
-  // Writing Support
-  { id: 'codex', label: 'Codex', category: 'support' },
-  { id: 'manuscript', label: 'Manuscript', category: 'support' },
-  { id: 'tablet', label: 'Tablet', category: 'support' },
-  { id: 'letter', label: 'Letter', category: 'support' },
-  { id: 'print', label: 'Print', category: 'support' },
-  { id: 'book', label: 'Book', category: 'support' },
-  { id: 'papyrus', label: 'Papyrus', category: 'support' },
-  { id: 'inscription', label: 'Inscription', category: 'support' },
-  { id: 'roll', label: 'Roll', category: 'support' },
-  { id: 'diary', label: 'Diary', category: 'support' },
-  { id: 'journal', label: 'Journal', category: 'support' },
-  
-  // Keywords (Placeholders)
-  { id: 'keyword1', label: 'Keyword 1', category: 'keyword' },
-  { id: 'keyword2', label: 'Keyword 2', category: 'keyword' },
-  { id: 'keyword3', label: 'Keyword 3', category: 'keyword' },
-  { id: 'keyword4', label: 'Keyword 4', category: 'keyword' },
-  { id: 'keyword5', label: 'Keyword 5', category: 'keyword' },
+// Hardcoded languages and supports (until backend endpoints are fixed)
+const languageTags = [
+  { id: 'lat', label: 'LAT' },
+  { id: 'eng', label: 'ENG' },
+  { id: 'gre', label: 'GRE' },
+  { id: 'grc', label: 'GRC' },
+  { id: 'ger', label: 'GER' },
+  { id: 'fre', label: 'FRE' },
+  { id: 'ita', label: 'ITA' },
+  { id: 'spa', label: 'SPA' },
+  { id: 'wel', label: 'WEL' },
+  { id: 'ara', label: 'ARA' },
+  { id: 'heb', label: 'HEB' },
+  { id: 'non', label: 'NON' },
+  { id: 'dut', label: 'DUT' },
+];
+const supportTags = [
+  { id: 'codex', label: 'Codex' },
+  { id: 'manuscript', label: 'Manuscript' },
+  { id: 'tablet', label: 'Tablet' },
+  { id: 'letter', label: 'Letter' },
+  { id: 'print', label: 'Print' },
+  { id: 'book', label: 'Book' },
+  { id: 'papyrus', label: 'Papyrus' },
+  { id: 'inscription', label: 'Inscription' },
+  { id: 'roll', label: 'Roll' },
+  { id: 'diary', label: 'Diary' },
+  { id: 'journal', label: 'Journal' },
 ];
 
-const languageTags = allTags.filter(tag => tag.category === 'language');
-const supportTags = allTags.filter(tag => tag.category === 'support');
-const periodTags = allTags.filter(tag => tag.category === 'period');
-const keywordTags = allTags.filter(tag => tag.category === 'keyword');
+// Dynamic tags from backend
+const keywordTags = ref([]);
+const periodTags = ref([]);
 
-const toggleTag = (tag) => {
-  if (selectedTagIds.value.has(tag.id)) {
-    selectedTagIds.value.delete(tag.id);
+onMounted(async () => {
+  // Fetch keywords
+  try {
+    const res = await fetch('http://localhost:5000/texts/tags');
+    const data = await res.json();
+    keywordTags.value = data.allTags.map(tag => ({ id: tag, label: tag }));
+  } catch (e) {
+    keywordTags.value = [];
+  }
+  // Fetch periods
+  try {
+    const res = await fetch('http://localhost:5000/texts/period/name');
+    const data = await res.json();
+    // Deduplicate and clean up periods
+    const uniquePeriods = Array.from(new Set(data.map(item => item['Historical Period'])));
+    periodTags.value = uniquePeriods.map(period => ({ id: period, label: period }));
+  } catch (e) {
+    periodTags.value = [];
+  }
+});
+
+const toggleTag = (tag, category) => {
+  const tagId = `${category}:${tag.id}`;
+  if (selectedTagIds.value.has(tagId)) {
+    selectedTagIds.value.delete(tagId);
   } else {
-    selectedTagIds.value.add(tag.id);
+    selectedTagIds.value.add(tagId);
   }
   updateFilters();
 };
 
-const getTagClass = (tag) => {
-  const isSelected = selectedTagIds.value.has(tag.id);
-  const hasSelectionInCategory = allTags.some(t => t.category === tag.category && selectedTagIds.value.has(t.id));
-
-  if (isSelected) {
-    return 'tag-selected';
+const getTagClass = (tag, category) => {
+  const tagId = `${category}:${tag.id}`;
+  const isSelected = selectedTagIds.value.has(tagId);
+  let hasSelectionInCategory = false;
+  for (let id of selectedTagIds.value) {
+    if (id.startsWith(category + ':')) {
+      hasSelectionInCategory = true;
+      break;
+    }
   }
-  if (hasSelectionInCategory) {
-    return 'tag-muted';
-  }
+  if (isSelected) return 'tag-selected';
+  if (hasSelectionInCategory) return 'tag-muted';
   return 'tag-neutral';
 };
 
 const updateFilters = () => {
   const selected = Array.from(selectedTagIds.value);
-  
-  const languages = allTags
-    .filter(t => t.category === 'language' && selected.includes(t.id))
-    .map(t => t.label);
-  
-  const periods = allTags
-    .filter(t => t.category === 'period' && selected.includes(t.id))
-    .map(t => t.label);
-  
-  const supports = allTags
-    .filter(t => t.category === 'support' && selected.includes(t.id))
-    .map(t => t.label);
-
-  // Note: Keywords are not yet hooked up to filters
-  
+  const languages = selected.filter(id => id.startsWith('language:')).map(id => id.split(':')[1]);
+  const periods = selected.filter(id => id.startsWith('period:')).map(id => id.split(':')[1]);
+  const supports = selected.filter(id => id.startsWith('support:')).map(id => id.split(':')[1]);
+  const keywords = selected.filter(id => id.startsWith('keyword:')).map(id => id.split(':')[1]);
   updateFilter('language', languages);
   updateFilter('historicalPeriod', periods);
   updateFilter('writingSupport', supports);
+  updateFilter('keywords', keywords);
 };
 </script>
 
@@ -192,6 +188,13 @@ const updateFilters = () => {
   gap: 2px;
   overflow-y: auto;
   align-content: flex-start;
+}
+
+/* Only for period and keywords tag lists: limit height to 4 tags and make scrollable */
+.tag-category-box:nth-child(3) .tags-list,
+.tag-category-box:last-child .tags-list {
+  max-height: 96px; /* 4 tags * 22px height + gap */
+  overflow-y: auto;
 }
 
 .tag-button {

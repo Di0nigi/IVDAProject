@@ -98,19 +98,34 @@ export function useEditionsData() {
       }
     }
 
-    // Apply language filter (OR logic)
+
+    // Apply language filter (OR logic, exact match or substring)
     if (activeFilters.language?.length > 0) {
       filtered = filtered.filter(e => {
-        const lang = e.Language || '';
-        return activeFilters.language.some(l => lang.includes(l));
+        const lang = (e.Language || '').toLowerCase();
+        return activeFilters.language.some(l => lang && lang.includes(l.toLowerCase()));
       });
     }
 
-    // Apply writing support filter (OR logic)
+    // Apply writing support filter (OR logic, exact match or substring)
     if (activeFilters.writingSupport?.length > 0) {
       filtered = filtered.filter(e => {
-        const ws = e['Writing support'] || '';
-        return activeFilters.writingSupport.some(w => ws.includes(w));
+        const ws = (e['Writing support'] || '').toLowerCase();
+        return activeFilters.writingSupport.some(w => ws && ws.includes(w.toLowerCase()));
+      });
+    }
+
+    // Apply keywords filter (OR logic, substring match)
+    if (activeFilters.keywords?.length > 0) {
+      filtered = filtered.filter(e => {
+        const kw = Array.isArray(e.Keywords) ? e.Keywords.map(k => k.toLowerCase()) : (e.Keywords || '').toLowerCase();
+        return activeFilters.keywords.some(keyword => {
+          if (Array.isArray(kw)) {
+            return kw.some(k => k.includes(keyword.toLowerCase()));
+          } else {
+            return kw.includes(keyword.toLowerCase());
+          }
+        });
       });
     }
 
