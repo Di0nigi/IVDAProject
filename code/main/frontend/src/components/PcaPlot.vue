@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <div id='myScatterPlot'></div>
+      <div id='myScatterPlot' class="myScatterPlot"></div>
     </div>
   </div>
 </template>
@@ -57,18 +57,65 @@ drawScatterPlot(containerId, x, y, labels) {
         text: labels
     };
 
+    const xMin = Math.min(...x);
+    const xMax = Math.max(...x);
+    const yMin = Math.min(...y);
+    const yMax = Math.max(...y);
+    const xMin2 = Math.min(xMin, 0);
+    const xMax2 = Math.max(xMax, 0);
+    const yMin2 = Math.min(yMin, 0);
+    const yMax2 = Math.max(yMax, 0);
+
     const layout = {
-    margin: {
-      l: 0,  // left margin
-      r: 0,  // right margin
-      t: 0,  // top margin
-      b: 0   // bottom margin
-    },
-    autosize: true,
+      width: 600,
+      height: 400,
+
+
+      margin: { l: 0, r: 0, t: 0, b: 0 },
+
+  autosize: true,
+
+xaxis: {
+  fixedrange: false,
+  autorange: false,
+    range: [-5, 25], 
+    zeroline: false,
+    showline: true,
+    label: false,
+    linecolor: "black",
+    anchor: "y"     // force crossing
+  },
+  yaxis: {
+    autorange: false,
+    fixedrange: false ,
+    range: [-15, 5], 
+    zeroline: false,
+    showline: true,
+    label: false,
+    linecolor: "black",
+    anchor: "x"     // force crossing
+  }
+    
     };
 
-    Plotly.newPlot(containerId, [trace], layout);
+  const config = {
+    displayModeBar: true,
+    responsive: true
+};
+
+
+    Plotly.newPlot(containerId, [trace], layout, config);
 }
 }
 }
 </script>
+
+<style>
+
+.myScatterPlot {
+  width: 100%;
+  height: 100%;
+}
+
+</style>
+

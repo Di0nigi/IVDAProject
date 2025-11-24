@@ -41,6 +41,18 @@ methods: {
 
     this.graph = ForceGraph()(this.$refs.graphContainer)
       .graphData(this.graphData)
+      .nodeColor(node => {
+        switch(node.label) {
+          case 0: return 'red';
+          case 1: return 'green';
+          case 2: return 'blue';
+          case 3: return 'orange';
+          case 4: return 'purple';
+          case 5: return 'brown';
+          case 6: return 'maroon';
+          default: return 'gray';
+        }
+      })
       .width(containerWidth)
       .height(containerHeight)
       .linkDirectionalArrowLength(0)
@@ -54,9 +66,9 @@ methods: {
         alert(`Link clicked: ${link.label}`);
       })
       .d3Force('charge', d3.forceManyBody().strength(-60))
-      .d3Force('link', d3.forceLink().distance(40))
+      .d3Force('link', d3.forceLink().distance(50).strength(0.8))
       .d3Force('x', d3.forceX().strength(1))
-      .d3Force('y', d3.forceY().strength(0.01));
+      .d3Force('y', d3.forceY().strength(0.01))
   },
 },
 

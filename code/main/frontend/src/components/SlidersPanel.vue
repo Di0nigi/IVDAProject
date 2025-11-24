@@ -1,6 +1,9 @@
 <template>
   <div class="sliders-container">
-    <div class="sliders-row">
+    <div class="sliders-column">
+
+      
+
       <!-- Authoritativeness Slider (dummy) -->
       <div class="slider-group">
         <label>Authority</label>
@@ -14,7 +17,6 @@
               v-model.number="authoritativeness"
               :min="0"
               :max="100"
-              orient="vertical"
               class="slider single-slider"
             />
           </div>
@@ -22,13 +24,7 @@
       </div>
 
       <!-- Shared labels for both sliders -->
-      <div class="shared-labels">
-        <div class="range-labels">
-          <span>High</span>
-          <span>Medium</span>
-          <span>Moderate</span>
-        </div>
-      </div>
+      
 
       <!-- Renown Slider (dummy) -->
       <div class="slider-group">
@@ -43,11 +39,18 @@
               v-model.number="renown"
               :min="0"
               :max="100"
-              orient="vertical"
               class="slider single-slider"
             />
           </div>
         </div>
+
+        <div class="shared-labels">
+        <div class="range-labels">
+          <span>High</span>
+          <span>Medium</span>
+          <span>Moderate</span>
+        </div>
+      </div>
       </div>
     </div>
 
@@ -67,14 +70,14 @@ const renown = ref(0);
 const authoritativenessStyle = computed(() => {
   const percent = authoritativeness.value;
   return {
-    height: `${percent}%`
+    width: `${authoritativeness.value}%`
   };
 });
 
 const renownStyle = computed(() => {
   const percent = renown.value;
   return {
-    height: `${percent}%`
+    width: `${renown.value}%`
   };
 });
 
@@ -94,6 +97,7 @@ const reset = () => {
   padding: 1px;
   align-items: center;
   justify-content: center;
+  
 }
 
 .sliders-row {
@@ -147,8 +151,8 @@ label {
 
 .single-slider-wrapper {
   position: relative;
-  width: 20px;
-  height: 200px;
+  width: 200px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,13 +160,15 @@ label {
 
 .range-track, .single-track {
   position: absolute;
-  width: 6px;
-  height: 100%;
+  height: 6px;
+  width: 100%;
   background: #e0e0e0;
   border-radius: 3px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  
+
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
 }
 
 .range-fill {
@@ -174,22 +180,20 @@ label {
 
 .single-fill {
   position: absolute;
-  width: 6px;
+  height: 6px;
   background: #dc2626;
   border-radius: 3px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
   bottom: 0;
 }
 
 .slider {
   position: absolute;
-  width: 20px;
-  height: 200px;
+  width: 200px;
+  height: 20px;
   border-radius: 3px;
   outline: none;
-  -webkit-appearance: slider-vertical;
-  appearance: slider-vertical;
   writing-mode: bt-lr;
   background: transparent;
   top: 0;
@@ -231,13 +235,15 @@ label {
 }
 
 .range-labels {
+  flex-direction: row;
+  height: auto;
+  width: 200px;
+  justify-content:space-around;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  
   font-size: 10px;
   color: #666;
-  height: 200px;
-  text-align: center;
+  text-align: justify;
   gap: 5px;
   padding: 0 10px;
 }

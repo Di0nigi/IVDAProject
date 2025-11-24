@@ -164,6 +164,7 @@ const chartOptions = computed(() => ({
   maintainAspectRatio: false,
   plugins: {
     legend: {
+      display:false,
       position: 'top',
       labels: {
         font: {
@@ -185,7 +186,7 @@ const chartOptions = computed(() => ({
       stacked: true,
       ticks: {
         font: {
-          size: 10
+          size: 0
         },
         maxRotation: 45,
         minRotation: 45,
