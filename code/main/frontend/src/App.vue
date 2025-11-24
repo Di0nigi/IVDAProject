@@ -34,7 +34,7 @@
         @update:categoryLabel="categoryLabel = $event"
       />
     </div>
-    <div class="box pca"><PcaPlot /></div>
+    <div class="boxScatter pca"><PcaPlot /></div>
     <!-- <div class="box reliability">
       <ReliabilitySliders />
     </div> -->
@@ -73,9 +73,9 @@ const selectedEdition = ref(null)
   width: 100%;
   max-width: 100%;
 
-  grid-template-columns: 1fr 2fr 1.5fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.7fr;
 
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1.5fr 1fr;
 }
 
 .box {
@@ -87,11 +87,22 @@ const selectedEdition = ref(null)
   z-index: 1;
 }
 
+.boxScatter {
+  background: #f2f4f7;
+  border-radius: 12px;
+  padding: 0px;
+  border: 1px solid #d5d9df;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  
+}
+
 .summary {
   grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .sidebar {
@@ -107,36 +118,39 @@ const selectedEdition = ref(null)
 }
 
 .sliders {
-  grid-column: 4;
+  grid-column: 5;
   grid-row: 4;
 }
 
 .tag-filter {
-  grid-column: 2 / 4;
+  grid-column: 2 / 5;
   grid-row: 4;
 }
 
 .timeline {
-  grid-column: 2 / 4;
+  grid-column: 2 / 5;
   grid-row: 3;
 }
 
 .network {
-  grid-column: 2;
+  grid-column: 2/4;
   grid-row: 1 / 3;
   overflow: hidden;
 }
 
 /* Right column */
 .small-chart {
-  grid-column: 3;
+  grid-column: 4 / 6;
   grid-row: 1 / 3;
 }
 
 .pca {
-  grid-column: 4;
-  grid-row: 1 / 4;
-  overflow: hidden;
+  grid-column: 5;
+  grid-row: 3;
+
+
+  border: 1px solid #d5d9df;
+
 }
 
 .reliability {
@@ -156,5 +170,6 @@ html {
 body {
   background: #ffffff;
   color: #000000;
+  overflow: hidden;
 }
 </style>
