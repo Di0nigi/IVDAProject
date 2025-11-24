@@ -1,7 +1,12 @@
 <template>
+  <div class="category-titles-row">
+    <div class="category-title">Language</div>
+    <div class="category-title">Writing Support</div>
+    <div class="category-title">Period</div>
+    <div class="category-title">Keywords</div>
+  </div>
   <div class="new-tag-filter-container">
     <div class="tag-category-box">
-      <h5>Language</h5>
       <div class="tags-list">
         <button
           v-for="tag in languageTags"
@@ -14,7 +19,6 @@
       </div>
     </div>
     <div class="tag-category-box">
-      <h5>Writing Support</h5>
       <div class="tags-list">
         <button
           v-for="tag in supportTags"
@@ -27,7 +31,6 @@
       </div>
     </div>
     <div class="tag-category-box">
-      <h5>Period</h5>
       <div class="tags-list">
         <button
           v-for="tag in periodTags"
@@ -40,7 +43,6 @@
       </div>
     </div>
     <div class="tag-category-box">
-      <h5>Keywords</h5>
       <div class="tags-list">
         <button
           v-for="tag in keywordTags"
@@ -156,6 +158,19 @@ const updateFilters = () => {
 </script>
 
 <style scoped>
+.category-titles-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+.category-title {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 2px;
+}
 .new-tag-filter-container {
   display: flex;
   gap: 8px;
@@ -172,6 +187,7 @@ const updateFilters = () => {
   border-radius: 4px;
   padding: 4px;
   overflow: hidden;
+  height: 140px; /* Adjust as needed for your layout */
 }
 
 .tag-category-box h5 {
@@ -186,16 +202,14 @@ const updateFilters = () => {
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   align-content: flex-start;
 }
 
-/* Only for period and keywords tag lists: limit height to 4 tags and make scrollable */
-.tag-category-box:nth-child(3) .tags-list,
-.tag-category-box:last-child .tags-list {
-  max-height: 96px; /* 4 tags * 22px height + gap */
-  overflow-y: auto;
-}
+/* Remove max-height, let .tags-list fill parent and scroll */
 
 .tag-button {
   padding: 1px 3px;
