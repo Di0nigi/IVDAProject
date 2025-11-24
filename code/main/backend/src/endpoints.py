@@ -110,10 +110,10 @@ def getAndComputeGraphPoints():
 def getAndComputeScatterPoints():
     dc = dataEncoder(textType='d')
     vM=visModel(nClusters=7)
-    keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Content_Description":1,"descritpionEmbed":1}))
+    descriptionLists = list(texts.find({}, {"_id": 0,"id":1,"Content_Description":1,"descritpionEmbed":1}))
     #formatted = dc.formatData(keyWordsList)
     #encoded = dc.encode(formatted)
-    encoded = [elem["descritpionEmbed"] for elem in keyWordsList]
+    encoded = [elem["descritpionEmbed"] for elem in descriptionLists]
 
     labs , points = vM.train(encoded,mode="d")
 
@@ -124,6 +124,40 @@ def getAndComputeScatterPoints():
 
     #print("done")
 
+
+    return jsonify(ret)
+
+# to get tags
+
+@app.route("/texts/tags",methods = ["GET"])
+def getAllTags():
+    dc = dataEncoder(textType='k')
+
+    keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1}))
+
+    formatted = dc.formatData(keyWordsList)
+    l=set([])
+    for elem in formatted:
+        for word in elem:
+            l.add(word.lower())
+
+    ret = {"allTags": list(l)}
+    
+
+
+
+    return jsonify(ret)
+
+@app.route("/texts/tags/<id>",methods = ["GET"])
+def getEditionTags(id):
+
+    keyWordsList = list(texts.find({"id": int(id)}, {"_id": 0,"id":1,"Keywords":1}))
+
+    dc = dataEncoder(textType='k')
+
+    keywords = dc.formatData(keyWordsList)[0]
+
+    ret = {"tags": keywords}
 
     return jsonify(ret)
 

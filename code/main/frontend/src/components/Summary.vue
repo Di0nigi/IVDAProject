@@ -25,10 +25,12 @@ const props = defineProps({
 
 <style scoped>
 h2 {
-  margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
 }
 
 p {
-  margin: 0.3em 0;
+    margin: 0.3em 0;
+    font-size: 0.95em;
 }
 </style>

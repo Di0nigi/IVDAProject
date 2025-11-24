@@ -58,10 +58,10 @@ const searchFilteredEditions = computed(() => {
 
 .search-bar input {
   flex: 1;
-  padding: 8px 12px;
+  padding: 4px 8px;
   border: 1px solid #d5d9df;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 12px;
   outline: none;
 }
 
