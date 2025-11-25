@@ -73,19 +73,19 @@ const showSettings = ref(false);
 const props = defineProps({
   xAttribute: {
     type: String,
-    default: 'Historical Period'
+    default: 'Language'
   },
   categoryAttribute: {
     type: String,
-    default: 'Scholarly'
+    default: 'Historical Period'
   },
   xLabel: {
     type: String,
-    default: 'Historical Period'
+    default: 'Language'
   },
   categoryLabel: {
     type: String,
-    default: 'Scholarly'
+    default: 'Historical Period'
   }
 });
 

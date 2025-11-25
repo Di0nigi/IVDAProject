@@ -140,6 +140,7 @@ const audienceStyle = computed(() => {
   gap: 16px;
   height: 100%;
   padding: 4px;
+  width: 100%;
 }
 
 h3 {
