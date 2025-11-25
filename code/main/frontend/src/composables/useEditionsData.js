@@ -35,12 +35,29 @@ export function useEditionsData() {
       filtered = filtered.filter(e => {
         const start = e.period_start;
         const end = e.period_end;
-        
         // Include if either start or end falls within the selected range
         return (start !== undefined && start >= min && start <= max) ||
-               (end !== undefined && end >= min && end <= max) ||
-               // Also include if the work spans the entire selected range
-               (start !== undefined && end !== undefined && start <= min && end >= max);
+             (end !== undefined && end >= min && end <= max) ||
+             // Also include if the work spans the entire selected range
+             (start !== undefined && end !== undefined && start <= min && end >= max);
+      });
+    }
+
+    // Authority filter
+    if (typeof activeFilters.authoritativeness === 'number' && activeFilters.authoritativeness > 0) {
+      filtered = filtered.filter(e => {
+        // Accepts e.authoritativeness or e.Authoritativeness
+        const val = e.authoritativeness ?? e.Authoritativeness;
+        return typeof val === 'number' && val >= activeFilters.authoritativeness;
+      });
+    }
+
+    // Renown filter
+    if (typeof activeFilters.renown === 'number' && activeFilters.renown > 0) {
+      filtered = filtered.filter(e => {
+        // Accepts e.renown or e.Renown
+        const val = e.renown ?? e.Renown;
+        return typeof val === 'number' && val >= activeFilters.renown;
       });
     }
 

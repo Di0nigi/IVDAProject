@@ -59,32 +59,37 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import { useFilters } from '../composables/useFilters';
 
-const { resetFilters } = useFilters();
+const { resetFilters, updateFilter, activeFilters } = useFilters();
 
-const authoritativeness = ref(0);
-const renown = ref(0);
+const authoritativeness = ref(activeFilters.authoritativeness ?? 0);
+const renown = ref(activeFilters.renown ?? 0);
 
-const authoritativenessStyle = computed(() => {
-  const percent = authoritativeness.value;
-  return {
-    width: `${authoritativeness.value}%`
-  };
+const authoritativenessStyle = computed(() => ({
+  width: `${authoritativeness.value}%`
+}));
+
+const renownStyle = computed(() => ({
+  width: `${renown.value}%`
+}));
+
+// Watchers to update filters when sliders change
+watch(authoritativeness, (val) => {
+  updateFilter('authoritativeness', val);
 });
 
-const renownStyle = computed(() => {
-  const percent = renown.value;
-  return {
-    width: `${renown.value}%`
-  };
+watch(renown, (val) => {
+  updateFilter('renown', val);
 });
 
 const reset = () => {
   resetFilters();
   authoritativeness.value = 0;
   renown.value = 0;
+  updateFilter('authoritativeness', 0);
+  updateFilter('renown', 0);
 };
 </script>
 
