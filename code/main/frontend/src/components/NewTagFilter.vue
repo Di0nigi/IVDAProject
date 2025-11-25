@@ -61,8 +61,7 @@
 import { ref, computed, onMounted } from 'vue';
 import { useFilters } from '../composables/useFilters';
 
-const { updateFilter } = useFilters();
-const selectedTagIds = ref(new Set());
+const { activeFilters, updateFilter } = useFilters();
 
 // Hardcoded languages and supports (until backend endpoints are fixed)
 const languageTags = [
@@ -143,40 +142,23 @@ onMounted(async () => {
 });
 
 const toggleTag = (tag, category) => {
-  const tagId = `${category}:${tag.id}`;
-  if (selectedTagIds.value.has(tagId)) {
-    selectedTagIds.value.delete(tagId);
+  let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : (category === 'keyword' ? 'keywords' : category)));
+  let current = [...activeFilters[filterKey]];
+  if (!current.includes(tag.id)) {
+    current.push(tag.id);
   } else {
-    selectedTagIds.value.add(tagId);
+    current = current.filter(t => t !== tag.id);
   }
-  updateFilters();
+  updateFilter(filterKey, current);
 };
 
 const getTagClass = (tag, category) => {
-  const tagId = `${category}:${tag.id}`;
-  const isSelected = selectedTagIds.value.has(tagId);
-  let hasSelectionInCategory = false;
-  for (let id of selectedTagIds.value) {
-    if (id.startsWith(category + ':')) {
-      hasSelectionInCategory = true;
-      break;
-    }
-  }
+  let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : (category === 'keyword' ? 'keywords' : category)));
+  const isSelected = activeFilters[filterKey] && activeFilters[filterKey].includes(tag.id);
+  let hasSelectionInCategory = activeFilters[filterKey] && activeFilters[filterKey].length > 0;
   if (isSelected) return 'tag-selected';
   if (hasSelectionInCategory) return 'tag-muted';
   return 'tag-neutral';
-};
-
-const updateFilters = () => {
-  const selected = Array.from(selectedTagIds.value);
-  const languages = selected.filter(id => id.startsWith('language:')).map(id => id.split(':')[1]);
-  const periods = selected.filter(id => id.startsWith('period:')).map(id => id.split(':')[1]);
-  const supports = selected.filter(id => id.startsWith('support:')).map(id => id.split(':')[1]);
-  const keywords = selected.filter(id => id.startsWith('keyword:')).map(id => id.split(':')[1]);
-  updateFilter('language', languages);
-  updateFilter('historicalPeriod', periods);
-  updateFilter('writingSupport', supports);
-  updateFilter('keywords', keywords);
 };
 </script>
 
