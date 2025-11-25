@@ -75,7 +75,7 @@ const selectedEdition = ref(null)
   width: 100%;
   max-width: 100%;
 
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.7fr;
+  grid-template-columns: 0.8fr 0.7fr 1fr 1fr 0.7fr;
 
   grid-template-rows: 1fr 1fr 1.5fr 1fr;
 }
