@@ -11,6 +11,7 @@ const filters = reactive({
   openAccess: null,
   language: [],
   writingSupport: [],
+  keywords: [],
 });
 
 export function useFilters() {
@@ -29,6 +30,7 @@ export function useFilters() {
     filters.openAccess = null;
     filters.language = [];
     filters.writingSupport = [];
+    filters.keywords = [];
   };
 
   const hasActiveFilters = computed(() => {

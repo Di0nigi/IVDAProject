@@ -50,7 +50,7 @@ import BarChart from './components/BarChart.vue';
 import BarChartSelector from './components/BarChartSelector.vue';
 import SlidersPanel from './components/SlidersPanel.vue';
 import NewTagFilter from './components/NewTagFilter.vue';
-import ReliabilitySliders from './components/ReliabilitySliders.vue';
+// import ReliabilitySliders from './components/ReliabilitySliders.vue';
 import TimelinePlot from './components/TimelinePlot.vue';
 import SourceList from './components/SourceList.vue';
 import Summary from './components/Summary.vue';
