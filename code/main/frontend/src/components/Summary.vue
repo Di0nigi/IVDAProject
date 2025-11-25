@@ -5,6 +5,7 @@
     <p><strong>Historical Period:</strong> {{ edition['Historical Period'] }}</p>
     <p><strong>Time/Century:</strong> {{ edition['Time/Century'] }}</p>
     <p><strong>Language:</strong> {{ edition.Language }}</p>
+    <p> {{ edition.Content_Description }}</p>
   </div>
 
   <div v-else>
