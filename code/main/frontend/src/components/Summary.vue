@@ -352,6 +352,7 @@ const getTagClass = (tag, category) => {
 
 a.tag-button:hover {
   transform: scale(1.05);
+  filter: brightness(120%);
 }
 
 .summary-pill {
@@ -459,7 +460,4 @@ a.tag-button:hover {
   transform: scale(0.95);
 }
 
-.tag-button.visit-website-button:hover {
-  filter: brightness(120%);
-}
 </style>
