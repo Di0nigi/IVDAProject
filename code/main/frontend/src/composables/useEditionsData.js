@@ -63,9 +63,10 @@ export function useEditionsData() {
 
     // Apply historical period filter (OR logic within category)
     if (activeFilters.historicalPeriod?.length > 0) {
-      filtered = filtered.filter(e =>
-        e['Historical Period'] && activeFilters.historicalPeriod.includes(e['Historical Period'].toLowerCase())
-      );
+      filtered = filtered.filter(e => {
+        const periods = (e['Historical Period'] || '').toLowerCase().split(/[,;]+/).map(p => p.trim());
+        return periods.some(p => activeFilters.historicalPeriod.includes(p));
+      });
     }
 
     // Apply scholarly filter

@@ -142,7 +142,8 @@ onMounted(async () => {
     const res = await fetch('http://localhost:5000/texts/period/name');
     const data = await res.json();
     // Deduplicate and clean up periods
-    const uniquePeriods = Array.from(new Set(data.map(item => item['Historical Period'])));
+    const allPeriods = data.flatMap(item => (item['Historical Period'] || '').split(/[,;]+/)).map(p => p.trim().toLowerCase()).filter(Boolean);
+    const uniquePeriods = Array.from(new Set(allPeriods));
     periodTags.value = uniquePeriods.map(period => ({ id: period, label: period }));
   } catch (e) {
     periodTags.value = [];
