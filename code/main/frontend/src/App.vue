@@ -45,9 +45,8 @@
 </template>
 
 <script setup>
-import { VueForceGraph2D, VueForceGraph3D, VueForceGraphVR, VueForceGraphAR, GraphContextMenu } from 'vue-force-graph';
-//app.use(VueForceGraph2D)
-import { ref } from 'vue';
+import { ref, onMounted, watch } from 'vue';
+import { useEditionsData } from './composables/useEditionsData';
 import BarChart from './components/BarChart.vue';
 import BarChartSelector from './components/BarChartSelector.vue';
 import SlidersPanel from './components/SlidersPanel.vue';
@@ -64,6 +63,19 @@ const categoryAttribute = ref('Scholarly');
 const xLabel = ref('Historical Period');
 const categoryLabel = ref('Scholarly');
 const selectedEdition = ref(null)
+
+const { editions, fetchEditions } = useEditionsData();
+
+onMounted(() => {
+  fetchEditions();
+});
+
+watch(editions, (newEditions) => {
+  if (newEditions.length > 0 && !selectedEdition.value) {
+    const randomIndex = Math.floor(Math.random() * newEditions.length);
+    selectedEdition.value = newEditions[randomIndex];
+  }
+}, { immediate: true });
 </script>
 
 <style scoped>
