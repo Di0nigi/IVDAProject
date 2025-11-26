@@ -80,27 +80,7 @@ import { useFilters } from '../composables/useFilters';
 const { activeFilters, updateFilter } = useFilters();
 
 const languageTags = ref([]);
-const supportTags = [
-  { id: 'Manuscript', label: 'Manuscript' },
-  { id: 'Letter', label: 'Letter' },
-  { id: 'Codex', label: 'Codex' },
-  { id: 'Print', label: 'Print' },
-  { id: 'Book', label: 'Book' },
-  { id: 'not_provided', label: 'not provided' },
-  { id: 'Diary', label: 'Diary' },
-  { id: 'Printed_book', label: 'Printed book' },
-  { id: 'Journal', label: 'Journal' },
-
-  { id: 'Tablet', label: 'Tablet' },
-  { id: 'Print_edition', label: 'Print edition' },
-  { id: 'Novel', label: 'Novel' },
-  { id: 'Notebook', label: 'Notebook' },
-  { id: 'Inscription', label: 'Inscription' },
-  { id: 'Paper', label: 'Paper' },
-  { id: 'Minutes', label: 'Minutes' },
-];
-
-// Dynamic tags from backend
+const supportTags = ref([]);
 const keywordTags = ref([]);
 const periodTags = ref([]);
 
@@ -114,6 +94,16 @@ onMounted(async () => {
     languageTags.value = uniqueLangs.map(lang => ({ id: lang, label: lang.toUpperCase() }));
   } catch (e) {
     languageTags.value = [];
+  }
+  // Fetch writing supports
+  try {
+    const res = await fetch('http://localhost:5000/texts/writingsupport/name');
+    const data = await res.json();
+    const allSupports = data.flatMap(item => (item['Writing support'] || '').split(/[,;]+/)).map(s => s.trim().toLowerCase()).filter(Boolean);
+    const uniqueSupports = Array.from(new Set(allSupports));
+    supportTags.value = uniqueSupports.map(support => ({ id: support, label: support }));
+  } catch (e) {
+    supportTags.value = [];
   }
   // Fetch keywords
   try {

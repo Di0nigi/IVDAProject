@@ -78,6 +78,20 @@
           </span>
         </button>
         <div style="width:100%;height:2.5em;"></div>
+        <button
+          v-if="edition['OCR or keyed?']"
+          class="tag-button summary-pill"
+          :style="ocrPillStyle"
+        >
+          {{ edition['OCR or keyed?'] }}
+        </button>
+        <button
+          v-if="edition['Open source/Open access']"
+          class="tag-button summary-pill"
+          :style="openAccessPillStyle"
+        >
+          {{ openAccessText }}
+        </button>
         <a
           :href="edition['URL']"
           target="_blank"
@@ -85,7 +99,7 @@
           class="tag-button summary-pill"
           style="background:#1976d2; color:#fff; display:inline-flex; align-items:center; height:28px; margin-right:8px; vertical-align:middle;"
         >
-          <span style="display:flex; align-items:center; justify-content:center; width:100%; height:100%;">Link
+          <span style="display:flex; align-items:center; justify-content:center; width:100%; height:100%;">Visit Website
             <svg style="margin-left:4px;" width="19" height="19" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 13L13 7M13 7H9M13 7V11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -107,7 +121,6 @@
       <p style="margin:0;text-align:left;"><strong>Philosophical/Artistic Direction:</strong> {{ edition['phil_direction'] }}</p>
     </div>
     <div style="margin-top:2px;margin-bottom:2px;text-align:left;">
-      <p style="margin:0;text-align:left;"><strong>OCR or keyed?:</strong> {{ edition['OCR or keyed?'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Time/Century:</strong> {{ edition['Time/Century'] }}</p>
     </div>
     </div>
@@ -174,6 +187,53 @@ const reliabilityPillStyle = computed(() => {
     boxSizing: 'border-box',
   };
 });
+
+const ocrPillStyle = computed(() => {
+  if (!props.edition) return {};
+  const ocr = props.edition['OCR or keyed?'] || '';
+  let color = '#e0e0e0'; // default grey
+  if (ocr.toLowerCase().includes('keyed')) {
+    color = '#4CAF50'; // green
+  } else if (ocr.toLowerCase().includes('ocr')) {
+    color = '#2196F3'; // blue
+  }
+  return {
+    background: color,
+    color: 'white',
+  };
+});
+
+const openAccessPillStyle = computed(() => {
+  if (!props.edition) return {};
+  const oa = props.edition['Open source/Open access'] || '';
+  let color = '#e0e0e0'; // default grey
+  if (oa.toLowerCase().includes('open access and open source')) {
+    color = '#66BB6A'; // brighter green
+  } else if (oa.toLowerCase().includes('yes') || oa.toLowerCase().includes('open access')) {
+    color = '#4CAF50'; // green
+  } else if (oa.toLowerCase().includes('partly')) {
+    color = '#FFC107'; // yellow
+  } else if (oa.toLowerCase() === 'no') {
+    color = '#F44336'; // red
+  }
+  return {
+    background: color,
+    color: 'white',
+  };
+});
+
+const openAccessText = computed(() => {
+  if (!props.edition) return '';
+  const oa = props.edition['Open source/Open access'] || '';
+  if (oa.toLowerCase() === 'yes' || oa.toLowerCase() === 'open access') {
+    return 'Open Access';
+  }
+  if (oa.toLowerCase().includes('open access and open source')) {
+    return 'Open Access & Source';
+  }
+  return `Open Access: ${oa}`;
+});
+
 
 const { activeFilters, updateFilter } = useFilters();
 const showReliability = ref(false);

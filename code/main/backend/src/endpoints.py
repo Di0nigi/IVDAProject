@@ -59,6 +59,11 @@ def getLanguageName():
     langList = list(texts.find({}, {"_id": 0, "id": 1, "Language": 1}))
     return langList
 
+@app.route("/texts/writingsupport/name", methods=["GET"])
+def getWritingSupportName():
+    supportList = list(texts.find({}, {"_id": 0, "id": 1, "Writing support": 1}))
+    return supportList
+
 #   period
 
 @app.route("/texts/period", methods=["GET"])
