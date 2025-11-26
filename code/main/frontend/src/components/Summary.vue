@@ -93,7 +93,7 @@
             </svg>
           </span>
         </button>
-        <div style="width:100%;height:2.5em;"></div>
+        <div style="width:100%;height:1em;"></div>
         <button
           v-if="edition['OCR or keyed?']"
           class="tag-button summary-pill"
@@ -149,13 +149,16 @@ const props = defineProps({
 
 var scoreVis = ref(false);
 
-var sc = Math.floor(Math.random()*101)
-
-var score = sc.toString()
+const score = computed(() => {
+  if (props.edition) {
+    return props.edition.reliabilityScore;
+  }
+  return 0;
+});
 
 const reliabilityPillStyle = computed(() => {
   // Convert score to number
-  const s = Number(score);
+  const s = Number(score.value);
   // Clamp between 0 and 100
   const clamped = Math.max(0, Math.min(100, s));
   // Interpolate color: 0=red, 50=yellow, 100=green

@@ -4,40 +4,87 @@
       <input type="text" placeholder="Search..." v-model="searchQuery" />
     </div>
     <ul class="source-list">
-    <li v-for="text in searchFilteredEditions" :key="text.id" class="list-item">
+      <li v-for="text in searchFilteredEditions" :key="text.id" class="list-item">
         <a href="#" @click.prevent="selectEdition(text.id)">
-        {{ text['Edition name'] }}
+          <div class="list-item-content">
+            <span>{{ text['Edition name'] }}</span>
+            <div class="dots-container">
+              <span class="dot" :style="{ backgroundColor: getOcrColor(text) }"></span>
+              <span class="dot" :style="{ backgroundColor: getOpenAccessColor(text) }"></span>
+              <span class="dot" :style="{ backgroundColor: getReliabilityColor(text) }"></span>
+            </div>
+          </div>
         </a>
-    </li>
+      </li>
     </ul>
   </div>
 </template>
 
 <script setup>
-import { ref, computed} from 'vue'
-import { useEditionsData } from '../composables/useEditionsData'
+import { ref, computed } from 'vue';
+import { useEditionsData } from '../composables/useEditionsData';
 
-const texts = ref([])
-const selected = ref(null)
-const searchQuery = ref('')
+const searchQuery = ref('');
+const { filteredEditions } = useEditionsData();
 
-const { editions, filteredEditions, fetchEditions } = useEditionsData()
-
-const emit = defineEmits(['select'])
+const emit = defineEmits(['select']);
 
 function selectEdition(id) {
-  const edition = filteredEditions.value.find(e => e.id === id)
-  emit('select', edition)
+  const edition = filteredEditions.value.find(e => e.id === id);
+  emit('select', edition);
 }
 
 const searchFilteredEditions = computed(() => {
-  if (!searchQuery.value) return filteredEditions.value
+  if (!searchQuery.value) return filteredEditions.value;
   return filteredEditions.value.filter(text =>
     text['Edition name']
       .toLowerCase()
       .includes(searchQuery.value.toLowerCase())
-  )
-})
+  );
+});
+
+function getOcrColor(edition) {
+  if (!edition) return '#e0e0e0';
+  const ocr = edition['OCR or keyed?'] || '';
+  if (ocr.toLowerCase().includes('keyed')) {
+    return '#4CAF50'; // green
+  } else if (ocr.toLowerCase().includes('ocr')) {
+    return '#2196F3'; // blue
+  }
+  return '#e0e0e0'; // default grey
+}
+
+function getOpenAccessColor(edition) {
+  if (!edition) return '#e0e0e0';
+  const oa = edition['Open source/Open access'] || '';
+  if (oa.toLowerCase().includes('open access and open source')) {
+    return '#66BB6A'; // brighter green
+  } else if (oa.toLowerCase().includes('yes') || oa.toLowerCase().includes('open access')) {
+    return '#4CAF50'; // green
+  } else if (oa.toLowerCase().includes('partly')) {
+    return '#FFC107'; // yellow
+  } else if (oa.toLowerCase() === 'no') {
+    return '#F44336'; // red
+  }
+  return '#e0e0e0'; // default grey
+}
+
+function getReliabilityColor(edition) {
+  const score = edition.reliabilityScore || 0;
+  const clamped = Math.max(0, Math.min(100, score));
+  let r, g, b;
+  const maxIntensity = 180;
+  if (clamped <= 50) {
+    r = maxIntensity;
+    g = Math.round(maxIntensity * (clamped / 50));
+    b = 0;
+  } else {
+    r = Math.round(maxIntensity * (1 - (clamped - 50) / 50));
+    g = maxIntensity;
+    b = 0;
+  }
+  return `rgb(${r},${g},${b})`;
+}
 </script>
 
 <style scoped>
@@ -101,5 +148,22 @@ const searchFilteredEditions = computed(() => {
 
 .list-item {
   list-style: none;
+}
+
+.list-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dots-container {
+  display: flex;
+  gap: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 </style>
