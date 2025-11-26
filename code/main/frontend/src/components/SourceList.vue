@@ -9,9 +9,9 @@
           <div class="list-item-content">
             <span>{{ text['Edition name'] }}</span>
             <div class="dots-container">
-              <span class="dot" :style="{ backgroundColor: getOcrColor(text) }"></span>
-              <span class="dot" :style="{ backgroundColor: getOpenAccessColor(text) }"></span>
-              <span class="dot" :style="{ backgroundColor: getReliabilityColor(text) }"></span>
+              <span class="dot" :style="{ backgroundColor: getOcrColor(text) }" title="OCR/Keyed"></span>
+              <span class="dot" :style="{ backgroundColor: getOpenAccessColor(text) }" title="Open Access"></span>
+              <span class="dot" :style="{ backgroundColor: getReliabilityColor(text) }" title="Reliability"></span>
             </div>
           </div>
         </a>
@@ -165,5 +165,42 @@ function getReliabilityColor(edition) {
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  position: relative;
+  cursor: help;
+}
+
+.dot:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.dot::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
 }
 </style>

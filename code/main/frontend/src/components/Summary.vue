@@ -6,10 +6,8 @@
       <div class="column">
 
       
-      <button @click="relScore()" >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 18l6-6-6-6"></path>
-      </svg>
+      <button @click="relScore()" style="background-color: red; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;">
+        back
       </button>
 
       <div class="slidersContainer">
@@ -94,20 +92,26 @@
           </span>
         </button>
         <div style="width:100%;height:1em;"></div>
-        <button
+        <a
           v-if="edition['OCR or keyed?']"
+          href="https://textcreationpartnership.org/using-tcp-content/results-of-keying/"
+          target="_blank"
+          rel="noopener noreferrer"
           class="tag-button summary-pill"
           :style="ocrPillStyle"
         >
           {{ edition['OCR or keyed?'] }}
-        </button>
-        <button
+        </a>
+        <a
           v-if="edition['Open source/Open access']"
+          href="https://open-access.network/en/home"
+          target="_blank"
+          rel="noopener noreferrer"
           class="tag-button summary-pill"
           :style="openAccessPillStyle"
         >
           {{ openAccessText }}
-        </button>
+        </a>
         <button
           @click="relScore()"
           class="tag-button summary-pill"
