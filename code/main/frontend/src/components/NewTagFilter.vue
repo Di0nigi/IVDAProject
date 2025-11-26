@@ -79,29 +79,7 @@ import { useFilters } from '../composables/useFilters';
 
 const { activeFilters, updateFilter } = useFilters();
 
-// Hardcoded languages and supports (until backend endpoints are fixed)
-const languageTags = [
-  { id: 'LAT', label: 'LAT' },
-  { id: 'ENG', label: 'ENG' },
-  { id: 'GER', label: 'GER' },
-  { id: 'HUN', label: 'HUN' },
-  { id: 'FRE', label: 'FRE' },
-  { id: 'ITA', label: 'ITA' },
-  { id: 'GRC', label: 'GRC' },
-  { id: 'SPA', label: 'SPA' },
-  { id: 'ENM', label: 'ENM' },
-  { id: 'POL', label: 'POL' },
-  { id: 'ARA', label: 'ARA' },
-  { id: 'HEB', label: 'HEB' },
-  { id: 'DUT', label: 'DUT' },
-  { id: 'FRO', label: 'FRO' },
-  { id: 'GMH', label: 'GMH' },
-  { id: 'DEU', label: 'DEU' },
-  { id: 'ANG', label: 'ANG' },
-  { id: 'FRA', label: 'FRA' },
-  { id: 'ARC', label: 'ARC' },
-  { id: 'DAN', label: 'DAN' },
-];
+const languageTags = ref([]);
 const supportTags = [
   { id: 'Manuscript', label: 'Manuscript' },
   { id: 'Letter', label: 'Letter' },
@@ -127,6 +105,16 @@ const keywordTags = ref([]);
 const periodTags = ref([]);
 
 onMounted(async () => {
+  // Fetch languages
+  try {
+    const res = await fetch('http://localhost:5000/texts/language/name');
+    const data = await res.json();
+    const allLangs = data.flatMap(item => (item.Language || '').split(/[,;]+/)).map(l => l.trim().toLowerCase()).filter(Boolean);
+    const uniqueLangs = Array.from(new Set(allLangs));
+    languageTags.value = uniqueLangs.map(lang => ({ id: lang, label: lang.toUpperCase() }));
+  } catch (e) {
+    languageTags.value = [];
+  }
   // Fetch keywords
   try {
     const res = await fetch('http://localhost:5000/texts/tags');

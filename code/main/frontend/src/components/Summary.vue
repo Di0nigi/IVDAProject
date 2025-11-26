@@ -32,7 +32,7 @@
           @click="handleTagClick(lang, 'language')"
           :class="getTagClass(lang, 'language')"
         >
-          {{ lang }}<span v-if="getTagClass(lang, 'language') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+          {{ lang.toUpperCase() }}<span v-if="getTagClass(lang, 'language') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
             <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>

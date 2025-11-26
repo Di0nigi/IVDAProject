@@ -54,6 +54,11 @@ def getPeriodName():
     timeList = list(texts.find({}, {"_id": 0,"id":1,"Historical Period":1}))  
     return timeList
 
+@app.route("/texts/language/name", methods=["GET"])
+def getLanguageName():
+    langList = list(texts.find({}, {"_id": 0, "id": 1, "Language": 1}))
+    return langList
+
 #   period
 
 @app.route("/texts/period", methods=["GET"])
