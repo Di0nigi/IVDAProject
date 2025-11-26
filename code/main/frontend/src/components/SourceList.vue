@@ -208,8 +208,7 @@ function getReliabilityColor(edition) {
 .list-item-content span {
   display: block;
   max-width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: normal;
 }
 </style>
