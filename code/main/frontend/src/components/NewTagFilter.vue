@@ -12,9 +12,9 @@
           v-for="tag in languageTags"
           :key="tag.id"
           @click="toggleTag(tag, 'language')"
-          :class="getTagClass(tag, 'language')"
+          :class="['tag-button', getTagClass(tag, 'language')]"
         >
-          {{ tag.label }}<span v-if="getTagClass(tag, 'language') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;position:relative;top:3px;">
+          <span>{{ tag.label }}</span><span v-if="getTagClass(tag, 'language') === 'tag-selected'">
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -28,9 +28,9 @@
           v-for="tag in supportTags"
           :key="tag.id"
           @click="toggleTag(tag, 'support')"
-          :class="getTagClass(tag, 'support')"
+          :class="['tag-button', getTagClass(tag, 'support')]"
         >
-          {{ tag.label }}<span v-if="getTagClass(tag, 'support') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;position:relative;top:3px;">
+          <span>{{ tag.label }}</span><span v-if="getTagClass(tag, 'support') === 'tag-selected'">
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -44,9 +44,9 @@
           v-for="tag in periodTags"
           :key="tag.id"
           @click="toggleTag(tag, 'period')"
-          :class="getTagClass(tag, 'period')"
+          :class="['tag-button', getTagClass(tag, 'period')]"
         >
-          {{ tag.label }}<span v-if="getTagClass(tag, 'period') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;position:relative;top:3px;">
+          <span>{{ tag.label }}</span><span v-if="getTagClass(tag, 'period') === 'tag-selected'">
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -60,9 +60,9 @@
           v-for="tag in keywordTags"
           :key="tag.id"
           @click="toggleTag(tag, 'keyword')"
-          :class="getTagClass(tag, 'keyword')"
+          :class="['tag-button', getTagClass(tag, 'keyword')]"
         >
-          {{ tag.label }}<span v-if="getTagClass(tag, 'keyword') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;position:relative;top:3px;">
+          <span>{{ tag.label }}</span><span v-if="getTagClass(tag, 'keyword') === 'tag-selected'">
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -202,53 +202,36 @@ const getTagClass = (tag, category) => {
   align-content: flex-start;
 }
 
-/* Remove max-height, let .tags-list fill parent and scroll */
-
 .tag-button {
-  padding: 1px 3px;
-  border: none;
-  border-radius: 2px;
-  font-size: 4px;
+  padding: 2px 8px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
   white-space: nowrap;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tag-button:hover {
+  filter: brightness(80%);
+  border-color: #4a90e2;
 }
 
 .tag-neutral {
   background: #e0e0e0;
   color: #333;
-}
-
-.tag-button {
-  padding: 2px 8px;
-  border: none;
-  border-radius: 2px;
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s;
-  white-space: nowrap;
-  min-height: 22px;
-  line-height: 1.2;
-}
-
-.tag-neutral {
-  background: #e0e0e0;
-  color: #333;
-  font-size: 13px;
-  padding: 2px 8px;
 }
 .tag-selected {
   background: #4CAF50;
   color: white;
-  font-size: 13px;
-  padding: 2px 8px;
 }
 .tag-muted {
   background: #f5f5f5;
   color: #aaa;
-  font-size: 13px;
-  padding: 2px 8px;
 }
 </style>

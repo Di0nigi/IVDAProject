@@ -420,6 +420,11 @@ label {
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   pointer-events: all;
+  transition: transform 0.2s ease;
+}
+
+.slider:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
 }
 
 .slider::-moz-range-thumb {
@@ -431,6 +436,11 @@ label {
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   pointer-events: all;
+  transition: transform 0.2s ease;
+}
+
+.slider:hover::-moz-range-thumb {
+  transform: scale(1.2);
 }
 
 .slider::-webkit-slider-runnable-track {

@@ -141,9 +141,8 @@ function getReliabilityColor(edition) {
 }
 
 .source-list a:hover {
-  background: #f5f5f5;
-  border-color: #8f4e1f;
-  color: #8f4e1f;
+  filter: brightness(90%);
+  border-color: #4a90e2;
 }
 
 .list-item {

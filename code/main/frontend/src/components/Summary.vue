@@ -6,8 +6,8 @@
       <div class="column">
 
       
-      <button @click="relScore()" style="background-color: red; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;">
-        back
+      <button @click="relScore()" class="back-button">
+        Back
       </button>
 
       <div class="slidersContainer">
@@ -114,7 +114,7 @@
         </a>
         <button
           @click="relScore()"
-          class="tag-button summary-pill"
+          class="tag-button summary-pill reliability-pill"
           :style="reliabilityPillStyle"
         >
           Reliability: <span style="margin-left:6px;">{{score}}</span>
@@ -300,7 +300,7 @@ function getTagClass(tag, category) {
 }
 .tag-button {
   padding: 1px 10px;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 12px;
   font-size: 12px;
   font-weight: 500;
@@ -310,6 +310,15 @@ function getTagClass(tag, category) {
   min-height: 20px;
   line-height: 1.2;
 }
+.tag-button:hover {
+  filter: brightness(90%);
+  border-color: #4a90e2;
+}
+
+a.tag-button:hover {
+  transform: scale(1.05);
+}
+
 .summary-pill {
   border-radius: 12px;
   height: 24px;
@@ -338,9 +347,11 @@ function getTagClass(tag, category) {
 }
 
 .slidersRel{
-  padding:0%;
   width: 100%;
   height: 100%;
+  position: relative;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 
 .row{
@@ -383,5 +394,27 @@ function getTagClass(tag, category) {
   align-items: center;
   gap: 50px;
 
+}
+.back-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+}
+
+.back-button:hover {
+  filter: brightness(80%);
+  transform: scale(1.05);
+}
+
+.reliability-pill:hover {
+  transform: scale(0.95);
 }
 </style>

@@ -54,7 +54,12 @@
       </div>
     </div>
 
-    <button @click="reset" class="reset-button">Reset</button>
+    <button 
+      @click="reset" 
+      class="reset-button"
+    >
+      Reset all filters
+    </button>
   </div>
 </template>
 
@@ -217,6 +222,11 @@ label {
   border: 2px solid #000;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.slider:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
 }
 
 .slider::-moz-range-thumb {
@@ -227,6 +237,11 @@ label {
   border: 2px solid #000;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.slider:hover::-moz-range-thumb {
+  transform: scale(1.2);
 }
 
 .slider::-webkit-slider-runnable-track {
@@ -261,12 +276,12 @@ label {
   border-radius: 6px;
   font-size: 12px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s;
   align-self: center;
   margin-left: 11px;
 }
 
 .reset-button:hover {
-  background: #d32f2f;
+  filter: brightness(80%);
 }
 </style>
