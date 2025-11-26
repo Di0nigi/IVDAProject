@@ -77,7 +77,11 @@
             </svg>
           </span>
         </a>
-        <button @click="relScore()" class="tag-button summary-pill" style="background:#388e3c; color:#fff; display:inline-flex; align-items:center; height:28px; font-weight:600; vertical-align:middle;">
+        <button
+          @click="relScore()"
+          class="tag-button summary-pill"
+          :style="reliabilityPillStyle"
+        >
           Reliability: <span style="margin-left:6px;">{{score}}</span>
         </button>
       </div>
@@ -104,7 +108,7 @@
 </template>
 
 <script setup>
-import { defineProps, ref } from 'vue'
+import { defineProps, ref, computed } from 'vue'
 import { useFilters } from '../composables/useFilters'
 import ReliabilitySliders from '../components/ReliabilitySliders.vue';
 
@@ -121,6 +125,39 @@ var scoreVis = ref(false);
 var sc = Math.floor(Math.random()*101)
 
 var score = sc.toString()
+
+const reliabilityPillStyle = computed(() => {
+  // Convert score to number
+  const s = Number(score);
+  // Clamp between 0 and 100
+  const clamped = Math.max(0, Math.min(100, s));
+  // Interpolate color: 0=red, 50=yellow, 100=green
+  let r, g, b;
+  if (clamped <= 50) {
+    // Red to Yellow
+    r = 255;
+    g = Math.round(255 * (clamped / 50));
+    b = 0;
+  } else {
+    // Yellow to Green
+    r = Math.round(255 * (1 - (clamped - 50) / 50));
+    g = 255;
+    b = 0;
+  }
+  return {
+    background: `rgb(${r},${g},${b})`,
+    color: '#fff',
+    display: 'inline-flex',
+    alignItems: 'center',
+    height: '28px',
+    fontWeight: 600,
+    verticalAlign: 'middle',
+    borderRadius: '16px',
+    border: 'none',
+    padding: '0 14px',
+    boxSizing: 'border-box',
+  };
+});
 
 const { activeFilters, updateFilter } = useFilters();
 const showReliability = ref(false);

@@ -184,7 +184,7 @@ label {
 .single-fill {
   position: absolute;
   height: 6px;
-  background: #2196F3;
+  background: #000;
   border-radius: 3px;
   left: 0;
 }
@@ -211,7 +211,7 @@ label {
   height: 16px;
   border-radius: 50%;
   background: white;
-  border: 2px solid #2196F3;
+  border: 2px solid #000;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   pointer-events: all;
@@ -222,7 +222,7 @@ label {
   height: 16px;
   border-radius: 50%;
   background: white;
-  border: 2px solid #2196F3;
+  border: 2px solid #000;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   pointer-events: all;
