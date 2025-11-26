@@ -22,7 +22,23 @@
 
     <div v-else>
 
-    <h2>{{ edition['Edition name'] }}</h2>
+    <h2 style="margin-top: 0;">{{ edition['Edition name'] }}</h2>
+    <div style="text-align: center; margin-bottom: 10px;">
+        <a
+          :href="edition['URL']"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="tag-button summary-pill"
+          style="background:#1976d2; color:#fff; display:inline-flex; align-items:center; height:24px; margin-right:8px; vertical-align:middle;"
+        >
+          <span style="display:flex; align-items:center; justify-content:center; width:100%; height:100%;">Visit Website
+            <svg style="margin-left:4px;" width="19" height="19" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 13L13 7M13 7H9M13 7V11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+    </div>
+    <p> {{ edition.Content_Description }}</p>
     <div class="summary-tags-row">
       <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
         <button
@@ -92,19 +108,6 @@
         >
           {{ openAccessText }}
         </button>
-        <a
-          :href="edition['URL']"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="tag-button summary-pill"
-          style="background:#1976d2; color:#fff; display:inline-flex; align-items:center; height:28px; margin-right:8px; vertical-align:middle;"
-        >
-          <span style="display:flex; align-items:center; justify-content:center; width:100%; height:100%;">Visit Website
-            <svg style="margin-left:4px;" width="19" height="19" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 13L13 7M13 7H9M13 7V11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </a>
         <button
           @click="relScore()"
           class="tag-button summary-pill"
@@ -114,13 +117,10 @@
         </button>
       </div>
     
-    <p> {{ edition.Content_Description }}</p>
     <div style="margin-top:8px;margin-bottom:4px;">
       <p style="margin:0;text-align:left;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Author:</strong> {{ edition['author'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Philosophical/Artistic Direction:</strong> {{ edition['phil_direction'] }}</p>
-    </div>
-    <div style="margin-top:2px;margin-bottom:2px;text-align:left;">
       <p style="margin:0;text-align:left;"><strong>Time/Century:</strong> {{ edition['Time/Century'] }}</p>
     </div>
     </div>
@@ -178,12 +178,12 @@ const reliabilityPillStyle = computed(() => {
     color: '#333',
     display: 'inline-flex',
     alignItems: 'center',
-    height: '28px',
+    height: '24px',
     fontWeight: 600,
     verticalAlign: 'middle',
-    borderRadius: '16px',
-    border: `4px solid rgb(${r},${g},${b})`,
-    padding: '0 14px',
+    borderRadius: '12px',
+    border: `3px solid rgb(${r},${g},${b})`,
+    padding: '0 10px',
     boxSizing: 'border-box',
   };
 });
@@ -288,25 +288,25 @@ function getTagClass(tag, category) {
 .summary-tags-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 4px;
   margin-bottom: 10px;
 }
 .tag-button {
-  padding: 2px 14px;
+  padding: 1px 10px;
   border: none;
-  border-radius: 16px;
-  font-size: 13px;
+  border-radius: 12px;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
   white-space: nowrap;
-  min-height: 22px;
+  min-height: 20px;
   line-height: 1.2;
 }
 .summary-pill {
-  border-radius: 16px;
-  height: 28px;
-  padding: 0 14px;
+  border-radius: 12px;
+  height: 24px;
+  padding: 0 10px;
   display: inline-flex;
   align-items: center;
   box-sizing: border-box;
@@ -314,20 +314,20 @@ function getTagClass(tag, category) {
 .tag-neutral {
   background: #e0e0e0;
   color: #333;
-  font-size: 13px;
-  padding: 2px 14px;
+  font-size: 12px;
+  padding: 1px 10px;
 }
 .tag-selected {
   background: #4CAF50;
   color: white;
-  font-size: 13px;
-  padding: 2px 14px;
+  font-size: 12px;
+  padding: 1px 10px;
 }
 .tag-muted {
   background: #f5f5f5;
   color: #aaa;
-  font-size: 13px;
-  padding: 2px 14px;
+  font-size: 12px;
+  padding: 1px 10px;
 }
 
 .slidersRel{
