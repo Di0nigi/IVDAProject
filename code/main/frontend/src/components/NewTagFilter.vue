@@ -1,9 +1,29 @@
 <template>
-  <div class="category-titles-row">
-    <div class="category-title">Language</div>
-    <div class="category-title">Writing Support</div>
-    <div class="category-title">Period</div>
-    <div class="category-title">Keywords</div>
+  <div class="category-controls-row">
+    <div class="category-control">
+      <span class="category-title">Language</span>
+      <span class="reset-pill-wrapper">
+        <button class="reset-pill" @click="resetCategory('language')">Reset</button>
+      </span>
+    </div>
+    <div class="category-control">
+      <span class="category-title">Writing Support</span>
+      <span class="reset-pill-wrapper">
+        <button class="reset-pill" @click="resetCategory('support')">Reset</button>
+      </span>
+    </div>
+    <div class="category-control">
+      <span class="category-title">Period</span>
+      <span class="reset-pill-wrapper">
+        <button class="reset-pill" @click="resetCategory('period')">Reset</button>
+      </span>
+    </div>
+    <div class="category-control">
+      <span class="category-title">Keywords</span>
+      <span class="reset-pill-wrapper">
+        <button class="reset-pill" @click="resetCategory('keyword')">Reset</button>
+      </span>
+    </div>
   </div>
   <div class="new-tag-filter-container">
     <div class="tag-category-box">
@@ -102,10 +122,11 @@
 </template>
 
 <script setup>
+
 import { ref, onMounted } from 'vue';
 import { useFilters } from '../composables/useFilters';
 
-const { activeFilters, toggleTagFilter } = useFilters();
+const { activeFilters, toggleTagFilter, resetTagCategory } = useFilters();
 
 const languageTags = ref([]);
 const supportTags = ref([]);
@@ -179,25 +200,47 @@ const getTagStatus = (tag, category) => {
     return 'neutral';
 }
 
+
 const getTagClass = (tag, category) => {
     const status = getTagStatus(tag, category);
     return `tag-${status}`;
 }
+
+const resetCategory = (category) => {
+  const filterKey = getFilterKey(category);
+  if (typeof resetTagCategory === 'function') {
+    resetTagCategory(filterKey);
+  } else {
+    // fallback: clear all filters in category
+    if (activeFilters[filterKey]) {
+      activeFilters[filterKey].splice(0, activeFilters[filterKey].length);
+    }
+  }
+};
 </script>
 
 <style scoped>
-.category-titles-row {
+.category-controls-row {
   display: flex;
   gap: 8px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+}
+.category-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
 }
 .category-title {
-  flex: 1;
-  text-align: center;
   font-size: 13px;
   font-weight: 600;
   color: #333;
-  padding-bottom: 2px;
+}
+.reset-pill-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
 }
 .new-tag-filter-container {
   display: flex;
@@ -216,6 +259,34 @@ const getTagClass = (tag, category) => {
   padding: 4px;
   overflow: hidden;
   height: 140px; /* Adjust as needed for your layout */
+  position: relative;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.reset-pill {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: transparent;
+  color: #555;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+.reset-pill:hover {
+  background: #E53935;
+  color: #fff;
 }
 
 .tag-category-box h5 {
