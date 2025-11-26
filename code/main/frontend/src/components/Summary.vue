@@ -24,60 +24,72 @@
 
     <h2>{{ edition['Edition name'] }}</h2>
     <div class="summary-tags-row">
-      <button
-        v-for="lang in splitTags(edition.Language)"
-        :key="'lang-' + lang"
-        class="tag-button summary-pill"
-        @click="handleTagClick(lang, 'language')"
-        :class="getTagClass(lang, 'language')"
-      >
-        {{ lang }}<span v-if="getTagClass(lang, 'language') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
-          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </button>
-      <button
-        v-for="support in splitTags(edition['Writing support'])"
-        :key="'support-' + support"
-        class="tag-button summary-pill"
-        @click="handleTagClick(support, 'support')"
-        :class="getTagClass(support, 'support')"
-      >
-        {{ support }}<span v-if="getTagClass(support, 'support') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
-          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </button>
-
-      <button
-        v-if="edition['Historical Period']"
-        class="tag-button summary-pill"
-        @click="handleTagClick(edition['Historical Period'], 'period')"
-        :class="getTagClass(edition['Historical Period'], 'period')"
-      >
-        {{ edition['Historical Period'] }}<span v-if="getTagClass(edition['Historical Period'], 'period') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
-          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </button>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+        <button
+          v-for="lang in splitTags(edition.Language)"
+          :key="'lang-' + lang"
+          class="tag-button summary-pill"
+          @click="handleTagClick(lang, 'language')"
+          :class="getTagClass(lang, 'language')"
+        >
+          {{ lang }}<span v-if="getTagClass(lang, 'language') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <button
+          v-for="support in splitTags(edition['Writing support'])"
+          :key="'support-' + support"
+          class="tag-button summary-pill"
+          @click="handleTagClick(support, 'support')"
+          :class="getTagClass(support, 'support')"
+        >
+          {{ support }}<span v-if="getTagClass(support, 'support') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <button
+          v-if="edition['Historical Period']"
+          class="tag-button summary-pill"
+          @click="handleTagClick(edition['Historical Period'], 'period')"
+          :class="getTagClass(edition['Historical Period'], 'period')"
+        >
+          {{ edition['Historical Period'] }}<span v-if="getTagClass(edition['Historical Period'], 'period') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div style="width:100%;height:2.5em;"></div>
+        <a
+          :href="edition['URL']"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="tag-button summary-pill"
+          style="background:#1976d2; color:#fff; display:inline-flex; align-items:center; height:28px; margin-right:8px; vertical-align:middle;"
+        >
+          <span style="display:flex; align-items:center; justify-content:center; width:100%; height:100%;">Link
+            <svg style="margin-left:4px;" width="19" height="19" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 13L13 7M13 7H9M13 7V11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+        <button @click="relScore()" class="tag-button summary-pill" style="background:#388e3c; color:#fff; display:inline-flex; align-items:center; height:28px; font-weight:600; vertical-align:middle;">
+          Reliability: <span style="margin-left:6px;">{{score}}</span>
+        </button>
+      </div>
     
-    <p><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>
-    <p><strong>Author:</strong> {{ edition['author'] }}</p>
-    <p><strong>Philosophical/Artistic Direction:</strong> {{ edition['phil_direction'] }}</p>
-    <a :href="edition['URL']" target="_blank" rel="noopener noreferrer" style="display:block;">
-      <strong>Link: </strong> {{ edition['URL'] }}
-    </a>
+    <div style="margin-top:8px;margin-bottom:4px;">
+      <span style="display:inline-block;margin-right:18px;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</span>
+      <span style="display:inline-block;margin-right:18px;"><strong>Author:</strong> {{ edition['author'] }}</span>
+      <span style="display:inline-block;"><strong>Philosophical/Artistic Direction:</strong> {{ edition['phil_direction'] }}</span>
+    </div>
     <p><strong>OCR or keyed?:</strong> {{ edition['OCR or keyed?'] }}</p>
     <div class="row">
     <p ><strong>Time/Century:</strong> {{ edition['Time/Century'] }}</p>
-    <div class="scoreBox">
-       <button @click="relScore()" class="btStyle"  >
-        <span> {{score}} </span>
-       </button>
-    </div>
     </div>
     <p> {{ edition.Content_Description }}</p>
     </div>
@@ -169,6 +181,11 @@ function getTagClass(tag, category) {
 }
 .summary-pill {
   border-radius: 16px;
+  height: 28px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 .tag-neutral {
   background: #e0e0e0;
