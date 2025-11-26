@@ -131,7 +131,9 @@ onMounted(async () => {
   try {
     const res = await fetch('http://localhost:5000/texts/tags');
     const data = await res.json();
-    keywordTags.value = data.allTags.map(tag => ({ id: tag, label: tag }));
+    const processedTags = data.allTags.flatMap(tag => tag.split('#')).filter(tag => tag.trim() !== '');
+    const uniqueTags = [...new Set(processedTags.map(t => t.toLowerCase()))];
+    keywordTags.value = uniqueTags.map(tag => ({ id: tag, label: tag }));
   } catch (e) {
     keywordTags.value = [];
   }
@@ -150,17 +152,18 @@ onMounted(async () => {
 const toggleTag = (tag, category) => {
   let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : (category === 'keyword' ? 'keywords' : category)));
   let current = [...activeFilters[filterKey]];
-  if (!current.includes(tag.id)) {
-    current.push(tag.id);
+  const lowercasedId = tag.id.toLowerCase();
+  if (!current.includes(lowercasedId)) {
+    current.push(lowercasedId);
   } else {
-    current = current.filter(t => t !== tag.id);
+    current = current.filter(t => t !== lowercasedId);
   }
   updateFilter(filterKey, current);
 };
 
 const getTagClass = (tag, category) => {
   let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : (category === 'keyword' ? 'keywords' : category)));
-  const isSelected = activeFilters[filterKey] && activeFilters[filterKey].includes(tag.id);
+  const isSelected = activeFilters[filterKey] && activeFilters[filterKey].includes(tag.id.toLowerCase());
   let hasSelectionInCategory = activeFilters[filterKey] && activeFilters[filterKey].length > 0;
   if (isSelected) return 'tag-selected';
   if (hasSelectionInCategory) return 'tag-muted';

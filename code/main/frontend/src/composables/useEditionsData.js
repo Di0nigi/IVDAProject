@@ -64,7 +64,7 @@ export function useEditionsData() {
     // Apply historical period filter (OR logic within category)
     if (activeFilters.historicalPeriod?.length > 0) {
       filtered = filtered.filter(e =>
-        activeFilters.historicalPeriod.includes(e['Historical Period'])
+        e['Historical Period'] && activeFilters.historicalPeriod.includes(e['Historical Period'].toLowerCase())
       );
     }
 
@@ -116,33 +116,29 @@ export function useEditionsData() {
     }
 
 
-    // Apply language filter (OR logic, exact match or substring)
+    // Apply language filter (OR logic, exact match on split values)
     if (activeFilters.language?.length > 0) {
       filtered = filtered.filter(e => {
-        const lang = (e.Language || '').toLowerCase();
-        return activeFilters.language.some(l => lang && lang.includes(l.toLowerCase()));
+        const langs = (e.Language || '').toLowerCase().split(/[,;]+/).map(l => l.trim());
+        return activeFilters.language.some(l => langs.includes(l));
       });
     }
 
-    // Apply writing support filter (OR logic, exact match or substring)
+    // Apply writing support filter (OR logic, exact match on split values)
     if (activeFilters.writingSupport?.length > 0) {
       filtered = filtered.filter(e => {
-        const ws = (e['Writing support'] || '').toLowerCase();
-        return activeFilters.writingSupport.some(w => ws && ws.includes(w.toLowerCase()));
+        const supports = (e['Writing support'] || '').toLowerCase().split(/[,;]+/).map(s => s.trim());
+        return activeFilters.writingSupport.some(w => supports.includes(w));
       });
     }
 
-    // Apply keywords filter (OR logic, substring match)
+    // Apply keywords filter (OR logic)
     if (activeFilters.keywords?.length > 0) {
       filtered = filtered.filter(e => {
-        const kw = Array.isArray(e.Keywords) ? e.Keywords.map(k => k.toLowerCase()) : (e.Keywords || '').toLowerCase();
-        return activeFilters.keywords.some(keyword => {
-          if (Array.isArray(kw)) {
-            return kw.some(k => k.includes(keyword.toLowerCase()));
-          } else {
-            return kw.includes(keyword.toLowerCase());
-          }
-        });
+        const keywords = (e.Keywords || '').toLowerCase().split('#').map(k => k.trim());
+        return activeFilters.keywords.some(filterKeyword =>
+          keywords.includes(filterKeyword)
+        );
       });
     }
 

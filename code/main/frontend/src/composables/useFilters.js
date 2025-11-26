@@ -16,7 +16,11 @@ const filters = reactive({
 
 export function useFilters() {
   const updateFilter = (filterName, value) => {
-    filters[filterName] = value;
+    if (Array.isArray(value)) {
+      filters[filterName] = value.map(v => typeof v === 'string' ? v.toLowerCase() : v);
+    } else {
+      filters[filterName] = value;
+    }
   };
 
   const resetFilters = () => {

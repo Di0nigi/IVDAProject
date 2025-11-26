@@ -52,6 +52,19 @@
           </span>
         </button>
         <button
+          v-for="keyword in splitKeywords(edition.Keywords)"
+          :key="'keyword-' + keyword"
+          class="tag-button summary-pill"
+          @click="handleTagClick(keyword, 'keyword')"
+          :class="getTagClass(keyword, 'keyword')"
+        >
+          {{ keyword }}<span v-if="getTagClass(keyword, 'keyword') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <button
           v-if="edition['Historical Period']"
           class="tag-button summary-pill"
           @click="handleTagClick(edition['Historical Period'], 'period')"
@@ -178,23 +191,34 @@ function relScore(){
 
 function splitTags(val) {
   if (!val) return [];
-  return String(val).split(/[,;]+/).map(t => t.trim()).filter(Boolean);
+  return String(val).toLowerCase().split(/[,;]+/).map(t => t.trim()).filter(Boolean);
+}
+
+function splitKeywords(val) {
+  if (!val) return [];
+  return String(val).toLowerCase().split('#').map(t => t.trim()).filter(Boolean);
 }
 
 function handleTagClick(tag, category) {
-  let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : category));
+  let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : (category === 'keyword' ? 'keywords' : category)));
+  const lowercasedTag = typeof tag === 'string' ? tag.toLowerCase() : tag;
   let current = [...activeFilters[filterKey]];
-  if (!current.includes(tag)) {
-    current.push(tag);
+  if (!current.includes(lowercasedTag)) {
+    current.push(lowercasedTag);
   } else {
-    current = current.filter(t => t !== tag);
+    current = current.filter(t => t !== lowercasedTag);
   }
   updateFilter(filterKey, current);
 }
 
 function getTagClass(tag, category) {
-  let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : category));
-  return activeFilters[filterKey].includes(tag) ? 'tag-selected' : 'tag-neutral';
+  let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : (category === 'keyword' ? 'keywords' : category)));
+  const lowercasedTag = typeof tag === 'string' ? tag.toLowerCase() : tag;
+  const isSelected = activeFilters[filterKey] && activeFilters[filterKey].includes(lowercasedTag);
+  let hasSelectionInCategory = activeFilters[filterKey] && activeFilters[filterKey].length > 0;
+  if (isSelected) return 'tag-selected';
+  if (hasSelectionInCategory) return 'tag-muted';
+  return 'tag-neutral';
 }
 </script>
 
