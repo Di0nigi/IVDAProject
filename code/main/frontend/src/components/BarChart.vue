@@ -1,12 +1,12 @@
 <template>
   <div class="bar-chart-container">
     <!-- Settings gear icon -->
-    <button @click="showSettings = !showSettings" class="settings-button" :title="showSettings ? 'Show Chart' : 'Chart Settings'">
+    <button @click="showSettings = !showSettings" :class="['settings-button', { 'back-mode': showSettings }]" :title="showSettings ? 'Show Chart' : 'Chart Settings'">
       <svg v-if="!showSettings" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="3"></circle>
         <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
       </svg>
-      <span v-else style="background-color: #f44336; color: white; padding: 4px 8px; border-radius: 4px;">Back</span>
+      <span v-else>Back</span>
     </button>
 
     <div v-if="!showSettings" class="chart-view">
@@ -205,102 +205,269 @@ const chartOptions = computed(() => ({
 </script>
 
 <style scoped>
+
 .bar-chart-container {
+
   width: 100%;
+
   height: 100%;
+
   position: relative;
+
   display: flex;
+
   flex-direction: column;
+
 }
+
+
+
+/* Base style for the button, primarily for the 'gear' state */
 
 .settings-button {
+
   position: absolute;
+
   top: 8px;
+
   right: 8px;
+
   width: 28px;
+
   height: 28px;
+
   border: 1px solid #d5d9df;
+
+  border-radius: 8px; /* Rounded square */
+
   background: white;
-  border-radius: 6px;
+
   cursor: pointer;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   transition: all 0.2s;
+
   z-index: 10;
+
   padding: 0;
+
+  color: #555; /* Default color for SVG */
+
 }
 
-.settings-button:hover {
-  background: #f5f5f5;
-  border-color: #999;
-  filter: brightness(80%);
+
+
+/* Overrides when in 'back-mode' */
+
+.settings-button.back-mode {
+
+  width: auto;
+
+  height: auto;
+
+  padding: 4px 12px;
+
+  border-radius: 16px; /* Pill shape */
+
+  border: none;
+
+  background: #f44336;
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+}
+
+
+
+/* Hover effect specifically for the 'gear' state */
+
+
+
+.settings-button:not(.back-mode):hover {
+
+
+
+  transform: scale(0.95);
+
+
+
+  border-color: #4a90e2;
+
+
+
+  background-color: #eaf2fa;
+
+
+
+}
+
+
+
+.settings-button:not(.back-mode):hover svg {
+
+
+
+  color: #4a90e2;
+
+
+
+}
+
+
+
+
+
+
+
+/* Hover effect specifically for the 'back' state */
+
+
+
+.settings-button.back-mode:hover {
+
+
+
   transform: scale(1.05);
+
+
+
+  filter: brightness(80%);
+
+
+
 }
 
-.settings-button svg {
-  color: #555;
-}
+
 
 .chart-view {
+
   position: absolute;
+
   top: 0;
+
   left: 0;
+
   width: 100%;
+
   height: 100%;
+
 }
+
+
 
 .settings-view {
+
   position: absolute;
+
   top: 0;
+
   left: 0;
+
   width: 100%;
+
   height: 100%;
+
   display: flex;
+
   flex-direction: column;
+
   gap: 20px;
+
   padding: 40px 20px 20px 20px;
+
   box-sizing: border-box;
+
   overflow-y: auto;
+
 }
+
+
 
 .settings-view h3 {
+
   margin: 0;
+
   font-size: 16px;
+
   font-weight: 600;
+
   color: #333;
+
 }
+
+
 
 .selector-group {
+
   display: flex;
+
   flex-direction: column;
+
   gap: 8px;
+
 }
+
+
 
 label {
+
   font-size: 13px;
+
   font-weight: 500;
+
   color: #555;
+
 }
+
+
 
 .selector {
+
   padding: 8px 12px;
+
   border: 1px solid #d5d9df;
+
   border-radius: 6px;
+
   background: white;
+
   font-size: 13px;
+
   color: #333;
+
   cursor: pointer;
+
   transition: border-color 0.2s;
+
 }
+
+
 
 .selector:hover {
+
   border-color: #999;
+
 }
 
+
+
 .selector:focus {
+
   outline: none;
+
   border-color: #4a90e2;
+
   box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+
 }
+
 </style>

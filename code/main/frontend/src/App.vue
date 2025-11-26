@@ -11,11 +11,13 @@
 
     <!-- Column 2 (middle) -->
     <div class="boxMlPlots network"><NetworkPlot /></div>
-    <div class="box sliders">
-      <SlidersPanel />
-    </div>
-    <div class="box tag-filter">
-      <NewTagFilter />
+    <div class="box filters-panel">
+      <div style="flex: 3;">
+        <NewTagFilter />
+      </div>
+      <div style="flex: 1;">
+        <SlidersPanel />
+      </div>
     </div>
     <div class="box timeline">
       <TimelinePlot />
@@ -123,14 +125,11 @@ const selectedEdition = ref(null)
   grid-row: 1;
 }
 
-.sliders {
-  grid-column: 5;
+.filters-panel {
+  grid-column: 2 / 6;
   grid-row: 4;
-}
-
-.tag-filter {
-  grid-column: 2 / 5;
-  grid-row: 4;
+  display: flex;
+  gap: 20px;
 }
 
 .timeline {

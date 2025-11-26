@@ -177,7 +177,7 @@ const getTagClass = (tag, category) => {
   gap: 4px;
   background: white;
   border: 1px solid #d5d9df;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 4px;
   overflow: hidden;
   height: 140px; /* Adjust as needed for your layout */

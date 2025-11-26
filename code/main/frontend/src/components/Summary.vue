@@ -396,17 +396,19 @@ a.tag-button:hover {
 
 }
 .back-button {
-  background-color: red;
+  background-color: #f44336;
   color: white;
   border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 4px 12px;
+  border-radius: 16px;
   cursor: pointer;
   transition: all 0.2s;
   position: absolute;
   top: 16px;
   right: 16px;
   z-index: 10;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .back-button:hover {
