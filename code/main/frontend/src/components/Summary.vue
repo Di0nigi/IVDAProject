@@ -82,16 +82,16 @@
         </button>
       </div>
     
-    <div style="margin-top:8px;margin-bottom:4px;">
-      <span style="display:inline-block;margin-right:18px;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</span>
-      <span style="display:inline-block;margin-right:18px;"><strong>Author:</strong> {{ edition['author'] }}</span>
-      <span style="display:inline-block;"><strong>Philosophical/Artistic Direction:</strong> {{ edition['phil_direction'] }}</span>
-    </div>
-    <p><strong>OCR or keyed?:</strong> {{ edition['OCR or keyed?'] }}</p>
-    <div class="row">
-    <p ><strong>Time/Century:</strong> {{ edition['Time/Century'] }}</p>
-    </div>
     <p> {{ edition.Content_Description }}</p>
+    <div style="margin-top:8px;margin-bottom:4px;">
+      <p style="margin:0;text-align:left;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>
+      <p style="margin:0;text-align:left;"><strong>Author:</strong> {{ edition['author'] }}</p>
+      <p style="margin:0;text-align:left;"><strong>Philosophical/Artistic Direction:</strong> {{ edition['phil_direction'] }}</p>
+    </div>
+    <div style="margin-top:2px;margin-bottom:2px;text-align:left;">
+      <p style="margin:0;text-align:left;"><strong>OCR or keyed?:</strong> {{ edition['OCR or keyed?'] }}</p>
+      <p style="margin:0;text-align:left;"><strong>Time/Century:</strong> {{ edition['Time/Century'] }}</p>
+    </div>
     </div>
   </div>
   </div>
