@@ -133,27 +133,29 @@ const reliabilityPillStyle = computed(() => {
   const clamped = Math.max(0, Math.min(100, s));
   // Interpolate color: 0=red, 50=yellow, 100=green
   let r, g, b;
+  // Avoid very bright colors by reducing max intensity
+  const maxIntensity = 180;
   if (clamped <= 50) {
     // Red to Yellow
-    r = 255;
-    g = Math.round(255 * (clamped / 50));
+    r = maxIntensity;
+    g = Math.round(maxIntensity * (clamped / 50));
     b = 0;
   } else {
     // Yellow to Green
-    r = Math.round(255 * (1 - (clamped - 50) / 50));
-    g = 255;
+    r = Math.round(maxIntensity * (1 - (clamped - 50) / 50));
+    g = maxIntensity;
     b = 0;
   }
   return {
-    background: `rgb(${r},${g},${b})`,
-    color: '#fff',
+    background: '#e0e0e0', // grey like other pills
+    color: '#333',
     display: 'inline-flex',
     alignItems: 'center',
     height: '28px',
     fontWeight: 600,
     verticalAlign: 'middle',
     borderRadius: '16px',
-    border: 'none',
+    border: `4px solid rgb(${r},${g},${b})`,
     padding: '0 14px',
     boxSizing: 'border-box',
   };
