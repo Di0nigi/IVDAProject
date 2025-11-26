@@ -93,6 +93,7 @@ function getReliabilityColor(edition) {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .search-bar {
@@ -127,6 +128,7 @@ function getReliabilityColor(edition) {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  overflow-x: hidden;
 }
 
 .source-list a {
@@ -153,6 +155,7 @@ function getReliabilityColor(edition) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 0;
 }
 
 .dots-container {
@@ -201,5 +204,12 @@ function getReliabilityColor(edition) {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s;
+}
+.list-item-content span {
+  display: block;
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>

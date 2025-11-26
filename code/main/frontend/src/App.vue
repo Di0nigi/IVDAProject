@@ -12,10 +12,10 @@
     <!-- Column 2 (middle) -->
     <div class="boxMlPlots network"><NetworkPlot /></div>
     <div class="box filters-panel">
-      <div style="flex: 3;">
+      <div style="flex: 4.5; min-width: 220px;">
         <NewTagFilter />
       </div>
-      <div style="flex: 1;">
+      <div style="flex: 1; min-width: 140px;">
         <SlidersPanel />
       </div>
     </div>
