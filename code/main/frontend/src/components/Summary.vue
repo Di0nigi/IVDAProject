@@ -26,7 +26,7 @@
           :href="edition['URL']"
           target="_blank"
           rel="noopener noreferrer"
-          class="tag-button summary-pill"
+          class="tag-button summary-pill visit-website-button"
           style="background:#1976d2; color:#fff; display:inline-flex; align-items:center; height:24px; margin-right:8px; vertical-align:middle;"
         >
           <span style="display:flex; align-items:center; justify-content:center; width:100%; height:100%;">Visit Website
@@ -416,5 +416,9 @@ a.tag-button:hover {
 
 .reliability-pill:hover {
   transform: scale(0.95);
+}
+
+.tag-button.visit-website-button:hover {
+  filter: brightness(120%);
 }
 </style>
