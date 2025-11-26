@@ -43,12 +43,19 @@
           v-for="lang in splitTags(edition.Language)"
           :key="'lang-' + lang"
           class="tag-button summary-pill"
-          @click="handleTagClick(lang, 'language')"
+          @click="toggleTag(lang, 'language')"
           :class="getTagClass(lang, 'language')"
         >
-          {{ lang.toUpperCase() }}<span v-if="getTagClass(lang, 'language') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+          <span>{{ lang.toUpperCase() }}</span>
+          <span v-if="getTagStatus(lang, 'language') === 'selected'" style="display:inline-flex;align-items:center;">
             <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span v-if="getTagStatus(lang, 'language') === 'excluded'" style="display:inline-flex;align-items:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </span>
         </button>
@@ -56,12 +63,19 @@
           v-for="support in splitTags(edition['Writing support'])"
           :key="'support-' + support"
           class="tag-button summary-pill"
-          @click="handleTagClick(support, 'support')"
+          @click="toggleTag(support, 'support')"
           :class="getTagClass(support, 'support')"
         >
-          {{ support }}<span v-if="getTagClass(support, 'support') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+          <span>{{ support }}</span>
+          <span v-if="getTagStatus(support, 'support') === 'selected'" style="display:inline-flex;align-items:center;">
             <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span v-if="getTagStatus(support, 'support') === 'excluded'" style="display:inline-flex;align-items:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </span>
         </button>
@@ -69,12 +83,19 @@
           v-for="keyword in splitKeywords(edition.Keywords)"
           :key="'keyword-' + keyword"
           class="tag-button summary-pill"
-          @click="handleTagClick(keyword, 'keyword')"
+          @click="toggleTag(keyword, 'keyword')"
           :class="getTagClass(keyword, 'keyword')"
         >
-          {{ keyword }}<span v-if="getTagClass(keyword, 'keyword') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+          <span>{{ keyword }}</span>
+          <span v-if="getTagStatus(keyword, 'keyword') === 'selected'" style="display:inline-flex;align-items:center;">
             <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span v-if="getTagStatus(keyword, 'keyword') === 'excluded'" style="display:inline-flex;align-items:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </span>
         </button>
@@ -82,12 +103,19 @@
           v-for="period in splitTags(edition['Historical Period'])"
           :key="'period-' + period"
           class="tag-button summary-pill"
-          @click="handleTagClick(period, 'period')"
+          @click="toggleTag(period, 'period')"
           :class="getTagClass(period, 'period')"
         >
-          {{ period }}<span v-if="getTagClass(period, 'period') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+          <span>{{ period }}</span>
+          <span v-if="getTagStatus(period, 'period') === 'selected'" style="display:inline-flex;align-items:center;">
             <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span v-if="getTagStatus(period, 'period') === 'excluded'" style="display:inline-flex;align-items:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </span>
         </button>
@@ -242,8 +270,8 @@ const openAccessText = computed(() => {
 });
 
 
-const { activeFilters, updateFilter } = useFilters();
-const showReliability = ref(false);
+const { activeFilters, toggleTagFilter } = useFilters();
+
 
 function relScore(){
 
@@ -267,26 +295,32 @@ function splitKeywords(val) {
   return String(val).toLowerCase().split('#').map(t => t.trim()).filter(Boolean);
 }
 
-function handleTagClick(tag, category) {
-  let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : (category === 'keyword' ? 'keywords' : category)));
-  const lowercasedTag = typeof tag === 'string' ? tag.toLowerCase() : tag;
-  let current = [...activeFilters[filterKey]];
-  if (!current.includes(lowercasedTag)) {
-    current.push(lowercasedTag);
-  } else {
-    current = current.filter(t => t !== lowercasedTag);
-  }
-  updateFilter(filterKey, current);
+const getFilterKey = (category) => {
+  return category === 'period' ? 'historicalPeriod' :
+         category === 'language' ? 'language' :
+         category === 'support' ? 'writingSupport' :
+         'keywords';
 }
 
-function getTagClass(tag, category) {
-  let filterKey = category === 'period' ? 'historicalPeriod' : (category === 'language' ? 'language' : (category === 'support' ? 'writingSupport' : (category === 'keyword' ? 'keywords' : category)));
-  const lowercasedTag = typeof tag === 'string' ? tag.toLowerCase() : tag;
-  const isSelected = activeFilters[filterKey] && activeFilters[filterKey].includes(lowercasedTag);
-  let hasSelectionInCategory = activeFilters[filterKey] && activeFilters[filterKey].length > 0;
-  if (isSelected) return 'tag-selected';
-  if (hasSelectionInCategory) return 'tag-muted';
-  return 'tag-neutral';
+const toggleTag = (tag, category) => {
+  const filterKey = getFilterKey(category);
+  toggleTagFilter(filterKey, tag.toLowerCase());
+};
+
+const getTagStatus = (tag, category) => {
+    const filterKey = getFilterKey(category);
+    const lowercasedId = tag.toLowerCase();
+    const tagState = activeFilters[filterKey].find(t => t.name === lowercasedId);
+    if (tagState) return tagState.status;
+
+    const hasSelectionInCategory = activeFilters[filterKey].some(t => t.status === 'selected');
+    if (hasSelectionInCategory) return 'muted';
+    return 'neutral';
+}
+
+const getTagClass = (tag, category) => {
+    const status = getTagStatus(tag, category);
+    return `tag-${status}`;
 }
 </script>
 
@@ -309,6 +343,7 @@ function getTagClass(tag, category) {
   white-space: nowrap;
   min-height: 20px;
   line-height: 1.2;
+  gap: 6px;
 }
 .tag-button:hover {
   filter: brightness(90%);
@@ -338,6 +373,10 @@ a.tag-button:hover {
   color: white;
   font-size: 12px;
   padding: 1px 10px;
+}
+.tag-excluded {
+  background: #E53935;
+  color: white;
 }
 .tag-muted {
   background: #f5f5f5;

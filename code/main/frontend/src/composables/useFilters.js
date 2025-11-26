@@ -16,10 +16,35 @@ const filters = reactive({
 
 export function useFilters() {
   const updateFilter = (filterName, value) => {
+    const tagFilters = ['historicalPeriod', 'language', 'writingSupport', 'keywords'];
+    if (tagFilters.includes(filterName)) {
+      console.warn(`updateFilter should not be used for ${filterName}. Use toggleTagFilter instead.`);
+      return;
+    }
     if (Array.isArray(value)) {
       filters[filterName] = value.map(v => typeof v === 'string' ? v.toLowerCase() : v);
     } else {
       filters[filterName] = value;
+    }
+  };
+
+  const toggleTagFilter = (filterKey, tag) => {
+    const lowerCaseTag = tag.toLowerCase();
+    const filterArray = filters[filterKey];
+    const existingTagIndex = filterArray.findIndex(t => t.name === lowerCaseTag);
+
+    if (existingTagIndex === -1) {
+      // Not selected -> Selected
+      filterArray.push({ name: lowerCaseTag, status: 'selected' });
+    } else {
+      const existingTag = filterArray[existingTagIndex];
+      if (existingTag.status === 'selected') {
+        // Selected -> Excluded
+        existingTag.status = 'excluded';
+      } else {
+        // Excluded -> Not selected
+        filterArray.splice(existingTagIndex, 1);
+      }
     }
   };
 
@@ -48,12 +73,14 @@ export function useFilters() {
            filters.hasAPI !== null ||
            filters.openAccess !== null ||
            filters.language.length > 0 ||
-           filters.writingSupport.length > 0;
+           filters.writingSupport.length > 0 ||
+           filters.keywords.length > 0;
   });
 
   return {
     activeFilters: filters,
     updateFilter,
+    toggleTagFilter,
     resetFilters,
     hasActiveFilters
   };

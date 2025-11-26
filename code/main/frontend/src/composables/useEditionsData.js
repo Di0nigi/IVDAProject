@@ -62,11 +62,16 @@ export function useEditionsData() {
       });
     }
 
-    // Apply historical period filter (OR logic within category)
+    // Apply historical period filter
     if (activeFilters.historicalPeriod?.length > 0) {
+      const selected = activeFilters.historicalPeriod.filter(f => f.status === 'selected').map(f => f.name);
+      const excluded = activeFilters.historicalPeriod.filter(f => f.status === 'excluded').map(f => f.name);
+
       filtered = filtered.filter(e => {
         const periods = (e['Historical Period'] || '').toLowerCase().split(/[,;]+/).map(p => p.trim());
-        return periods.some(p => activeFilters.historicalPeriod.includes(p));
+        const hasSelected = selected.length === 0 || periods.some(p => selected.includes(p));
+        const hasExcluded = excluded.length > 0 && periods.some(p => excluded.includes(p));
+        return hasSelected && !hasExcluded;
       });
     }
 
@@ -117,30 +122,42 @@ export function useEditionsData() {
       }
     }
 
-
-    // Apply language filter (OR logic, exact match on split values)
+    // Apply language filter
     if (activeFilters.language?.length > 0) {
+      const selected = activeFilters.language.filter(f => f.status === 'selected').map(f => f.name);
+      const excluded = activeFilters.language.filter(f => f.status === 'excluded').map(f => f.name);
+
       filtered = filtered.filter(e => {
         const langs = (e.Language || '').toLowerCase().split(/[,;]+/).map(l => l.trim());
-        return activeFilters.language.some(l => langs.includes(l));
+        const hasSelected = selected.length === 0 || langs.some(l => selected.includes(l));
+        const hasExcluded = excluded.length > 0 && langs.some(l => excluded.includes(l));
+        return hasSelected && !hasExcluded;
       });
     }
 
-    // Apply writing support filter (OR logic, exact match on split values)
+    // Apply writing support filter
     if (activeFilters.writingSupport?.length > 0) {
+      const selected = activeFilters.writingSupport.filter(f => f.status === 'selected').map(f => f.name);
+      const excluded = activeFilters.writingSupport.filter(f => f.status === 'excluded').map(f => f.name);
+
       filtered = filtered.filter(e => {
         const supports = (e['Writing support'] || '').toLowerCase().split(/[,;]+/).map(s => s.trim());
-        return activeFilters.writingSupport.some(w => supports.includes(w));
+        const hasSelected = selected.length === 0 || supports.some(s => selected.includes(s));
+        const hasExcluded = excluded.length > 0 && supports.some(s => excluded.includes(s));
+        return hasSelected && !hasExcluded;
       });
     }
 
-    // Apply keywords filter (OR logic)
+    // Apply keywords filter
     if (activeFilters.keywords?.length > 0) {
+      const selected = activeFilters.keywords.filter(f => f.status === 'selected').map(f => f.name);
+      const excluded = activeFilters.keywords.filter(f => f.status === 'excluded').map(f => f.name);
+
       filtered = filtered.filter(e => {
         const keywords = (e.Keywords || '').toLowerCase().split('#').map(k => k.trim());
-        return activeFilters.keywords.some(filterKeyword =>
-          keywords.includes(filterKeyword)
-        );
+        const hasSelected = selected.length === 0 || keywords.some(k => selected.includes(k));
+        const hasExcluded = excluded.length > 0 && keywords.some(k => excluded.includes(k));
+        return hasSelected && !hasExcluded;
       });
     }
 
