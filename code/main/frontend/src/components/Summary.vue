@@ -31,7 +31,11 @@
         @click="handleTagClick(lang, 'language')"
         :class="getTagClass(lang, 'language')"
       >
-        {{ lang }}
+        {{ lang }}<span v-if="getTagClass(lang, 'language') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
       </button>
       <button
         v-for="support in splitTags(edition['Writing support'])"
@@ -40,7 +44,11 @@
         @click="handleTagClick(support, 'support')"
         :class="getTagClass(support, 'support')"
       >
-        {{ support }}
+        {{ support }}<span v-if="getTagClass(support, 'support') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
       </button>
 
       <button
@@ -49,7 +57,11 @@
         @click="handleTagClick(edition['Historical Period'], 'period')"
         :class="getTagClass(edition['Historical Period'], 'period')"
       >
-        {{ edition['Historical Period'] }}
+        {{ edition['Historical Period'] }}<span v-if="getTagClass(edition['Historical Period'], 'period') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;">
+          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
       </button>
     
     <p><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>

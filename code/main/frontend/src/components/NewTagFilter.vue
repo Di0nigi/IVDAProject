@@ -14,7 +14,11 @@
           @click="toggleTag(tag, 'language')"
           :class="getTagClass(tag, 'language')"
         >
-          {{ tag.label }}
+          {{ tag.label }}<span v-if="getTagClass(tag, 'language') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;position:relative;top:3px;">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
         </button>
       </div>
     </div>
@@ -26,7 +30,11 @@
           @click="toggleTag(tag, 'support')"
           :class="getTagClass(tag, 'support')"
         >
-          {{ tag.label }}
+          {{ tag.label }}<span v-if="getTagClass(tag, 'support') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;position:relative;top:3px;">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
         </button>
       </div>
     </div>
@@ -38,7 +46,11 @@
           @click="toggleTag(tag, 'period')"
           :class="getTagClass(tag, 'period')"
         >
-          {{ tag.label }}
+          {{ tag.label }}<span v-if="getTagClass(tag, 'period') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;position:relative;top:3px;">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
         </button>
       </div>
     </div>
@@ -50,7 +62,11 @@
           @click="toggleTag(tag, 'keyword')"
           :class="getTagClass(tag, 'keyword')"
         >
-          {{ tag.label }}
+          {{ tag.label }}<span v-if="getTagClass(tag, 'keyword') === 'tag-selected'" style="margin-left:6px;display:inline-flex;align-items:center;position:relative;top:3px;">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
         </button>
       </div>
     </div>
@@ -89,30 +105,20 @@ const languageTags = [
 const supportTags = [
   { id: 'Manuscript', label: 'Manuscript' },
   { id: 'Letter', label: 'Letter' },
-  { id: 'Manuscript_Print', label: 'Manuscript; Print' },
   { id: 'Codex', label: 'Codex' },
   { id: 'Print', label: 'Print' },
   { id: 'Book', label: 'Book' },
   { id: 'not_provided', label: 'not provided' },
   { id: 'Diary', label: 'Diary' },
   { id: 'Printed_book', label: 'Printed book' },
-  { id: 'Manuscript_Letter', label: 'Manuscript; Letter' },
   { id: 'Journal', label: 'Journal' },
-  { id: 'Manuscript_Book', label: 'Manuscript; Book' },
+
   { id: 'Tablet', label: 'Tablet' },
   { id: 'Print_edition', label: 'Print edition' },
-  { id: 'List_diary_entry', label: 'List; diary entry' },
-  { id: 'Printed_book_Manuscript', label: 'Printed book; Manuscript' },
   { id: 'Novel', label: 'Novel' },
-  { id: 'Manuscript_Codex', label: 'Manuscript; Codex' },
-  { id: 'Letter_postcard', label: 'Letter; postcard' },
-  { id: 'Letter_manuscript', label: 'Letter; manuscript' },
   { id: 'Notebook', label: 'Notebook' },
   { id: 'Inscription', label: 'Inscription' },
-  { id: 'Manuscript_Roll', label: 'Manuscript; Roll' },
-  { id: 'Letter_diary_entry_list', label: 'Letter; diary entry; list' },
   { id: 'Paper', label: 'Paper' },
-  { id: 'Oral_history_interviews_video_audio', label: 'Oral history interviews; video; audio' },
   { id: 'Minutes', label: 'Minutes' },
 ];
 
