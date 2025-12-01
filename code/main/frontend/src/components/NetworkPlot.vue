@@ -10,21 +10,26 @@
 import { Network, DataSet } from "vis-network/standalone";
 import { useEditionsData } from "../composables/useEditionsData";
 
-const emit = defineEmits(['select']);
-
-function selectEdition(id) {
-  const edition = filteredEditions.value.find(e => e.id === id);
-  emit('select', edition);
-}
 
 export default {
+
+emits: ['select'],
 
 networkInstance: null,
 
 data: () => ({
   graphData: {nodes: [], links: []},
+  networkInstance: null,
+  filteredEditions: useEditionsData().filteredEditions
 }),
 methods: {
+
+  selectEdition(id) {
+      const edition = this.filteredEditions.find(e => e.id === id);
+      console.log("edition", edition);
+      this.$emit('select', edition);
+  },
+  
   async fetchData() {
     var reqUrl = 'http://127.0.0.1:5000/texts/graphPoints'
     console.log("reqUrl" + reqUrl)
@@ -35,7 +40,6 @@ methods: {
     this.graphData.nodes = responseData.nodes;
     this.graphData.links = responseData.links;
 
-    // Wait a tick to ensure container is sized
     await this.$nextTick();
     
     const containerWidth = this.$refs.graphContainer.clientWidth;
@@ -122,40 +126,27 @@ methods: {
         enabled: false
       },
     };
-
+    
     this.networkInstance = new Network(this.$refs.graphContainer, data, options);
+
+      this.networkInstance.on('click', (properties) => {
+        const ids = properties.nodes;
+        const clickedNodes = nodes.get(ids);
+        console.log('clicked nodes:', clickedNodes[0].id);
+        if (clickedNodes.length > 0) {
+          this.selectEdition(clickedNodes[0].id);
+        }
+    });
   }
 },
 
   mounted() {
-    this.fetchData()
-
+  this.$nextTick(() => {
+    this.fetchData();
+  });
   },
 }
 
-// function groupToX(group) {
-//   switch(group) {
-//     case 0: return -200;
-//     case 1: return -150;
-//     case 2: return 200;
-//     case 3: return 150;
-//     case 4: return -50;
-//     case 5: return 0;
-//     case 6: return 50;
-//   }
-// }
-
-// function groupToY(group) {
-//   switch(group) {
-//     case 0: return -200;
-//     case 1: return -150;
-//     case 2: return 200;
-//     case 3: return 150;
-//     case 4: return -50;
-//     case 5: return 0;
-//     case 6: return 50;
-//   }
-// }
 
 </script>
 
