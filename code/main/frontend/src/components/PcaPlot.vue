@@ -1,127 +1,154 @@
 <template>
   <div>
     <div>
-      <div id='myScatterPlot' class="myScatterPlot"></div>
+      <div id="myScatterPlot" class="myScatterPlot"></div>
     </div>
   </div>
 </template>
 
-
 <script>
-import Plotly from 'plotly.js/dist/plotly';
+import Plotly from "plotly.js/dist/plotly";
+import { useEditionsData } from "../composables/useEditionsData";
+import { watch } from "vue";
+
 export default {
-data: () => ({
-  ScatterPlotData: {xCoor: [], yCoor: [], labels: []},
-}),
-mounted() {
-  
-
-    
-  this.fetchData()
-},
-methods: {
-  async fetchData() {
-    var reqUrl = 'http://127.0.0.1:5000/texts/scatterPoints'
-    console.log("reqUrl" + reqUrl)
-
-    const response = await fetch(reqUrl)
-    const responseData = await response.json();
-
-    this.ScatterPlotData.xCoor = responseData.xCoor;
-    this.ScatterPlotData.yCoor = responseData.yCoor;
-    this.ScatterPlotData.labels = responseData.labels;
-
-    this.drawScatterPlot("myScatterPlot", this.ScatterPlotData.xCoor, this.ScatterPlotData.yCoor, this.ScatterPlotData.labels)
+  data() {
+    return {
+      ScatterPlotData: { ids: [], xCoor: [], yCoor: [], labels: [] },
+      rawResponseData: null, // store raw data so we can recompute on filter change
+    };
   },
 
-drawScatterPlot(containerId, x, y, labels) {
-    const parent = this.$el.parentElement;
-    const parentWidth = parent.clientWidth;
-    const parentHeight = parent.clientHeight;
+  created() {
+    const { filteredEditions } = useEditionsData();
+    this.filteredEditions = filteredEditions;
 
-    console.log(parentWidth);
-    console.log(parentHeight);
-    const uniqueLabels = [...new Set(labels)];
+    // REACTIVE WATCH ON FILTERED EDITIONS
+    watch(
+      this.filteredEditions,
+      () => {
+        if (this.rawResponseData) {
+          this.processScatterData();
+          this.drawScatterPlot(
+            "myScatterPlot",
+            this.ScatterPlotData.xCoor,
+            this.ScatterPlotData.yCoor,
+            this.ScatterPlotData.labels
+          );
+        }
+      },
+      { deep: true }
+    );
+  },
 
-    const colorMap = {};
-    const colors = uniqueLabels.map((_, i) => {
+  mounted() {
+    this.fetchData();
+  },
+
+  methods: {
+    async fetchData() {
+      const reqUrl = "http://127.0.0.1:5000/texts/scatterPoints";
+
+      const response = await fetch(reqUrl);
+      const responseData = await response.json();
+
+      // store raw response for recomputation
+      this.rawResponseData = responseData;
+
+      // initial compute
+      this.processScatterData();
+      this.drawScatterPlot(
+        "myScatterPlot",
+        this.ScatterPlotData.xCoor,
+        this.ScatterPlotData.yCoor,
+        this.ScatterPlotData.labels
+      );
+    },
+
+    processScatterData() {
+      if (!this.rawResponseData) return;
+
+      const responseData = JSON.parse(JSON.stringify(this.rawResponseData));
+
+      const arr = [...this.filteredEditions.value].sort((a, b) => a.id - b.id);
+      responseData.ids = responseData.ids.sort((a, b) => a - b);
+
+      // RESET before recomputing (important for reactivity!)
+      this.ScatterPlotData.ids = [];
+      this.ScatterPlotData.xCoor = [];
+      this.ScatterPlotData.yCoor = [];
+      this.ScatterPlotData.labels = [];
+
+      let i = 0; // filtered editions
+      let j = 0; // response IDs
+
+      while (i < arr.length && j < responseData.ids.length) {
+        if (arr[i].id === responseData.ids[j]) {
+          this.ScatterPlotData.xCoor.push(responseData.xCoor[j]);
+          this.ScatterPlotData.yCoor.push(responseData.yCoor[j]);
+          this.ScatterPlotData.labels.push(responseData.labels[j]);
+          i++;
+          j++;
+        } else if (arr[i].id < responseData.ids[j]) {
+          i++;
+        } else {
+          j++;
+        }
+      }
+    },
+
+    drawScatterPlot(containerId, x, y, labels) {
+      const parent = this.$el.parentElement;
+      const parentWidth = parent.clientWidth;
+      const parentHeight = parent.clientHeight;
+
+      const uniqueLabels = [...new Set(labels)];
+
+      const colorMap = {};
+      const colors = uniqueLabels.map((_, i) => {
         const hue = (i * 137.508) % 360;
         return `hsl(${hue}, 70%, 50%)`;
-    });
-    uniqueLabels.forEach((label, idx) => {
+      });
+      uniqueLabels.forEach((label, idx) => {
         colorMap[label] = colors[idx];
-    });
+      });
 
-    const pointColors = labels.map(l => colorMap[l]);
+      const pointColors = labels.map((l) => colorMap[l]);
 
-    const trace = {
-        x: x,
-        y: y,
+      const trace = {
+        x,
+        y,
         mode: "markers",
         type: "scatter",
-        marker: {
-            color: pointColors,
-            size: 8
+        marker: { color: pointColors, size: 8 },
+        text: labels,
+      };
+
+      const layout = {
+        width: parentWidth,
+        height: parentHeight,
+        margin: { l: 0, r: 0, t: 0, b: 0 },
+        autosize: true,
+        xaxis: {
+          zeroline: true,
+          showline: true,
+          linecolor: "black",
+          anchor: "y",
         },
-        text: labels
-    };
+        yaxis: {
+          zeroline: true,
+          showline: true,
+          linecolor: "black",
+          anchor: "x",
+        },
+      };
 
-    const xMin = Math.min(...x);
-    const xMax = Math.max(...x);
-    const yMin = Math.min(...y);
-    const yMax = Math.max(...y);
-    const xMin2 = Math.min(xMin, 0);
-    const xMax2 = Math.max(xMax, 0);
-    const yMin2 = Math.min(yMin, 0);
-    const yMax2 = Math.max(yMax, 0);
-
-    const layout = {
-      width: parentWidth,
-      height: parentHeight,
-
-
-      margin: { l: 0, r: 0, t: 0, b: 0 },
-
-  autosize: true,
-
-xaxis: {
-  /*fixedrange: false,
-  autorange: false,
-    range: [-5, 25], */
-    zeroline: true,
-    showline: true,
-    label: false,
-    linecolor: "black",
-    anchor: "y"     // force crossing
+      const config = { displayModeBar: true, responsive: true };
+      Plotly.newPlot(containerId, [trace], layout, config);
+    },
   },
-  yaxis: {
-    /*autorange: false,
-    fixedrange: false ,
-    range: [-15, 5], */
-    zeroline: true,
-    showline: true,
-    label: false,
-    linecolor: "black",
-    anchor: "x"     // force crossing
-  }
-    
-    };
-
-  const config = {
-    displayModeBar: true,
-    responsive: true
 };
-
-
-    Plotly.newPlot(containerId, [trace], layout, config);
-}
-}
-}
 </script>
 
 <style>
-
-
-
 </style>
-

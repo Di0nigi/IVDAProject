@@ -116,7 +116,7 @@ function getReliabilityColor(edition) {
 .search-bar input:focus {
   border-color: #4a90e2;
 }
-
+ 
 .source-list {
   list-style: none;
   padding: 0;

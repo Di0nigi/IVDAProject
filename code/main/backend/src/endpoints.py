@@ -3,6 +3,7 @@ from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from .mlUtils import visModel,dataEncoder,ScoreModel
+from .filterning import filterModel
 
 app = Flask(__name__)
 CORS(app)
@@ -18,6 +19,12 @@ texts = db["editions"]
 
 
 scM = ScoreModel()
+fM = filterModel()
+
+#@app.route("/texts/filter", methods=["POST"])
+#def setFilterParams():
+#    return
+
 
 # To get all the editions in a list
 

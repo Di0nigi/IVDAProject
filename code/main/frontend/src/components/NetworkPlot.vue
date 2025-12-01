@@ -10,12 +10,7 @@
 import { Network, DataSet } from "vis-network/standalone";
 import { useEditionsData } from "../composables/useEditionsData";
 
-const emit = defineEmits(['select']);
 
-function selectEdition(id) {
-  const edition = filteredEditions.value.find(e => e.id === id);
-  emit('select', edition);
-}
 
 export default {
 
