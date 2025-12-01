@@ -29,9 +29,6 @@ methods: {
     this.graphData.nodes = responseData.nodes;
     this.graphData.links = responseData.links;
 
-    // console.log("graph data : ")
-    // console.log(this.graphData.nodes[1]["label"])
-
     // Wait a tick to ensure container is sized
     await this.$nextTick();
     
@@ -40,28 +37,68 @@ methods: {
     
     console.log("Container dimensions:", containerWidth, containerHeight);
 
+    const parent = this.$el.parentElement;
+    const rectWidth = parent.clientWidth;
+    const rectHeight = parent.clientHeight;
+
+    const groupPositions = {
+      0: { x: -rectWidth/2 + rectWidth/4, y: -rectHeight/2 + rectHeight/4 },
+      1: { x: rectWidth/2 - rectWidth/4, y: -rectHeight/2 + rectHeight/4 },  
+      2: { x: 0, y: -rectHeight/2 + rectHeight/4 },                           
+      3: { x: -rectWidth/4, y: 0 },                                           
+      4: { x: rectWidth/4, y: 0 },                                            
+      5: { x: -rectWidth/4, y: rectHeight/2 - rectHeight/4 },                 
+      6: { x: rectWidth/4, y: rectHeight/2 - rectHeight/4 },                 
+    };
+
     const nodes = new DataSet(
       this.graphData.nodes.map(n => ({
         ...n,
         group: n.label,
-        size: 50
+        size: 100,
+        x: groupPositions[n.label]?.x,
+        y: groupPositions[n.label]?.y,
         
       }))
     );
-    const edges = new DataSet(this.graphData.links.slice(0,1000));
-    console.log(nodes)
+
+
+
+    const gravityNodes = [
+    { id: "gravity_0", x: -200, y: -200, fixed: true, physics: false, hidden: true },
+    { id: "gravity_1", x: -150, y: -150, fixed: true, physics: false, hidden: true },
+    { id: "gravity_2", x: 200, y: 200, fixed: true, physics: false, hidden: true },
+    { id: "gravity_3", x: 150, y: 150, fixed: true, physics: false, hidden: true },
+    { id: "gravity_4", x: -50, y: -50, fixed: true, physics: false, hidden: true },
+    { id: "gravity_5", x: 0, y: 0, fixed: true, physics: false, hidden: true },
+    { id: "gravity_6", x: 50, y: 50, fixed: true, physics: false, hidden: true },
+    ];
+
+    const extraEdges = this.graphData.nodes.map(n => ({
+      from: n.id,
+      to: "gravity_" + n.label,
+      hidden: true,
+      physics: true
+    }));
+
+    const edges = new DataSet(this.graphData.links.slice(5000,6000));
+    console.log(nodes) 
+
+    nodes.add(gravityNodes);
+    edges.add(extraEdges);
 
     const data = { nodes, edges };
     const options = {
       nodes:{
         shape : 'square',
-        size: 60.6
-        
-       
+        size: 100
+      },
+      edges: {
+        width: 2
       },
       layout: {
         improvedLayout: false
-      },
+      },   
       physics: {
         enabled: true,
         solver: "forceAtlas2Based", 
@@ -72,12 +109,21 @@ methods: {
           springConstant: 0.005,       
           damping: 0.4,               
           avoidOverlap: 0.9,
-             
         },
         stabilization: {
           iterations: 500,            
           updateInterval: 25
-        }
+        },
+      },
+      groups: {
+      0: { physics: { springLength: 1000, springConstant: 500 } },
+      1: { physics: { springLength: 1000, springConstant: 500 } },
+      2: { physics: { springLength: 1000, springConstant: 500 } },
+      3: { physics: { springLength: 1000, springConstant: 500 } },
+      4: { physics: { springLength: 1000, springConstant: 500 } },
+      5: { physics: { springLength: 1000, springConstant: 500 } },
+      6: { physics: { springLength: 1000, springConstant: 500 } }
+      
       }
     };
 
@@ -90,6 +136,31 @@ methods: {
 
   },
 }
+
+// function groupToX(group) {
+//   switch(group) {
+//     case 0: return -200;
+//     case 1: return -150;
+//     case 2: return 200;
+//     case 3: return 150;
+//     case 4: return -50;
+//     case 5: return 0;
+//     case 6: return 50;
+//   }
+// }
+
+// function groupToY(group) {
+//   switch(group) {
+//     case 0: return -200;
+//     case 1: return -150;
+//     case 2: return 200;
+//     case 3: return 150;
+//     case 4: return -50;
+//     case 5: return 0;
+//     case 6: return 50;
+//   }
+// }
+
 </script>
 
 <style scoped>
