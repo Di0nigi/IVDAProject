@@ -7,6 +7,7 @@
 
 <script>
 
+
 import { Network, DataSet } from "vis-network/standalone";
 import { useEditionsData } from "../composables/useEditionsData";
 
@@ -93,6 +94,7 @@ methods: {
         return {
           ...n,
           group: n.label,
+
           size: 8,
           x,
           y,
