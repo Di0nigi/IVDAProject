@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-from .mlUtils import visModel,dataEncoder
+from .mlUtils import visModel,dataEncoder,ScoreModel
 
 app = Flask(__name__)
 CORS(app)
@@ -15,6 +15,9 @@ client = MongoClient("mongodb://localhost:27017/")
 db = client["DigitalEditions"]
  
 texts = db["editions"]    
+
+
+scM = ScoreModel()
 
 # To get all the editions in a list
 
@@ -127,7 +130,9 @@ def getAndComputeScatterPoints():
 
     labs , points = vM.train(encoded,mode="d")
 
-    ret = {"labels":labs.tolist(),"xCoor":points[0].tolist(),"yCoor":points[1].tolist()}
+    ids = [elem["id"] for elem in descriptionLists]
+
+    ret = {"ids":ids ,"labels":labs.tolist(),"xCoor":points[0].tolist(),"yCoor":points[1].tolist()}
     #ret={}
 
     #dc.saveData(encoded, "descritpionEmbed", client, db, texts)
@@ -136,6 +141,18 @@ def getAndComputeScatterPoints():
 
 
     return jsonify(ret)
+
+
+# to compute scores
+
+@app.route("/texts/reliability",methods = ["POST"])
+def setScoreParams():
+    return
+
+@app.route("/texts/reliability/<id>",methods = ["GET"])
+def getScores():
+    return
+
 
 # to get tags
 
@@ -170,13 +187,6 @@ def getEditionTags(id):
     ret = {"tags": keywords}
 
     return jsonify(ret)
-
-
-
-
-
-
-
 
 
 # To get titles

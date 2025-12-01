@@ -49,7 +49,7 @@ methods: {
       }))
     );
     const edges = new DataSet(this.graphData.links.slice(0,1000));
-    console.log(nodes)
+    //console.log(nodes)
 
     const data = { nodes, edges };
     const options = {

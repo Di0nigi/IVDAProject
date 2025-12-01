@@ -75,7 +75,7 @@ export function useEditionsData() {
       });
     }
 
-    // Apply scholarly filter
+    // Apply scholarly filter 
     if (activeFilters.scholarly !== null) {
       filtered = filtered.filter(e => e.Scholarly === activeFilters.scholarly);
     }
