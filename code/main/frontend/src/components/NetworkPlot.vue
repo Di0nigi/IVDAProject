@@ -10,6 +10,7 @@
 
 import { Network, DataSet } from "vis-network/standalone";
 import { useEditionsData } from "../composables/useEditionsData";
+import { watch, onMounted, nextTick } from "vue";
 
 
 export default {
@@ -19,30 +20,53 @@ emits: ['select'],
 networkInstance: null,
 
 data: () => ({
+  fullGraphData: {nodes: [], links: []},
   graphData: {nodes: [], links: []},
   networkInstance: null,
-  filteredEditions: useEditionsData().filteredEditions
+  rawResponseData: null
 }),
+
+computed: {
+  filteredEditions() {
+    return useEditionsData().filteredEditions.value
+  }
+},
+
+
+watch: {
+  filteredEditions: {
+    handler(newVal) {
+      if (this.rawResponseData) {
+        this.networkInstance.destroy();
+        this.$refs.graphContainer.innerHTML = "";
+
+        const filteredIds = new Set(this.filteredEditions.map(e => e.id));
+
+        this.graphData.nodes = this.fullGraphData.nodes.filter(node => filteredIds.has(node.id));
+        this.graphData.links = [...this.fullGraphData.links];
+
+        this.loadGraph();
+      }
+    },
+    deep: true
+  },
+},
+
+async mounted() {
+  await this.fetchData();
+  this.loadGraph();
+},
+
 methods: {
 
   selectEdition(id) {
+      console.log(this.filteredEditions)
       const edition = this.filteredEditions.find(e => e.id === id);
       console.log("edition", edition);
       this.$emit('select', edition);
   },
-  
-  async fetchData() {
-    var reqUrl = 'http://127.0.0.1:5000/texts/graphPoints'
-    console.log("reqUrl" + reqUrl)
 
-    const response = await fetch(reqUrl)
-    const responseData = await response.json();
-
-    this.graphData.nodes = responseData.nodes;
-    this.graphData.links = responseData.links;
-
-    await this.$nextTick();
-    
+  loadGraph() {
     const containerWidth = this.$refs.graphContainer.clientWidth;
     const containerHeight = this.$refs.graphContainer.clientHeight;
     
@@ -94,15 +118,12 @@ methods: {
         return {
           ...n,
           group: n.label,
-
           size: 8,
           x,
           y,
         };
       })
     );
-
-
 
     const edges = new DataSet(this.graphData.links.slice(500,1000));
     console.log(nodes) 
@@ -139,14 +160,23 @@ methods: {
           this.selectEdition(clickedNodes[0].id);
         }
     });
+  },
+  
+  async fetchData() {
+    var reqUrl = 'http://127.0.0.1:5000/texts/graphPoints'
+    console.log("reqUrl" + reqUrl)
+
+    const response = await fetch(reqUrl)
+    const responseData = await response.json();
+
+    this.graphData.nodes = responseData.nodes;
+    this.graphData.links = responseData.links;
+    this.fullGraphData.nodes = responseData.nodes;
+    this.fullGraphData.links = responseData.links;
+    this.rawResponseData = responseData;
   }
 },
 
-  mounted() {
-  this.$nextTick(() => {
-    this.fetchData();
-  });
-  },
 }
 
 

@@ -10,7 +10,7 @@
     </div>
 
     <!-- Column 2 (middle) -->
-    <div class="boxMlPlots network"><NetworkPlot @select="selectedEdition = $event" /></div>
+    <div class="boxMlPlots network"><NetworkPlot @select="selectedEdition = $event" :edition="selectedEdition"/></div>
     <div class="box filters-panel">
       <div style="flex: 4.5; min-width: 220px;">
         <NewTagFilter />
@@ -57,7 +57,7 @@ import SourceList from './components/SourceList.vue';
 import Summary from './components/Summary.vue';
 import PcaPlot from './components/PcaPlot.vue';
 import NetworkPlot from './components/NetworkPlot.vue';
-// import NewNetworkPlot from './components/NewNetworkPlot.vue';
+
 
 const xAttribute = ref('Historical Period');
 const categoryAttribute = ref('Scholarly');
