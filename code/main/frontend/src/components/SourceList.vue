@@ -162,13 +162,15 @@ function getReliabilityColor(edition) {
 .list-item-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   min-width: 0;
 }
 
 .dots-container {
   display: flex;
   gap: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .dot {
