@@ -1,5 +1,6 @@
 <template>
   <div class="network-wrapper">
+    <h3 class="plot-title">Edition Similarity Network</h3>
     <div ref='graphContainer' class="graph-container"></div>
   </div>
 </template>
@@ -183,6 +184,17 @@ methods: {
 </script>
 
 <style scoped>
+.plot-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+}
 .network-wrapper {
   width: 100%;
   height: 100%;

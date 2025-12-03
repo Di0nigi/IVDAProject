@@ -1,5 +1,6 @@
 <template>
   <div class="timeline-container">
+    <h3>Editions Timeline</h3>
     <div class="chart-wrapper">
       <canvas ref="chartCanvas"></canvas>
     </div>

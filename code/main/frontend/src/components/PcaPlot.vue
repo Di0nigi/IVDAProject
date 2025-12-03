@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="plot-wrapper">
+    <h3 class="plot-title">PCA of Edition Embeddings</h3>
     <div>
       <div id="myScatterPlot" class="myScatterPlot"></div>
     </div>
@@ -127,7 +128,7 @@ export default {
       const layout = {
         width: parentWidth,
         height: parentHeight,
-        margin: { l: 0, r: 0, t: 0, b: 0 },
+        margin: { l: 0, r: 0, t: 40, b: 0 },
         autosize: true,
         xaxis: {
           zeroline: true,
@@ -151,4 +152,23 @@ export default {
 </script>
 
 <style>
+</style>
+
+<style scoped>
+.plot-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.plot-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+}
 </style>
