@@ -1,6 +1,9 @@
 <template>
   <div class="network-wrapper">
     <h3 class="plot-title">Edition Similarity Network</h3>
+    <div v-if="updateStatus" class="update-status" :class="updateStatus">
+      {{ updateStatus === 'updating' ? 'Updating...' : 'Up to date' }}
+    </div>
     <div ref='graphContainer' class="graph-container"></div>
   </div>
 </template>
@@ -11,6 +14,7 @@
 
 import { Network, DataSet } from "vis-network/standalone";
 import { useEditionsData } from "../composables/useEditionsData";
+import { useFilters } from "../composables/useFilters";
 import { watch, onMounted, nextTick } from "vue";
 
 
@@ -20,11 +24,22 @@ emits: ['select'],
 
 networkInstance: null,
 
+setup() {
+  const { activeFilters } = useFilters();
+  return { activeFilters };
+},
+
 data: () => ({
   fullGraphData: {nodes: [], links: []},
   graphData: {nodes: [], links: []},
   networkInstance: null,
-  rawResponseData: null
+  rawResponseData: null,
+  updateDebounceTimer: null,
+  updateStatus: null,
+  hasChanges: false,
+  periodicCheckInterval: null,
+  lastFilterState: null,
+  changeDebounceTimer: null
 }),
 
 computed: {
@@ -35,18 +50,23 @@ computed: {
 
 
 watch: {
-  filteredEditions: {
+  activeFilters: {
     handler(newVal) {
-      if (this.rawResponseData) {
-        this.networkInstance.destroy();
-        this.$refs.graphContainer.innerHTML = "";
-
-        const filteredIds = new Set(this.filteredEditions.map(e => e.id));
-
-        this.graphData.nodes = this.fullGraphData.nodes.filter(node => filteredIds.has(node.id));
-        this.graphData.links = [...this.fullGraphData.links];
-
-        this.loadGraph();
+      if (this.rawResponseData && this.networkInstance) {
+        // Clear any pending change detection
+        if (this.changeDebounceTimer) {
+          clearTimeout(this.changeDebounceTimer);
+        }
+        
+        // Wait 3000ms before marking as changed (batches rapid filter changes)
+        this.changeDebounceTimer = setTimeout(() => {
+          const currentState = JSON.stringify(newVal);
+          if (this.lastFilterState !== currentState) {
+            console.log('Network: Filters changed, marking for update');
+            this.hasChanges = true;
+            this.lastFilterState = currentState;
+          }
+        }, 3000);
       }
     },
     deep: true
@@ -56,6 +76,42 @@ watch: {
 async mounted() {
   await this.fetchData();
   this.loadGraph();
+  
+  console.log('Network: Setting up 5-second update interval');
+  let checkCount = 0;
+  
+  // Start periodic check for updates every 5 seconds
+  this.periodicCheckInterval = setInterval(() => {
+    checkCount++;
+    console.log(`Network: Periodic check #${checkCount} (should be every 5 seconds)`);
+    
+    if (this.hasChanges) {
+      console.log('Network: Starting update...');
+      this.updateStatus = 'updating';
+      this.hasChanges = false;
+      
+      setTimeout(() => {
+        this.updateNetwork();
+        console.log('Network: Update complete');
+        this.updateStatus = 'up-to-date';
+        
+        setTimeout(() => {
+          this.updateStatus = null;
+        }, 2000);
+      }, 100);
+    } else {
+      console.log('Network: No changes, skipping update');
+    }
+  }, 5000);
+},
+
+beforeUnmount() {
+  if (this.periodicCheckInterval) {
+    clearInterval(this.periodicCheckInterval);
+  }
+  if (this.networkInstance) {
+    this.networkInstance.destroy();
+  }
 },
 
 methods: {
@@ -65,6 +121,36 @@ methods: {
       const edition = this.filteredEditions.find(e => e.id === id);
       console.log("edition", edition);
       this.$emit('select', edition);
+  },
+
+  updateNetwork() {
+    if (!this.networkInstance || !this.networkInstance.body) return;
+    
+    const filteredIds = new Set(this.filteredEditions.map(e => e.id));
+    const nodesDataSet = this.networkInstance.body.data.nodes;
+    
+    // Get all node IDs and update in batch
+    const allNodeIds = nodesDataSet.getIds();
+    const updates = [];
+    
+    for (let i = 0; i < allNodeIds.length; i++) {
+      const nodeId = allNodeIds[i];
+      const shouldShow = filteredIds.has(nodeId);
+      const currentNode = nodesDataSet.get(nodeId);
+      
+      // Only update if visibility needs to change
+      if (currentNode.hidden === shouldShow) {
+        updates.push({
+          id: nodeId,
+          hidden: !shouldShow
+        });
+      }
+    }
+    
+    // Single batch update
+    if (updates.length > 0) {
+      nodesDataSet.update(updates);
+    }
   },
 
   loadGraph() {
@@ -195,6 +281,41 @@ methods: {
   font-weight: 600;
   color: #333;
 }
+
+.update-status {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.update-status.updating {
+  background: #FFC107;
+  color: #333;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.update-status.up-to-date {
+  background: #4CAF50;
+  color: white;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 .network-wrapper {
   width: 100%;
   height: 100%;

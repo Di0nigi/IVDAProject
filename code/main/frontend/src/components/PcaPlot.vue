@@ -1,6 +1,9 @@
 <template>
   <div class="plot-wrapper">
     <h3 class="plot-title">PCA grouping by Description</h3>
+    <div v-if="updateStatus" class="update-status" :class="updateStatus">
+      {{ updateStatus === 'updating' ? 'Updating...' : 'Up to date' }}
+    </div>
     <div id="myScatterPlot" class="myScatterPlot"></div>
   </div>
 </template>
@@ -8,32 +11,47 @@
 <script>
 import Plotly from "plotly.js/dist/plotly";
 import { useEditionsData } from "../composables/useEditionsData";
+import { useFilters } from "../composables/useFilters";
 import { watch } from "vue";
 
 export default {
   data() {
     return {
       ScatterPlotData: { ids: [], xCoor: [], yCoor: [], labels: [] },
-      rawResponseData: null, // store raw data so we can recompute on filter change
+      rawResponseData: null,
+      updateStatus: null,
+      hasChanges: false,
+      periodicCheckInterval: null,
+      lastFilterState: null,
+      changeDebounceTimer: null
     };
   },
 
   created() {
     const { filteredEditions } = useEditionsData();
+    const { activeFilters } = useFilters();
     this.filteredEditions = filteredEditions;
+    this.activeFilters = activeFilters;
 
-    // REACTIVE WATCH ON FILTERED EDITIONS
+    // Watch for filter changes and mark for update
     watch(
-      this.filteredEditions,
-      () => {
+      this.activeFilters,
+      (newVal) => {
         if (this.rawResponseData) {
-          this.processScatterData();
-          this.drawScatterPlot(
-            "myScatterPlot",
-            this.ScatterPlotData.xCoor,
-            this.ScatterPlotData.yCoor,
-            this.ScatterPlotData.labels
-          );
+          // Clear any pending change detection
+          if (this.changeDebounceTimer) {
+            clearTimeout(this.changeDebounceTimer);
+          }
+          
+          // Wait 3 seconds before marking as changed
+          this.changeDebounceTimer = setTimeout(() => {
+            const currentState = JSON.stringify(newVal);
+            if (this.lastFilterState !== currentState) {
+              console.log('PCA: Filters changed, marking for update');
+              this.hasChanges = true;
+              this.lastFilterState = currentState;
+            }
+          }, 3000);
         }
       },
       { deep: true }
@@ -42,6 +60,45 @@ export default {
 
   mounted() {
     this.fetchData();
+    
+    console.log('PCA: Setting up 5-second update interval');
+    let checkCount = 0;
+    
+    // Start periodic check for updates every 5 seconds
+    this.periodicCheckInterval = setInterval(() => {
+      checkCount++;
+      console.log(`PCA: Periodic check #${checkCount} (should be every 5 seconds)`);
+      
+      if (this.hasChanges) {
+        console.log('PCA: Starting update...');
+        this.updateStatus = 'updating';
+        this.hasChanges = false;
+        
+        setTimeout(() => {
+          this.processScatterData();
+          this.drawScatterPlot(
+            "myScatterPlot",
+            this.ScatterPlotData.xCoor,
+            this.ScatterPlotData.yCoor,
+            this.ScatterPlotData.labels
+          );
+          console.log('PCA: Update complete');
+          this.updateStatus = 'up-to-date';
+          
+          setTimeout(() => {
+            this.updateStatus = null;
+          }, 2000);
+        }, 100);
+      } else {
+        console.log('PCA: No changes, skipping update');
+      }
+    }, 5000);
+  },
+
+  beforeUnmount() {
+    if (this.periodicCheckInterval) {
+      clearInterval(this.periodicCheckInterval);
+    }
   },
 
   methods: {
@@ -150,15 +207,47 @@ export default {
   display: flex;
   background-color: white;
   flex-direction: column;
+  position: relative;
 }
 .plot-title {
-  padding: 2px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  margin: 0;
   font-family: sans-serif;
-  font-size: 0.8em;
+  font-size: 1.1em;
   font-weight: 600;
   color: #333;
-  flex-shrink: 0;
-  text-align: center;
+}
+.update-status {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.update-status.updating {
+  background: #FFC107;
+  color: #333;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+.update-status.up-to-date {
+  background: #4CAF50;
+  color: white;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
 }
 #myScatterPlot {
     flex-grow: 1;
