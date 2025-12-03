@@ -85,7 +85,7 @@ const attributes = [
   { value: 'OCR or keyed?', label: 'OCR/Keyed' },
   { value: 'Print facsimile (complementary output)', label: 'Print Facsimile' },
   { value: 'Audience', label: 'Audience' },
-  { value: 'Institution(s)', label: 'Institution' },
+
 ];
 
 const updateLabel = (value, type) => {

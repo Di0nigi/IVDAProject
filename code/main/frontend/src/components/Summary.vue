@@ -150,10 +150,11 @@
       </div>
     
     <div style="margin-top:8px;margin-bottom:4px;">
-      <p style="margin:0;text-align:left;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Author:</strong> {{ edition['author'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Philosophical/Artistic Direction:</strong> {{ edition['phil_direction'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Time/Century:</strong> {{ edition['Time/Century'] }}</p>
+      <p v-if="edition['Manager or Editor']" style="margin:0;text-align:left;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>
+      <p v-if="edition['Sponsor/Funding body']" style="margin:0;text-align:left;"><strong>Funding Body:</strong> {{ edition['Sponsor/Funding body'] }}</p>
     </div>
     </div>
   </div>
