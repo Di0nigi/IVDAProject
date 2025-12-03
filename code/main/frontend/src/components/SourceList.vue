@@ -135,16 +135,24 @@ function getReliabilityColor(edition) {
   color: #333;
   text-decoration: none;
   display: block;
-  padding: 8px 12px;
+  padding: 6px 10px;
   background: white;
   border: 1px solid #d5d9df;
   border-radius: 6px;
   transition: all 0.2s;
+  height: 2.4em;
+  min-height: 2.4em;
+  overflow: hidden;
 }
 
 .source-list a:hover {
   filter: brightness(90%);
   border-color: #4a90e2;
+  min-height: 2.4em;
+  height: auto;
+  overflow: visible;
+  z-index: 10;
+  position: relative;
 }
 
 .list-item {
@@ -206,9 +214,18 @@ function getReliabilityColor(edition) {
     transition: opacity 0.2s;
 }
 .list-item-content span {
-  display: block;
+  display: -webkit-box;
   max-width: 70%;
-  word-break: break-word;
-  white-space: normal;
+  font-size: 13px;
+  line-height: 1.4;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.source-list a:hover .list-item-content span {
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
 </style>
