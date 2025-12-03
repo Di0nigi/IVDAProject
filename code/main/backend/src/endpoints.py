@@ -100,13 +100,18 @@ def getEndPeriod():
 @app.route("/texts/graphPoints", methods=["GET"])
 def getAndComputeGraphPoints():
     dc = dataEncoder(textType='k')
-    vM=visModel(nClusters=7)
+    vM=visModel(nClusters=5)
     keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
     formatted = dc.formatData(keyWordsList)
     edges= dc.getGraphEncoding(formatted)
     #encoded = dc.encode(formatted)
+
+    #dc.saveData(encoded, "keywordsEmbed", client, db, texts)
+
     encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
     labs = vM.train(encoded,mode="k")[0].tolist()
+
+
 
     #ids=[elem["id"] for elem in keyWordsList]
 
@@ -131,8 +136,9 @@ def getAndComputeScatterPoints():
     dc = dataEncoder(textType='d')
     vM=visModel(nClusters=7)
     descriptionLists = list(texts.find({}, {"_id": 0,"id":1,"Content_Description":1,"descritpionEmbed":1}))
-    #formatted = dc.formatData(keyWordsList)
+    #formatted = dc.formatData(descriptionLists)
     #encoded = dc.encode(formatted)
+    #dc.saveData(encoded, "descritpionEmbed", client, db, texts)
     encoded = [elem["descritpionEmbed"] for elem in descriptionLists]
 
     labs , points = vM.train(encoded,mode="d")
@@ -142,7 +148,7 @@ def getAndComputeScatterPoints():
     ret = {"ids":ids ,"labels":labs.tolist(),"xCoor":points[0].tolist(),"yCoor":points[1].tolist()}
     #ret={}
 
-    #dc.saveData(encoded, "descritpionEmbed", client, db, texts)
+    
 
     #print("done")
 
