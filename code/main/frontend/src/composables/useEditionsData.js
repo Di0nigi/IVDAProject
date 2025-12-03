@@ -69,7 +69,7 @@ export function useEditionsData() {
 
       filtered = filtered.filter(e => {
         const periods = (e['Historical Period'] || '').toLowerCase().split(/[,;]+/).map(p => p.trim());
-        const hasSelected = selected.length === 0 || periods.some(p => selected.includes(p));
+        const hasSelected = selected.length === 0 || selected.some(s => periods.includes(s));
         const hasExcluded = excluded.length > 0 && periods.some(p => excluded.includes(p));
         return hasSelected && !hasExcluded;
       });
@@ -129,7 +129,7 @@ export function useEditionsData() {
 
       filtered = filtered.filter(e => {
         const langs = (e.Language || '').toLowerCase().split(/[,;]+/).map(l => l.trim());
-        const hasSelected = selected.length === 0 || langs.some(l => selected.includes(l));
+        const hasSelected = selected.length === 0 || selected.some(s => langs.includes(s));
         const hasExcluded = excluded.length > 0 && langs.some(l => excluded.includes(l));
         return hasSelected && !hasExcluded;
       });
