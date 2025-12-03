@@ -11,7 +11,7 @@
       </button>
 
       <div class="slidersContainer">
-        <ReliabilitySliders />
+        <ReliabilitySliders :edition="edition" />
 
         </div>
       </div>

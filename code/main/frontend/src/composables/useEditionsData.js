@@ -1,4 +1,4 @@
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import { useFilters } from './useFilters';
 
 const editions = ref([]);
@@ -9,6 +9,28 @@ let fetched = false;
 export function useEditionsData() {
   const { activeFilters } = useFilters();
 
+  // Fetch reliability scores based on weights
+  const fetchReliabilityScores = async (weights) => {
+    try {
+      const response = await fetch('http://127.0.0.1:5000/texts/reliability', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ weights })
+      });
+      const scores = await response.json();
+      
+      // Update editions with new scores (mutate in place to avoid triggering unnecessary reactivity)
+      const scoreMap = new Map(scores.map(s => [s.id, s.reliabilityScore]));
+      editions.value.forEach(e => {
+        e.reliabilityScore = scoreMap.get(e.id) || 0;
+      });
+    } catch (err) {
+      console.error('Error fetching reliability scores:', err);
+    }
+  };
+
   // Fetch data once on first use
   const fetchEditions = async () => {
     if (fetched) return;
@@ -17,14 +39,28 @@ export function useEditionsData() {
     try {
       const response = await fetch('http://127.0.0.1:5000/texts');
       const data = await response.json();
-      editions.value = data.map(e => ({ ...e, reliabilityScore: Math.floor(Math.random() * 101) }));
+      editions.value = data;
       loading.value = false;
+      
+      // Fetch initial reliability scores
+      await fetchReliabilityScores(activeFilters.reliabilityWeights);
     } catch (err) {
       console.error('Error fetching editions:', err);
       error.value = err;
       loading.value = false;
     }
   };
+
+  // Watch for reliability weight changes
+  watch(
+    () => activeFilters.reliabilityWeights,
+    (newWeights) => {
+      if (fetched && editions.value.length > 0) {
+        fetchReliabilityScores(newWeights);
+      }
+    },
+    { deep: true }
+  );
 
   // Computed filtered data
   const filteredEditions = computed(() => {
@@ -169,6 +205,7 @@ export function useEditionsData() {
     filteredEditions,
     loading,
     error,
-    fetchEditions
+    fetchEditions,
+    fetchReliabilityScores
   };
 }

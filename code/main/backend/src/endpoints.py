@@ -159,8 +159,40 @@ def getAndComputeScatterPoints():
 # to compute scores
 
 @app.route("/texts/reliability",methods = ["POST"])
-def setScoreParams():
-    return
+def calculateReliabilityScores():
+    data = request.json
+    weights = data.get('weights', {'citations': 50, 'witnesses': 50, 'audience': 50})
+    
+    # Normalize weights to sum to 1
+    total = weights['citations'] + weights['witnesses'] + weights['audience']
+    if total == 0:
+        total = 1
+    
+    w_citations = weights['citations'] / total
+    w_witnesses = weights['witnesses'] / total
+    w_audience = weights['audience'] / total
+    
+    # Get all editions and calculate scores
+    all_texts = list(texts.find({}, {"_id": 0, "id": 1, "Citation_bin": 1, 
+                                      "Value_of_witnesses_yes": 1, "Audience": 1}))
+    
+    scores = []
+    for text in all_texts:
+        # Get binary values (default to 0 if not present)
+        citation_val = text.get('Citation_bin', 0)
+        witnesses_val = text.get('Value_of_witnesses_yes', 0)
+        # Audience is categorical, convert to binary (1 if specified, 0 if not)
+        audience_val = 1 if text.get('Audience') and text.get('Audience').lower() not in ['not provided', 'nan', ''] else 0
+        
+        # Calculate weighted score (0-100)
+        score = (citation_val * w_citations + witnesses_val * w_witnesses + audience_val * w_audience) * 100
+        
+        scores.append({
+            'id': text['id'],
+            'reliabilityScore': round(score)
+        })
+    
+    return jsonify(scores)
 
 @app.route("/texts/reliability/<id>",methods = ["GET"])
 def getScores():

@@ -2,6 +2,12 @@
   <div class="reliability-container">
     <h3>Reliability Score Influence</h3>
     
+    <!-- Current Edition Score Display -->
+    <div v-if="currentEdition" class="current-score">
+      <div class="score-label">Current Edition Score:</div>
+      <div class="score-value" :style="scoreStyle">{{ currentScore }}</div>
+    </div>
+    
     <!-- Citations Slider -->
     <div class="slider-group">
       <label>Citations</label>
@@ -74,12 +80,73 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, watch, defineProps } from 'vue';
+import { useFilters } from '../composables/useFilters';
+
+const props = defineProps({
+  edition: {
+    type: Object,
+    default: null
+  }
+});
+
+const { updateReliabilityWeights } = useFilters();
 
 const citations = ref(50);
 const witnesses = ref(50);
-const funding = ref(50);
 const audience = ref(50);
+
+const currentEdition = computed(() => props.edition);
+
+const currentScore = computed(() => {
+  if (!currentEdition.value) return 0;
+  
+  // Get binary values
+  const citationVal = currentEdition.value.Citation_bin || 0;
+  const witnessesVal = currentEdition.value.Value_of_witnesses_yes || 0;
+  const audienceVal = currentEdition.value.Audience && 
+                      currentEdition.value.Audience.toLowerCase() !== 'not provided' ? 1 : 0;
+  
+  // Calculate total weight
+  const total = citations.value + witnesses.value + audience.value;
+  if (total === 0) return 0;
+  
+  // Calculate weighted score
+  const score = (citationVal * citations.value + 
+                 witnessesVal * witnesses.value + 
+                 audienceVal * audience.value) / total * 100;
+  
+  return Math.round(score);
+});
+
+const scoreStyle = computed(() => {
+  const s = currentScore.value;
+  let r, g, b;
+  const maxIntensity = 200;
+  if (s <= 50) {
+    r = maxIntensity;
+    g = Math.round(maxIntensity * (s / 50));
+    b = 0;
+  } else {
+    r = Math.round(maxIntensity * (1 - (s - 50) / 50));
+    g = maxIntensity;
+    b = 0;
+  }
+  return {
+    color: `rgb(${r},${g},${b})`,
+    fontWeight: 'bold',
+    fontSize: '24px'
+  };
+});
+
+// Watch for slider changes and update global weights
+watch([citations, witnesses, audience], () => {
+  updateReliabilityWeights({
+    citations: citations.value,
+    witnesses: witnesses.value,
+    audience: audience.value
+  });
+}, { immediate: true });
 
 const citationsStyle = computed(() => {
   const percent = citations.value;
@@ -231,5 +298,27 @@ label {
   font-size: 10px;
   color: #666;
   margin-top: 2px;
+}
+
+.current-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.score-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+}
+
+.score-value {
+  font-size: 24px;
+  font-weight: bold;
 }
 </style>

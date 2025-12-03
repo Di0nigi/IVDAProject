@@ -12,6 +12,11 @@ const filters = reactive({
   language: [],
   writingSupport: [],
   keywords: [],
+  reliabilityWeights: {
+    citations: 50,
+    witnesses: 50,
+    audience: 50
+  }
 });
 
 export function useFilters() {
@@ -48,6 +53,10 @@ export function useFilters() {
     }
   };
 
+  const updateReliabilityWeights = (weights) => {
+    filters.reliabilityWeights = { ...weights };
+  };
+
   const resetFilters = () => {
     filters.periodRange = [-800, 2000];
     filters.historicalPeriod = [];
@@ -60,6 +69,11 @@ export function useFilters() {
     filters.language = [];
     filters.writingSupport = [];
     filters.keywords = [];
+    filters.reliabilityWeights = {
+      citations: 50,
+      witnesses: 50,
+      audience: 50
+    };
   };
 
   const hasActiveFilters = computed(() => {
@@ -81,6 +95,7 @@ export function useFilters() {
     activeFilters: filters,
     updateFilter,
     toggleTagFilter,
+    updateReliabilityWeights,
     resetFilters,
     hasActiveFilters
   };

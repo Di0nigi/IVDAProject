@@ -82,6 +82,7 @@ const chartData = computed(() => {
   // Sort by start year to process chronologically
   const sortedData = validData
     .map(e => ({
+      id: e.id,
       period: e['Historical Period'] || 'Unknown',
       name: e['Edition name'] || 'Unknown',
       timeCentury: e['Time/Century'] || 'Unknown',
