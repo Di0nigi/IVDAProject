@@ -48,29 +48,6 @@
       </div>
     </div>
 
-    <!-- Funding Body Slider -->
-    <div class="slider-group">
-      <label>Funding Body</label>
-      <div style="flex: 1;">
-      <div class="single-slider-wrapper">
-        <div class="single-track">
-          <div class="single-fill" :style="fundingStyle"></div>
-        </div>
-        <input
-          type="range"
-          v-model.number="funding"
-          :min="0"
-          :max="100"
-          class="slider single-slider"
-        />
-      </div>
-      <div class="range-labels">
-        <span>low</span>
-        <span>High</span>
-      </div>
-      </div>
-    </div>
-
     <!-- Audience Slider -->
     <div class="slider-group">
       <label>Audience</label>
