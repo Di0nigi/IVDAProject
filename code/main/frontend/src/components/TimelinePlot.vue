@@ -57,6 +57,13 @@ import { useFilters } from '../composables/useFilters';
 
 Chart.register(...registerables);
 
+const props = defineProps({
+  colorAttribute: {
+    type: String,
+    required: true
+  }
+});
+
 const { filteredEditions } = useEditionsData();
 const { getColorForCategory } = useColorPalette();
 const { activeFilters, updateFilter } = useFilters();
@@ -81,14 +88,29 @@ const chartData = computed(() => {
 
   // Sort by start year to process chronologically
   const sortedData = validData
-    .map(e => ({
-      id: e.id,
-      period: e['Historical Period'] || 'Unknown',
-      name: e['Edition name'] || 'Unknown',
-      timeCentury: e['Time/Century'] || 'Unknown',
-      start: e.period_start || 0,
-      end: e.period_end || e.period_start || 0
-    }))
+    .map(e => {
+      let categoryValue = 'Unknown';
+      if (props.colorAttribute === 'Language') {
+        const rawValue = e.Language;
+        if (rawValue) {
+            const firstVal = Array.isArray(rawValue) ? rawValue[0] : String(rawValue);
+            categoryValue = firstVal.split(/[,;]+/)[0].trim() || 'Unknown';
+        }
+      } else {
+          const rawValue = e[props.colorAttribute];
+          const value = Array.isArray(rawValue) ? rawValue[0] : rawValue;
+          categoryValue = value || 'Unknown';
+      }
+      
+      return {
+        id: e.id,
+        category: categoryValue,
+        name: e['Edition name'] || 'Unknown',
+        timeCentury: e['Time/Century'] || 'Unknown',
+        start: e.period_start || 0,
+        end: e.period_end || e.period_start || 0
+      };
+    })
     .sort((a, b) => a.start - b.start);
 
   // Assign y positions avoiding overlaps
@@ -111,14 +133,14 @@ const chartData = computed(() => {
     };
   });
 
-  // Group by period for coloring
-  const periods = [...new Set(data.map(d => d.period))];
-  const datasets = periods.map(period => {
-    const periodData = data.filter(d => d.period === period);
-    const color = getColorForCategory(period);
+  // Group by category for coloring
+  const categories = [...new Set(data.map(d => d.category))];
+  const datasets = categories.map(category => {
+    const categoryData = data.filter(d => d.category === category);
+    const color = getColorForCategory(category);
     
     // Create line segments for each work
-    const segments = periodData.map(work => ({
+    const segments = categoryData.map(work => ({
       type: 'line',
       xMin: work.start,
       xMax: work.end,
@@ -127,21 +149,21 @@ const chartData = computed(() => {
       borderColor: color,
       borderWidth: 2,
       label: work.name,
-      period: work.period,
+      category: work.category,
       start: work.start,
       end: work.end
     }));
     
     return {
-      label: period,
-      data: periodData.map(work => ({
+      label: category,
+      data: categoryData.map(work => ({
         x: work.start, // Point at the start of the work
         y: work.yPosition,
         name: work.name,
         timeCentury: work.timeCentury,
         start: work.start,
         end: work.end,
-        period: work.period
+        category: work.category
       })),
       backgroundColor: color,
       borderColor: color,
@@ -174,14 +196,6 @@ const createChart = () => {
         title: {
           display: false
         },
-        // legend: {
-        //   display: true,
-        //   position: 'right',
-        //   labels: {
-        //     font: { size: 10 },
-        //     boxWidth: 10
-        //   }
-        // },
         legend: {
           display: false
         },
@@ -191,7 +205,7 @@ const createChart = () => {
               const data = context.raw;
               return [
                 `Name: ${data.name}`,
-                `Period: ${data.period}`,
+                `${props.colorAttribute}: ${data.category}`,
                 `Time/Century: ${data.timeCentury}`
               ];
             }
