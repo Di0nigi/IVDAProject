@@ -1,116 +1,26 @@
 <template>
-  <div class="category-controls-row">
-    <div class="category-control">
-      <span class="category-title">Language</span>
-      <span class="reset-pill-wrapper">
-        <button class="reset-pill" @click="resetCategory('language')">Reset</button>
-      </span>
-    </div>
-    <div class="category-control">
-      <span class="category-title">Writing Support</span>
-      <span class="reset-pill-wrapper">
-        <button class="reset-pill" @click="resetCategory('support')">Reset</button>
-      </span>
-    </div>
-    <div class="category-control">
-      <span class="category-title">Keywords</span>
-      <span class="reset-pill-wrapper">
-        <button class="reset-pill" @click="resetCategory('keyword')">Reset</button>
-      </span>
-    </div>
-    <div class="category-control">
-      <span class="category-title">Period</span>
-      <span class="reset-pill-wrapper">
-        <button class="reset-pill" @click="resetCategory('period')">Reset</button>
-      </span>
-    </div>
-  </div>
   <div class="new-tag-filter-container">
-    <div class="tag-category-box">
-      <div class="tags-list">
-        <button
-          v-for="tag in languageTags"
-          :key="tag.id"
-          @click="toggleTag(tag, 'language')"
-          :class="['tag-button', getTagClass(tag, 'language')]"
-        >
-          <span>{{ tag.label }}</span>
-          <span v-if="getTagStatus(tag, 'language') === 'selected'">
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span v-if="getTagStatus(tag, 'language') === 'excluded'">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </button>
+    <!-- Language -->
+    <div class="category-column">
+      <div class="category-header">
+        <span class="category-title">Language</span>
+        <button class="reset-pill" @click="resetCategory('language')">Reset</button>
       </div>
-    </div>
-    <div class="tag-category-box">
-      <div class="tags-list">
-        <button
-          v-for="tag in supportTags"
-          :key="tag.id"
-          @click="toggleTag(tag, 'support')"
-          :class="['tag-button', getTagClass(tag, 'support')]"
-        >
-          <span>{{ tag.label }}</span>
-          <span v-if="getTagStatus(tag, 'support') === 'selected'">
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span v-if="getTagStatus(tag, 'support') === 'excluded'">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </div>
-    <div class="tag-category-box">
-      <div class="tags-list">
-        <button
-          v-for="tag in keywordTags"
-          :key="tag.id"
-          @click="toggleTag(tag, 'keyword')"
-          :class="['tag-button', getTagClass(tag, 'keyword')]"
-        >
-          <span>{{ tag.label }}</span>
-          <span v-if="getTagStatus(tag, 'keyword') === 'selected'">
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span v-if="getTagStatus(tag, 'keyword') === 'excluded'">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </div>
-    <div class="period-column">
-      <div class="tag-category-box period-box">
+      <div class="tag-category-box">
         <div class="tags-list">
           <button
-            v-for="tag in periodTags"
+            v-for="tag in languageTags"
             :key="tag.id"
-            @click="toggleTag(tag, 'period')"
-            :class="['tag-button', getTagClass(tag, 'period')]"
+            @click="toggleTag(tag, 'language')"
+            :class="['tag-button', getTagClass(tag, 'language')]"
           >
             <span>{{ tag.label }}</span>
-            <span v-if="getTagStatus(tag, 'period') === 'selected'">
+            <span v-if="getTagStatus(tag, 'language') === 'selected'">
               <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
-            <span v-if="getTagStatus(tag, 'period') === 'excluded'">
+            <span v-if="getTagStatus(tag, 'language') === 'excluded'">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -119,12 +29,102 @@
           </button>
         </div>
       </div>
-      <button 
-        @click="resetAllFilters" 
-        class="reset-all-button"
-      >
-        Reset all filters
-      </button>
+    </div>
+    <!-- Writing Support -->
+    <div class="category-column">
+      <div class="category-header">
+        <span class="category-title">Writing Support</span>
+        <button class="reset-pill" @click="resetCategory('support')">Reset</button>
+      </div>
+      <div class="tag-category-box">
+        <div class="tags-list">
+          <button
+            v-for="tag in supportTags"
+            :key="tag.id"
+            @click="toggleTag(tag, 'support')"
+            :class="['tag-button', getTagClass(tag, 'support')]"
+          >
+            <span>{{ tag.label }}</span>
+            <span v-if="getTagStatus(tag, 'support') === 'selected'">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span v-if="getTagStatus(tag, 'support') === 'excluded'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Keywords -->
+    <div class="category-column">
+      <div class="category-header">
+        <span class="category-title">Keywords</span>
+        <button class="reset-pill" @click="resetCategory('keyword')">Reset</button>
+      </div>
+      <div class="tag-category-box">
+        <div class="tags-list">
+          <button
+            v-for="tag in keywordTags"
+            :key="tag.id"
+            @click="toggleTag(tag, 'keyword')"
+            :class="['tag-button', getTagClass(tag, 'keyword')]"
+          >
+            <span>{{ tag.label }}</span>
+            <span v-if="getTagStatus(tag, 'keyword') === 'selected'">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span v-if="getTagStatus(tag, 'keyword') === 'excluded'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Period -->
+    <div class="category-column">
+        <div class="category-header">
+            <span class="category-title">Period</span>
+            <button class="reset-pill" @click="resetCategory('period')">Reset</button>
+        </div>
+        <div class="tag-category-box period-box">
+            <div class="tags-list">
+            <button
+                v-for="tag in periodTags"
+                :key="tag.id"
+                @click="toggleTag(tag, 'period')"
+                :class="['tag-button', getTagClass(tag, 'period')]"
+            >
+                <span>{{ tag.label }}</span>
+                <span v-if="getTagStatus(tag, 'period') === 'selected'">
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+                <span v-if="getTagStatus(tag, 'period') === 'excluded'">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+            </button>
+            </div>
+        </div>
+        <button 
+            @click="resetAllFilters" 
+            class="reset-all-button"
+        >
+            Reset all filters
+        </button>
     </div>
   </div>
 </template>
@@ -232,46 +232,16 @@ const resetAllFilters = () => {
 </script>
 
 <style scoped>
-.category-controls-row {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 4px;
-}
-.category-control {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  position: relative;
-}
-.category-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: #333;
-}
-.reset-pill-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
-}
 .new-tag-filter-container {
   display: flex;
   gap: 8px;
-  height: 100%;
 }
 
-.tag-category-box {
+.category-column {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  background: white;
-  border: 1px solid #d5d9df;
-  border-radius: 8px;
-  padding: 4px;
-  overflow: hidden;
-  height: 140px; /* Adjust as needed for your layout */
-  position: relative;
 }
 
 .category-header {
@@ -279,6 +249,13 @@ const resetAllFilters = () => {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2px;
+  padding: 0 4px;
+}
+
+.category-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
 }
 
 .reset-pill {
@@ -293,20 +270,22 @@ const resetAllFilters = () => {
   transition: background 0.2s, color 0.2s;
   box-shadow: none;
   outline: none;
-  position: relative;
-  z-index: 1;
 }
 .reset-pill:hover {
   background: #E53935;
   color: #fff;
 }
 
-.tag-category-box h5 {
-  margin: 0;
-  font-size: 13px;
-  font-weight: 600;
-  color: #555;
-  flex-shrink: 0;
+.tag-category-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: white;
+  border: 1px solid #d5d9df;
+  border-radius: 8px;
+  padding: 4px;
+  overflow: hidden;
+  height: 110px;
 }
 
 .tags-list {
@@ -358,15 +337,7 @@ const resetAllFilters = () => {
 }
 
 .period-box {
-  height: 70px !important;
-}
-
-.period-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  max-height: 140px;
+  height: 48px !important;
 }
 
 .reset-all-button {
@@ -380,6 +351,7 @@ const resetAllFilters = () => {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
+  margin-top: auto;
 }
 
 .reset-all-button:hover {
