@@ -19,7 +19,7 @@
           <input
             type="range"
             v-model.number="periodRange[0]"
-            :min="-600"
+            :min="-800"
             :max="2000"
             :step="100"
             @input="updatePeriodFilter"
@@ -28,7 +28,7 @@
           <input
             type="range"
             v-model.number="periodRange[1]"
-            :min="-600"
+            :min="-800"
             :max="2000"
             :step="100"
             @input="updatePeriodFilter"
@@ -36,11 +36,10 @@
           />
         </div>
         <div class="range-labels">
-          <span>-600</span>
-          <span>0</span>
+          <span>-800</span>
+          <span>-200</span>
           <span>400</span>
-          <span>800</span>
-          <span>1200</span>
+          <span>1000</span>
           <span>1600</span>
           <span>2000</span>
         </div>
@@ -62,7 +61,7 @@ const { filteredEditions } = useEditionsData();
 const { getColorForCategory } = useColorPalette();
 const { activeFilters, updateFilter } = useFilters();
 
-const periodRange = ref([-600, 2000]);
+const periodRange = ref([-800, 2000]);
 
 const chartCanvas = ref(null);
 let chartInstance = null;
@@ -72,7 +71,7 @@ const chartData = computed(() => {
     .filter(e => e.period_start !== undefined && e.period_start !== null);
   
   if (validData.length === 0) {
-    return { datasets: [], minYear: -600, maxYear: 2000 };
+    return { datasets: [], minYear: -800, maxYear: 2000 };
   }
 
   // Calculate min and max years from the data
@@ -258,9 +257,9 @@ watch(chartData, () => {
 const rangeStyle = computed(() => {
   const min = periodRange.value[0];
   const max = periodRange.value[1];
-  const totalRange = 2000 - (-600);
-  const leftPercent = ((min - (-600)) / totalRange) * 100;
-  const rightPercent = ((max - (-600)) / totalRange) * 100;
+  const totalRange = 2000 - (-800);
+  const leftPercent = ((min - (-800)) / totalRange) * 100;
+  const rightPercent = ((max - (-800)) / totalRange) * 100;
   
   return {
     left: `${leftPercent}%`,

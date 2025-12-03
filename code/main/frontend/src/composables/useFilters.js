@@ -1,7 +1,7 @@
 import { reactive, computed } from 'vue';
 
 const filters = reactive({
-  periodRange: [-600, 2000],
+  periodRange: [-800, 2000],
   historicalPeriod: [],
   scholarly: null,
   digital: null,
@@ -49,7 +49,7 @@ export function useFilters() {
   };
 
   const resetFilters = () => {
-    filters.periodRange = [-600, 2000];
+    filters.periodRange = [-800, 2000];
     filters.historicalPeriod = [];
     filters.scholarly = null;
     filters.digital = null;
@@ -63,7 +63,7 @@ export function useFilters() {
   };
 
   const hasActiveFilters = computed(() => {
-    return filters.periodRange[0] !== -600 ||
+    return filters.periodRange[0] !== -800 ||
            filters.periodRange[1] !== 2000 ||
            filters.historicalPeriod.length > 0 ||
            filters.scholarly !== null ||
