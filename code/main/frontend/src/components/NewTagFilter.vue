@@ -13,15 +13,15 @@
       </span>
     </div>
     <div class="category-control">
-      <span class="category-title">Period</span>
-      <span class="reset-pill-wrapper">
-        <button class="reset-pill" @click="resetCategory('period')">Reset</button>
-      </span>
-    </div>
-    <div class="category-control">
       <span class="category-title">Keywords</span>
       <span class="reset-pill-wrapper">
         <button class="reset-pill" @click="resetCategory('keyword')">Reset</button>
+      </span>
+    </div>
+    <div class="category-control">
+      <span class="category-title">Period</span>
+      <span class="reset-pill-wrapper">
+        <button class="reset-pill" @click="resetCategory('period')">Reset</button>
       </span>
     </div>
   </div>
@@ -75,29 +75,6 @@
     <div class="tag-category-box">
       <div class="tags-list">
         <button
-          v-for="tag in periodTags"
-          :key="tag.id"
-          @click="toggleTag(tag, 'period')"
-          :class="['tag-button', getTagClass(tag, 'period')]"
-        >
-          <span>{{ tag.label }}</span>
-          <span v-if="getTagStatus(tag, 'period') === 'selected'">
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span v-if="getTagStatus(tag, 'period') === 'excluded'">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </div>
-    <div class="tag-category-box">
-      <div class="tags-list">
-        <button
           v-for="tag in keywordTags"
           :key="tag.id"
           @click="toggleTag(tag, 'keyword')"
@@ -118,6 +95,37 @@
         </button>
       </div>
     </div>
+    <div class="period-column">
+      <div class="tag-category-box period-box">
+        <div class="tags-list">
+          <button
+            v-for="tag in periodTags"
+            :key="tag.id"
+            @click="toggleTag(tag, 'period')"
+            :class="['tag-button', getTagClass(tag, 'period')]"
+          >
+            <span>{{ tag.label }}</span>
+            <span v-if="getTagStatus(tag, 'period') === 'selected'">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span v-if="getTagStatus(tag, 'period') === 'excluded'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <button 
+        @click="resetAllFilters" 
+        class="reset-all-button"
+      >
+        Reset all filters
+      </button>
+    </div>
   </div>
 </template>
 
@@ -126,7 +134,7 @@
 import { ref, onMounted } from 'vue';
 import { useFilters } from '../composables/useFilters';
 
-const { activeFilters, toggleTagFilter, resetTagCategory } = useFilters();
+const { activeFilters, toggleTagFilter, resetTagCategory, resetFilters } = useFilters();
 
 const languageTags = ref([]);
 const supportTags = ref([]);
@@ -216,6 +224,10 @@ const resetCategory = (category) => {
       activeFilters[filterKey].splice(0, activeFilters[filterKey].length);
     }
   }
+};
+
+const resetAllFilters = () => {
+  resetFilters();
 };
 </script>
 
@@ -343,5 +355,34 @@ const resetCategory = (category) => {
 .tag-muted {
   background: #f5f5f5;
   color: #aaa;
+}
+
+.period-box {
+  height: 70px !important;
+}
+
+.period-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 140px;
+}
+
+.reset-all-button {
+  width: 100%;
+  padding: 6px 16px;
+  background: #E53935;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reset-all-button:hover {
+  background: #C62828;
 }
 </style>

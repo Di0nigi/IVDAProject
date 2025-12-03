@@ -54,13 +54,6 @@
       </div>
       </div>
     </div>
-
-    <button 
-      @click="reset" 
-      class="reset-button"
-    >
-      Reset all filters
-    </button>
   </div>
 </template>
 
