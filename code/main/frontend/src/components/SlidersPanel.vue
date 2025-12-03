@@ -1,5 +1,6 @@
 <template>
   <div class="sliders-container">
+    <h3>Filter Editions</h3>
     <div class="sliders-column">
 
       

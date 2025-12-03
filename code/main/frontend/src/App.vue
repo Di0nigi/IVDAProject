@@ -14,14 +14,11 @@
     <!-- Column 2 (middle) -->
     <div class="boxMlPlots network"><NetworkPlot @select="selectedEdition = $event" :edition="selectedEdition"/></div>
     <div class="box filters-panel">
-      <h3>Filter Editions</h3>
-      <div class="filter-controls">
-        <div style="flex: 4.5; min-width: 220px;">
-          <NewTagFilter />
-        </div>
-        <div style="flex: 1; min-width: 140px;">
-          <SlidersPanel />
-        </div>
+      <div style="flex: 4.5; min-width: 220px;">
+        <NewTagFilter />
+      </div>
+      <div style="flex: 1; min-width: 140px;">
+        <SlidersPanel />
       </div>
     </div>
     <div class="box timeline">
@@ -154,21 +151,7 @@ watch(editions, (newEditions) => {
   grid-column: 2 / 6;
   grid-row: 4;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.filters-panel h3 {
-    margin: 0 0 5px 0;
-    font-size: 1.1em;
-    font-family: sans-serif;
-    font-weight: 600;
-}
-
-.filter-controls {
-    display: flex;
-    gap: 20px;
-    flex-grow: 1;
+  gap: 20px;
 }
 
 .timeline {

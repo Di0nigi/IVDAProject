@@ -1,9 +1,7 @@
 <template>
   <div class="plot-wrapper">
-    <h3 class="plot-title">PCA of Edition Embeddings</h3>
-    <div>
-      <div id="myScatterPlot" class="myScatterPlot"></div>
-    </div>
+    <h3 class="plot-title">PCA grouping by Description</h3>
+    <div id="myScatterPlot" class="myScatterPlot"></div>
   </div>
 </template>
 
@@ -99,9 +97,8 @@ export default {
     },
 
     drawScatterPlot(containerId, x, y, labels) {
-      const parent = this.$el.parentElement;
-      const parentWidth = parent.clientWidth;
-      const parentHeight = parent.clientHeight;
+      const plotContainer = this.$el.querySelector('#' + containerId);
+      if (!plotContainer) return;
 
       const uniqueLabels = [...new Set(labels)];
 
@@ -126,21 +123,13 @@ export default {
       };
 
       const layout = {
-        width: parentWidth,
-        height: parentHeight,
-        margin: { l: 0, r: 0, t: 40, b: 0 },
+        margin: { l: 25, r: 10, t: 10, b: 25 },
         autosize: true,
         xaxis: {
-          zeroline: true,
-          showline: true,
-          linecolor: "black",
-          anchor: "y",
+          visible: false,
         },
         yaxis: {
-          zeroline: true,
-          showline: true,
-          linecolor: "black",
-          anchor: "x",
+          visible: false,
         },
       };
 
@@ -156,19 +145,23 @@ export default {
 
 <style scoped>
 .plot-wrapper {
-  position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
 }
 .plot-title {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 10;
-  margin: 0;
+  padding: 2px 10px;
   font-family: sans-serif;
-  font-size: 1.1em;
+  font-size: 0.8em;
   font-weight: 600;
   color: #333;
+  flex-shrink: 0;
+  text-align: center;
+}
+#myScatterPlot {
+    flex-grow: 1;
+    min-height: 0;
 }
 </style>
