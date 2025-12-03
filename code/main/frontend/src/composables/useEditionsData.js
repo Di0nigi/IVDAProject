@@ -47,8 +47,8 @@ export function useEditionsData() {
     // Authority filter
     if (typeof activeFilters.authoritativeness === 'number' && activeFilters.authoritativeness > 0) {
       filtered = filtered.filter(e => {
-        // Accepts e.authoritativeness or e.Authoritativeness
-        const val = e.authoritativeness ?? e.Authoritativeness;
+        // MongoDB field is authoritativeness_score
+        const val = e.authoritativeness_score ?? e.authoritativeness ?? e.Authoritativeness;
         return typeof val === 'number' && val >= activeFilters.authoritativeness;
       });
     }
@@ -56,8 +56,8 @@ export function useEditionsData() {
     // Renown filter
     if (typeof activeFilters.renown === 'number' && activeFilters.renown > 0) {
       filtered = filtered.filter(e => {
-        // Accepts e.renown or e.Renown
-        const val = e.renown ?? e.Renown;
+        // MongoDB field is renown_score
+        const val = e.renown_score ?? e.renown ?? e.Renown;
         return typeof val === 'number' && val >= activeFilters.renown;
       });
     }
