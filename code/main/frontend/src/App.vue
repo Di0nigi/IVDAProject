@@ -1,12 +1,14 @@
 <template>
   <div class="layout">
 
-    <div class="box summary">
-      <Summary :edition="selectedEdition" />
-    </div>
+    <div class="left-column">
+      <div class="box summary">
+        <Summary :edition="selectedEdition" />
+      </div>
 
-    <div class="box sidebar">
-      <SourceList @select="selectedEdition = $event" />
+      <div class="box sidebar">
+        <SourceList @select="selectedEdition = $event" />
+      </div>
     </div>
 
     <!-- Column 2 (middle) -->
@@ -119,18 +121,25 @@ watch(editions, (newEditions) => {
   
 }
 
+.left-column {
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .summary {
-  grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
   overflow: auto;
+  flex: 2.5;
 }
 
 .sidebar {
-  grid-row: 3 / 5;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  flex: 2;
 }
 
 .graph {
