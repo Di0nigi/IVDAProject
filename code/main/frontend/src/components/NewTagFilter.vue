@@ -337,7 +337,7 @@ const resetAllFilters = () => {
 }
 
 .period-box {
-  height: 48px !important;
+  height: 78px !important;
 }
 
 .reset-all-button {
