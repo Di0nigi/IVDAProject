@@ -11,7 +11,7 @@
       </button>
 
       <div class="slidersContainer">
-        <ReliabilitySliders />
+        <ReliabilitySliders :edition="edition" />
 
         </div>
       </div>
@@ -150,10 +150,11 @@
       </div>
     
     <div style="margin-top:8px;margin-bottom:4px;">
-      <p style="margin:0;text-align:left;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Author:</strong> {{ edition['author'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Philosophical/Artistic Direction:</strong> {{ edition['phil_direction'] }}</p>
       <p style="margin:0;text-align:left;"><strong>Time/Century:</strong> {{ edition['Time/Century'] }}</p>
+      <p v-if="edition['Manager or Editor']" style="margin:0;text-align:left;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>
+      <p v-if="edition['Sponsor/Funding body']" style="margin:0;text-align:left;"><strong>Funding Body:</strong> {{ edition['Sponsor/Funding body'] }}</p>
     </div>
     </div>
   </div>
@@ -390,8 +391,8 @@ a.tag-button:hover {
   width: 100%;
   height: 100%;
   position: relative;
-  padding-top: 50px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .row{
@@ -430,10 +431,13 @@ a.tag-button:hover {
 .column{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 50px;
-
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
 }
 .back-button {
   background-color: #f44336;

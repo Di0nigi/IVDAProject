@@ -22,20 +22,21 @@
       </div>
     </div>
     <div class="box timeline">
-      <TimelinePlot />
+      <TimelinePlot :color-attribute="colorAttribute" />
     </div>
+
+    <!-- New Legend Box -->
+    <ColorLegend class="legend-box" title="Legend" :color-map="categoryColorMap" />
 
     <!-- Column 3 (right) -->
     <div class="box small-chart">
       <BarChart 
         :xAttribute="xAttribute" 
-        :categoryAttribute="categoryAttribute"
+        :categoryAttribute="colorAttribute"
         :xLabel="xLabel"
-        :categoryLabel="categoryLabel"
+        :categoryLabel="colorAttribute"
         @update:xAttribute="xAttribute = $event"
-        @update:categoryAttribute="categoryAttribute = $event"
         @update:xLabel="xLabel = $event"
-        @update:categoryLabel="categoryLabel = $event"
       />
     </div>
     <div class="boxMlPlots pca"><PcaPlot /></div>
@@ -49,35 +50,38 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 import { useEditionsData } from './composables/useEditionsData';
+import { useColorPalette } from './composables/useColorPalette';
 import BarChart from './components/BarChart.vue';
-import BarChartSelector from './components/BarChartSelector.vue';
 import SlidersPanel from './components/SlidersPanel.vue';
 import NewTagFilter from './components/NewTagFilter.vue';
-// import ReliabilitySliders from './components/ReliabilitySliders.vue';
 import TimelinePlot from './components/TimelinePlot.vue';
 import SourceList from './components/SourceList.vue';
 import Summary from './components/Summary.vue';
 import PcaPlot from './components/PcaPlot.vue';
 import NetworkPlot from './components/NetworkPlot.vue';
-
+import ColorLegend from './components/ColorLegend.vue';
 
 const xAttribute = ref('Historical Period');
-const categoryAttribute = ref('Scholarly');
 const xLabel = ref('Historical Period');
-const categoryLabel = ref('Scholarly');
-const selectedEdition = ref(null)
+const selectedEdition = ref(null);
 
 const { editions, fetchEditions } = useEditionsData();
+const { precomputeColorsForAttribute, categoryColorMap } = useColorPalette();
+
+const colorAttribute = 'Language';
 
 onMounted(() => {
   fetchEditions();
 });
 
 watch(editions, (newEditions) => {
-  if (newEditions.length > 0 && !selectedEdition.value) {
-    const randomIndex = Math.floor(Math.random() * newEditions.length);
-    selectedEdition.value = newEditions[randomIndex];
-  }
+    if (newEditions && newEditions.length > 0) {
+        precomputeColorsForAttribute(newEditions, colorAttribute);
+        if (!selectedEdition.value) {
+            const randomIndex = Math.floor(Math.random() * newEditions.length);
+            selectedEdition.value = newEditions[randomIndex];
+        }
+    }
 }, { immediate: true });
 </script>
 
@@ -92,7 +96,7 @@ watch(editions, (newEditions) => {
   width: 100%;
   max-width: 100%;
 
-  grid-template-columns: 0.8fr 0.7fr 1fr 1fr 0.7fr;
+  grid-template-columns: 0.8fr 1.3fr 0.4fr 0.6fr 0.4fr;
 
   grid-template-rows: 1fr 1fr 1.5fr 1fr;
 }
@@ -155,7 +159,12 @@ watch(editions, (newEditions) => {
 }
 
 .timeline {
-  grid-column: 2 / 5;
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+.legend-box {
+  grid-column: 5;
   grid-row: 3;
 }
 
@@ -172,7 +181,7 @@ watch(editions, (newEditions) => {
 }
 
 .pca {
-  grid-column: 5;
+  grid-column: 4;
   grid-row: 3;
 
   width: 100%;
