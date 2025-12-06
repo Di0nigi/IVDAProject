@@ -18,7 +18,17 @@
 
     </div>
 
+
     <div v-else>
+
+    <div v-if="tagVis">
+
+      
+
+
+
+    </div>
+    <div v-else> 
 
     <h2 style="margin-top: 0;">{{ edition['Edition name'] }}</h2>
     <div style="text-align: center; margin-bottom: 10px;">
@@ -79,26 +89,7 @@
             </svg>
           </span>
         </button>
-        <button
-          v-for="keyword in splitKeywords(edition.Keywords)"
-          :key="'keyword-' + keyword"
-          class="tag-button summary-pill"
-          @click="toggleTag(keyword, 'keyword')"
-          :class="getTagClass(keyword, 'keyword')"
-        >
-          <span>{{ keyword }}</span>
-          <span v-if="getTagStatus(keyword, 'keyword') === 'selected'" style="display:inline-flex;align-items:center;">
-            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span v-if="getTagStatus(keyword, 'keyword') === 'excluded'" style="display:inline-flex;align-items:center;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </button>
+       
         <button
           v-for="period in splitTags(edition['Historical Period'])"
           :key="'period-' + period"
@@ -119,6 +110,32 @@
             </svg>
           </span>
         </button>
+         <button
+          v-for="keyword in splitKeywords(edition.Keywords)"
+          :key="'keyword-' + keyword"
+          class="tag-button summary-pill"
+          @click="toggleTag(keyword, 'keyword')"
+          :class="getTagClass(keyword, 'keyword')"
+        >
+          <span>{{ keyword }}</span>
+          <span v-if="getTagStatus(keyword, 'keyword') === 'selected'" style="display:inline-flex;align-items:center;">
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10.5L9 14.5L15 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span v-if="getTagStatus(keyword, 'keyword') === 'excluded'" style="display:inline-flex;align-items:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <button class="tag-button summary-pill-edit"  @click="tagEdit()" >
+          <span>Edit tags</span>
+          
+         
+        </button>
+
         <div style="width:100%;height:1em;"></div>
         <a
           v-if="edition['OCR or keyed?']"
@@ -159,6 +176,7 @@
     </div>
   </div>
   </div>
+  </div>
 
 
   <div v-else>
@@ -181,6 +199,7 @@ const props = defineProps({
 })
 
 var scoreVis = ref(false);
+var tagVis = ref(false);
 
 const score = computed(() => {
   if (props.edition) {
@@ -273,6 +292,12 @@ const openAccessText = computed(() => {
 
 const { activeFilters, toggleTagFilter } = useFilters();
 
+function tagEdit(){
+  tagVis.value = !tagVis.value;
+
+  console.log(tagVis)
+
+}
 
 function relScore(){
 
@@ -357,6 +382,16 @@ a.tag-button:hover {
 }
 
 .summary-pill {
+  border-radius: 12px;
+  height: 24px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.summary-pill-edit {
+  background: #1976d2;
   border-radius: 12px;
   height: 24px;
   padding: 0 10px;

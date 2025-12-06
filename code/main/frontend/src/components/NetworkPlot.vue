@@ -284,9 +284,9 @@ methods: {
     const filteredEdges = this.graphData.links.filter(edge => edge.weight === 3)
 
     const edges = new DataSet(filteredEdges);  
-    console.log(nodes) 
-    console.log(filteredEdges.length, " number of links")
-    console.log(edges, " links")
+    //console.log(nodes) 
+    //console.log(filteredEdges.length, " number of links")
+    //console.log(edges, " links")
 
     const data = { nodes, edges };
     const options = {
@@ -369,10 +369,10 @@ methods: {
   color: #333;
 }
 
-.weights-filter {
+.weights-filterODp {
   position: fixed;
   top: 105px;
-  left: 465px;
+  left: 405px;
   z-index: 10;
   font-family: sans-serif;
   font-size: 1.1em;
@@ -383,11 +383,25 @@ methods: {
   gap: 5px;
 }
 
+.weights-filter {
+  position: absolute;      /* relative to .network-wrapper */
+  top: 23%;
+  left: 2%;
+  z-index: 20;             /* must be higher than graph canvas */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #000000;
+}
+
 .weights-filter button {
   padding: 6px 14px;
   margin-right: 6px;
   background: #e0e0e0;
-  border-color: #4caf50;
+  border-color: #1976d2;
   border-radius: 5px;
   border-width: 2px;
   cursor: pointer;
