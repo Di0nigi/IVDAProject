@@ -17,7 +17,7 @@ import { watch } from "vue";
 export default {
   data() {
     return {
-      ScatterPlotData: { ids: [], xCoor: [], yCoor: [], labels: [] },
+      ScatterPlotData: { ids: [], xCoor: [], yCoor: [], labels: [], titles: [] },
       rawResponseData: null,
       updateStatus: null,
       hasChanges: false,
@@ -47,7 +47,7 @@ export default {
           this.changeDebounceTimer = setTimeout(() => {
             const currentState = JSON.stringify(newVal);
             if (this.lastFilterState !== currentState) {
-              console.log('PCA: Filters changed, marking for update');
+              //console.log('PCA: Filters changed, marking for update');
               this.hasChanges = true;
               this.lastFilterState = currentState;
             }
@@ -61,16 +61,16 @@ export default {
   mounted() {
     this.fetchData();
     
-    console.log('PCA: Setting up 5-second update interval');
+    //console.log('PCA: Setting up 5-second update interval');
     let checkCount = 0;
     
     // Start periodic check for updates every 5 seconds
     this.periodicCheckInterval = setInterval(() => {
       checkCount++;
-      console.log(`PCA: Periodic check #${checkCount} (should be every 5 seconds)`);
+      //console.log(`PCA: Periodic check #${checkCount} (should be every 5 seconds)`);
       
       if (this.hasChanges) {
-        console.log('PCA: Starting update...');
+        //console.log('PCA: Starting update...');
         this.updateStatus = 'updating';
         this.hasChanges = false;
         
@@ -79,16 +79,18 @@ export default {
             "myScatterPlot",
             this.ScatterPlotData.xCoor,
             this.ScatterPlotData.yCoor,
-            this.ScatterPlotData.labels
+            this.ScatterPlotData.labels,
+             this.ScatterPlotData.titles
+
           );
-          console.log('PCA: Update complete');
+          //console.log('PCA: Update complete');
           this.updateStatus = 'up-to-date';
           
           setTimeout(() => {
             this.updateStatus = null;
           }, 1000);
       } else {
-        console.log('PCA: No changes, skipping update');
+        //console.log('PCA: No changes, skipping update');
       }
     }, 1000);
   },
@@ -115,7 +117,9 @@ export default {
         "myScatterPlot",
         this.ScatterPlotData.xCoor,
         this.ScatterPlotData.yCoor,
-        this.ScatterPlotData.labels
+        this.ScatterPlotData.labels,
+        this.ScatterPlotData.titles
+
       );
     },
 
@@ -132,6 +136,7 @@ export default {
       this.ScatterPlotData.xCoor = [];
       this.ScatterPlotData.yCoor = [];
       this.ScatterPlotData.labels = [];
+      this.ScatterPlotData.titles = [];
 
       let i = 0; // filtered editions
       let j = 0; // response IDs
@@ -141,6 +146,7 @@ export default {
           this.ScatterPlotData.xCoor.push(responseData.xCoor[j]);
           this.ScatterPlotData.yCoor.push(responseData.yCoor[j]);
           this.ScatterPlotData.labels.push(responseData.labels[j]);
+          this.ScatterPlotData.titles.push(arr[i]["Edition name"].slice(0, 15)+"...");
           i++;
           j++;
         } else if (arr[i].id < responseData.ids[j]) {
@@ -151,7 +157,14 @@ export default {
       }
     },
 
-    drawScatterPlot(containerId, x, y, labels) {
+    drawScatterPlot(containerId, x, y, labels,titles) {
+      const parent = this.$el.parentElement;
+      const parentWidth = parent.clientWidth;
+      const parentHeight = parent.clientHeight;
+      console.log("measurements")
+      console.log(parentWidth);
+      console.log(parentHeight);
+
       const plotContainer = this.$el.querySelector('#' + containerId);
       if (!plotContainer) return;
 
@@ -174,17 +187,23 @@ export default {
         mode: "markers",
         type: "scatter",
         marker: { color: pointColors, size: 8 },
-        text: labels,
+        text: titles,
+        hovertext: titles,        
+        hoverinfo: "text",
       };
 
       const layout = {
-        margin: { l: 25, r: 10, t: 10, b: 25 },
+        width: parentWidth,
+        height: parentHeight,  
+        margin: { l: 0, r: 0, t: 0, b: 0 },
         autosize: true,
         xaxis: {
-          visible: false,
+          visible: true,
+          showticklabels: false,
         },
         yaxis: {
-          visible: false,
+          visible: true,
+          showticklabels: false,
         },
       };
 

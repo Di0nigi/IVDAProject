@@ -96,7 +96,7 @@ watch(editions, (newEditions) => {
   width: 100%;
   max-width: 100%;
 
-  grid-template-columns: 0.8fr 1.3fr 0.4fr 0.6fr 0.4fr;
+  grid-template-columns: 0.8fr 0.6fr 1.3fr 0.4fr  0.4fr;
 
   grid-template-rows: 1fr 1fr 1.5fr 1fr;
 }
@@ -159,7 +159,7 @@ watch(editions, (newEditions) => {
 }
 
 .timeline {
-  grid-column: 2 / 4;
+  grid-column: 3 / 5;
   grid-row: 3;
 }
 
@@ -181,7 +181,7 @@ watch(editions, (newEditions) => {
 }
 
 .pca {
-  grid-column: 4;
+  grid-column: 2;
   grid-row: 3;
 
   width: 100%;
