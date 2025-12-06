@@ -38,7 +38,7 @@ data: () => ({
   hasChanges: false,
   periodicCheckInterval: null,
   lastFilterState: null,
-  changeDebounceTimer: null
+  changeDebounceTimer: null,
 }),
 
 computed: {
@@ -79,7 +79,7 @@ async mounted() {
   
   this.periodicCheckInterval = setInterval(() => {
     checkCount++;
-    console.log(`Network: Periodic check #${checkCount} (should be every 1 seconds)`);
+    console.log(`Network: Periodic check #${checkCount} (should be every second)`);
     
     if (this.hasChanges) {
       console.log('Network: Starting update...');
@@ -93,7 +93,7 @@ async mounted() {
       
       setTimeout(() => {
         this.updateStatus = null;
-      }, 2000);
+      }, 1000);
     } else {
       console.log('Network: No changes, skipping update');
     }
@@ -122,17 +122,18 @@ methods: {
     if (!this.networkInstance || !this.networkInstance.body) return;
     
     const filteredIds = new Set(this.filteredEditions.map(e => e.id));
-    console.log(filteredIds, "ids to show")
     const nodesDataSet = this.networkInstance.body.data.nodes;
     const edgesDataSet = this.networkInstance.body.data.edges;
     const allNodeIds = nodesDataSet.getIds();
-    const batchUpdates = [];
+    const allEdges = edgesDataSet.get();
+    const nodeBatchUpdates = [];
+    const edgeBatchUpdates = [];
     
     for (let i = 0; i < allNodeIds.length; i++) {
       const nodeId = allNodeIds[i];
       const shouldShow = filteredIds.has(nodeId);
       
-      batchUpdates.push({
+      nodeBatchUpdates.push({
         id: nodeId,
         opacity: shouldShow ? 1 : 0.2,
         color: {
@@ -145,9 +146,25 @@ methods: {
         }
       });
     }
-    
-    nodesDataSet.update(batchUpdates);
 
+    for (let i = 0; i < allEdges.length; i++) {
+      const edge = allEdges[i];
+
+      const isConnected =
+        filteredIds.has(edge.from) && filteredIds.has(edge.to);
+
+      console.log("edge", edge.id, isConnected)
+
+      edgeBatchUpdates.push({
+        id: edge.id,
+        hidden: isConnected ? false : true
+      });
+    }
+
+    console.log(edgeBatchUpdates)
+    
+    nodesDataSet.update(nodeBatchUpdates);
+    edgesDataSet.update(edgeBatchUpdates);
   },
 
   loadGraph() {
@@ -203,9 +220,10 @@ methods: {
 
         return {
           ...n,
-          group: n.label,
+          group: n.label, 
           size: 4,
           borderWidth: 0.5,
+          title: this.filteredEditions.find(e => e.id === n.id)["Edition name"],
           color: {
             border: "#000000",
             background: "#c2e0ff",
@@ -219,22 +237,29 @@ methods: {
       })
     );
 
-    const edges = new DataSet(this.graphData.links.slice(500,1000));
+    const filteredEdges = this.graphData.links.filter(edge => edge.weight === 3)
+
+    const edges = new DataSet(filteredEdges);  
     console.log(nodes) 
-    console.log(this.graphData.links.length, " number of links")
+    console.log(filteredEdges.length, " number of links")
+    console.log(edges, " links")
 
     const data = { nodes, edges };
     const options = {
+      interaction: { hover: true },
+      manipulation: {
+        enabled: true,
+      },
       nodes:{
         shape : 'square',
       },
       edges: {
         width: 1,
         color: {
-          color: 'rgba(200,200,200,1)',
+          color: 'rgba(200,200,200,0.2)',
           highlight: 'rgb(0,0,0)',
         },
-        selectionWidth: 3,
+        selectionWidth: 2,
         smooth: false,
       },
       layout: {
@@ -251,13 +276,20 @@ methods: {
     
     this.networkInstance = new Network(this.$refs.graphContainer, data, options);
 
-      this.networkInstance.on('click', (properties) => {
+    this.networkInstance.on('click', (properties) => {
         const ids = properties.nodes;
         const clickedNodes = nodes.get(ids);
-        console.log('clicked nodes:', clickedNodes[0].id);
+        console.log('clicked nodes:', clickedNodes[0]?.id);
         if (clickedNodes.length > 0) {
           this.selectEdition(clickedNodes[0].id);
         }
+    });
+
+    this.networkInstance.on("showPopup", function (params) {
+      
+    });
+    this.networkInstance.on("hidePopup", function () {
+      console.log("hidePopup Event");
     });
   },
   
@@ -281,8 +313,6 @@ methods: {
 },
 
 }
-
-
 </script>
 
 <style scoped>
