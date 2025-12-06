@@ -25,15 +25,16 @@
 import { Network, DataSet } from "vis-network/standalone";
 import { useEditionsData } from "../composables/useEditionsData";
 import { useFilters } from "../composables/useFilters";
-
+import { markRaw } from "vue";
 
 export default {
 
 emits: ['select'],
+props: ['edition'],
 
 networkInstance: null,
 
-setup() {
+setup(props) {
   const { activeFilters } = useFilters();
   return { activeFilters };
 },
@@ -79,18 +80,30 @@ watch: {
     },
     deep: true
   },
+  edition: {
+    handler(newEdition, oldEdition) {
+      if (newEdition && this.networkInstance && this.networkInstance.body && this.networkInstance.body.data) {
+        this.$nextTick(() => {
+          try {
+            this.networkInstance.unselectAll();
+            this.networkInstance.selectNodes([newEdition.id]);
+          } catch (error) {
+            console.warn('Error selecting node:', error);
+          }
+        });
+      }
+    }
+  }
 },
 
 async mounted() {
   await this.fetchData();
   this.loadGraph();
   
-  console.log('Network: Setting up 1-second update interval');
   let checkCount = 0;
   
   this.periodicCheckInterval = setInterval(() => {
     checkCount++;
-    console.log(`Network: Periodic check #${checkCount} (should be every second)`);
     
     if (this.hasChanges) {
       console.log('Network: Starting update...');
@@ -106,7 +119,6 @@ async mounted() {
         this.updateStatus = null;
       }, 1000);
     } else {
-      console.log('Network: No changes, skipping update');
     }
   }, 1000);
 },
@@ -279,9 +291,6 @@ methods: {
     const data = { nodes, edges };
     const options = {
       interaction: { hover: true },
-      manipulation: {
-        enabled: true,
-      },
       nodes:{
         shape : 'square',
       },
@@ -306,7 +315,7 @@ methods: {
       }
     };
     
-    this.networkInstance = new Network(this.$refs.graphContainer, data, options);
+    this.networkInstance = markRaw(new Network(this.$refs.graphContainer, data, options));
 
     this.networkInstance.on('click', (properties) => {
         const ids = properties.nodes;
@@ -350,7 +359,7 @@ methods: {
 <style scoped>
 .plot-title {
   position: absolute;
-  top: 40px;
+  top: 10px;
   left: 10px;
   z-index: 10;
   margin: 0;
