@@ -19,7 +19,10 @@ export function useEditionsData() {
         },
         body: JSON.stringify({ weights })
       });
-      const scores = await response.json();
+      const scores = await response.json
+      
+
+      
       
       // Update editions with new scores (mutate in place to avoid triggering unnecessary reactivity)
       const scoreMap = new Map(scores.map(s => [s.id, s.reliabilityScore]));

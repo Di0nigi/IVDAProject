@@ -3,6 +3,10 @@ from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from .mlUtils import visModel,dataEncoder,ScoreModel
+import random
+
+
+
 #from .filterning import filterModel
 
 app = Flask(__name__)
@@ -104,6 +108,9 @@ def getAndComputeGraphPoints():
     keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
     formatted = dc.formatData(keyWordsList)
     edges= dc.getGraphEncoding(formatted)
+
+    random.shuffle(edges)
+
     #encoded = dc.encode(formatted)
 
     #dc.saveData(encoded, "keywordsEmbed", client, db, texts)
@@ -119,6 +126,7 @@ def getAndComputeGraphPoints():
 
     nodeList=[{"id":elem["id"],"label":labs[ind]} for ind,elem in enumerate(keyWordsList)]
     linkList=[{"from":ed[0],"to":ed[1],"weight":ed[2]} for ed in list(edges)]
+
 
     ret = {"nodes":nodeList,"links":linkList}
     #ret={}
