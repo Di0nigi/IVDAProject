@@ -5,6 +5,16 @@
       {{ updateStatus === 'updating' ? 'Updating...' : 'Up to date' }}
     </div>
     <div ref='graphContainer' class="graph-container"></div>
+  <div class="weights-filter">
+    <button v-for="opt in [1, 2, 3, 4, 5]"
+      :key="opt"
+      :class="{ active: selectedWeight === opt }"
+      @click="selectedWeight = opt; changeWeights(opt)"
+      :title="'Number of related tags'"
+      :disabled="!isSelectable(opt)">
+      {{ opt }}
+    </button>
+  </div>
   </div>
 </template>
 
@@ -39,6 +49,7 @@ data: () => ({
   periodicCheckInterval: null,
   lastFilterState: null,
   changeDebounceTimer: null,
+  selectedWeight: 3,
 }),
 
 computed: {
@@ -116,6 +127,27 @@ methods: {
       const edition = this.filteredEditions.find(e => e.id === id);
       console.log("edition", edition);
       this.$emit('select', edition);
+  },
+
+  changeWeights(weight) {
+    if (!this.isSelectable(weight)) return;
+    const filteredEdges = this.graphData.links.filter(edge => edge.weight === weight)
+    const edgesDataSet = this.networkInstance.body.data.edges;
+    console.log(filteredEdges.length, "hello")
+
+    edgesDataSet.clear()
+
+    edgesDataSet.update(filteredEdges)
+  },
+
+  isSelectable(weight) {
+    const filteredEdges = this.graphData.links.filter(edge => edge.weight === weight)
+    if (filteredEdges.length > 0) {
+      return true
+    }
+    else {
+      return false
+    }
   },
 
   updateNetwork() {
@@ -318,7 +350,7 @@ methods: {
 <style scoped>
 .plot-title {
   position: absolute;
-  top: 10px;
+  top: 40px;
   left: 10px;
   z-index: 10;
   margin: 0;
@@ -326,6 +358,38 @@ methods: {
   font-size: 1.1em;
   font-weight: 600;
   color: #333;
+}
+
+.weights-filter {
+  position: fixed;
+  top: 105px;
+  left: 465px;
+  z-index: 10;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.weights-filter button {
+  padding: 6px 14px;
+  margin-right: 6px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.weights-filter button.active {
+  background: #9c9c9c;
+  color: white;
+}
+
+.weights-filter button:hover {
+  background: #adadad;
 }
 
 .update-status {
