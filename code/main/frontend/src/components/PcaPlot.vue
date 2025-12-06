@@ -51,7 +51,7 @@ export default {
               this.hasChanges = true;
               this.lastFilterState = currentState;
             }
-          }, 3000);
+          }, 1000);
         }
       },
       { deep: true }
@@ -74,7 +74,6 @@ export default {
         this.updateStatus = 'updating';
         this.hasChanges = false;
         
-        setTimeout(() => {
           this.processScatterData();
           this.drawScatterPlot(
             "myScatterPlot",
@@ -87,12 +86,11 @@ export default {
           
           setTimeout(() => {
             this.updateStatus = null;
-          }, 2000);
-        }, 100);
+          }, 1000);
       } else {
         console.log('PCA: No changes, skipping update');
       }
-    }, 5000);
+    }, 1000);
   },
 
   beforeUnmount() {
@@ -211,14 +209,15 @@ export default {
 }
 .plot-title {
   position: absolute;
-  top: 10px;
+  top: 260px;
   left: 10px;
   z-index: 10;
   margin: 0;
   font-family: sans-serif;
-  font-size: 1.1em;
+  font-size: 0.8em;
   font-weight: 600;
   color: #333;
+
 }
 .update-status {
   position: absolute;

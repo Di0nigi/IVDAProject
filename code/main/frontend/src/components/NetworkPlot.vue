@@ -15,7 +15,6 @@
 import { Network, DataSet } from "vis-network/standalone";
 import { useEditionsData } from "../composables/useEditionsData";
 import { useFilters } from "../composables/useFilters";
-import { watch, onMounted, nextTick } from "vue";
 
 
 export default {
@@ -53,12 +52,10 @@ watch: {
   activeFilters: {
     handler(newVal) {
       if (this.rawResponseData && this.networkInstance) {
-        // Clear any pending change detection
         if (this.changeDebounceTimer) {
           clearTimeout(this.changeDebounceTimer);
         }
         
-        // Wait 3000ms before marking as changed (batches rapid filter changes)
         this.changeDebounceTimer = setTimeout(() => {
           const currentState = JSON.stringify(newVal);
           if (this.lastFilterState !== currentState) {
@@ -66,7 +63,7 @@ watch: {
             this.hasChanges = true;
             this.lastFilterState = currentState;
           }
-        }, 3000);
+        }, 500);
       }
     },
     deep: true
@@ -77,32 +74,30 @@ async mounted() {
   await this.fetchData();
   this.loadGraph();
   
-  console.log('Network: Setting up 5-second update interval');
+  console.log('Network: Setting up 1-second update interval');
   let checkCount = 0;
   
-  // Start periodic check for updates every 5 seconds
   this.periodicCheckInterval = setInterval(() => {
     checkCount++;
-    console.log(`Network: Periodic check #${checkCount} (should be every 5 seconds)`);
+    console.log(`Network: Periodic check #${checkCount} (should be every 1 seconds)`);
     
     if (this.hasChanges) {
       console.log('Network: Starting update...');
       this.updateStatus = 'updating';
       this.hasChanges = false;
       
+
+      this.updateNetwork();
+      console.log('Network: Update complete');
+      this.updateStatus = 'up-to-date';
+      
       setTimeout(() => {
-        this.updateNetwork();
-        console.log('Network: Update complete');
-        this.updateStatus = 'up-to-date';
-        
-        setTimeout(() => {
-          this.updateStatus = null;
-        }, 2000);
-      }, 100);
+        this.updateStatus = null;
+      }, 2000);
     } else {
       console.log('Network: No changes, skipping update');
     }
-  }, 5000);
+  }, 1000);
 },
 
 beforeUnmount() {
@@ -127,30 +122,32 @@ methods: {
     if (!this.networkInstance || !this.networkInstance.body) return;
     
     const filteredIds = new Set(this.filteredEditions.map(e => e.id));
+    console.log(filteredIds, "ids to show")
     const nodesDataSet = this.networkInstance.body.data.nodes;
-    
-    // Get all node IDs and update in batch
+    const edgesDataSet = this.networkInstance.body.data.edges;
     const allNodeIds = nodesDataSet.getIds();
-    const updates = [];
+    const batchUpdates = [];
     
     for (let i = 0; i < allNodeIds.length; i++) {
       const nodeId = allNodeIds[i];
       const shouldShow = filteredIds.has(nodeId);
-      const currentNode = nodesDataSet.get(nodeId);
       
-      // Only update if visibility needs to change
-      if (currentNode.hidden === shouldShow) {
-        updates.push({
-          id: nodeId,
-          hidden: !shouldShow
-        });
-      }
+      batchUpdates.push({
+        id: nodeId,
+        opacity: shouldShow ? 1 : 0.2,
+        color: {
+          border: "#000000",
+          background: "#c2e0ff",
+          hover: {
+            border: '#de0f00',
+            background: '#D2E5FF'
+          } 
+        }
+      });
     }
     
-    // Single batch update
-    if (updates.length > 0) {
-      nodesDataSet.update(updates);
-    }
+    nodesDataSet.update(batchUpdates);
+
   },
 
   loadGraph() {
@@ -163,32 +160,35 @@ methods: {
     const rectWidth = parent.clientWidth;
     const rectHeight = parent.clientHeight;
 
-    const groupPositions = {
-      0: { x: -rectWidth/2, y: -rectHeight/1.8},
-      1: { x: rectWidth/2, y: -rectHeight/1.8},  
-      2: { x: 0, y: -rectHeight/1.8 },                           
-      3: { x: -rectWidth/2, y: 0 },                                           
-      4: { x: rectWidth/2, y: 0 },                                            
-      5: { x: -rectWidth/2, y: rectHeight/1.8},                 
-      6: { x: rectWidth/2, y: rectHeight/1.8},                 
-    };
+    const radiusX = rectWidth * 0.4;  
+    const radiusY = rectHeight * 0.4;  
 
-    const maxRadius = 100;
-    const minDist = 20;
+    const groupPositions = {};
+    for (let i = 0; i < 5; i++) {
+      const angle = (i / 5) * Math.PI * 2;
+
+      groupPositions[i] = {
+        x: Math.cos(angle) * radiusX,
+        y: Math.sin(angle) * radiusY
+      };
+    }
+    const maxRadius = 90;
+    const minDist = 10;
 
     const placed = [];
 
     const nodes = new DataSet(
       this.graphData.nodes.map(n => {
         let x, y;
-
         let attempts = 0;
+
+        const base = groupPositions[n.label] ?? { x: 0, y: 0 };
         do {
           const angle = Math.random() * Math.PI * 2;
           const r = Math.sqrt(Math.random()) * maxRadius;
 
-          x = (groupPositions[n.label]?.x ?? 0) + Math.cos(angle) * r;
-          y = (groupPositions[n.label]?.y ?? 0) + Math.sin(angle) * r;
+          x = base.x + Math.cos(angle) * r;
+          y = base.y + Math.sin(angle) * r;
 
           attempts++;
           if (attempts > 2000) break;
@@ -199,13 +199,20 @@ methods: {
             return dx * dx + dy * dy < minDist * minDist;
           })
         );
-
         placed.push({ x, y });
 
         return {
           ...n,
           group: n.label,
-          size: 8,
+          size: 4,
+          borderWidth: 0.5,
+          color: {
+            border: "#000000",
+            background: "#c2e0ff",
+            hover: {
+              border: '#de0f00',
+              background: '#D2E5FF'} 
+          },
           x,
           y,
         };
@@ -214,20 +221,21 @@ methods: {
 
     const edges = new DataSet(this.graphData.links.slice(500,1000));
     console.log(nodes) 
+    console.log(this.graphData.links.length, " number of links")
 
     const data = { nodes, edges };
     const options = {
       nodes:{
         shape : 'square',
-        size: 8
       },
       edges: {
         width: 1,
         color: {
           color: 'rgba(200,200,200,1)',
-          highlight: 'rgb(0,0,0)'
+          highlight: 'rgb(0,0,0)',
         },
         selectionWidth: 3,
+        smooth: false,
       },
       layout: {
         improvedLayout: false
@@ -235,6 +243,10 @@ methods: {
       physics: {
         enabled: false
       },
+      interaction: {
+        hideEdgesOnDrag: true,
+        hideEdgesOnZoom: true,
+      }
     };
     
     this.networkInstance = new Network(this.$refs.graphContainer, data, options);
@@ -256,7 +268,11 @@ methods: {
     const response = await fetch(reqUrl)
     const responseData = await response.json();
 
-    this.graphData.nodes = responseData.nodes;
+    const filteredIds = new Set(this.filteredEditions.map(e => e.id));
+
+    this.graphData.nodes = responseData.nodes.filter(node =>
+      filteredIds.has(node.id)
+    );
     this.graphData.links = responseData.links;
     this.fullGraphData.nodes = responseData.nodes;
     this.fullGraphData.links = responseData.links;
