@@ -378,14 +378,21 @@ methods: {
   padding: 6px 14px;
   margin-right: 6px;
   background: #e0e0e0;
-  border: none;
-  border-radius: 6px;
+  border-color: #4caf50;
+  border-radius: 5px;
+  border-width: 2px;
   cursor: pointer;
 }
 
 .weights-filter button.active {
   background: #9c9c9c;
   color: white;
+}
+
+.weights-filter button:disabled {
+  background: #cccccc;
+  color: #666666;
+  border-color: #666666;
 }
 
 .weights-filter button:hover {
