@@ -95,20 +95,33 @@ class dataEncoder():
         
         return
     
-    def getGraphEncoding(self,data):
+    def getGraphEncoding(self, data):
+        # attribute → list of item IDs
         index = defaultdict(list)
-
         for itemId, attrs in enumerate(data):
             for a in attrs:
                 index[a].append(itemId)
-        edges = set()
+
+        
+        edges = defaultdict(int)
 
         for attr, itemList in index.items():
+            # for each attribute, connect all items that share it
             for i in range(len(itemList)):
                 for j in range(i + 1, len(itemList)):
                     a, b = itemList[i], itemList[j]
                     if a != b:
-                        edges.add((min(a, b), max(a, b))) 
+                        u, v = min(a, b), max(a, b)
+                        edges[(u, v)] += 1  
+
+       
+        #print(edges[0:10])
+        
+        edges = [(a, b, w) for (a, b), w in edges.items()]
+        #print("after")
+
+        #print(edges[0:10])
+
 
         return edges
     

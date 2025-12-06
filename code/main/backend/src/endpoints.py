@@ -3,7 +3,7 @@ from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from .mlUtils import visModel,dataEncoder,ScoreModel
-from .filterning import filterModel
+#from .filterning import filterModel
 
 app = Flask(__name__)
 CORS(app)
@@ -19,7 +19,7 @@ texts = db["editions"]
 
 
 scM = ScoreModel()
-fM = filterModel()
+#fM = filterModel()
 
 #@app.route("/texts/filter", methods=["POST"])
 #def setFilterParams():
@@ -118,7 +118,7 @@ def getAndComputeGraphPoints():
     #ret={"labels":labs.tolist(),"edges":list(edges),"nodes":ids}
 
     nodeList=[{"id":elem["id"],"label":labs[ind]} for ind,elem in enumerate(keyWordsList)]
-    linkList=[{"from":ed[0],"to":ed[1]} for ed in list(edges)]
+    linkList=[{"from":ed[0],"to":ed[1],"weight":ed[2]} for ed in list(edges)]
 
     ret = {"nodes":nodeList,"links":linkList}
     #ret={}
