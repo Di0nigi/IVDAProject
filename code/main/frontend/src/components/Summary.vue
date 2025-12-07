@@ -318,7 +318,13 @@ const openAccessText = computed(() => {
   if (oa.toLowerCase().includes('open access and open source')) {
     return 'Open Access & Source';
   }
-  return `Open Access: ${oa}`;
+  if (oa.toLowerCase() === 'no') {
+    return 'Not Open Access';
+  }
+  if (oa.toLowerCase().includes('partly')) {
+    return 'Partly Open Access';
+  }
+  return oa;
 });
 
 const translationPillStyle = computed(() => {
