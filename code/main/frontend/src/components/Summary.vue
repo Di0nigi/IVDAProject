@@ -148,7 +148,7 @@
           class="tag-button summary-pill"
           :style="ocrPillStyle"
         >
-          {{ edition['OCR or keyed?'] }}
+          {{ ocrText }}
         </a>
         <a
           v-if="edition['Open source/Open access']"
@@ -272,11 +272,22 @@ const ocrPillStyle = computed(() => {
     color = '#4CAF50'; // green
   } else if (ocr.toLowerCase().includes('ocr')) {
     color = '#2196F3'; // blue
+  } else if (ocr.toLowerCase() === 'not provided' || ocr.toLowerCase() === 'no' || !ocr) {
+    color = '#F44336'; // red for no OCR
   }
   return {
     background: color,
     color: 'white',
   };
+});
+
+const ocrText = computed(() => {
+  if (!props.edition) return '';
+  const ocr = props.edition['OCR or keyed?'] || '';
+  if (ocr.toLowerCase() === 'not provided' || ocr.toLowerCase() === 'no' || !ocr) {
+    return 'No OCR';
+  }
+  return ocr;
 });
 
 const openAccessPillStyle = computed(() => {
@@ -321,7 +332,7 @@ const translationPillStyle = computed(() => {
   } else if (trans.toLowerCase() === 'partly') {
     color = '#FFC107'; // yellow
     textColor = 'white';
-  } else if (trans.toLowerCase() === 'no') {
+  } else if (trans.toLowerCase() === 'no' || trans.toLowerCase() === 'not provided') {
     color = '#F44336'; // red
     textColor = 'white';
   }
@@ -338,7 +349,7 @@ const translationText = computed(() => {
     return 'Translation Available';
   } else if (trans.toLowerCase() === 'partly') {
     return 'Translation: Partly';
-  } else if (trans.toLowerCase() === 'no') {
+  } else if (trans.toLowerCase() === 'no' || trans.toLowerCase() === 'not provided') {
     return 'No Translation';
   }
   return `Translation: ${trans}`;
