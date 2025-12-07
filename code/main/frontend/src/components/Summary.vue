@@ -20,6 +20,20 @@
 
     <div v-else>
 
+    <div v-if="tagVis">
+      <div class="column">
+        <button @click="tagEdit()" class="back-button">
+          Back
+        </button>
+
+        <div class="tag-edit-container">
+          <h3>Edit Tags</h3>
+          <p style="color: #666; font-size: 13px;">Tag editing interface coming soon...</p>
+        </div>
+      </div>
+    </div>
+    <div v-else> 
+
     <h2 style="margin-top: 0;">{{ edition['Edition name'] }}</h2>
     <div style="text-align: center; margin-bottom: 10px;">
         <a
@@ -119,6 +133,12 @@
             </svg>
           </span>
         </button>
+        <button class="tag-button summary-pill-edit"  @click="tagEdit()" >
+          <span>Edit tags</span>
+          
+         
+        </button>
+
         <div style="width:100%;height:1em;"></div>
         <a
           v-if="edition['OCR or keyed?']"
@@ -159,6 +179,7 @@
     </div>
   </div>
   </div>
+  </div>
 
 
   <div v-else>
@@ -181,6 +202,7 @@ const props = defineProps({
 })
 
 var scoreVis = ref(false);
+var tagVis = ref(false);
 
 const score = computed(() => {
   if (props.edition) {
@@ -224,7 +246,32 @@ const reliabilityPillStyle = computed(() => {
   };
 });
 
-
+const scoreNumberStyle = computed(() => {
+  // Convert score to number
+  const s = Number(score.value);
+  // Clamp between 0 and 100
+  const clamped = Math.max(0, Math.min(100, s));
+  // Interpolate color: 0=red, 50=yellow, 100=green
+  let r, g, b;
+  // Use higher intensity for the number to make it stand out
+  const maxIntensity = 200;
+  if (clamped <= 50) {
+    // Red to Yellow
+    r = maxIntensity;
+    g = Math.round(maxIntensity * (clamped / 50));
+    b = 0;
+  } else {
+    // Yellow to Green
+    r = Math.round(maxIntensity * (1 - (clamped - 50) / 50));
+    g = maxIntensity;
+    b = 0;
+  }
+  return {
+    color: `rgb(${r},${g},${b})`,
+    fontWeight: 'bold',
+    marginLeft: '6px'
+  };
+});
 
 const ocrPillStyle = computed(() => {
   if (!props.edition) return {};
@@ -275,6 +322,12 @@ const openAccessText = computed(() => {
 
 const { activeFilters, toggleTagFilter } = useFilters();
 
+function tagEdit(){
+  tagVis.value = !tagVis.value;
+
+  console.log(tagVis)
+
+}
 
 function relScore(){
 
@@ -366,6 +419,17 @@ a.tag-button:hover {
   align-items: center;
   box-sizing: border-box;
 }
+
+.summary-pill-edit {
+  background: #1976d2;
+  color: white;
+  border-radius: 12px;
+  height: 24px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+}
 .tag-neutral {
   background: #e0e0e0;
   color: #333;
@@ -411,10 +475,23 @@ a.tag-button:hover {
   padding: 0%;
   width: 100%;
   height: 100%;
-
-  
-
 }
+
+.tag-edit-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.tag-edit-container h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
 .btStyle{
   display: flex;
   border-radius: 100;
