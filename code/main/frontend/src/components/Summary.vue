@@ -183,6 +183,9 @@
       <p v-if="edition['Manager or Editor']" style="margin:0;text-align:left;"><strong>Manager:</strong> {{ edition['Manager or Editor'] }}</p>
       <p v-if="edition['Sponsor/Funding body']" style="margin:0;text-align:left;"><strong>Funding Body:</strong> {{ edition['Sponsor/Funding body'] }}</p>
     </div>
+    
+    <OriginMap v-if="edition['Place of origin of source material(s)']" :location="edition['Place of origin of source material(s)']" />
+    
     </div>
   </div>
   </div>
@@ -199,7 +202,7 @@
 import { defineProps, ref, computed } from 'vue'
 import { useFilters } from '../composables/useFilters'
 import ReliabilitySliders from '../components/ReliabilitySliders.vue';
-
+import OriginMap from '../components/OriginMap.vue';
 
 const props = defineProps({
   edition: {
