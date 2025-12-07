@@ -136,14 +136,14 @@ watch(editions, (newEditions) => {
   display: flex;
   flex-direction: column;
   overflow: auto;
-  flex: 2.5;
+  flex: 3;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  flex: 2;
+  flex: 1.5;
 }
 
 .graph {

@@ -1,6 +1,10 @@
 <template>
   <div class="source-container">
     <div class="search-bar">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="11" r="6" stroke="#666" stroke-width="2"/>
+        <path d="M20 20L15.5 15.5" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+      </svg>
       <input type="text" placeholder="Search..." v-model="searchQuery" />
     </div>
     <ul class="source-list">
@@ -102,11 +106,19 @@ function getReliabilityColor(edition) {
   gap: 8px;
   flex-shrink: 0;
   margin-bottom: 12px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  pointer-events: none;
+  flex-shrink: 0;
 }
 
 .search-bar input {
   flex: 1;
-  padding: 4px 8px;
+  padding: 4px 8px 4px 30px;
   border: 1px solid #d5d9df;
   border-radius: 6px;
   font-size: 12px;
