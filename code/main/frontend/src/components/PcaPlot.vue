@@ -1,6 +1,6 @@
 <template>
   <div class="plot-wrapper">
-    <h3 class="plot-title">PCA grouping by Description</h3>
+    <h3 class="plot-title">PCA Grouping by Description</h3>
     <div v-if="updateStatus" class="update-status" :class="updateStatus">
       {{ updateStatus === 'updating' ? 'Updating...' : 'Up to date' }}
     </div>
@@ -228,15 +228,14 @@ export default {
 }
 .plot-title {
   position: absolute;
-  top: 260px;
+  top: 10px;
   left: 10px;
   z-index: 10;
   margin: 0;
   font-family: sans-serif;
-  font-size: 0.8em;
+  font-size: 1.1em;
   font-weight: 600;
   color: #333;
-
 }
 .update-status {
   position: absolute;
