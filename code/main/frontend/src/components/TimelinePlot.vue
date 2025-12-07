@@ -64,6 +64,8 @@ const props = defineProps({
   }
 });
 
+const emit = defineEmits(['select']);
+
 const { filteredEditions } = useEditionsData();
 const { getColorForCategory } = useColorPalette();
 const { activeFilters, updateFilter } = useFilters();
@@ -192,6 +194,23 @@ const createChart = () => {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      onClick: (event, activeElements) => {
+        if (activeElements.length > 0) {
+          const element = activeElements[0];
+          const datasetIndex = element.datasetIndex;
+          const index = element.index;
+          const clickedData = chartInstance.data.datasets[datasetIndex].data[index];
+          
+          // Find the full edition object by matching the name
+          const edition = filteredEditions.value.find(e => 
+            (e['Edition name'] || 'Unknown') === clickedData.name
+          );
+          
+          if (edition) {
+            emit('select', edition);
+          }
+        }
+      },
       plugins: {
         title: {
           display: false

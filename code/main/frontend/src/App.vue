@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="box timeline">
-      <TimelinePlot :color-attribute="colorAttribute" />
+      <TimelinePlot :color-attribute="colorAttribute" @select="selectedEdition = $event" />
     </div>
 
     <!-- New Legend Box -->
