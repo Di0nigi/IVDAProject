@@ -25,7 +25,7 @@ let map = null;
 let marker = null;
 const hasValidLocation = ref(false);
 
-// Simple geocoding lookup for common places (can be extended)
+// Simple geocoding lookup for common places
 const locationCoordinates = {
   'italy': [41.9028, 12.4964],
   'rome': [41.9028, 12.4964],
@@ -78,15 +78,22 @@ const geocodeLocation = (locationStr) => {
 const initMap = () => {
   if (!mapElement.value) return;
   
-  // Initialize map centered on Europe
+  // Initialize map with world view - much more zoomed out
   map = L.map(mapElement.value, {
-    zoomControl: true,
-    attributionControl: false
-  }).setView([45, 10], 4);
+    zoomControl: false,
+    attributionControl: false,
+    dragging: false,
+    scrollWheelZoom: false,
+    doubleClickZoom: false,
+    boxZoom: false,
+    keyboard: false,
+    touchZoom: false
+  }).setView([30, 0], 1.5); // World view centered, zoom level 1.5
   
-  // Add tile layer
+  // Use a simpler tile layer with less detail
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 4,
+    minZoom: 1
   }).addTo(map);
 };
 
@@ -103,12 +110,28 @@ const updateMarker = () => {
       map.removeLayer(marker);
     }
     
-    // Add new marker
-    marker = L.marker(coords).addTo(map);
-    marker.bindPopup(props.location).openPopup();
+    // Create a custom icon - larger and more visible
+    const customIcon = L.icon({
+      iconUrl: 'data:image/svg+xml;base64,' + btoa(`
+        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="8" fill="#E53935" stroke="white" stroke-width="2"/>
+          <circle cx="16" cy="16" r="4" fill="white"/>
+        </svg>
+      `),
+      iconSize: [32, 32],
+      iconAnchor: [16, 16],
+      popupAnchor: [0, -16]
+    });
     
-    // Center map on marker
-    map.setView(coords, 6);
+    // Add new marker with custom icon
+    marker = L.marker(coords, { icon: customIcon }).addTo(map);
+    marker.bindPopup(`<strong>${props.location}</strong>`, {
+      closeButton: false
+    }).openPopup();
+    
+    // Keep the world view but slightly adjust to show the marker
+    // Don't zoom in - just pan to show the location in context
+    map.setView(coords, 2); // Zoom level 2 shows continent level
   } else {
     hasValidLocation.value = false;
     
@@ -118,8 +141,8 @@ const updateMarker = () => {
       marker = null;
     }
     
-    // Reset to default view
-    map.setView([45, 10], 4);
+    // Reset to world view
+    map.setView([30, 0], 1.5);
   }
 };
 
@@ -158,6 +181,7 @@ onUnmounted(() => {
   height: 200px;
   border-radius: 8px;
   border: 1px solid #d5d9df;
+  background: #f8f9fa;
 }
 
 .no-location {
