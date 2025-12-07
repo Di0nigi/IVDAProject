@@ -54,6 +54,8 @@ function getOcrColor(edition) {
     return '#4CAF50'; // green
   } else if (ocr.toLowerCase().includes('ocr')) {
     return '#2196F3'; // blue
+  } else if (ocr.toLowerCase() === 'not provided' || ocr.toLowerCase() === 'no' || !ocr) {
+    return '#F44336'; // red for no OCR
   }
   return '#e0e0e0'; // default grey
 }
