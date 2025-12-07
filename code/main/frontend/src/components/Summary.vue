@@ -160,6 +160,13 @@
         >
           {{ openAccessText }}
         </a>
+        <a
+          v-if="edition['Source Text Translation']"
+          class="tag-button summary-pill"
+          :style="translationPillStyle"
+        >
+          {{ translationText }}
+        </a>
         <button
           @click="relScore()"
           class="tag-button summary-pill reliability-pill"
@@ -300,6 +307,39 @@ const openAccessText = computed(() => {
   return `Open Access: ${oa}`;
 });
 
+const translationPillStyle = computed(() => {
+  if (!props.edition) return {};
+  const trans = props.edition['Source Text Translation'] || '';
+  let color = '#e0e0e0'; // default grey
+  let textColor = '#333'; // dark text for grey background
+  if (trans.toLowerCase() === 'yes') {
+    color = '#4CAF50'; // green
+    textColor = 'white';
+  } else if (trans.toLowerCase() === 'partly') {
+    color = '#FFC107'; // yellow
+    textColor = 'white';
+  } else if (trans.toLowerCase() === 'no') {
+    color = '#F44336'; // red
+    textColor = 'white';
+  }
+  return {
+    background: color,
+    color: textColor,
+  };
+});
+
+const translationText = computed(() => {
+  if (!props.edition) return '';
+  const trans = props.edition['Source Text Translation'] || '';
+  if (trans.toLowerCase() === 'yes') {
+    return 'Translation Available';
+  } else if (trans.toLowerCase() === 'partly') {
+    return 'Translation: Partly';
+  } else if (trans.toLowerCase() === 'no') {
+    return 'No Translation';
+  }
+  return `Translation: ${trans}`;
+});
 
 const { activeFilters, toggleTagFilter } = useFilters();
 
