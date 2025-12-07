@@ -247,27 +247,8 @@ const reliabilityPillStyle = computed(() => {
 });
 
 const scoreNumberStyle = computed(() => {
-  // Convert score to number
-  const s = Number(score.value);
-  // Clamp between 0 and 100
-  const clamped = Math.max(0, Math.min(100, s));
-  // Interpolate color: 0=red, 50=yellow, 100=green
-  let r, g, b;
-  // Use higher intensity for the number to make it stand out
-  const maxIntensity = 200;
-  if (clamped <= 50) {
-    // Red to Yellow
-    r = maxIntensity;
-    g = Math.round(maxIntensity * (clamped / 50));
-    b = 0;
-  } else {
-    // Yellow to Green
-    r = Math.round(maxIntensity * (1 - (clamped - 50) / 50));
-    g = maxIntensity;
-    b = 0;
-  }
   return {
-    color: `rgb(${r},${g},${b})`,
+    color: '#333',
     fontWeight: 'bold',
     marginLeft: '6px'
   };
