@@ -29,7 +29,6 @@
         <h3>Edit Tags</h3>
         <div class="keywordContainer">
 
-        
           <h3 >Default</h3>
           <div class="summary-tags-row">
 
@@ -49,11 +48,10 @@
         <div class="summary-tags-row">
         <button
           v-for="keyword in customTags"
-          
           class="tag-button summary-pill-unselected"
-          @click="() => enableTag(keyword)"
-          @dblclick="() => disableTag(keyword)"
-          :class="getTagClass(keyword.text, 'keyword')"
+          @click="handleClick"
+          @dblclick="handleDoubleClick"
+          :class="[getTagClass(keyword.text, 'keyword'), { 'single-disabled': blockClicks }]"
         >
           <span>{{ keyword.text }}</span>
           
@@ -262,22 +260,28 @@ const props = defineProps({
     type: Object,
     default: null
   }
-
-  
-
 })
 
 var scoreVis = ref(false);
 var tagVis = ref(false);
 
-//var newTag = "";
-
-
 const newTag = ref("")
 var usedPlaces = 0;
+const blockClicks = ref(false)
 
 
+const handleClick = (e) => {
+    if (blockClicks.value) {
+      e.stopImmediatePropagation()
+      e.preventDefault()
+      return
+    }
+    enableTag(e.target.innerText)
+};
 
+const handleDoubleClick = (e) => {
+  disableTag(e.target.innerText)
+}
 
 const score = computed(() => {
   if (props.edition) {
@@ -428,15 +432,14 @@ const translationText = computed(() => {
 
 const { activeFilters, toggleTagFilter } = useFilters();
 
-var customTags=ref([{text: "...", assignedWorks: [] },{text: "...", assignedWorks: [] }]);
+var customTags=ref([{text: "...", assignedWorks: [] }, {text: "...", assignedWorks: [] }]);
 
 var txtUpdate= 0;
 
 function addTag(){
-if (newTag.value ===""){
+if (newTag.value === ""){
   return
 }
-
   var tag = {text: newTag.value, assignedWorks: [props.edition.id] }
   
   if(usedPlaces<2){
@@ -447,45 +450,34 @@ if (newTag.value ===""){
     customTags.value.push(tag);
   }
   
-
   newTag.value ="";
 
   console.log(customTags.value);
   txtUpdate+=1;
   usedPlaces+=1;
-
-
 }
 
 function enableTag(text){
-  console.log(props.edition.Keywords);
-  props.edition.Keywords= props.edition.Keywords+"#"+text;
+  
+  props.edition.customTags.push(text)
 }
 function disableTag(text){
-  if( props.edition.Keywords.includes("#"+text)){
+  if(props.edition.customTags.includes(text)){
     console.log(props.edition.Keywords);
-    props.edition.Keywords=  props.edition.Keywords.replace("#"+text, "");
-
+    const index = props.edition.customTags.indexOf(text);
+    props.edition.customTags.splice(index, 1);
   }
   else{
-  console.log(nope);
-  console.log(props.edition.Keywords);}
-   
-
+    console.log(nope);
+    console.log(props.edition.Keywords);}
 }
 
 function tagEdit(){
   tagVis.value = !tagVis.value;
-
   console.log(tagVis)
-
 }
 
 function relScore(){
-
-  //sc = Math.floor(Math.random()*101)
-
-  //score = sc.toString()
 
   scoreVis.value = !scoreVis.value;
 
@@ -561,6 +553,12 @@ const getTagClass = (tag, category) => {
 a.tag-button:hover {
   transform: scale(1.05);
   filter: brightness(120%);
+}
+
+.single-disabled {
+  background-color: #ccc;  
+  cursor: not-allowed;      
+  opacity: 0.6;           
 }
 
 .summary-pill {
