@@ -39,7 +39,7 @@
         @update:xLabel="xLabel = $event"
       />
     </div>
-    <div class="boxMlPlots pca"><PcaPlot /></div>
+    <div class="boxMlPlots pca"><PcaPlot   @select="selectedEdition = $event" :edition="selectedEdition"/></div>
     <!-- <div class="box reliability">
       <ReliabilitySliders />
     </div> -->

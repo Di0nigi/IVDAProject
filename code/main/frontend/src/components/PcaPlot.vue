@@ -14,7 +14,11 @@ import { useEditionsData } from "../composables/useEditionsData";
 import { useFilters } from "../composables/useFilters";
 import { watch } from "vue";
 
+
 export default {
+
+  emits: ['select'],
+
   data() {
     return {
       ScatterPlotData: { ids: [], xCoor: [], yCoor: [], labels: [], titles: [] },
@@ -23,7 +27,7 @@ export default {
       hasChanges: false,
       periodicCheckInterval: null,
       lastFilterState: null,
-      changeDebounceTimer: null
+      changeDebounceTimer: null,
     };
   },
 
@@ -123,6 +127,13 @@ export default {
       );
     },
 
+    selectEdition(id) {
+      console.log(this.filteredEditions._value[id])
+      const edition = this.filteredEditions._value[id];
+      console.log("edition", edition);
+      this.$emit('select', edition);
+    },
+
     processScatterData() {
       if (!this.rawResponseData) return;
 
@@ -147,6 +158,7 @@ export default {
           this.ScatterPlotData.yCoor.push(responseData.yCoor[j]);
           this.ScatterPlotData.labels.push(responseData.labels[j]);
           this.ScatterPlotData.titles.push(arr[i]["Edition name"].slice(0, 15)+"...");
+          this.ScatterPlotData.ids.push(responseData.ids[j])
           i++;
           j++;
         } else if (arr[i].id < responseData.ids[j]) {
@@ -209,6 +221,10 @@ export default {
 
       const config = { displayModeBar: true, responsive: true };
       Plotly.newPlot(containerId, [trace], layout, config);
+      document.getElementById(containerId).on('plotly_click', (evt) => {
+        console.log(evt.points[0].pointIndex)
+        this.selectEdition(evt.points[0].pointIndex)
+      });
     },
   },
 };
