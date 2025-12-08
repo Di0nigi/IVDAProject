@@ -370,24 +370,24 @@ methods: {
 }
 
 .weights-filter {
-  position: fixed;
-  top: 105px;
-  left: 465px;
-  z-index: 10;
+  position: absolute;    
+  top: 23%;
+  left: 2%;
+  z-index: 20;          
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   font-family: sans-serif;
   font-size: 1.1em;
   font-weight: 600;
   color: #000000;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 
 .weights-filter button {
   padding: 6px 14px;
   margin-right: 6px;
   background: #e0e0e0;
-  border-color: #4caf50;
+  border-color: #1976d2;
   border-radius: 5px;
   border-width: 2px;
   cursor: pointer;
