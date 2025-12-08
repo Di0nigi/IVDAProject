@@ -21,15 +21,68 @@
     <div v-else>
 
     <div v-if="tagVis">
-      <div class="column">
+      <div class="column" style="justify-content: space-between; ">
         <button @click="tagEdit()" class="back-button">
           Back
         </button>
+        <div style="padding: 2%;"> </div>
+        <h3>Edit Tags</h3>
+        <div class="keywordContainer">
 
-        <div class="tag-edit-container">
-          <h3>Edit Tags</h3>
-          <p style="color: #666; font-size: 13px;">Tag editing interface coming soon...</p>
+        
+          <h3 >Default</h3>
+          <div class="summary-tags-row">
+
+          <button
+          v-for="keyword in splitKeywords(edition.Keywords)"
+          :key="'keyword-' + keyword"
+          class="tag-button summary-pill-selected"
+          @click=""
+          :class="getTagClass(keyword, 'keyword')"
+        >
+          <span>{{ keyword }}</span>
+          
+        </button>
+        
         </div>
+        <h3>Custom</h3>
+        <div class="summary-tags-row">
+        <button
+          v-for="keyword in customTags"
+          :key="'keyword-' + keyword"
+          class="tag-button summary-pill-unselected"
+          @click="() => enableTag(keyword)"
+          @dblclick="() => disableTag(keyword)"
+          :class="getTagClass(keyword, 'keyword')"
+        >
+          <span>{{ keyword }}</span>
+          
+        </button>
+      </div>
+        
+        
+        </div>
+        <div style="padding: 2%;"> </div>
+      
+      <div class="addWordContainer">
+        <h3>Add Tag</h3>
+        <div class="row">
+          <input v-model="newTag" type="text" placeholder="Enter new tag..." class="search-bar" />
+          <button class="tag-button summary-pill" style="background-color: #4CAF50;" @click="addTag">
+            Add
+          </button>
+        
+        </div>
+        
+        <div style="padding: 5%;"> </div>
+
+      <button class="tag-button summary-pill"  style="background-color: #1976d2; justify-content: center;">
+            Recompute Tags
+          </button>
+
+      </div>
+      
+
       </div>
     </div>
     <div v-else> 
@@ -214,6 +267,14 @@ const props = defineProps({
 var scoreVis = ref(false);
 var tagVis = ref(false);
 
+//var newTag = "";
+
+
+const newTag = ref("")
+var usedPlaces = 0;
+
+
+
 const score = computed(() => {
   if (props.edition) {
     return props.edition.reliabilityScore;
@@ -363,6 +424,50 @@ const translationText = computed(() => {
 
 const { activeFilters, toggleTagFilter } = useFilters();
 
+var customTags=ref(["...","..."]);
+
+var txtUpdate= 0;
+
+function addTag(){
+if (newTag.value ===""){
+  return
+}
+  
+  if(usedPlaces<2){
+    customTags.value[usedPlaces]=newTag.value;
+
+  }
+  else{
+    customTags.value.push(newTag.value);
+  }
+  
+
+  newTag.value ="";
+
+  console.log(customTags.value);
+  txtUpdate+=1;
+  usedPlaces+=1;
+
+
+}
+
+function enableTag(text){
+  console.log(props.edition.Keywords);
+  props.edition.Keywords= props.edition.Keywords+"#"+text;
+}
+function disableTag(text){
+  if( props.edition.Keywords.includes("#"+text)){
+    console.log(props.edition.Keywords);
+    props.edition.Keywords=  props.edition.Keywords.replace("#"+text, "");
+
+  }
+  else{
+  console.log(nope);
+  console.log(props.edition.Keywords);}
+   
+
+}
+
 function tagEdit(){
   tagVis.value = !tagVis.value;
 
@@ -460,6 +565,26 @@ a.tag-button:hover {
   align-items: center;
   box-sizing: border-box;
 }
+
+.summary-pill-selected {
+  border-radius: 12px;
+  height: 24px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #4CAF50;
+}
+.summary-pill-unselected {
+  border-radius: 12px;
+  height: 24px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #E53935;
+}
+
 
 .summary-pill-edit {
   background: #1976d2;
@@ -584,4 +709,50 @@ a.tag-button:hover {
   transform: scale(0.95);
 }
 
+
+.keywordContainer{
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 2%;
+  border: 1px solid #d5d9df;
+  align-items: flex-start;
+  height: 20vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+.keywordContainer h3{
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+
+  
+}
+.search-bar {
+  flex: 1;
+  padding: 4px 8px 4px 5px;
+  border: 1px solid #d5d9df;
+  border-radius: 6px;
+  font-size: 12px;
+  outline: none;
+}
+.addWordContainer{
+  border-radius: 10px;
+  background-color: #ffffff00;
+  padding: 2%;
+  border: 0px solid #d5d9df;
+  align-items: flex-start;
+  height: 20vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+addWordContainer h3{
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;  
+}
 </style>
