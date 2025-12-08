@@ -168,19 +168,6 @@ class visModel():
         return labels , res
       
 
-class ScoreModel():
-    def  __init__(self,parameters=None):
-        self.params = parameters
-        return
-
-    
-    def setParams(self,parameters):
-        self.params = parameters
-        return
-
-    def computeScore(self):
-        score=random.randint(0,100)
-        return score
     
 
 ### demo code not final 

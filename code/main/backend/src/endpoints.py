@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-from .mlUtils import visModel,dataEncoder,ScoreModel
+from .mlUtils import visModel,dataEncoder
 import random
+import json
+from urllib.parse import unquote
 
 
 
@@ -22,7 +24,7 @@ db = client["DigitalEditions"]
 texts = db["editions"]    
 
 
-scM = ScoreModel()
+#scM = ScoreModel()
 #fM = filterModel()
 
 #@app.route("/texts/filter", methods=["POST"])
@@ -101,26 +103,53 @@ def getEndPeriod():
 
 # ML endopoints
 
-@app.route("/texts/graphPoints", methods=["GET"])
-def getAndComputeGraphPoints():
+@app.route("/texts/graphPoints/<modPoints>", methods=["GET"])
+def getAndComputeGraphPoints(modPoints):
     dc = dataEncoder(textType='k')
     vM=visModel(nClusters=5)
-    keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
-    formatted = dc.formatData(keyWordsList)
-    edges= dc.getGraphEncoding(formatted)
+    
+    decoded=unquote(modPoints)
+    modEditions = json.loads(decoded)
 
-    random.shuffle(edges)
+    print(f"modeeds{modEditions}")
 
-    #encoded = dc.encode(formatted)
+    if modEditions == []:
+        keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
+        formatted = dc.formatData(keyWordsList)
+        edges= dc.getGraphEncoding(formatted)
+        encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
+        random.shuffle(edges)
+    else:
+        keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
+
+        #print(keyWordsList[0])
+
+        for modEd in modEditions:
+            id = modEd["id"]
+            mask = modEd["mask"]
+            custom = modEd["customKeywords"]
+            customWords=""
+            for k in custom:
+                customWords+=f"#{k}"
+
+            result = next((item for item in keyWordsList if item["id"] == id), None)
+            result["Keywords"]+=customWords
+        
+            
+
+        formatted = dc.formatData(keyWordsList)
+        edges= dc.getGraphEncoding(formatted)
+        encoded = dc.encode(formatted)
+        random.shuffle(edges)
 
     #dc.saveData(encoded, "keywordsEmbed", client, db, texts)
 
-    encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
+    
     labs = vM.train(encoded,mode="k")[0].tolist()
 
 
 
-    #ids=[elem["id"] for elem in keyWordsList]
+    ids=[elem["id"] for elem in keyWordsList]
 
     #ret={"labels":labs.tolist(),"edges":list(edges),"nodes":ids}
 

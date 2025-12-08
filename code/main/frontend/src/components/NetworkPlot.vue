@@ -335,7 +335,7 @@ methods: {
   },
   
   async fetchData() {
-    var reqUrl = 'http://127.0.0.1:5000/texts/graphPoints'
+    var reqUrl = 'http://127.0.0.1:5000/texts/graphPoints/[]'
     console.log("reqUrl" + reqUrl)
 
     const response = await fetch(reqUrl)
