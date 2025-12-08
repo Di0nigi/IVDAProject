@@ -22,20 +22,24 @@ export default {
   data() {
     return {
       ScatterPlotData: { ids: [], xCoor: [], yCoor: [], labels: [], titles: [] },
+      FullScatterPlotData: { ids: [], xCoor: [], yCoor: [], labels: [], titles: [] },
       rawResponseData: null,
       updateStatus: null,
       hasChanges: false,
       periodicCheckInterval: null,
       lastFilterState: null,
       changeDebounceTimer: null,
+      ignoreScatterUpdate: false,
     };
   },
 
   created() {
     const { filteredEditions } = useEditionsData();
-    const { activeFilters } = useFilters();
+    const { activeFilters, updateIdsFilter, resetFilters } = useFilters();
     this.filteredEditions = filteredEditions;
     this.activeFilters = activeFilters;
+    this.updateIdsFilter = updateIdsFilter;
+    this.resetFilters = resetFilters;
 
     // Watch for filter changes and mark for update
     watch(
@@ -73,7 +77,7 @@ export default {
       checkCount++;
       //console.log(`PCA: Periodic check #${checkCount} (should be every 5 seconds)`);
       
-      if (this.hasChanges) {
+      if (this.hasChanges && !this.ignoreScatterUpdate) {
         //console.log('PCA: Starting update...');
         this.updateStatus = 'updating';
         this.hasChanges = false;
@@ -81,11 +85,10 @@ export default {
           this.processScatterData();
           this.drawScatterPlot(
             "myScatterPlot",
-            this.ScatterPlotData.xCoor,
-            this.ScatterPlotData.yCoor,
-            this.ScatterPlotData.labels,
-             this.ScatterPlotData.titles
-
+            this.FullScatterPlotData.xCoor,
+            this.FullScatterPlotData.yCoor,
+            this.FullScatterPlotData.labels,
+            this.FullScatterPlotData.titles
           );
           //console.log('PCA: Update complete');
           this.updateStatus = 'up-to-date';
@@ -117,19 +120,20 @@ export default {
 
       // initial compute
       this.processScatterData();
+      this.FullScatterPlotData = JSON.parse(JSON.stringify(this.ScatterPlotData));
       this.drawScatterPlot(
         "myScatterPlot",
-        this.ScatterPlotData.xCoor,
-        this.ScatterPlotData.yCoor,
-        this.ScatterPlotData.labels,
-        this.ScatterPlotData.titles
+        this.FullScatterPlotData.xCoor,
+        this.FullScatterPlotData.yCoor,
+        this.FullScatterPlotData.labels,
+        this.FullScatterPlotData.titles
 
       );
     },
 
     selectEdition(id) {
       console.log(this.filteredEditions._value[id])
-      const edition = this.filteredEditions._value[id];
+      const edition = this.filteredEditions.value.find(e => e.id === id);
       console.log("edition", edition);
       this.$emit('select', edition);
     },
@@ -169,7 +173,7 @@ export default {
       }
     },
 
-    drawScatterPlot(containerId, x, y, labels,titles) {
+    drawScatterPlot(containerId, x, y, labels, titles) {
       const parent = this.$el.parentElement;
       const parentWidth = parent.clientWidth;
       const parentHeight = parent.clientHeight;
@@ -191,7 +195,18 @@ export default {
         colorMap[label] = colors[idx];
       });
 
-      const pointColors = labels.map((l) => colorMap[l]);
+      const fullIds = this.FullScatterPlotData.ids;
+      const idSet = new Set(this.ScatterPlotData.ids);
+
+      console.log(fullIds);
+
+      const pointColors = fullIds.map((id, i) => {
+        if (idSet.has(id)) {
+          return colorMap[labels[i]];
+        } else {
+          return "rgba(150,150,150,0.4)"; 
+        }
+      });
 
       const trace = {
         x,
@@ -217,13 +232,39 @@ export default {
           visible: true,
           showticklabels: false,
         },
+        modebar: {
+          orientation: 'v',
+        },
       };
 
-      const config = { displayModeBar: true, responsive: true };
+      const config = { displayModeBar: true, responsive: true, modeBarButtonsToRemove: ['select2d'], doubleClick: false, };
       Plotly.newPlot(containerId, [trace], layout, config);
       document.getElementById(containerId).on('plotly_click', (evt) => {
-        console.log(evt.points[0].pointIndex)
-        this.selectEdition(evt.points[0].pointIndex)
+        const editionId = this.FullScatterPlotData.ids[evt.points[0].pointIndex];
+        this.selectEdition(editionId)
+      });
+
+      document.getElementById(containerId).on('plotly_selected', (evt) =>{
+        this.ignoreScatterUpdate = true;
+        // console.log(evt)
+        const pointIds = evt.points.map(item => this.FullScatterPlotData.ids[item.pointIndex]);
+        // console.log(pointIds, 'lasso')
+        this.updateIdsFilter(pointIds)
+        this.ignoreScatterUpdate = false;
+      });
+
+      document.getElementById(containerId).on('plotly_doubleclick', (evt) =>{
+        this.ignoreScatterUpdate = true;
+        this.ScatterPlotData = JSON.parse(JSON.stringify(this.FullScatterPlotData));
+        this.resetFilters();
+        this.drawScatterPlot(
+          containerId,
+          this.FullScatterPlotData.xCoor,
+          this.FullScatterPlotData.yCoor,
+          this.FullScatterPlotData.labels,
+          this.FullScatterPlotData.titles
+        );
+        this.ignoreScatterUpdate = false;
       });
     },
   },

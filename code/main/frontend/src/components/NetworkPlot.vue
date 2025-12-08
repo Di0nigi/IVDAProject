@@ -145,7 +145,7 @@ methods: {
     if (!this.isSelectable(weight)) return;
     const filteredEdges = this.graphData.links.filter(edge => edge.weight === weight)
     const edgesDataSet = this.networkInstance.body.data.edges;
-    console.log(filteredEdges.length, "hello")
+    // console.log(filteredEdges.length, "hello")
 
     edgesDataSet.clear()
 
@@ -197,7 +197,7 @@ methods: {
       const isConnected =
         filteredIds.has(edge.from) && filteredIds.has(edge.to);
 
-      console.log("edge", edge.id, isConnected)
+      // console.log("edge", edge.id, isConnected)
 
       edgeBatchUpdates.push({
         id: edge.id,
@@ -205,7 +205,7 @@ methods: {
       });
     }
 
-    console.log(edgeBatchUpdates)
+    // console.log(edgeBatchUpdates)
     
     nodesDataSet.update(nodeBatchUpdates);
     edgesDataSet.update(edgeBatchUpdates);
@@ -284,9 +284,9 @@ methods: {
     const filteredEdges = this.graphData.links.filter(edge => edge.weight === 3)
 
     const edges = new DataSet(filteredEdges);  
-    //console.log(nodes) 
-    //console.log(filteredEdges.length, " number of links")
-    //console.log(edges, " links")
+    console.log(nodes) 
+    console.log(filteredEdges.length, " number of links")
+    console.log(edges, " links")
 
     const data = { nodes, edges };
     const options = {
@@ -369,10 +369,10 @@ methods: {
   color: #333;
 }
 
-.weights-filterODp {
+.weights-filter {
   position: fixed;
   top: 105px;
-  left: 405px;
+  left: 465px;
   z-index: 10;
   font-family: sans-serif;
   font-size: 1.1em;
@@ -383,25 +383,11 @@ methods: {
   gap: 5px;
 }
 
-.weights-filter {
-  position: absolute;      /* relative to .network-wrapper */
-  top: 23%;
-  left: 2%;
-  z-index: 20;             /* must be higher than graph canvas */
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-family: sans-serif;
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #000000;
-}
-
 .weights-filter button {
   padding: 6px 14px;
   margin-right: 6px;
   background: #e0e0e0;
-  border-color: #1976d2;
+  border-color: #4caf50;
   border-radius: 5px;
   border-width: 2px;
   cursor: pointer;

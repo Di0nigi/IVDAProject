@@ -197,6 +197,12 @@ export function useEditionsData() {
       });
     }
 
+    // Apply id filter
+    if (activeFilters.ids?.length > 0) {
+      const idSet = new Set(activeFilters.ids);
+      filtered = filtered.filter(e => idSet.has(e.id));
+    }
+
     return filtered;
   });
 
