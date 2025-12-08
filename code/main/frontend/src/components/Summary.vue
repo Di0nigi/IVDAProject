@@ -29,19 +29,20 @@
         <h3>Edit Tags</h3>
         <div class="keywordContainer">
 
-          <h3 >Default</h3>
+          <h3>Default</h3>
           <div class="summary-tags-row">
-
+          <div v-for="keyword in splitKeywords(edition.Keywords)" >
           <button
-          v-for="keyword in splitKeywords(edition.Keywords)"
+          v-if="isNotCustom(keyword)"
           :key="'keyword-' + keyword"
           class="tag-button summary-pill-selected"
-          @click=""
+          @click="(e)=>handleClick(e,keyword,'default')"
           :class="getTagClass(keyword, 'keyword')"
         >
           <span>{{ keyword }}</span>
           
         </button>
+        </div>
         
         </div>
         <h3>Custom</h3>
@@ -49,8 +50,8 @@
         <button
           v-for="keyword in customTags"
           class="tag-button summary-pill-unselected"
-          @click="handleClick"
-          @dblclick="handleDoubleClick"
+          @click="(e)=>handleClick(e,keyword,'custom')"
+          
           :class="[getTagClass(keyword.text, 'keyword'), { 'single-disabled': blockClicks }]"
         >
           <span>{{ keyword.text }}</span>
@@ -270,14 +271,38 @@ var usedPlaces = 0;
 const blockClicks = ref(false)
 
 
-const handleClick = (e) => {
+const handleClick = (e , keyword, md) => {
     if (blockClicks.value) {
       e.stopImmediatePropagation()
       e.preventDefault()
       return
     }
-    enableTag(e.target.innerText)
+
+    const button = e.currentTarget;
+    if (button.classList.contains('summary-pill-unselected')){
+      
+    button.classList.remove('summary-pill-unselected');
+    button.classList.add('summary-pill-selected');
+
+    enableTag(keyword,md);
+  
+
+    }
+    
+
+    else if (button.classList.contains('summary-pill-selected')){
+      button.classList.remove('summary-pill-selected');
+    button.classList.add('summary-pill-unselected');
+
+    disableTag(keyword,md);
+
+    
+
+    }
+    
 };
+
+var clickNum = 0;
 
 const handleDoubleClick = (e) => {
   disableTag(e.target.innerText)
@@ -436,11 +461,31 @@ var customTags=ref([{text: "...", assignedWorks: [] }, {text: "...", assignedWor
 
 var txtUpdate= 0;
 
+
+function isNotCustom(keyword){
+  var i=customTags.value.findIndex(t => t.text === keyword);
+  //console.log(customTags.value)
+  //console.log("ind" + i);
+  if (i===-1){
+    return true;
+  }
+  else{
+    return false;
+  }
+
+
+
+}
+
 function addTag(){
 if (newTag.value === ""){
   return
 }
-  var tag = {text: newTag.value, assignedWorks: [props.edition.id] }
+  var i=customTags.value.findIndex(t => t.text.toLowerCase() === newTag.value.toLowerCase());
+  if(i!==-1){
+    return
+  }
+  var tag = {text: newTag.value.toLowerCase(), assignedWorks: [] }
   
   if(usedPlaces<2){
     customTags.value[usedPlaces]=tag;
@@ -457,19 +502,69 @@ if (newTag.value === ""){
   usedPlaces+=1;
 }
 
-function enableTag(text){
+function enableTag(tag,md){
+  if (md === 'custom'){
+  var i=customTags.value.findIndex(t => t.text.toLowerCase() === tag.text.toLowerCase());
+  console.log(i);
+  if ( customTags.value[i].assignedWorks.includes(props.edition.id)){
+    console.log("already present");
+    return
+  }
   
-  props.edition.customTags.push(text)
+  props.edition.customTags.push(tag.text);
+
+  props.edition.Keywords = props.edition.Keywords+"#"+tag.text.toLowerCase();
+
+  customTags.value[i].assignedWorks.push(props.edition.id);
+
+  console.log (props.edition.Keywords);
+  console.log(props.edition.customTags);
+
+  //console.log("array");
+  //console.log(customTags.value);
+  }
+  else{
+    console.log("default");
+  }
+
+
 }
-function disableTag(text){
-  if(props.edition.customTags.includes(text)){
+function disableTag(tag,md){
+  if (md ==='custom'){
+  /*if(props.edition.customTags.includes(text)){
     console.log(props.edition.Keywords);
     const index = props.edition.customTags.indexOf(text);
     props.edition.customTags.splice(index, 1);
   }
   else{
     console.log(nope);
-    console.log(props.edition.Keywords);}
+    console.log(props.edition.Keywords);}*/
+
+    // tolta dpendency da custom tags
+
+    var i=customTags.value.findIndex(t => t.text.toLowerCase() === tag.text.toLowerCase());
+    console.log(i);
+    customTags.value[i].assignedWorks=customTags.value[i].assignedWorks.filter(t => t.id === props.edition.id);
+    console.log(customTags.value[i].assignedWorks);
+
+    // tolto da editions
+
+    var j = props.edition.customTags.findIndex(t => t.toLowerCase() === tag.text.toLowerCase());
+
+    props.edition.customTags.splice(j,1)
+
+    if (props.edition.Keywords.includes('#'+tag.text.toLowerCase())){
+
+      props.edition.Keywords=props.edition.Keywords.replace('#'+tag.text.toLowerCase(),"");
+
+    }
+    console.log (props.edition.Keywords);
+    console.log(props.edition.customTags);
+
+  }
+  else{
+    console.log("default disabled");
+  }
 }
 
 function tagEdit(){
