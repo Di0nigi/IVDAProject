@@ -49,13 +49,13 @@
         <div class="summary-tags-row">
         <button
           v-for="keyword in customTags"
-          :key="'keyword-' + keyword"
+          
           class="tag-button summary-pill-unselected"
           @click="() => enableTag(keyword)"
           @dblclick="() => disableTag(keyword)"
-          :class="getTagClass(keyword, 'keyword')"
+          :class="getTagClass(keyword.text, 'keyword')"
         >
-          <span>{{ keyword }}</span>
+          <span>{{ keyword.text }}</span>
           
         </button>
       </div>
@@ -262,6 +262,9 @@ const props = defineProps({
     type: Object,
     default: null
   }
+
+  
+
 })
 
 var scoreVis = ref(false);
@@ -272,6 +275,7 @@ var tagVis = ref(false);
 
 const newTag = ref("")
 var usedPlaces = 0;
+
 
 
 
@@ -424,7 +428,7 @@ const translationText = computed(() => {
 
 const { activeFilters, toggleTagFilter } = useFilters();
 
-var customTags=ref(["...","..."]);
+var customTags=ref([{text: "...", assignedWorks: [] },{text: "...", assignedWorks: [] }]);
 
 var txtUpdate= 0;
 
@@ -432,13 +436,15 @@ function addTag(){
 if (newTag.value ===""){
   return
 }
+
+  var tag = {text: newTag.value, assignedWorks: [props.edition.id] }
   
   if(usedPlaces<2){
-    customTags.value[usedPlaces]=newTag.value;
+    customTags.value[usedPlaces]=tag;
 
   }
   else{
-    customTags.value.push(newTag.value);
+    customTags.value.push(tag);
   }
   
 
