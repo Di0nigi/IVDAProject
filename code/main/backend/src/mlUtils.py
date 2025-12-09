@@ -74,10 +74,11 @@ class dataEncoder():
         else:
             for edition in data:
                 keywords=edition["Keywords"]
-                # Format: Manuscript # Theology # Liturgy # Philology # Religion
+                # Format: Manuscript # Theology # Liturgy 
                 keywords=keywords.replace(" ","").split("#")
                 #print(len(keywords))
                 dataPoints.append(keywords)
+
                 
         return dataPoints
     

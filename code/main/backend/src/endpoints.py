@@ -130,16 +130,20 @@ def getAndComputeGraphPoints(modPoints):
             custom = modEd["customKeywords"]
             customWords=""
             for k in custom:
-                customWords+=f"#{k}"
+                customWords+=f"# {k}"
 
             result = next((item for item in keyWordsList if item["id"] == id), None)
+            for ind in mask:
+                rm=result["Keywords"].pop(int(ind))
+
             result["Keywords"]+=customWords
         
             
 
         formatted = dc.formatData(keyWordsList)
         edges= dc.getGraphEncoding(formatted)
-        encoded = dc.encode(formatted)
+        encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
+        #encoded = dc.encode(formatted)
         random.shuffle(edges)
 
     #dc.saveData(encoded, "keywordsEmbed", client, db, texts)
