@@ -525,6 +525,29 @@ function enableTag(tag,md){
   }
   else{
     console.log("default");
+
+    var i=splitKeywords(props.edition.Keywords).findIndex(t => t.toLowerCase() == tag.toLowerCase());
+
+    if (i===-1){
+      console.log("shouldn't happen");
+      return
+    }
+    else{
+      if (props.edition.mask.includes(i)){
+
+        props.edition.mask=props.edition.mask.filter(t => t !== i);
+        console.log( props.edition.mask);
+      }
+      else{
+        console.log("nothing happens");
+
+        return
+
+      }
+
+
+    }
+
   }
 
 
@@ -564,6 +587,29 @@ function disableTag(tag,md){
   }
   else{
     console.log("default disabled");
+
+    console.log(props.edition.mask);
+
+    var i=splitKeywords(props.edition.Keywords).findIndex(t => t.toLowerCase() == tag.toLowerCase());
+
+
+
+    if (i === -1){
+      
+      
+      console.log("shouldn't happen");
+
+      return
+
+    }
+    else{
+
+      props.edition.mask.push(i);
+
+    }
+
+
+
   }
 }
 
