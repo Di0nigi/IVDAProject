@@ -31,13 +31,12 @@
 
           <h3>Default</h3>
           <div class="summary-tags-row">
-          <div v-for="keyword in splitKeywords(edition.Keywords)" >
+          <div v-for="(keyword, i) in splitKeywords(edition.Keywords)" >
           <button
           v-if="isNotCustom(keyword)"
           :key="'keyword-' + keyword"
-          class="tag-button summary-pill-selected"
+          :class="[props.edition.mask.includes(i) ? 'tag-button summary-pill-unselected' : 'tag-button summary-pill-selected']"
           @click="(e)=>handleClick(e,keyword,'default')"
-          :class="getTagClass(keyword, 'keyword')"
         >
           <span>{{ keyword }}</span>
           
@@ -51,8 +50,7 @@
           v-for="keyword in customTags"
           class="tag-button summary-pill-unselected"
           @click="(e)=>handleClick(e,keyword,'custom')"
-          
-          :class="[getTagClass(keyword.text, 'keyword'), { 'single-disabled': blockClicks }]"
+          :class="[getTagClass(keyword.text, 'keyword'), { 'single-disabled': blockClicks || keyword.text === '...'}]"
         >
           <span>{{ keyword.text }}</span>
           
@@ -146,7 +144,7 @@
           </span>
         </button>
         <button
-          v-for="keyword in splitKeywords(edition.Keywords)"
+          v-for="(keyword, i) in splitKeywords(edition.Keywords).filter((_, idx) => !props.edition.mask.includes(idx))"
           :key="'keyword-' + keyword"
           class="tag-button summary-pill"
           @click="toggleTag(keyword, 'keyword')"
@@ -285,21 +283,14 @@ const handleClick = (e , keyword, md) => {
     button.classList.add('summary-pill-selected');
 
     enableTag(keyword,md);
-  
-
     }
-    
 
     else if (button.classList.contains('summary-pill-selected')){
       button.classList.remove('summary-pill-selected');
     button.classList.add('summary-pill-unselected');
 
     disableTag(keyword,md);
-
-    
-
     }
-    
 };
 
 var clickNum = 0;
@@ -472,9 +463,6 @@ function isNotCustom(keyword){
   else{
     return false;
   }
-
-
-
 }
 
 function addTag(){
@@ -510,7 +498,6 @@ function enableTag(tag,md){
     console.log("already present");
     return
   }
-  
   props.edition.customTags.push(tag.text);
 
   props.edition.Keywords = props.edition.Keywords+"#"+tag.text.toLowerCase();
@@ -544,8 +531,6 @@ function enableTag(tag,md){
         return
 
       }
-
-
     }
 
   }
@@ -587,29 +572,15 @@ function disableTag(tag,md){
   }
   else{
     console.log("default disabled");
-
     console.log(props.edition.mask);
-
     var i=splitKeywords(props.edition.Keywords).findIndex(t => t.toLowerCase() == tag.toLowerCase());
-
-
-
     if (i === -1){
-      
-      
       console.log("shouldn't happen");
-
       return
-
     }
     else{
-
       props.edition.mask.push(i);
-
     }
-
-
-
   }
 }
 
@@ -629,7 +600,7 @@ function relScore(){
 function splitTags(val) {
   if (!val) return [];
   return String(val).toLowerCase().split(/[,;]+/).map(t => t.trim()).filter(Boolean);
-}
+} 
 
 function splitKeywords(val) {
   if (!val) return [];
@@ -699,7 +670,8 @@ a.tag-button:hover {
 .single-disabled {
   background-color: #ccc;  
   cursor: not-allowed;      
-  opacity: 0.6;           
+  opacity: 0.6;
+  border: 1px solid #666666 !important;
 }
 
 .summary-pill {
@@ -813,10 +785,6 @@ a.tag-button:hover {
   padding: 0;
   width: 40px;
   height: 30px;
-  /* border-radius: 100; */
-  /* background-color: #4CAF50; */
-  /* width : 10;
-  height: 10; */
 }
 .column{
   display: flex;
