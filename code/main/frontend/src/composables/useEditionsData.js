@@ -5,6 +5,7 @@ const editions = ref([]);
 const loading = ref(true);
 const error = ref(null);
 let fetched = false;
+const plotData = ref([])
 
 export function useEditionsData() {
   const { activeFilters } = useFilters();
@@ -218,6 +219,7 @@ export function useEditionsData() {
     loading,
     error,
     fetchEditions,
-    fetchReliabilityScores
+    fetchReliabilityScores,
+    plotData
   };
 }

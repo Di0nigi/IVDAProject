@@ -56,7 +56,10 @@ data: () => ({
 computed: {
   filteredEditions() {
     return useEditionsData().filteredEditions.value
-  }
+  },
+  plotData() {
+    return useEditionsData().plotData.value;
+  },
 },
 
 
@@ -93,11 +96,29 @@ watch: {
         });
       }
     }
-  }
+  },
+  plotData: {
+    handler(newVal) {
+      console.log("new value changing graph")
+      this.fetchData(newVal)
+      this.$nextTick(() => {
+        if (!this.$refs.graphContainer) {
+          console.warn("Graph container not ready yet, skipping loadGraph")
+          return
+        }
+        if (this.networkInstance) {
+          this.networkInstance.destroy()
+        }
+        this.loadGraph()
+      })
+    },
+    deep: true,
+    immediate: true
+  },
 },
 
 async mounted() {
-  await this.fetchData();
+  await this.fetchData([]);
   this.loadGraph();
   
   let checkCount = 0;
@@ -145,7 +166,6 @@ methods: {
     if (!this.isSelectable(weight)) return;
     const filteredEdges = this.graphData.links.filter(edge => edge.weight === weight)
     const edgesDataSet = this.networkInstance.body.data.edges;
-    // console.log(filteredEdges.length, "hello")
 
     edgesDataSet.clear()
 
@@ -197,15 +217,11 @@ methods: {
       const isConnected =
         filteredIds.has(edge.from) && filteredIds.has(edge.to);
 
-      // console.log("edge", edge.id, isConnected)
-
       edgeBatchUpdates.push({
         id: edge.id,
         hidden: isConnected ? false : true
       });
     }
-
-    // console.log(edgeBatchUpdates)
     
     nodesDataSet.update(nodeBatchUpdates);
     edgesDataSet.update(edgeBatchUpdates);
@@ -276,7 +292,7 @@ methods: {
               background: '#D2E5FF'} 
           },
           x,
-          y,
+          y,  
         };
       })
     );
@@ -323,6 +339,17 @@ methods: {
         console.log('clicked nodes:', clickedNodes[0]?.id);
         if (clickedNodes.length > 0) {
           this.selectEdition(clickedNodes[0].id);
+          const connectedEdges = this.graphData.links.filter(
+            edge => edge.from === clickedNodes[0].id || edge.to === clickedNodes[0].id
+        );
+
+          // Example: log all weights of connected edges
+          const weights = connectedEdges.map(edge => edge.weight);
+          console.log('Node ID:', clickedNodes[0].id);
+          console.log('Connected edge weights:', weights);
+
+          const maxWeight = Math.max(...weights);
+          console.log('Max connected weight:', maxWeight);
         }
     });
 
@@ -334,12 +361,24 @@ methods: {
     });
   },
   
-  async fetchData() {
-    var reqUrl = 'http://127.0.0.1:5000/texts/graphPoints/[]'
-    console.log("reqUrl" + reqUrl)
+  async fetchData(data) {
+    console.log(data)
 
-    const response = await fetch(reqUrl)
-    const responseData = await response.json();
+    let responseData;
+
+    if (data === undefined || (Array.isArray(data) && data.length === 0)) {
+      var reqUrl = 'http://127.0.0.1:5000/texts/graphPoints/[]'
+      console.log("reqUrl" + reqUrl)
+
+      const response = await fetch(reqUrl)
+      responseData = await response.json(); 
+    } 
+    else {
+      console.log("setting response data as", data)
+      responseData = data
+
+      
+    }
 
     const filteredIds = new Set(this.filteredEditions.map(e => e.id));
 

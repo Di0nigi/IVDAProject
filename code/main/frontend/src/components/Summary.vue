@@ -35,7 +35,7 @@
           <button
           v-if="isNotCustom(keyword)"
           :key="'keyword-' + keyword"
-          :class="[props.edition.mask.includes(i) ? 'tag-button summary-pill-unselected' : 'tag-button summary-pill-selected']"
+          :class="[getTagClass(keyword, 'keyword'), props.edition.mask.includes(i) ? 'tag-button summary-pill-unselected' : 'tag-button summary-pill-selected']"
           @click="(e)=>handleClick(e,keyword,'default')"
         >
           <span>{{ keyword }}</span>
@@ -50,7 +50,8 @@
           v-for="keyword in customTags"
           class="tag-button summary-pill-unselected"
           @click="(e)=>handleClick(e,keyword,'custom')"
-          :class="[getTagClass(keyword.text, 'keyword'), { 'single-disabled': blockClicks || keyword.text === '...'}]"
+          :class="[getTagClass(keyword.text, 'keyword'), { 'single-disabled': blockClicks || keyword.text === '...'}, 
+          props.edition.customTags.includes(keyword.text) ? 'tag-button summary-pill-selected' : 'tag-button summary-pill-unselected']"
         >
           <span>{{ keyword.text }}</span>
           
@@ -254,7 +255,7 @@ import { defineProps, ref, computed } from 'vue'
 import { useFilters } from '../composables/useFilters'
 import ReliabilitySliders from '../components/ReliabilitySliders.vue';
 import OriginMap from '../components/OriginMap.vue';
-import { useEditionsData } from "../composables/useEditionsData";
+import { useEditionsData} from "../composables/useEditionsData";
 
 const props = defineProps({
   edition: {
@@ -263,13 +264,16 @@ const props = defineProps({
   }
 })
 
-
+const { plotData } = useEditionsData();
 
 var scoreVis = ref(false);
 var tagVis = ref(false);
 
 const newTag = ref("")
 var usedPlaces = 0;
+// const blockClicks = computed(() => {
+//   return props.edition.customTags.length + splitKeywords(props.edition.Keywords).length - props.edition.mask.length >= 5
+// })
 const blockClicks = ref(false)
 
 
@@ -633,6 +637,8 @@ async function compTags() {
 
   var modPoints = computeModPoints();
 
+  console.log(modPoints, "modpoints ;;;")
+
   const jsonString = JSON.stringify(modPoints);
 
 
@@ -645,6 +651,8 @@ async function compTags() {
   const response = await fetch(reqUrl);
   const responseData = await response.json();
   console.log(responseData);
+
+  plotData.value = responseData
 
 }
 
