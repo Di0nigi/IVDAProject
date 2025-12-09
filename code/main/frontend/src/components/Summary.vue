@@ -73,7 +73,8 @@
         
         <div style="padding: 5%;"> </div>
 
-      <button class="tag-button summary-pill"  style="background-color: #1976d2; justify-content: center;">
+      <button class="tag-button summary-pill"  style="background-color: #1976d2; justify-content: center;" 
+      @click="compTags">
             Recompute Tags
           </button>
 
@@ -253,6 +254,7 @@ import { defineProps, ref, computed } from 'vue'
 import { useFilters } from '../composables/useFilters'
 import ReliabilitySliders from '../components/ReliabilitySliders.vue';
 import OriginMap from '../components/OriginMap.vue';
+import { useEditionsData } from "../composables/useEditionsData";
 
 const props = defineProps({
   edition: {
@@ -260,6 +262,8 @@ const props = defineProps({
     default: null
   }
 })
+
+
 
 var scoreVis = ref(false);
 var tagVis = ref(false);
@@ -292,6 +296,8 @@ const handleClick = (e , keyword, md) => {
     disableTag(keyword,md);
     }
 };
+
+
 
 var clickNum = 0;
 
@@ -535,7 +541,6 @@ function enableTag(tag,md){
 
   }
 
-
 }
 function disableTag(tag,md){
   if (md ==='custom'){
@@ -594,6 +599,52 @@ function relScore(){
   scoreVis.value = !scoreVis.value;
 
   console.log(scoreVis)
+
+}
+
+
+function computeModPoints(){
+
+  //console.log(useEditionsData().editions.value);
+
+  var out=[]
+
+  for(var i=0; i<useEditionsData().editions.value.length;i++){
+
+    var ed = useEditionsData().editions.value[i];
+
+    if (ed.customTags.length>0 ||ed.mask.length>0 ){
+
+      out.push({"id":ed.id,"customKeywords":ed.customTags,"mask":ed.mask});
+
+    }
+
+
+    //console.log(i);
+
+
+  }
+
+  return out
+
+}
+
+async function compTags() {
+
+  var modPoints = computeModPoints();
+
+  const jsonString = JSON.stringify(modPoints);
+
+
+  const encoded = encodeURIComponent(jsonString);
+
+  console.log(encoded);
+
+  var reqUrl = 'http://127.0.0.1:5000/texts/graphPoints/'+encoded;
+
+  const response = await fetch(reqUrl);
+  const responseData = await response.json();
+  console.log(responseData);
 
 }
 

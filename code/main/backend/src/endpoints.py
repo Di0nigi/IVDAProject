@@ -125,6 +125,7 @@ def getAndComputeGraphPoints(modPoints):
         #print(keyWordsList[0])
 
         for modEd in modEditions:
+            #print(modEd)
             id = modEd["id"]
             mask = modEd["mask"]
             custom = modEd["customKeywords"]
