@@ -33,17 +33,13 @@ class dataEncoder():
         out = []
         
         if self.tp=="d":
-
             for elem in data:
-
                 inputs = self.tokenizer(elem, return_tensors="pt", padding=True, truncation=True)
-                
                 with torch.no_grad():
                     outputs = self.model(**inputs)
-                
                 embeddings = outputs.last_hidden_state[:, 0, :]
                 out.append(embeddings.squeeze(0))
-            print(out[0].shape)
+            #print(out[0].shape)
         else:
             out=[]
             for elem in data:
@@ -98,10 +94,12 @@ class dataEncoder():
     
     def getGraphEncoding(self, data):
         # attribute → list of item IDs
+        #print(data[0:10])
         index = defaultdict(list)
         for itemId, attrs in enumerate(data):
             for a in attrs:
                 index[a].append(itemId)
+        #print(index)
 
         
         edges = defaultdict(int)
@@ -113,16 +111,22 @@ class dataEncoder():
                     a, b = itemList[i], itemList[j]
                     if a != b:
                         u, v = min(a, b), max(a, b)
-                        edges[(u, v)] += 1  
+                        edges[(u, v)] += 1
+                          
 
        
-        #print(edges[0:10])
+        #print(edges.items())
         
-        edges = [(a, b, w) for (a, b), w in edges.items()]
+        edges = [[a+1, b+1, w] for (a, b), w in edges.items()]
         #print("after")
 
         #print(edges[0:10])
 
+        #for e in edges:
+         #   if e[2]>2:
+          #      pass #print(e)
+            #else:
+            #   print("eo"
 
         return edges
     

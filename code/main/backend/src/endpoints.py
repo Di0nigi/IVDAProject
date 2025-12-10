@@ -107,23 +107,16 @@ def getEndPeriod():
 def getAndComputeGraphPoints(modPoints):
     dc = dataEncoder(textType='k')
     vM=visModel(nClusters=5)
-    
     decoded=unquote(modPoints)
     modEditions = json.loads(decoded)
-
-    print(f"modeeds{modEditions}")
-
     if modEditions == []:
         keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
         formatted = dc.formatData(keyWordsList)
         edges= dc.getGraphEncoding(formatted)
         encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
-        random.shuffle(edges)
+        #random.shuffle(edges)
     else:
         keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
-
-        #print(keyWordsList[0])
-
         for modEd in modEditions:
             #print(modEd)
             id = modEd["id"]
@@ -131,37 +124,21 @@ def getAndComputeGraphPoints(modPoints):
             custom = modEd["customKeywords"]
             customWords=""
             for k in custom:
-                customWords+=f"# {k}"
-
+                customWords+=f" # {k}"
+            #print(customWords)
             result = next((item for item in keyWordsList if item["id"] == id), None)
             for ind in mask:
-                rm=result["Keywords"].pop(int(ind))
-
+                #rm=result["Keywords"].pop(int(ind))
+                pass
             result["Keywords"]+=customWords
-        
-            
-
+            print(result["Keywords"])   
         formatted = dc.formatData(keyWordsList)
         edges= dc.getGraphEncoding(formatted)
         encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
-        #encoded = dc.encode(formatted)
-        random.shuffle(edges)
-
-    #dc.saveData(encoded, "keywordsEmbed", client, db, texts)
-
-    
     labs = vM.train(encoded,mode="k")[0].tolist()
-
-
-
     ids=[elem["id"] for elem in keyWordsList]
-
-    #ret={"labels":labs.tolist(),"edges":list(edges),"nodes":ids}
-
     nodeList=[{"id":elem["id"],"label":labs[ind]} for ind,elem in enumerate(keyWordsList)]
-    linkList=[{"from":ed[0],"to":ed[1],"weight":ed[2]} for ed in list(edges)]
-
-
+    linkList=[{"from":ed[0],"to":ed[1],"weight":ed[2]} for ed in edges]
     ret = {"nodes":nodeList,"links":linkList}
     #ret={}
 

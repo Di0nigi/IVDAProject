@@ -380,10 +380,22 @@ methods: {
 
     const filteredIds = new Set(this.filteredEditions.map(e => e.id));
 
+    
+    
+
+
+
     this.graphData.nodes = responseData.nodes.filter(node =>
       filteredIds.has(node.id)
     );
-    this.graphData.links = responseData.links;
+    const nodeIds = new Set(this.graphData.nodes.map(n => n.id));
+
+    this.graphData.links = responseData.links.filter(edge =>
+      nodeIds.has(edge.from) && nodeIds.has(edge.to)
+    );
+    
+    //this.graphData.links = responseData.links;
+
     this.fullGraphData.nodes = responseData.nodes;
     this.fullGraphData.links = responseData.links;
     this.rawResponseData = responseData;
