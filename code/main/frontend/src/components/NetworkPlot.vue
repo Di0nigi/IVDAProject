@@ -376,8 +376,6 @@ methods: {
     else {
       console.log("setting response data as", data)
       responseData = data
-
-      
     }
 
     const filteredIds = new Set(this.filteredEditions.map(e => e.id));

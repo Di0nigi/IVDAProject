@@ -66,7 +66,7 @@
         <h3>Add Tag</h3>
         <div class="row">
           <input v-model="newTag" type="text" placeholder="Enter new tag..." class="search-bar" />
-          <button class="tag-button summary-pill" style="background-color: #4CAF50;" @click="addTag">
+          <button class="tag-button summary-pill" style="background-color: #4CAF50; color: #fff;" @click="addTag">
             Add
           </button>
         
@@ -74,7 +74,7 @@
         
         <div style="padding: 5%;"> </div>
 
-      <button class="tag-button summary-pill"  style="background-color: #1976d2; justify-content: center;" 
+      <button class="tag-button recompute-pill"  style="background-color: #1976d2; justify-content: center; color: #fff;"
       @click="compTags">
             Recompute Tags
           </button>
@@ -736,6 +736,15 @@ a.tag-button:hover {
 .summary-pill {
   border-radius: 12px;
   height: 24px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.recompute-pill {
+  border-radius: 12px;
+  height: 40px;
   padding: 0 10px;
   display: inline-flex;
   align-items: center;

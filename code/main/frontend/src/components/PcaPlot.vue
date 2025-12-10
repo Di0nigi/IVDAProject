@@ -188,8 +188,12 @@ export default {
 
       const colorMap = {};
       const colors = uniqueLabels.map((_, i) => {
-        const hue = (i * 137.508) % 360;
-        return `hsl(${hue}, 70%, 50%)`;
+        if (i === 0) return 'hsl(0, 0%, 50%)'; // grey
+        if (i === 1) return 'hsl(0, 0%, 0%)';  // black
+
+        const n = uniqueLabels.length - 2; // remaining groups
+        const lightness = 30 + (i - 2) * 50 / Math.max(n - 1, 1); // 30% to 80%
+        return `hsl(240, 100%, ${lightness}%)`; // blue shades
       });
       uniqueLabels.forEach((label, idx) => {
         colorMap[label] = colors[idx];
