@@ -37,7 +37,88 @@
 %%%%%%%%%%%%%%%%%
 %     Content     %
 %%%%%%%%%%%%%%%%%
+\section{Introduction} (Patrick)
 
+Humanity over has over the course of its existence produced an abundance of written records. Archivists, historians, and other researchers from the humanities
+that seek to analyze these records are often confronted with large amounts of unstructured text data, contained in large collections of works where it is often 
+unclear what documents are about or how they relate to eachother. %What
+As digitalization has made records more accessible and searchable, solving or at least alleviating the problem of analyzing an individual work, it has 
+made the problem of discoverability and exploration of large corpora of works even more pressing. Researchers find themselves overwhelmed with even 
+larger catalogues, often in the form of long, at best crudely sortable lists. Information on links between works is often entirely missing, while other important context, 
+such as the reliability and authenticity of a record is only available for judgement upon closer inspection, causing mistakes and costing precious time.  %Why
+In this report, we present a catalaogue exploration tool for online digital editions based a \href{https://github.com/dig-Eds-cat/digEds_cat/blob/main/digEds_cat.csv}{collection by Greta Franzini}, encompassing over 350 publicly avavailable works.
+Our toolprovides researchers with manifold overviews of the entire catalogue, easy to use filters and visualizations to explore the collection and narrow it down,
+ as well as the ability to see and annotate individual works and their relationships to other works.  
+The tool is available under \href{https://github.com/Di0nigi/IVDAProject}{this repository}. %How
+
+
+\section{Abstractions} (Patrick)
+
+% A description of the project’s domain context and target user(s)
+Our domain situation focuses on researchers from the humanities, such as historians and archivists, that seek to explore large collections of written works. 
+The data consists of metadata of a collection of just above 350 works from humanities, structured in tabular form, with fields relating to technical attributes of the digital editions as well as their origin.
+Thus, our domain problem is the challenge that users face when seeking to explore this catalogue of works, to find relevant editions for their research, and to understand the relationships between works.
+
+% A description of your tool’s goal
+The primary goal of our tool is to enable efficient exploration and discovery within large catalogues of digital scholarly editions. 
+By transforming a traditional list-based catalogue into an interactive visual environment, the tool addresses the fundamental challenge 
+researchers face when navigating large collections of works: the difficulty of understanding the overall landscape, identifying relevant 
+items, and uncovering hidden relationships between works.
+
+% A description of the tool's user tasks
+The tool supports the following key user tasks:
+(1) Overview: Gain comprehensive overviews of the entire collection through interactive visualizations that reveal patterns, 
+distributions, and relationships across works.
+(2) Filter: Use intuitive filtering mechanisms to narrow down the collection based on multiple criteria simultaneously.
+(3) Details-on-Demand: Inspect individual works and their contextual metadata to assess relevance, reliability, and authenticity.
+(4) Relate: Discover connections and relationships between works that would otherwise remain hidden in traditional list-based catalogues.
+(5) Annotate: Record and save findings, insights, and notes about individual works and their relationships.
+
+\section{Data Processing, wrangling, and modeling} (All)
+
+A data processing, wrangling, and modeling section that includes (1 point)
+– A description of the data used (features, sources, etc.)
+– A summary of the pre-processing and modeling steps and their results. Focus on the reasons these steps
+were necessary for your modeling and visualization goals.
+Reasoning as to why this set of approaches made sense in terms of your data analysis problem. Specifically
+refer back to elements in the abstractions section in your justification of steps.
+– Include annotated screenshots of relevant code sections, visualizations made during the data wrangling
+process, etc
+
+\section{Visual Interface} (All)
+A description of the decisions made on visual encoding decisions and the interactions used in your VA
+tool (0.5 point)
+– A description of how your defined user tasks relate to your visual interface, and all of its encodings and
+interactions (0.5 point)
+– To support the tasks in this section, please include annotated screenshots of your tool
+
+\section{Discussion and Limitations} (Cyril)
+– A summary of the feedback you received on your final presentation. Supplement this feedback with a
+self-reflection on this aspect. (0.5 point)
+– Identification of the limitations you agree would be relevant to address, with a discussion on how they
+might be addressed in a hypothetical future iteration of your work. Focus on feedback regarding whether
+your tasks were effectively supported by your data preprocessing and modeling choices, and by your tool.
+(2 points)
+
+\section{Possible Extensions} (Dionigi)
+Possible extensions of your approach (4 points) (called future work in research), focusing on the following
+content: Propose either a Human-AI Collaboration (L10, L15) or Human Knowledge Externaliza-
+tion (L16, L17) strategy that would significantly extend your existing contributions. Stick to concepts,
+methodologies, and terminology as used in class to underline your understanding of the human-centered
+aspects taught in the lecture.
+– How does this new idea support users’ existing defined tasks? Are there other, related tasks that are
+now newly supported by your suggestion?
+– What interactions and view compositions would empower your proposed strategy?
+– What user feedback data (labels, etc.) is provided to the machine as a result of user interaction with the
+system? What feedback data is provided to the user by the system in the strategy you’ve proposed?
+∗ Human Understandable Output: Specify the information output by the machine to the user.
+∗ Machine Readable Input: Describe the feedback data input to the machine by the user.
+– A flowchart summarizing this information, including data, human and AI agents, and components of
+your enhanced IVDA system
+
+\section{Conclusion} (Dionigi)
+A conclusion that summarizes your data analysis problem, your solution to address this problem, and your
+solution’s limitations (0.5 point)
 %%%%%%%%%%%%%%%%%
 \newpage
 %     Example reference in IEEE style:     %
