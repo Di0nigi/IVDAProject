@@ -19,9 +19,21 @@ CORS(app)
 
 client = MongoClient("mongodb://localhost:27017/")
 
-db = client["DigitalEditions"]
- 
-texts = db["editions"]    
+# Auto-detect database containing the `editions` collection so the backend
+# can work whether the user imported into `DigitalEditions` or (as happened)
+# into another DB (e.g. `local`). Falls back to `DigitalEditions`.
+db = None
+for name in client.list_database_names():
+    try:
+        if 'editions' in client[name].list_collection_names():
+            db = client[name]
+            break
+    except Exception:
+        continue
+if db is None:
+    db = client["DigitalEditions"]
+
+texts = db["editions"]
 
 
 #scM = ScoreModel()
