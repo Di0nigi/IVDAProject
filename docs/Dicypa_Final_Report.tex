@@ -25,7 +25,7 @@
 %%%%%%%%%%%%%%%%%
 %     Title     %
 %%%%%%%%%%%%%%%%%
-\title{Group Assignment 4: Final Report \\ \small Interactive-Visual Data Analysis, Fall 2024}
+\title{Group Assignment 4: Final Report \\ \small Interactive-Visual Data Analysis, Fall 2025}
 \author{
 \textbf{Dionigi Rodriguez (24-755-688)} \and
 \textbf{Cyril Smetanka (24-754-434)} \and
@@ -37,7 +37,7 @@
 %%%%%%%%%%%%%%%%%
 %     Content     %
 %%%%%%%%%%%%%%%%%
-\section{Introduction} (Patrick)
+\section{Introduction}
 
 Humanity over has over the course of its existence produced an abundance of written records. Archivists, historians, and other researchers from the humanities
 that seek to analyze these records are often confronted with large amounts of unstructured text data, contained in large collections of works where it is often 
@@ -52,7 +52,7 @@ Our toolprovides researchers with manifold overviews of the entire catalogue, ea
 The tool is available under \href{https://github.com/Di0nigi/IVDAProject}{this repository}. %How
 
 
-\section{Abstractions} (Patrick)
+\section{Abstractions}
 
 % A description of the project’s domain context and target user(s)
 Our domain situation focuses on researchers from the humanities, such as historians and archivists, that seek to explore large collections of written works. 
@@ -67,22 +67,22 @@ items, and uncovering hidden relationships between works.
 
 % A description of the tool's user tasks
 The tool supports the following key user tasks:
-(1) Overview: Gain comprehensive overviews of the entire collection through interactive visualizations that reveal patterns, 
+(1) Gain overview: Gain comprehensive overviews of the entire collection through interactive visualizations that reveal patterns, 
 distributions, and relationships across works.
-(2) Filter: Use intuitive filtering mechanisms to narrow down the collection based on multiple criteria simultaneously.
-(3) Details-on-Demand: Inspect individual works and their contextual metadata to assess relevance, reliability, and authenticity.
+(2) Filter by attributes: Use intuitive filtering mechanisms to narrow down the collection based on multiple criteria simultaneously.
+(3) Identify works: Inspect individual works and their contextual metadata to assess relevance, reliability, and authenticity.
 (4) Relate: Discover connections and relationships between works that would otherwise remain hidden in traditional list-based catalogues.
-(5) Annotate: Record and save findings, insights, and notes about individual works and their relationships.
+(5) Judge reliability: Provide a score represented as a coloured bar, as well as the modification of weighting for reliability score.
 
-\section{Data Processing, wrangling, and modeling} (All)
+\section{Data Processing, wrangling, and modeling}
 
 %A data processing, wrangling, and modeling section that includes (1 point)
 % A description of the data used (features, sources, etc.)
 We utilized a \href{https://github.com/dig-Eds-cat/digEds_cat/blob/main/digEds_cat.csv}{dataset} provided by Greta Franzini, which contains metadata for over 350 digital scholarly editions, as well as links to their websites.
 The dataset comes with 51 attributes per edition, most of which are coded as strings and contain categorical variables.  
 Attributes range from technical details, such as OCR availability or identifiers in other catalogues, to descriptive metadata, 
-such as what timeperiod a work covers or whether the digital edition considers textual variance between different published versions of a work.
-As we wanted some more descriptive data for tasks not supported by the original dataset, we leveraged Geminmi 3 Pro, to generate a description for each work,
+such as what time period a work covers or whether the digital edition considers textual variance between different published versions of a work.
+As we wanted some more descriptive data for tasks not supported by the original dataset, we leveraged Gemini 3 Pro, to generate a description for each work,
 the best guess for the name of the originial Author as well as keywords relating to the content of the work. We regard these AI-generated attributes 
 as not perfectly reliable, but generally useful and indicative based on our manual spot-checks.
 
@@ -98,30 +98,34 @@ values with "mid" where recoded to "XX50", where "XX" refers to the correspondin
 %refer back to elements in the abstractions section in your justification of steps.
 
 % Include annotated screenshots of relevant code sections, visualizations made during the data wrangling process, etc
-\includegraphics{./pics g4/whole_view.png}
 \includegraphics{./pics g4/filter panel.png}
-\includegraphics{./pics g4/legend.png}
 \includegraphics{./pics g4/pca with lasso.png}
 \includegraphics{./pics g4/network plot.png}
 \includegraphics{./pics g4/list.png}
 \includegraphics{./pics g4/detail 1.png}
-\includegraphics{./pics g4/detail 2.png}
-\includegraphics{./pics g4/reliability score.png}
 \includegraphics{./pics g4/timeline.png}
-\includegraphics{./pics g4/bar chart.png}
 \includegraphics{./pics g4/custom tags.png}
 
-\section{Visual Interface} (All)
+\section{Visual Interface} 
 %A description of the decisions made on visual encoding decisions and the interactions used in your VA tool (0.5 point)
+Within our tool, we decided to use green to signify functioning or reliable data points such as a selected tag or a work that has OCR or Open Access. We also chose blue and neutral colours such as grey for our network and PCA plots to differentiate them from the bar chart and timeline plots which match their colours to the key on the right side of the screen. In addition, placement of points on the network graph provided a valuable distinction between tags that were given to each work.
 %A description of how your defined user tasks relate to your visual interface, and all of its encodings and interactions (0.5 point)
+\begin{itemize}
+    \item Gain overview: Timeline with coloured works plotted, a block of title, author and description of a work, a bar chart of languages, and a cluster plot based on keywords as initial overview, all views are linked with filtering and selecting a work on a specific view connects to all others.
+    \item Identify relationships: A network graph and cluster plot with redundant encoding by colour and shape, along with linking of works from PCA and graph filtering.
+    \item Filter by attributes: A search function by title, as well as traditional filter by attribute. These are in the form of sliders, as well as tags to filter positively and negatively which are green or red respectively.
+    \item Judge reliability: We provide a score represented
+          as a coloured bar with a hue from red to green, as well as the attributes contributing to the score.
+    \item Tag relationships: Users can add tags in the overview menu on the left, which are also shown as edges on the central network graph.
+\end{itemize}
 % To support the tasks in this section, please include annotated screenshots of your tool
 
-\section{Discussion and Limitations} (Cyril)
+\section{Discussion and Limitations}
 % A summary of the feedback you received on your final presentation. Supplement this feedback with a self-reflection on this aspect. (0.5 point)
 % Identification of the limitations you agree would be relevant to address, with a discussion on how they might be addressed in a hypothetical future iteration of your work. Focus on feedback regarding whether
 %your tasks were effectively supported by your data preprocessing and modeling choices, and by your tool. (2 points)
 
-\section{Possible Extensions} (Dionigi)
+\section{Possible Extensions}
 %Possible extensions of your approach (4 points) (called future work in research), focusing on the following
 %content: Propose either a Human-AI Collaboration (L10, L15) or Human Knowledge Externaliza-
 %tion (L16, L17) strategy that would significantly extend your existing contributions. Stick to concepts,
@@ -136,12 +140,10 @@ values with "mid" where recoded to "XX50", where "XX" refers to the correspondin
 % Machine Readable Input: Describe the feedback data input to the machine by the user.
 % A flowchart summarizing this information, including data, human and AI agents, and components of your enhanced IVDA system
 
-\section{Conclusion} (Dionigi)
+\section{Conclusion}
 %A conclusion that summarizes your data analysis problem, your solution to address this problem, and your
 %solution’s limitations (0.5 point)
-
-
-
+Our data analysis problem involved providing an interactive exploration tool for a digital collection of 350 historical works. As there were only a few columns of data relating to content provided, we used LLM generated attributes to provide a network graph and PCA plot to allow for specific filtering and interaction. As our tool used textual works, it was difficult to choose which technical attributes to keep and how to present the data in a useful and intuitive way. Due to this we also decided on many competing views which may have resulted in a cluttered overall view and caused more confusion than clarity. 
 
 %%%%%%%%%%%%%%%%%
 \newpage
