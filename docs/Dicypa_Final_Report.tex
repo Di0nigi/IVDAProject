@@ -9,6 +9,7 @@
 \usepackage{float} 
 \usepackage{array}
 \usepackage{ai-usage-card}
+\usepackage[export]{adjustbox}
 % Margins
 \usepackage[top=1cm, left=2cm, right=2cm, bottom=4.0cm]{geometry}
 % Colour table cells
@@ -98,13 +99,6 @@ values with "mid" where recoded to "XX50", where "XX" refers to the correspondin
 %refer back to elements in the abstractions section in your justification of steps.
 
 % Include annotated screenshots of relevant code sections, visualizations made during the data wrangling process, etc
-\includegraphics{./pics g4/filter panel.png}
-\includegraphics{./pics g4/pca with lasso.png}
-\includegraphics{./pics g4/network plot.png}
-\includegraphics{./pics g4/list.png}
-\includegraphics{./pics g4/detail 1.png}
-\includegraphics{./pics g4/timeline.png}
-\includegraphics{./pics g4/custom tags.png}
 
 \section{Visual Interface} 
 %A description of the decisions made on visual encoding decisions and the interactions used in your VA tool (0.5 point)
@@ -113,17 +107,29 @@ Within our tool, we decided to use green to signify functioning or reliable data
 \begin{itemize}
     \item Gain overview: Timeline with coloured works plotted, a block of title, author and description of a work, a bar chart of languages, and a cluster plot based on keywords as initial overview, all views are linked with filtering and selecting a work on a specific view connects to all others.
     \item Identify relationships: A network graph and cluster plot with redundant encoding by colour and shape, along with linking of works from PCA and graph filtering.
-    \item Filter by attributes: A search function by title, as well as traditional filter by attribute. These are in the form of sliders, as well as tags to filter positively and negatively which are green or red respectively.
+    \item Filter by attributes: A search function by title, as well as traditional filter by attribute. These are in the form of sliders, as well as tags to filter inclusion and exclusion which are green or red respectively.
     \item Judge reliability: We provide a score represented
           as a coloured bar with a hue from red to green, as well as the attributes contributing to the score.
     \item Tag relationships: Users can add tags in the overview menu on the left, which are also shown as edges on the central network graph.
 \end{itemize}
 % To support the tasks in this section, please include annotated screenshots of your tool
+\includegraphics[width=1\textwidth]{./pics g4/filter panel.png}
+\includegraphics[width=0.3\textwidth]{./pics g4/pca with lasso.png}
+\includegraphics[width=0.3\textwidth]{./pics g4/detail 1.png}
+\includegraphics[width=0.3\textwidth]{./pics g4/custom tags.png}\newline
+\includegraphics[width=1\textwidth]{./pics g4/timeline.png}
+\includegraphics[width=1\textwidth]{./pics g4/network plot.png}
+
 
 \section{Discussion and Limitations}
 % A summary of the feedback you received on your final presentation. Supplement this feedback with a self-reflection on this aspect. (0.5 point)
+For our final presentation, the main message behind the feedback we received was clarity of the main view, which we aimed to improve on by providing captions for each view to describe what each one was for, however there was still limited clarity in these descriptions, which could have been improved by implementing a mouseover event that would provide a more detailed description of the view when prompted by the user. 
 % Identification of the limitations you agree would be relevant to address, with a discussion on how they might be addressed in a hypothetical future iteration of your work. Focus on feedback regarding whether
 %your tasks were effectively supported by your data preprocessing and modeling choices, and by your tool. (2 points)
+\\\\
+Overall, our tool supported the task of gaining overview quite clearly, as it showed how different works were related to each other, what features they had in common, a timeline showing when they were produced as well as providing a clear summary of the work with the detailed view on the top left. Identifying relationships was also feasible within our tool as we provided a network plot showing common tags between works as well as a PCA plot defined by the textual descriptions of each work. Moreover, relationships could also be found within the detailed view of each work by filtering with tags to see works that included mutual tags. As mentioned, filtering by attributes can be done from the detail view as well as the filter bar, PCA plot and timeline plot, with full linking between each view.
+\\\\
+Judging reliability had some limitations as the attributes used to measure reliability were LLM generated and so could have been misleading or incorrect, as well as implementing a more interactive reliability score that would allow users to select which attributes to include in a reliability score as well as modifying their related weighting. Finally, tagging relationships was possible within the detail view, by creating custom tags for works that could then also be assigned to others, however this could be modified to include adding the tags and relationships directly within the network plot, as that is where these links would be visualised.
 
 \section{Possible Extensions}
 %Possible extensions of your approach (4 points) (called future work in research), focusing on the following
@@ -139,6 +145,17 @@ Within our tool, we decided to use green to signify functioning or reliable data
 % Human Understandable Output: Specify the information output by the machine to the user.
 % Machine Readable Input: Describe the feedback data input to the machine by the user.
 % A flowchart summarizing this information, including data, human and AI agents, and components of your enhanced IVDA system
+A key extension of our system would be to strengthen Human–AI Collaboration by giving users finer control over tagging and clustering processes. Users could edit AI generated descriptions, add custom tags, and decide whether these tags should influence clustering and network graph construction. For advanced users, a Human-in-the-Loop clustering interface could expose parameters such as the number of clusters and provide a white-box k-means view with visualizations of centroid movement and cluster assignments. This supports existing tasks of exploration and relationship discovery while enabling model steering. 
+\begin{itemize}
+\item Machine-readable input: user-edited descriptions, custom tags, and clustering parameters.\\
+\item Human-understandable output: updated cluster and network visualizations, as well as transparent explanations of clustering behavior.
+
+    
+\end{itemize}
+
+In addition, a Human Knowledge Externalization strategy could be implemented by allowing users to access and annotate the original texts. User annotations and highlights would support deeper study and interpretation while also helping to refine tags, similarity measures, and clusters.
+Existing views could be further improved through tighter coordination, for example by extending the geographic map to display all works currently selected in other views, reinforcing linked interaction across the interface.
+Finally, a complementary Human–AI Collaboration approach could integrate an LLM fine-tuned on catalogue texts and user annotations. Acting as a non-authoritative “brainstorming partner” in a side panel, the model would suggest potential relationships and thematic connections using both the data and user feedback. Together, these extensions would empower users’ existing exploration tasks while maintaining human control, transparency, and interpretability throughout the analysis process.
 
 \section{Conclusion}
 %A conclusion that summarizes your data analysis problem, your solution to address this problem, and your
