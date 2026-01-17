@@ -1,4 +1,7 @@
+\NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{ai-usage-card}[Package for reporting AI usage in scientific works.]
+\RequirePackage{array}
+\RequirePackage{ragged2e}
 \RequirePackage[breakable, most]{tcolorbox}
 \RequirePackage{float}
 \RequirePackage{xcolor}
@@ -6,8 +9,6 @@
 \RequirePackage{longtable}
 \RequirePackage[hidelinks]{hyperref}
 \RequirePackage{qrcode}
-\RequirePackage{array}
-\NeedsTeXFormat{LaTeX2e}
 
 \definecolor{LightBlue}{HTML}{3389f8}
 \newcommand{\makeAIUsageCard}{%

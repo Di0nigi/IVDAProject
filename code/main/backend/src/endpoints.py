@@ -3,6 +3,13 @@ from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from .mlUtils import visModel,dataEncoder
+import random
+import json
+from urllib.parse import unquote
+
+
+
+#from .filterning import filterModel
 
 app = Flask(__name__)
 CORS(app)
@@ -12,9 +19,30 @@ CORS(app)
 
 client = MongoClient("mongodb://localhost:27017/")
 
-db = client["DigitalEditions"]
- 
-texts = db["editions"]    
+# Auto-detect database containing the `editions` collection so the backend
+# can work whether the user imported into `DigitalEditions` or (as happened)
+# into another DB (e.g. `local`). Falls back to `DigitalEditions`.
+db = None
+for name in client.list_database_names():
+    try:
+        if 'editions' in client[name].list_collection_names():
+            db = client[name]
+            break
+    except Exception:
+        continue
+if db is None:
+    db = client["DigitalEditions"]
+
+texts = db["editions"]
+
+
+#scM = ScoreModel()
+#fM = filterModel()
+
+#@app.route("/texts/filter", methods=["POST"])
+#def setFilterParams():
+#    return
+
 
 # To get all the editions in a list
 
@@ -54,6 +82,16 @@ def getPeriodName():
     timeList = list(texts.find({}, {"_id": 0,"id":1,"Historical Period":1}))  
     return timeList
 
+@app.route("/texts/language/name", methods=["GET"])
+def getLanguageName():
+    langList = list(texts.find({}, {"_id": 0, "id": 1, "Language": 1}))
+    return langList
+
+@app.route("/texts/writingsupport/name", methods=["GET"])
+def getWritingSupportName():
+    supportList = list(texts.find({}, {"_id": 0, "id": 1, "Writing support": 1}))
+    return supportList
+
 #   period
 
 @app.route("/texts/period", methods=["GET"])
@@ -77,24 +115,42 @@ def getEndPeriod():
 
 # ML endopoints
 
-@app.route("/texts/graphPoints", methods=["GET"])
-def getAndComputeGraphPoints():
+@app.route("/texts/graphPoints/<modPoints>", methods=["GET"])
+def getAndComputeGraphPoints(modPoints):
     dc = dataEncoder(textType='k')
-    vM=visModel(nClusters=7)
-    keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
-    formatted = dc.formatData(keyWordsList)
-    edges= dc.getGraphEncoding(formatted)
-    #encoded = dc.encode(formatted)
-    encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
+    vM=visModel(nClusters=5)
+    decoded=unquote(modPoints)
+    modEditions = json.loads(decoded)
+    if modEditions == []:
+        keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
+        formatted = dc.formatData(keyWordsList)
+        edges= dc.getGraphEncoding(formatted)
+        encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
+        #random.shuffle(edges)
+    else:
+        keyWordsList = list(texts.find({}, {"_id": 0,"id":1,"Keywords":1,"keywordsEmbed":1}))
+        for modEd in modEditions:
+            #print(modEd)
+            id = modEd["id"]
+            mask = modEd["mask"]
+            custom = modEd["customKeywords"]
+            customWords=""
+            for k in custom:
+                customWords+=f" # {k}"
+            #print(customWords)
+            result = next((item for item in keyWordsList if item["id"] == id), None)
+            for ind in mask:
+                #rm=result["Keywords"].pop(int(ind))
+                pass
+            result["Keywords"]+=customWords
+            print(result["Keywords"])   
+        formatted = dc.formatData(keyWordsList)
+        edges= dc.getGraphEncoding(formatted)
+        encoded = [elem["keywordsEmbed"] for elem in keyWordsList]
     labs = vM.train(encoded,mode="k")[0].tolist()
-
-    #ids=[elem["id"] for elem in keyWordsList]
-
-    #ret={"labels":labs.tolist(),"edges":list(edges),"nodes":ids}
-
+    ids=[elem["id"] for elem in keyWordsList]
     nodeList=[{"id":elem["id"],"label":labs[ind]} for ind,elem in enumerate(keyWordsList)]
-    linkList=[{"from":ed[0],"to":ed[1]} for ed in list(edges)]
-
+    linkList=[{"from":ed[0],"to":ed[1],"weight":ed[2]} for ed in edges]
     ret = {"nodes":nodeList,"links":linkList}
     #ret={}
 
@@ -111,21 +167,68 @@ def getAndComputeScatterPoints():
     dc = dataEncoder(textType='d')
     vM=visModel(nClusters=7)
     descriptionLists = list(texts.find({}, {"_id": 0,"id":1,"Content_Description":1,"descritpionEmbed":1}))
-    #formatted = dc.formatData(keyWordsList)
+    #formatted = dc.formatData(descriptionLists)
     #encoded = dc.encode(formatted)
+    #dc.saveData(encoded, "descritpionEmbed", client, db, texts)
     encoded = [elem["descritpionEmbed"] for elem in descriptionLists]
 
     labs , points = vM.train(encoded,mode="d")
 
-    ret = {"labels":labs.tolist(),"xCoor":points[0].tolist(),"yCoor":points[1].tolist()}
+    ids = [elem["id"] for elem in descriptionLists]
+
+    ret = {"ids":ids ,"labels":labs.tolist(),"xCoor":points[0].tolist(),"yCoor":points[1].tolist()}
     #ret={}
 
-    #dc.saveData(encoded, "descritpionEmbed", client, db, texts)
+    
 
     #print("done")
 
 
     return jsonify(ret)
+
+
+# to compute scores
+
+@app.route("/texts/reliability",methods = ["POST"])
+def calculateReliabilityScores():
+    data = request.json
+    weights = data.get('weights', {'citations': 50, 'witnesses': 50, 'audience': 50})
+    
+    # Normalize weights to sum to 1
+    total = weights['citations'] + weights['witnesses'] + weights['audience']
+    if total == 0:
+        total = 1
+    
+    w_citations = weights['citations'] / total
+    w_witnesses = weights['witnesses'] / total
+    w_audience = weights['audience'] / total
+    
+    # Get all editions and calculate scores
+    all_texts = list(texts.find({}, {"_id": 0, "id": 1, "Citation_bin": 1, 
+                                      "Value_of_witnesses_yes": 1, "Audience": 1}))
+    
+    scores = []
+    for text in all_texts:
+        # Get binary values (default to 0 if not present)
+        citation_val = text.get('Citation_bin', 0)
+        witnesses_val = text.get('Value_of_witnesses_yes', 0)
+        # Audience is categorical, convert to binary (1 if specified, 0 if not)
+        audience_val = 1 if text.get('Audience') and text.get('Audience').lower() not in ['not provided', 'nan', ''] else 0
+        
+        # Calculate weighted score (0-100)
+        score = (citation_val * w_citations + witnesses_val * w_witnesses + audience_val * w_audience) * 100
+        
+        scores.append({
+            'id': text['id'],
+            'reliabilityScore': round(score)
+        })
+    
+    return jsonify(scores)
+
+@app.route("/texts/reliability/<id>",methods = ["GET"])
+def getScores():
+    return
+
 
 # to get tags
 
@@ -160,13 +263,6 @@ def getEditionTags(id):
     ret = {"tags": keywords}
 
     return jsonify(ret)
-
-
-
-
-
-
-
 
 
 # To get titles

@@ -248,7 +248,7 @@ h4 {
 .tag-button {
   padding: 6px 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   font-size: 11px;
   font-weight: 500;
   cursor: pointer;

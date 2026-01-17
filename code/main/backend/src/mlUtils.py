@@ -1,7 +1,7 @@
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 
-
+import random
 import torch
 import matplotlib.pyplot as plt
 import numpy as np
@@ -33,17 +33,13 @@ class dataEncoder():
         out = []
         
         if self.tp=="d":
-
             for elem in data:
-
                 inputs = self.tokenizer(elem, return_tensors="pt", padding=True, truncation=True)
-                
                 with torch.no_grad():
                     outputs = self.model(**inputs)
-                
                 embeddings = outputs.last_hidden_state[:, 0, :]
                 out.append(embeddings.squeeze(0))
-            print(out[0].shape)
+            #print(out[0].shape)
         else:
             out=[]
             for elem in data:
@@ -74,10 +70,11 @@ class dataEncoder():
         else:
             for edition in data:
                 keywords=edition["Keywords"]
-                # Format: Manuscript # Theology # Liturgy # Philology # Religion
+                # Format: Manuscript # Theology # Liturgy 
                 keywords=keywords.replace(" ","").split("#")
                 #print(len(keywords))
                 dataPoints.append(keywords)
+
                 
         return dataPoints
     
@@ -95,20 +92,41 @@ class dataEncoder():
         
         return
     
-    def getGraphEncoding(self,data):
+    def getGraphEncoding(self, data):
+        # attribute → list of item IDs
+        #print(data[0:10])
         index = defaultdict(list)
-
         for itemId, attrs in enumerate(data):
             for a in attrs:
                 index[a].append(itemId)
-        edges = set()
+        #print(index)
+
+        
+        edges = defaultdict(int)
 
         for attr, itemList in index.items():
+            # for each attribute, connect all items that share it
             for i in range(len(itemList)):
                 for j in range(i + 1, len(itemList)):
                     a, b = itemList[i], itemList[j]
                     if a != b:
-                        edges.add((min(a, b), max(a, b))) 
+                        u, v = min(a, b), max(a, b)
+                        edges[(u, v)] += 1
+                          
+
+       
+        #print(edges.items())
+        
+        edges = [[a+1, b+1, w] for (a, b), w in edges.items()]
+        #print("after")
+
+        #print(edges[0:10])
+
+        #for e in edges:
+         #   if e[2]>2:
+          #      pass #print(e)
+            #else:
+            #   print("eo"
 
         return edges
     
@@ -155,9 +173,6 @@ class visModel():
         return labels , res
       
 
-
-
-    
     
 
 ### demo code not final 
@@ -176,6 +191,8 @@ def demoPipeline(data):
 
 
     return
+
+
 
 
 

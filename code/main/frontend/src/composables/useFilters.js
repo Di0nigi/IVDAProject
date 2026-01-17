@@ -1,7 +1,7 @@
 import { reactive, computed } from 'vue';
 
 const filters = reactive({
-  periodRange: [-600, 2000],
+  periodRange: [-800, 2000],
   historicalPeriod: [],
   scholarly: null,
   digital: null,
@@ -11,15 +11,59 @@ const filters = reactive({
   openAccess: null,
   language: [],
   writingSupport: [],
+  keywords: [],
+  reliabilityWeights: {
+    citations: 50,
+    witnesses: 50,
+    audience: 50
+  },
+  ids: Array.from({ length: 338 }, (_, i) => i + 1)
 });
 
 export function useFilters() {
   const updateFilter = (filterName, value) => {
-    filters[filterName] = value;
+    const tagFilters = ['historicalPeriod', 'language', 'writingSupport', 'keywords'];
+    if (tagFilters.includes(filterName)) {
+      console.warn(`updateFilter should not be used for ${filterName}. Use toggleTagFilter instead.`);
+      return;
+    }
+    if (Array.isArray(value)) {
+      filters[filterName] = value.map(v => typeof v === 'string' ? v.toLowerCase() : v);
+    } else {
+      filters[filterName] = value;
+    }
+  };
+
+  const toggleTagFilter = (filterKey, tag) => {
+    const lowerCaseTag = tag.toLowerCase();
+    const filterArray = filters[filterKey];
+    const existingTagIndex = filterArray.findIndex(t => t.name === lowerCaseTag);
+
+    if (existingTagIndex === -1) {
+      // Not selected -> Selected
+      filterArray.push({ name: lowerCaseTag, status: 'selected' });
+    } else {
+      const existingTag = filterArray[existingTagIndex];
+      if (existingTag.status === 'selected') {
+        // Selected -> Excluded
+        existingTag.status = 'excluded';
+      } else {
+        // Excluded -> Not selected
+        filterArray.splice(existingTagIndex, 1);
+      }
+    }
+  };
+
+  const updateReliabilityWeights = (weights) => {
+    filters.reliabilityWeights = { ...weights };
+  };
+
+  const updateIdsFilter = (idsArray) => {
+    filters.ids = idsArray;
   };
 
   const resetFilters = () => {
-    filters.periodRange = [-600, 2000];
+    filters.periodRange = [-800, 2000];
     filters.historicalPeriod = [];
     filters.scholarly = null;
     filters.digital = null;
@@ -29,10 +73,20 @@ export function useFilters() {
     filters.openAccess = null;
     filters.language = [];
     filters.writingSupport = [];
+    filters.keywords = [];
+    filters.reliabilityWeights = {
+      citations: 50,
+      witnesses: 50,
+      audience: 50
+    };
+    filters.ids = Array.from({ length: 338 }, (_, i) => i + 1);
   };
 
   const hasActiveFilters = computed(() => {
-    return filters.periodRange[0] !== -600 ||
+    const allIds = Array.from({ length: 338 }, (_, i) => i + 1);
+    const idsActive = filters.ids.length !== allIds.length;
+
+    return filters.periodRange[0] !== -800 ||
            filters.periodRange[1] !== 2000 ||
            filters.historicalPeriod.length > 0 ||
            filters.scholarly !== null ||
@@ -42,13 +96,18 @@ export function useFilters() {
            filters.hasAPI !== null ||
            filters.openAccess !== null ||
            filters.language.length > 0 ||
-           filters.writingSupport.length > 0;
+           filters.writingSupport.length > 0 ||
+           filters.keywords.length > 0 ||
+           idsActive;
   });
 
   return {
     activeFilters: filters,
     updateFilter,
+    toggleTagFilter,
+    updateReliabilityWeights,
     resetFilters,
-    hasActiveFilters
+    hasActiveFilters,
+    updateIdsFilter
   };
 }

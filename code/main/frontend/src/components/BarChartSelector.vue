@@ -43,8 +43,8 @@ import { ref } from 'vue';
 
 const emit = defineEmits(['update:xAttribute', 'update:categoryAttribute', 'update:xLabel', 'update:categoryLabel']);
 
-const selectedX = ref('Historical Period');
-const selectedCategory = ref('Scholarly');
+const selectedX = ref('Language');
+const selectedCategory = ref('Historical Period');
 
 // Available attributes from the dataset, preliminary. we should either build an endpoint to get this or adjust so only sensible attributes can be used.
 const attributes = [

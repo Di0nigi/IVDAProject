@@ -1,43 +1,96 @@
 <template>
   <div class="source-container">
     <div class="search-bar">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="11" r="6" stroke="#666" stroke-width="2"/>
+        <path d="M20 20L15.5 15.5" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+      </svg>
       <input type="text" placeholder="Search..." v-model="searchQuery" />
     </div>
     <ul class="source-list">
-    <li v-for="text in searchFilteredEditions" :key="text.id" class="list-item">
+      <li v-for="text in searchFilteredEditions" :key="text.id" class="list-item">
         <a href="#" @click.prevent="selectEdition(text.id)">
-        {{ text['Edition name'] }}
+          <div class="list-item-content">
+            <span>{{ text['Edition name'] }}</span>
+            <div class="dots-container">
+              <span class="dot" :style="{ backgroundColor: getOcrColor(text) }" title="OCR/Keyed"></span>
+              <span class="dot" :style="{ backgroundColor: getOpenAccessColor(text) }" title="Open Access"></span>
+              <span class="dot" :style="{ backgroundColor: getReliabilityColor(text) }" title="Reliability"></span>
+            </div>
+          </div>
         </a>
-    </li>
+      </li>
     </ul>
   </div>
 </template>
 
 <script setup>
-import { ref, computed} from 'vue'
-import { useEditionsData } from '../composables/useEditionsData'
+import { ref, computed } from 'vue';
+import { useEditionsData } from '../composables/useEditionsData';
 
-const texts = ref([])
-const selected = ref(null)
-const searchQuery = ref('')
+const searchQuery = ref('');
+const { filteredEditions } = useEditionsData();
 
-const { editions, filteredEditions, fetchEditions } = useEditionsData()
-
-const emit = defineEmits(['select'])
+const emit = defineEmits(['select']);
 
 function selectEdition(id) {
-  const edition = filteredEditions.value.find(e => e.id === id)
-  emit('select', edition)
+  const edition = filteredEditions.value.find(e => e.id === id);
+  emit('select', edition);
 }
 
 const searchFilteredEditions = computed(() => {
-  if (!searchQuery.value) return filteredEditions.value
+  if (!searchQuery.value) return filteredEditions.value;
   return filteredEditions.value.filter(text =>
     text['Edition name']
       .toLowerCase()
       .includes(searchQuery.value.toLowerCase())
-  )
-})
+  );
+});
+
+function getOcrColor(edition) {
+  if (!edition) return '#e0e0e0';
+  const ocr = edition['OCR or keyed?'] || '';
+  if (ocr.toLowerCase().includes('keyed')) {
+    return '#4CAF50'; // green
+  } else if (ocr.toLowerCase().includes('ocr')) {
+    return '#2196F3'; // blue
+  } else if (ocr.toLowerCase() === 'not provided' || ocr.toLowerCase() === 'no' || !ocr) {
+    return '#F44336'; // red for no OCR
+  }
+  return '#e0e0e0'; // default grey
+}
+
+function getOpenAccessColor(edition) {
+  if (!edition) return '#e0e0e0';
+  const oa = edition['Open source/Open access'] || '';
+  if (oa.toLowerCase().includes('open access and open source')) {
+    return '#66BB6A'; // brighter green
+  } else if (oa.toLowerCase().includes('yes') || oa.toLowerCase().includes('open access')) {
+    return '#4CAF50'; // green
+  } else if (oa.toLowerCase().includes('partly')) {
+    return '#FFC107'; // yellow
+  } else if (oa.toLowerCase() === 'no') {
+    return '#F44336'; // red
+  }
+  return '#e0e0e0'; // default grey
+}
+
+function getReliabilityColor(edition) {
+  const score = edition.reliabilityScore || 0;
+  const clamped = Math.max(0, Math.min(100, score));
+  let r, g, b;
+  const maxIntensity = 180;
+  if (clamped <= 50) {
+    r = maxIntensity;
+    g = Math.round(maxIntensity * (clamped / 50));
+    b = 0;
+  } else {
+    r = Math.round(maxIntensity * (1 - (clamped - 50) / 50));
+    g = maxIntensity;
+    b = 0;
+  }
+  return `rgb(${r},${g},${b})`;
+}
 </script>
 
 <style scoped>
@@ -46,6 +99,7 @@ const searchFilteredEditions = computed(() => {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .search-bar {
@@ -54,11 +108,19 @@ const searchFilteredEditions = computed(() => {
   gap: 8px;
   flex-shrink: 0;
   margin-bottom: 12px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  pointer-events: none;
+  flex-shrink: 0;
 }
 
 .search-bar input {
   flex: 1;
-  padding: 4px 8px;
+  padding: 4px 8px 4px 30px;
   border: 1px solid #d5d9df;
   border-radius: 6px;
   font-size: 12px;
@@ -68,7 +130,7 @@ const searchFilteredEditions = computed(() => {
 .search-bar input:focus {
   border-color: #4a90e2;
 }
-
+ 
 .source-list {
   list-style: none;
   padding: 0;
@@ -80,26 +142,106 @@ const searchFilteredEditions = computed(() => {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  overflow-x: hidden;
 }
 
 .source-list a {
   color: #333;
   text-decoration: none;
   display: block;
-  padding: 8px 12px;
+  padding: 6px 10px;
   background: white;
   border: 1px solid #d5d9df;
   border-radius: 6px;
   transition: all 0.2s;
+  height: 2.4em;
+  min-height: 2.4em;
+  overflow: hidden;
 }
 
 .source-list a:hover {
-  background: #f5f5f5;
-  border-color: #8f4e1f;
-  color: #8f4e1f;
+  filter: brightness(90%);
+  border-color: #4a90e2;
+  min-height: 2.4em;
+  height: auto;
+  overflow: visible;
+  z-index: 10;
+  position: relative;
 }
 
 .list-item {
   list-style: none;
+}
+
+.list-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.dots-container {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+  cursor: help;
+}
+
+.dot:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.dot::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+.list-item-content span {
+  display: -webkit-box;
+  max-width: 70%;
+  font-size: 13px;
+  line-height: 1.4;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.source-list a:hover .list-item-content span {
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
 </style>

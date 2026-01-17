@@ -1,40 +1,45 @@
 <template>
   <div class="layout">
 
-    <div class="box summary">
-      <Summary :edition="selectedEdition" />
-    </div>
+    <div class="left-column">
+      <div class="box summary">
+        <Summary :edition="selectedEdition" />
+      </div>
 
-    <div class="box sidebar">
-      <SourceList @select="selectedEdition = $event" />
+      <div class="box sidebar">
+        <SourceList @select="selectedEdition = $event" />
+      </div>
     </div>
 
     <!-- Column 2 (middle) -->
-    <div class="boxMlPlots network"><NetworkPlot /></div>
-    <div class="box sliders">
-      <SlidersPanel />
-    </div>
-    <div class="box tag-filter">
-      <NewTagFilter />
+    <div class="boxMlPlots network"><NetworkPlot @select="selectedEdition = $event" :edition="selectedEdition"/></div>
+    <div class="box filters-panel">
+      <div style="flex: 4.5; min-width: 220px;">
+        <NewTagFilter />
+      </div>
+      <div style="flex: 1; min-width: 140px;">
+        <SlidersPanel />
+      </div>
     </div>
     <div class="box timeline">
-      <TimelinePlot />
+      <TimelinePlot :color-attribute="colorAttribute" @select="selectedEdition = $event" />
     </div>
+
+    <!-- New Legend Box -->
+    <ColorLegend class="legend-box" title="Legend" :color-map="categoryColorMap" />
 
     <!-- Column 3 (right) -->
     <div class="box small-chart">
       <BarChart 
         :xAttribute="xAttribute" 
-        :categoryAttribute="categoryAttribute"
+        :categoryAttribute="colorAttribute"
         :xLabel="xLabel"
-        :categoryLabel="categoryLabel"
+        :categoryLabel="colorAttribute"
         @update:xAttribute="xAttribute = $event"
-        @update:categoryAttribute="categoryAttribute = $event"
         @update:xLabel="xLabel = $event"
-        @update:categoryLabel="categoryLabel = $event"
       />
     </div>
-    <div class="boxMlPlots pca"><PcaPlot /></div>
+    <div class="boxMlPlots pca"><PcaPlot   @select="selectedEdition = $event" :edition="selectedEdition"/></div>
     <!-- <div class="box reliability">
       <ReliabilitySliders />
     </div> -->
@@ -43,25 +48,41 @@
 </template>
 
 <script setup>
-import { VueForceGraph2D, VueForceGraph3D, VueForceGraphVR, VueForceGraphAR, GraphContextMenu } from 'vue-force-graph';
-//app.use(VueForceGraph2D)
-import { ref } from 'vue';
+import { ref, onMounted, watch } from 'vue';
+import { useEditionsData } from './composables/useEditionsData';
+import { useColorPalette } from './composables/useColorPalette';
 import BarChart from './components/BarChart.vue';
-import BarChartSelector from './components/BarChartSelector.vue';
 import SlidersPanel from './components/SlidersPanel.vue';
 import NewTagFilter from './components/NewTagFilter.vue';
-import ReliabilitySliders from './components/ReliabilitySliders.vue';
 import TimelinePlot from './components/TimelinePlot.vue';
 import SourceList from './components/SourceList.vue';
 import Summary from './components/Summary.vue';
 import PcaPlot from './components/PcaPlot.vue';
 import NetworkPlot from './components/NetworkPlot.vue';
+import ColorLegend from './components/ColorLegend.vue';
 
 const xAttribute = ref('Historical Period');
-const categoryAttribute = ref('Scholarly');
 const xLabel = ref('Historical Period');
-const categoryLabel = ref('Scholarly');
-const selectedEdition = ref(null)
+const selectedEdition = ref(null);
+
+const { editions, fetchEditions } = useEditionsData();
+const { precomputeColorsForAttribute, categoryColorMap } = useColorPalette();
+
+const colorAttribute = 'Language';
+
+onMounted(() => {
+  fetchEditions();
+});
+
+watch(editions, (newEditions) => {
+    if (newEditions && newEditions.length > 0) {
+        precomputeColorsForAttribute(newEditions, colorAttribute);
+        if (!selectedEdition.value) {
+            const randomIndex = Math.floor(Math.random() * newEditions.length);
+            selectedEdition.value = newEditions[randomIndex];
+        }
+    }
+}, { immediate: true });
 </script>
 
 <style scoped>
@@ -75,7 +96,7 @@ const selectedEdition = ref(null)
   width: 100%;
   max-width: 100%;
 
-  grid-template-columns: 0.8fr 0.7fr 1fr 1fr 0.7fr;
+  grid-template-columns: 0.8fr 0.6fr 1.3fr 0.4fr  0.4fr;
 
   grid-template-rows: 1fr 1fr 1.5fr 1fr;
 }
@@ -104,18 +125,25 @@ const selectedEdition = ref(null)
   
 }
 
+.left-column {
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .summary {
-  grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
   overflow: auto;
+  flex: 3;
 }
 
 .sidebar {
-  grid-row: 3 / 5;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  flex: 1.5;
 }
 
 .graph {
@@ -123,18 +151,20 @@ const selectedEdition = ref(null)
   grid-row: 1;
 }
 
-.sliders {
-  grid-column: 5;
+.filters-panel {
+  grid-column: 2 / 6;
   grid-row: 4;
-}
-
-.tag-filter {
-  grid-column: 2 / 5;
-  grid-row: 4;
+  display: flex;
+  gap: 20px;
 }
 
 .timeline {
-  grid-column: 2 / 5;
+  grid-column: 3 / 5;
+  grid-row: 3;
+}
+
+.legend-box {
+  grid-column: 5;
   grid-row: 3;
 }
 
@@ -151,7 +181,7 @@ const selectedEdition = ref(null)
 }
 
 .pca {
-  grid-column: 5;
+  grid-column: 2;
   grid-row: 3;
 
   width: 100%;
